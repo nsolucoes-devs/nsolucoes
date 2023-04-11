@@ -1,14 +1,13 @@
 import React from "react";
 import GlobalStyle from "./styles/GlobalStyles";
 import Header from "./components/Header";
-import MainWrapper from "./components/MainWrapper";
-import MainPage from "./pages/MainPage";
+import Main from "./pages/Main";
 
 function App() {
   return (
     <>
       <Header />
-      <MainPage />
+      <Main />
       <GlobalStyle />
     </>
   );

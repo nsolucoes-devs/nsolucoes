@@ -13,8 +13,9 @@ export const Container = styled.div`
   background-color: rgba(255, 255, 255, 0.70);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.5);
   color: #252525;
+  z-index: 9999;
 
   display: flex;
   flex-direction: row;

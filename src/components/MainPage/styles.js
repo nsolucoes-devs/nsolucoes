@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pin from "../../assets/images/pin1.png";
+import back from "../../assets/svg/back.png";
 
 export const Container = styled.div`
   width: 100vw;
@@ -7,7 +7,7 @@ export const Container = styled.div`
 `;
 
 export const BackgroundVideo = styled.div`
-  position: fixed;
+  position: absolute;
   top: 0;
   right: 0;
   height: 100%;
@@ -15,7 +15,7 @@ export const BackgroundVideo = styled.div`
   z-index: -1;
 
   .wave {
-    height: 100%;
+    height: 100vh;
     width: 100%;
     position: absolute;
     z-index: 999;
@@ -26,10 +26,11 @@ export const BackgroundVideo = styled.div`
     object-fit: cover;
     width: 100vw;
     height: 100vh;
-    position: fixed;
+    position: absolute;
     top: 0;
     right: 0;
   }
+
 `;
 
 export const MiddleContainer = styled.div`
@@ -39,7 +40,7 @@ export const MiddleContainer = styled.div`
   background-color: rgba(255, 255, 255, 0.65);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
-  border: 1px solid rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.5);
 
   h1 {
     font-size: 3rem;
