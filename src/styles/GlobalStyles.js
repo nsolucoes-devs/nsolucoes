@@ -19,6 +19,6 @@ export default createGlobalStyle`
         --accent-color: #1E8A4D;
         --hover-accent-color: #1E8A4D;
         --main-background: #ffffff;
-        --secundary-background: #EEEEEE;
+        --secundary-background: #F5F5F5;
     }
 `;
