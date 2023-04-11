@@ -10,6 +10,11 @@ export const Container = styled.div`
   left: 0;
   right: 0;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(255, 255, 255, 0.70);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
+  color: #252525;
 
   display: flex;
   flex-direction: row;

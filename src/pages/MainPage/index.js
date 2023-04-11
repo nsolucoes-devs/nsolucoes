@@ -6,7 +6,8 @@ import {
   Overlay,
   Title,
   MiddleButton,
-  Pin
+  Pin,
+  Wrapper
 } from "./styles";
 import background from "../../assets/videos/video1.mp4";
 import background2 from "../../assets/videos/video2.mp4";
@@ -27,7 +28,7 @@ function MainPage() {
   ]);
 
   const setPlayBackRate = () => {
-    videoRef.current.playbackRate = 0.5;
+    videoRef.current.playbackRate = 1;
   };
 
   useEffect(() => {
@@ -56,25 +57,26 @@ function MainPage() {
 
   return (
     <Container>
-      <MiddleContainer>
-        <Title>
-          <span className="underline">Transformando</span>
-          <span>Negócios com programação e</span>
-          <span className="type-writter">
-            <Typewriter
-              options={{
-                strings: ["Inteligência", "Cuidado", "Responsabilidade"],
-                autoStart: true,
-                loop: true,
-              }}
-            />
-          </span>
-        </Title>
-        <MiddleButton>
-            Saiba Mais!
-        </MiddleButton>
+      <Wrapper>
+        <MiddleContainer>
+          <Title>
+            <span className="underline">Transformando</span>
+            <span>Negócios com programação e</span>
+            <span className="type-writter">
+              <Typewriter
+                options={{
+                  strings: ["Inteligência", "Cuidado", "Responsabilidade"],
+                  autoStart: true,
+                  loop: true,
+                }}
+              />
+            </span>
+          </Title>
+          <MiddleButton>Saiba Mais!</MiddleButton>
+        </MiddleContainer>
         <Pin src={pin} />
-      </MiddleContainer>
+      </Wrapper>
+
       <BackgroundVideo>
         <img className="wave" src={wave} />
         <Overlay className="overlay" />
@@ -88,7 +90,7 @@ function MainPage() {
           preload
           onEnded={handleVideoEnded}
         >
-          <source src={background} />
+          <source src={background2} />
         </video>
       </BackgroundVideo>
     </Container>

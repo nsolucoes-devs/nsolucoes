@@ -22,32 +22,42 @@ export const BackgroundVideo = styled.div`
     right: 53px;
   }
 
-  iframe {
-    object-fit: contain;
+  video {
+    object-fit: cover;
     width: 100vw;
     height: 100vh;
     position: fixed;
     top: 0;
-    left: 0;
+    right: 0;
   }
 `;
 
 export const MiddleContainer = styled.div`
-  width: fit-content;
-  height: auto;
+  width: 100%;
   padding: 60px 36px;
-  position: relative;
-  top: 50%;
-  transform: translateY(-50%);
-  margin-left: 10%;
   border-radius: 20px;
-  box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
-  background-color: var(--main-background);
+  background-color: rgba(255, 255, 255, 0.65);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(15px);
+  border: 1px solid rgba(255, 255, 255, 0.18);
 
   h1 {
     font-size: 3rem;
     color: #1c2045;
   }
+`;
+
+export const Wrapper = styled.div`
+  width: fit-content;
+  height: fit-content;
+  position: absolute;
+  top: 50%;
+  position: relative;
+  width: fit-content;
+  height: auto;
+  top: 50%;
+  transform: translateY(-50%);
+  margin-left: 10%;
 `;
 
 export const Pin = styled.img`
@@ -57,21 +67,6 @@ export const Pin = styled.img`
   width: 250px;
   height: 250px;
   z-index: -1;
-  transform: translateY(50%) translateX(-50%);
-  background-position: contain;
-  animation: pulse 2s infinite;
-
-  @keyframes pulse {
-    0% {
-      transform: scale(0.9);
-    }
-    50% {
-      transform: scale(1);
-    }
-    100% {
-      transform: scale(0.9);
-    }
-  }
 `;
 
 export const Overlay = styled.div`
@@ -128,18 +123,24 @@ export const Title = styled.h1`
 
 export const MiddleButton = styled.div`
   width: fit-content;
-  padding: 23px 55px;
-  border-radius: 20px;
+  padding: 20px 75px;
+  border-radius: 70px;
   margin-top: 40px;
-  background-color: rgba(30, 138, 77, 0.8);
+  background-color: var(--accent-color);
   font-weight: 600;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 44px 84px -24px var(--accent-color);
+  box-shadow: 0 20px 84px -15px var(--accent-color);
+  -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
+  -moz-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
+  text-transform: uppercase;
+  letter-spacing: 3px;
   position: relative;
   overflow: hidden;
   transition: background-color 0.3s ease-out 0.2s;
+  z-index: 1;
 
   &:before {
     content: "";
@@ -148,7 +149,7 @@ export const MiddleButton = styled.div`
     left: 50%;
     width: 0;
     height: 0;
-    background-color: #1e8a4d;
+    background-color: #18693b;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.6s ease-out 0s;
