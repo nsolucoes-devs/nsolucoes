@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import pin from "../../assets/images/pin1.png"
+import pin from "../../assets/images/pin1.png";
 
 export const Container = styled.div`
   width: 100vw;
@@ -36,34 +36,30 @@ export const MiddleContainer = styled.div`
   width: fit-content;
   height: auto;
   padding: 60px 36px;
-  position: absolute;
+  position: relative;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 10%;
   border-radius: 20px;
   box-shadow: rgba(99, 99, 99, 0.2) 0px 2px 8px 0px;
   background-color: var(--main-background);
-  z-index: 1;
 
   h1 {
     font-size: 3rem;
     color: #1c2045;
   }
+`;
 
-  &::before {
-    content: "";
-    position: absolute;
-    bottom: 0;
-    left: 0;
-    width: 200px;
-    height: 200px;
-    background-image: url(${pin});
-    background-repeat: no-repeat;
-    z-index: -99;
-    transform: translateY(50%) translateX(-50%);
-    background-position: contain;    
-    animation: pulse 2s infinite;
-  }
+export const Pin = styled.img`
+  position: absolute;
+  bottom: -120px;
+  left: -120px;
+  width: 250px;
+  height: 250px;
+  z-index: -1;
+  transform: translateY(50%) translateX(-50%);
+  background-position: contain;
+  animation: pulse 2s infinite;
 
   @keyframes pulse {
     0% {
@@ -88,9 +84,11 @@ export const Overlay = styled.div`
   right: 0;
   z-index: 1;
   transition: all 0.5s;
-  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(6px);
-  -webkit-backdrop-filter: blur(6px);
+  background-image: linear-gradient(
+    to right,
+    rgba(30, 138, 77, 0.8) 40%,
+    rgba(0, 0, 0, 0)
+  );
 
   &.fadeIn {
     opacity: 1;

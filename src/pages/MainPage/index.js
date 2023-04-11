@@ -5,12 +5,14 @@ import {
   MiddleContainer,
   Overlay,
   Title,
-  MiddleButton
+  MiddleButton,
+  Pin
 } from "./styles";
-import background from "../../assets/videos/video3.mp4";
-import background2 from "../../assets/videos/video4.mp4";
-import background3 from "../../assets/videos/video5.mp4";
-import background4 from "../../assets/videos/video6.mp4";
+import background from "../../assets/videos/video1.mp4";
+import background2 from "../../assets/videos/video2.mp4";
+import background3 from "../../assets/videos/video3.mp4";
+import background4 from "../../assets/videos/video4.mp4";
+import pin from "../../assets/images/pin1.png";
 import wave from "../../assets/svg/back.png";
 import Typewriter from "typewriter-effect";
 
@@ -71,6 +73,7 @@ function MainPage() {
         <MiddleButton>
             Saiba Mais!
         </MiddleButton>
+        <Pin src={pin} />
       </MiddleContainer>
       <BackgroundVideo>
         <img className="wave" src={wave} />
@@ -85,7 +88,7 @@ function MainPage() {
           preload
           onEnded={handleVideoEnded}
         >
-          <source src={videoList[videoIndex]} />
+          <source src={background} />
         </video>
       </BackgroundVideo>
     </Container>
