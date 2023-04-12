@@ -221,3 +221,15 @@ export const InBuildBtn = styled.div`
   width: fit-content;
   cursor: pointer;
 `;
+
+export const StacksRow = styled.div`
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 10px;
+
+    @media (max-width: 500px) {
+        justify-content: center;
+    }
+
+`

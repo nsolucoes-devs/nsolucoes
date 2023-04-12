@@ -9,7 +9,8 @@ import {
   AppDetails,
   Phone,
   Logo,
-  InBuildBtn
+  InBuildBtn,
+  StacksRow
 } from "./styles";
 import Title from "../Title";
 import { IoLogoReact } from "../../styles/Icons";
@@ -27,6 +28,7 @@ import logzz from "../../assets/images/logzz.png";
 import mooncoded from "../../assets/images/mooncoded.png";
 import phoneMockup from "../../assets/images/phone-mockup.png";
 import logzzLogo from "../../assets/images/logzz-logo.png";
+import StacksTag from "../StacksTag";
 
 function Techs() {
   const stacks = {
@@ -72,12 +74,11 @@ function Techs() {
             adipisci, voluptate veritatis ex quisquam
           </p>
           <strong>Ferramentas de desenvolvimento</strong>
-          <ul>
-            <li>+ HTML5</li>
-            <li>+ PHP</li>
-            <li>+ CSS3</li>
-            <li>+ MYSQL</li>
-          </ul>
+          <StacksRow>
+            {["html", "php", "css", "sql"].map((item) => {
+              return <StacksTag title={item} />;
+            })}
+          </StacksRow>
         </ProductColumn>
         <img className="laptop" src={logzz} />
       </ProductRow>
@@ -93,12 +94,11 @@ function Techs() {
             adipisci, voluptate veritatis ex quisquam
           </p>
           <strong>Ferramentas de desenvolvimento</strong>
-          <ul>
-            <li>+ REACTJS</li>
-            <li>+ Styled-Components</li>
-            <li>+ MongoSQL</li>
-            <li>+ Github API</li>
-          </ul>
+          <StacksRow>
+            {["react", "styledComponents", "mongo"].map((item) => {
+              return <StacksTag title={item} />;
+            })}
+          </StacksRow>
         </ProductColumn>
       </ProductRow>
       <div className="divider" />
@@ -109,11 +109,16 @@ function Techs() {
               <Logo src={logzzLogo} /> <h1>Logzz App</h1>
             </div>
             <h2>O aplicativo que conecta clientes e entregadores.</h2>
-            <h4>A praticidade chegou pra quem precisa de segurança e confiança!</h4>
+            <h4>
+              A praticidade chegou pra quem precisa de segurança e confiança!
+            </h4>
+            <StacksRow>
+            {["html", "php", "css", "sql"].map((item) => {
+              return <StacksTag title={item} />;
+            })}
+          </StacksRow>
 
-            <InBuildBtn>
-            🔨 Em construção
-            </InBuildBtn>
+            <InBuildBtn>🔨 Em construção</InBuildBtn>
           </AppDetails>
           <div className="right-side">
             <div className="phone-holder">
