@@ -11,13 +11,25 @@ import {
   Column,
   SubmitButton,
   TextArea,
+  MessageBtn,
+  MessageInput,
+  SocialRow,
+  Footer,
 } from "./styles";
 import Title from "../Title";
-import { BiSupport } from "../../styles/Icons";
+import {
+  BiSupport,
+  MdEmail,
+  AiFillPhone,
+  FaMapMarkerAlt,
+  BsLinkedin,
+  AiFillInstagram,
+} from "../../styles/Icons";
 import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
 import { motion } from "framer-motion";
 import L from "leaflet";
 import locationIcon from "../../assets/images/marker.png";
+import { BsWhatsapp } from "react-icons/bs";
 
 function Support() {
   const MarkerIcon = L.icon({
@@ -29,8 +41,56 @@ function Support() {
 
   return (
     <Container>
-      <Title title="Suporte" icon={<BiSupport size={100} />} />
-      <FirstRow>
+      <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
+      <SocialRow>
+        <BsLinkedin size={30} />
+        <AiFillInstagram size={38} />
+      </SocialRow>
+      <Row className="main-row">
+        <Column>
+          <h1>Entre em contato!</h1>
+          <h3>
+            Fusce varius, dolor tempor interdum tristique, dui urna bib endum
+            magna, ut ullamcorper purus
+          </h3>
+          <MessageBtn>
+            <MessageInput placeholder="Envie sua mensagem!" />
+            <BsWhatsapp size={30} />
+          </MessageBtn>
+        </Column>
+        <div className="vertical-divider" />
+        <Column>
+          <Column>
+            <strong>Suporte</strong>
+            <ul>
+              <li>
+                <MdEmail />
+                suporte@nsolucoes.digital
+              </li>
+              <li>
+                <AiFillPhone /> (34) 9 98942-7824
+              </li>
+            </ul>
+          </Column>
+          <Column>
+            <strong>
+              <FaMapMarkerAlt /> Endereço
+            </strong>
+            <ul>
+              <li>
+                R. Irmão Afonso, 329 - São Sebastiao, Uberaba - MG, 38060-360
+              </li>
+            </ul>
+          </Column>
+        </Column>
+      </Row>
+
+      <div className="horizontal-divider" />
+
+      <Footer>
+        <small>© 2023. Todos os direitos reservados por N Soluções.</small>
+      </Footer>
+      {/* <FirstRow>
         <ContactForm>
           <Form>
             <Row>
@@ -138,7 +198,7 @@ function Support() {
             </Popup>
           </Marker>
         </Map>
-      </FirstRow>
+      </FirstRow> */}
     </Container>
   );
 }

@@ -8,6 +8,32 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  .vertical-divider {
+    height: 80%;
+    align-self: flex-start;
+    width: 1px;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  .horizontal-divider {
+    height: 2px;
+    width: 80%;
+    margin: 50px 0;
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+
+  @media (max-width: 750px) {
+    .main-row {
+      flex-direction: column;
+      margin: 40px 0;
+      text-align: center;
+      align-items: center;
+    }
+
+    .vertical-divider {
+      display: none;
+    }
+  }
 `;
 
 export const Map = styled(MapContainer)`
@@ -46,7 +72,7 @@ export const InputData = styled.div`
     background: linear-gradient(
       to right,
       var(-accent-color),
-      rgba(255,255,255,0.15)
+      rgba(255, 255, 255, 0.15)
     );
     transition: all 0.4s ease;
   }
@@ -61,7 +87,7 @@ export const Input = styled.input`
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: rgba(255, 255, 255, 0.70);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -80,7 +106,7 @@ export const TextArea = styled.textarea`
   outline: none;
   border: none;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: rgba(255, 255, 255, 0.70);
+  background-color: rgba(255, 255, 255, 0.7);
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
@@ -107,7 +133,7 @@ export const SubmitButton = styled.button`
   border-image: linear-gradient(
       45deg,
       var(-accent-color),
-      rgba(255,255,255,0.15)
+      rgba(255, 255, 255, 0.15)
     )
     1;
   background-color: transparent;
@@ -129,20 +155,120 @@ export const Form = styled.form`
   align-items: center;
   width: 100%;
   gap: 10px;
+  min-height: 400px;
 `;
 
 export const Row = styled.div`
   display: flex;
   flex-direction: row;
   justify-content: center;
-  gap: 10px;
-  width: 80%;
+  align-items: center;
+  gap: 50px;
+  width: 100%;
+  height: 350px;
+  margin-top: 50px;
+
+  @media (max-width: 500px) {
+    height: fit-content;
+  }
 `;
 
 export const Column = styled.div`
   display: flex;
   flex-direction: column;
-  width: 80%;
+  justify-content: flex-start;
   gap: 10px;
+  height: 100%;
+
+  ul {
+    list-style: none;
+
+    li {
+      margin-top: 8px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      max-width: 350px;
+    }
+  }
+
+  @media (max-width: 750px) {
+    align-items: center !important;
+    text-align: center;
+
+    ul {
+      margin-bottom: 30px;
+    }
+  }
+
+  strong {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    color: #252525;
+    font-weight: 900 !important;
+  }
+
+  h1 {
+    color: #252525;
+  }
+
+  h3 {
+    max-width: 400px;
+  }
+`;
+
+export const SocialRow = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
   align-items: center;
+  margin: 30px 0;
+
+  @media (max-width: 500px) {
+    margin-bottom: 10px;
+  }
+
+  svg {
+    color: #d9d9d9;
+    transition: all 0.2s;
+    cursor: pointer;
+
+    :hover {
+      color: #252525;
+      transform: scale(1.05);
+    }
+  }
+`;
+
+export const MessageBtn = styled.div`
+  width: 100%;
+  margin-top: 20px;
+  padding: 20px 25px;
+  border-radius: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 10px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+`;
+
+export const MessageInput = styled.input`
+  width: 100%;
+  height: 100%;
+  border: none;
+  outline: none;
+  font-size: 16px;
+`;
+
+export const Footer = styled.div`
+  display: flex;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
 `;
