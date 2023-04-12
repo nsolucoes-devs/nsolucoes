@@ -40,8 +40,17 @@ export const ProductRow = styled.div`
     padding: 26px;
     justify-content: center;
 
+    @media (max-width: 1100px) {
+        flex-direction: column-reverse;
+
+        .laptop {
+            max-width: 100% !important;
+        }
+    }
+
     .laptop {
         max-width: 40%;
+        cursor: pointer;
     }
 `;
 
@@ -50,6 +59,11 @@ export const ProductColumn = styled.div`
     display: flex;
     flex-direction: column;
     gap: 15px;
+
+    @media (max-width: 1100px) {
+        width: 80%;
+        text-align: center;
+    }
 
     h1 {
         text-transform: uppercase;

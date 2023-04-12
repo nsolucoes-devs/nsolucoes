@@ -1,21 +1,26 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: 80%;
+  width: ${(props) => (props.isOpen ? "100%" : "80%")};
   padding: 10px 24px;
   background: var(--main-background);
   border-radius: 0.4rem;
+  margin: ${props => props.isOpen ? "0px" : "20px auto"};
   position: fixed;
-  margin: 20px auto;
   left: 0;
   right: 0;
-  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
-  background-color: rgba(255, 255, 255, 0.70);
-  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  box-shadow: ${(props) =>
+    props.isOpen ? "none" : "rgba(0, 0, 0, 0.1) 0px 4px 12px"};
+  background-color: ${(props) =>
+    props.isOpen ? "transparent" : "rgba(255, 255, 255, 0.70)"};
+  box-shadow: ${(props) =>
+    props.isOpen ? "none" : "0 0 10px 1px rgba(0, 0, 0, 0.25)"};
   backdrop-filter: blur(10px);
-  border: 1px solid rgba(255, 255, 255, 0.5);
+  border: ${(props) =>
+    props.isOpen ? "none" : "1px solid rgba(255, 255, 255, 0.5)"};
   color: #252525;
   z-index: 9999;
+    transition: all .5s;
 
   display: flex;
   flex-direction: row;
@@ -41,6 +46,10 @@ export const Option = styled.li`
   display: flex;
   flex-direction: row;
   align-items: center;
+
+  @media (max-width: 1100px) {
+    display: none;
+  }
 
   svg {
     font-size: 20px;
@@ -91,4 +100,96 @@ export const LogoName = styled.img`
   animation: popIn 1s paused;
   transform: translate(-10px);
   margin-bottom: 10px;
+`;
+
+export const MobileHeader = styled.nav`
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100vw;
+  height: 100vh;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+  background-color: rgba(255, 255, 255, 0.7);
+  box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.5);
+  position: fixed;
+  z-index: 999;
+  right: 0;
+  bottom: 0;
+  opacity: 0;
+  animation: fadeIn 0.5s;
+  animation-play-state: running;
+  animation-fill-mode: both;
+  transition: all 0.2s;
+
+  @keyframes fadeIn {
+  from {
+    opacity: 0;
+    height: 0px;
+    transform: translateY(-100%); /* Adicione esta linha para animar o translateY */
+  }
+  to {
+    opacity: 1;
+    height: 100vh;
+    transform: translateY(0%); /* Adicione esta linha para animar o translateY */
+  }
+}
+
+  ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+
+    li {
+      text-transform: uppercase;
+      font-size: 16pt;
+      font-weight: 500;
+      cursor: pointer;
+      padding: 5px 15px;
+      color: #666;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      background-image: linear-gradient(
+        var(--accent-color),
+        var(--accent-color)
+      );
+      background-size: 0% 3px;
+      background-repeat: no-repeat;
+      transition: background-size 0.3s;
+      margin: 5px 0;
+      background-position: 50% calc(100% - 0px);
+      :hover {
+        background-size: 100% 3px;
+      }
+    }
+    .contact {
+      background-color: var(--accent-color);
+      border-radius: 12px;
+      padding: 10px;
+      transition: 0.2s;
+      background-image: none;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+      text-transform: uppercase;
+      text-decoration: none;
+      color: white;
+      font-size: 16pt;
+      font-weight: 500;
+    }
+  }
+  @media (min-width: 750px) {
+    display: none;
+  }
+`;
+
+export const Menu = styled.div`
+  display: none;
+
+  @media (max-width: 1100px) {
+    display: flex;
+  }
 `;

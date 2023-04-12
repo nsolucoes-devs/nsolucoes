@@ -46,6 +46,14 @@ export const MiddleContainer = styled.div`
     font-size: 3rem;
     color: #1c2045;
   }
+
+  @media (max-width: 700px) {
+    width: 85%;
+
+    h1 {
+      font-size: 2rem;
+    }
+  }
 `;
 
 export const Wrapper = styled.div`

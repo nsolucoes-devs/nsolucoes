@@ -6,7 +6,7 @@ export const Container = styled.div`
     width: 100%;
     justify-content: center;
     align-items: center;
-    padding: 150px 0 0 0;
+    padding: 70px 0 0 0;
     gap: 60px;
 `;
 
@@ -15,4 +15,5 @@ export const CardsRow = styled.div`
     flex-direction: row;
     width: 100%;
     justify-content: center;
+    flex-wrap: wrap;
 `

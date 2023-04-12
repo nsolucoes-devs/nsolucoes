@@ -12,11 +12,19 @@ export const MainRow = styled.div`
   flex-direction: row;
   padding: 100px 0;
   gap: 150px;
+  flex-wrap: wrap;
+  width: 100%;
+  justify-content: center;
+
+  @media (max-width: 1100px) {
+    text-align: center;
+  }
 `;
 
 export const MainColumn = styled.div`
   display: flex;
   flex-direction: column;
+  padding: 0 20px;
 
   h1 {
     font-weight: 600;

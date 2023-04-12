@@ -4,4 +4,18 @@ export { TiInfoLargeOutline } from "react-icons/ti";
 export { BiArchive, BiSupport } from "react-icons/bi";
 export { HiArchiveBox } from "react-icons/hi2";
 export { IoSpeedometer, IoLogoReact } from "react-icons/io5";
-export { AiFillPhone } from "react-icons/ai";
+export { GrContactInfo } from "react-icons/gr";
+export { GiTicket } from "react-icons/gi";
+export { IoMapSharp } from "react-icons/io5";
+export {
+  AiFillPhone,
+  AiOutlineInfoCircle,
+  AiFillStar,
+  AiFillCloseCircle,
+} from "react-icons/ai";
+export { HiOutlineDesktopComputer } from "react-icons/hi";
+export { BsFillPrinterFill, BsCheckLg } from "react-icons/bs";
+export { TbTruckDelivery } from "react-icons/tb";
+export { IoMdLock, IoMdUnlock } from "react-icons/io";
+export { FaTelegramPlane } from "react-icons/fa";
+export { FiCheckCircle } from "react-icons/fi";
