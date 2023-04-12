@@ -7,6 +7,7 @@ export const Wrapper = styled.div`
   min-width: 350px;
   margin: 25px;
   position: relative;
+  cursor: pointer;
 `;
 
 export const MainContainer = styled.div`

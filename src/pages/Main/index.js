@@ -3,6 +3,8 @@ import { Container } from "./styles";
 import MainPage from "../../components/MainPage";
 import AboutRow from "../../components/AboutRow";
 import AboutUs from "../../components/AboutUs";
+import Techs from "../../components/Techs";
+import Support from "../../components/Support";
 
 function Main() {
   return (
@@ -17,6 +19,8 @@ function Main() {
         ></path>
       </svg>
       <AboutUs />
+      <Techs />
+      <Support />
     </Container>
   );
 }
