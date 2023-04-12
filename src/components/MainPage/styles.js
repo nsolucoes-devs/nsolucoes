@@ -30,7 +30,6 @@ export const BackgroundVideo = styled.div`
     top: 0;
     right: 0;
   }
-
 `;
 
 export const MiddleContainer = styled.div`
@@ -48,7 +47,7 @@ export const MiddleContainer = styled.div`
   }
 
   @media (max-width: 700px) {
-    width: 85%;
+    width: 90%;
 
     h1 {
       font-size: 2rem;
@@ -57,16 +56,22 @@ export const MiddleContainer = styled.div`
 `;
 
 export const Wrapper = styled.div`
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: fit-content;
   height: fit-content;
-  position: absolute;
-  top: 50%;
   position: relative;
+  top: 50%;
   width: fit-content;
   height: auto;
   top: 50%;
   transform: translateY(-50%);
   margin-left: 10%;
+
+  @media (max-width: 600px) {
+    margin-left: 0px;
+  }
 `;
 
 export const Pin = styled.img`
@@ -76,6 +81,10 @@ export const Pin = styled.img`
   width: 250px;
   height: 250px;
   z-index: -1;
+
+  @media (max-width: 600px) {
+    display: none;
+  }
 `;
 
 export const Overlay = styled.div`

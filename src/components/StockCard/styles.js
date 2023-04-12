@@ -6,6 +6,10 @@ export const Container = styled.div`
   transform: rotate(0deg);
   cursor: pointer;
 
+  @media (max-width: 700px) {
+    max-width: 250px;
+  }
+
   :hover {
     img {
         transform: rotate(0deg);

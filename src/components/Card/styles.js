@@ -88,4 +88,8 @@ export const Pin = styled.img`
     top: -100px;
     right: -100px;
     z-index: -1;
+
+    @media (max-width: 750px) {
+        right: 0;
+    }
 `

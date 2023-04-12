@@ -1,12 +1,14 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  width: ${(props) => (props.isOpen ? "100%" : "80%")};
+  width: ${(props) => (props.isOpen ? "100%" : "90%")};
   padding: 10px 24px;
   background: var(--main-background);
   border-radius: 0.4rem;
-  margin: ${props => props.isOpen ? "0px" : "20px auto"};
+  margin: ${(props) => (props.isOpen ? "0px auto" : "20px auto")};
   position: fixed;
+  margin-left: auto;
+  margin-right: auto;
   left: 0;
   right: 0;
   box-shadow: ${(props) =>
@@ -20,7 +22,7 @@ export const Container = styled.div`
     props.isOpen ? "none" : "1px solid rgba(255, 255, 255, 0.5)"};
   color: #252525;
   z-index: 9999;
-    transition: all .5s;
+  transition: all 0.5s;
 
   display: flex;
   flex-direction: row;
@@ -115,8 +117,8 @@ export const MobileHeader = styled.nav`
   border: 1px solid rgba(255, 255, 255, 0.5);
   position: fixed;
   z-index: 999;
-  right: 0;
-  bottom: 0;
+  left: 0;
+  top: 0;
   opacity: 0;
   animation: fadeIn 0.5s;
   animation-play-state: running;
@@ -124,17 +126,21 @@ export const MobileHeader = styled.nav`
   transition: all 0.2s;
 
   @keyframes fadeIn {
-  from {
-    opacity: 0;
-    height: 0px;
-    transform: translateY(-100%); /* Adicione esta linha para animar o translateY */
+    from {
+      opacity: 0;
+      height: 0px;
+      transform: translateY(
+        -100%
+      ); /* Adicione esta linha para animar o translateY */
+    }
+    to {
+      opacity: 1;
+      height: 100vh;
+      transform: translateY(
+        0%
+      ); /* Adicione esta linha para animar o translateY */
+    }
   }
-  to {
-    opacity: 1;
-    height: 100vh;
-    transform: translateY(0%); /* Adicione esta linha para animar o translateY */
-  }
-}
 
   ul {
     display: flex;
