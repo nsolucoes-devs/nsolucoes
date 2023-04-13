@@ -11,6 +11,14 @@ export const Container = styled.div`
     font-weight: 900;
     text-align: center;
     position: relative;
+    color: #252525;
+    max-width: 95vw;
+
+    @media (max-width: 900px) {
+      :before {
+        display: none;
+      }
+    }
 
     :before {
       content: "";

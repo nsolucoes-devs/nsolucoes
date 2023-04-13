@@ -21,7 +21,7 @@ function Main() {
       </svg>
       <AboutUs />
       <Techs />
-      <SpecialSupport />
+      {/* <SpecialSupport /> */}
       <Support />
     </Container>
   );

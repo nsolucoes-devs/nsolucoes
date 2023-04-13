@@ -66,7 +66,7 @@ function Techs() {
         ))}
       </ScrollContainer>
       <br />
-      <MobileApp style={{marginTop: "80px"}} left>
+      <MobileApp style={{ marginTop: "80px" }} left>
         <div className="main-wrapper">
           <div className="right-side">
             <div className="phone-holder">
@@ -93,21 +93,29 @@ function Techs() {
       </MobileApp>
 
       <ProductRow>
-        <ProductColumn>
-          <div className="app-title">
-            <Logo src={logzzLogo} /> <h1>Logzz App</h1>
+        <div className="main-wrapper">
+          <AppDetails>
+            <div className="app-title">
+              <Logo src={logzzLogo} /> <h1>Logzz App</h1>
+            </div>
+            <h2>O aplicativo que conecta clientes e entregadores.</h2>
+            <h4>
+              A praticidade chegou pra quem precisa de segurança e confiança!
+            </h4>
+            <StacksRow>
+              {["html", "php", "css", "sql"].map((item) => {
+                return <StacksTag title={item} />;
+              })}
+            </StacksRow>
+
+            <InBuildBtn>🔨 Em construção</InBuildBtn>
+          </AppDetails>
+          <div className="right-side">
+            <div className="phone-holder">
+              <img className="laptop" src={logzz} />
+            </div>
           </div>
-          <h2>O aplicativo que conecta clientes e entregadores.</h2>
-          <h4>
-            A praticidade chegou pra quem precisa de segurança e confiança!
-          </h4>
-          <StacksRow>
-            {["html", "php", "css", "sql"].map((item) => {
-              return <StacksTag title={item} />;
-            })}
-          </StacksRow>
-        </ProductColumn>
-        <img className="laptop" src={logzz} />
+        </div>
       </ProductRow>
 
       <MobileApp>

@@ -33,33 +33,79 @@ export const Container = styled.div`
 
 export const ProductRow = styled.div`
   width: 99%;
-  border-radius: 20px;
-  display: flex;
-  flex-direction: row;
-  align-items: center;
-  gap: 20px;
-  padding: 26px;
-  justify-content: center;
   min-height: 450px;
-  background-color: #09824B;
+  display: flex;
+  border-radius: 20px;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  padding: 26px;
+  background-color: var(--accent-color);
+  position: relative;
+  -webkit-clip-path: inset(-100vw 0 0 -100vw);
+  clip-path: inset(-100vw 0 0 -100vw);
   margin-bottom: 70px;
 
-  @media (max-width: 1100px) {
-    flex-direction: column-reverse;
+  .main-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
 
-    .laptop {
-      max-width: 100% !important;
-    }
+  .right-side {
+    position: relative;
+    width: 100%;
+    padding-left: 12px;
+    padding-right: 12px;
+    flex: 0 0 50%;
+    max-width: 50%;
+    margin-right: ${(props) => (props.left ? "100px" : "0px")};
+  }
+
+  .phone-holder {
+    position: absolute;
+    width: 200%;
+    max-width: 200%;
+    top: -10rem;
   }
 
   .laptop {
-    max-width: 50%;
-    transform: rotate(2deg);
+    transition: all 0.2s;
+    width: 100%;
+    max-width: 100%;
+    transform: rotate(-2deg);
     cursor: pointer;
-    transition: all .2s;
 
     :hover {
-      transform: scale(1.05);
+      transform: scale(1.07);
+    }
+  }
+
+  @media (max-width: 900px) {
+    flex-direction: column;
+    width: 90%;
+
+    .main-wrapper {
+      flex-direction: column;
+    }
+
+    .right-side {
+      max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
+    }
+
+    .phone-holder {
+      position: relative;
+      width: 100%;
+      max-width: 100%;
+      top: 0px;
+      margin-top: 50px;
+
+      img {
+        position: relative;
+        width: 100%;
+      }
     }
   }
 `;
@@ -114,7 +160,7 @@ export const MobileApp = styled.div`
   position: relative;
   -webkit-clip-path: inset(-100vw 0 0 -100vw);
   clip-path: inset(-100vw 0 0 -100vw);
-    margin-bottom: 70px;
+  margin-bottom: 70px;
 
   .main-wrapper {
     display: flex;
@@ -129,7 +175,7 @@ export const MobileApp = styled.div`
     padding-right: 12px;
     flex: 0 0 50%;
     max-width: 50%;
-    margin-right: ${props => props.left ? "100px" : "0px"};
+    margin-right: ${(props) => (props.left ? "100px" : "0px")};
   }
 
   .phone-holder {
@@ -149,6 +195,8 @@ export const MobileApp = styled.div`
 
     .right-side {
       max-width: 100%;
+      margin-right: 0px;
+      margin-bottom: 20px;
     }
 
     .phone-holder {
@@ -171,7 +219,6 @@ export const Phone = styled.img`
   width: 100%;
   max-width: 100%;
   cursor: pointer;
-
 
   :hover {
     transform: scale(1.07);
@@ -242,13 +289,12 @@ export const InBuildBtn = styled.div`
 `;
 
 export const StacksRow = styled.div`
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 10px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: 10px;
 
-    @media (max-width: 500px) {
-        justify-content: center;
-    }
-
-`
+  @media (max-width: 500px) {
+    justify-content: center;
+  }
+`;
