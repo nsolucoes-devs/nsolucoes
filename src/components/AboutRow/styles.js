@@ -8,6 +8,7 @@ export const Container = styled.div`
     align-items: center;
     padding: 70px 0 0 0;
     gap: 60px;
+    text-align: center;
 `;
 
 export const CardsRow = styled.div`
@@ -16,4 +17,5 @@ export const CardsRow = styled.div`
     width: 100%;
     justify-content: center;
     flex-wrap: wrap;
+    margin-top: 50px;
 `

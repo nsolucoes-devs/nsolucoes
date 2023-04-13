@@ -10,7 +10,7 @@ import {
   Phone,
   Logo,
   InBuildBtn,
-  StacksRow
+  StacksRow,
 } from "./styles";
 import Title from "../Title";
 import { IoLogoReact } from "../../styles/Icons";
@@ -27,53 +27,80 @@ import ScrollContainer from "react-indiana-drag-scroll";
 import logzz from "../../assets/images/logzz.png";
 import mooncoded from "../../assets/images/mooncoded.png";
 import phoneMockup from "../../assets/images/phone-mockup.png";
+import phoneMockup2 from "../../assets/images/phone_mockup2.png";
 import logzzLogo from "../../assets/images/logzz-logo.png";
 import StacksTag from "../StacksTag";
 
 function Techs() {
-  const stacks = {
-    stack1,
-    stack2,
-    stack3,
-    stack4,
-    stack5,
-    stack6,
-    stack7,
-    stack8,
-    stack9,
-  };
+  const stacks = [
+    { name: stack8, size: "100px" },
+    { name: stack1, size: "60px" },
+    { name: stack3, size: "100px" },
+    { name: stack6, size: "100px" },
+    { name: stack7, size: "100px" },
+    { name: stack9, size: "60px" },
+  ];
 
   return (
     <Container>
-      <Title title="trabalhos" icon={<IoLogoReact size={100} />} />
+      <Title title="Trabalhamos com" />
       <ScrollContainer className="scroll-container">
-        {Object.keys(stacks).map((stack) => (
+        {stacks.map((stack) => (
           <div
-            key={stack}
+            key={stacks[stack.name]}
             style={{
               scrollBehavior: "smooth",
             }}
           >
             <img
-              src={stacks[stack]}
+              src={stack.name}
               className="stacks"
-              alt={stack}
-              style={{ pointerEvents: "none", userSelect: "none" }}
+              alt={stack.name}
+              style={{
+                pointerEvents: "none",
+                userSelect: "none",
+                width: stack.size,
+              }}
             />
           </div>
         ))}
       </ScrollContainer>
       <br />
+      <MobileApp style={{marginTop: "80px"}} left>
+        <div className="main-wrapper">
+          <div className="right-side">
+            <div className="phone-holder">
+              <Phone src={phoneMockup2} />
+            </div>
+          </div>
+          <AppDetails>
+            <div className="app-title">
+              <Logo src={logzzLogo} /> <h1>Logzz</h1>
+            </div>
+            <h2>A primeira plataforma cash on delivery do Brasil!.</h2>
+            <h4>
+              A praticidade chegou pra quem precisa de segurança e confiança!
+            </h4>
+            <StacksRow>
+              {["html", "php", "css", "sql"].map((item) => {
+                return <StacksTag title={item} />;
+              })}
+            </StacksRow>
+
+            <InBuildBtn>🔨 Em construção</InBuildBtn>
+          </AppDetails>
+        </div>
+      </MobileApp>
+
       <ProductRow>
         <ProductColumn>
-          <h1>logzz</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            corrupti sunt facilis delectus corporis, exercitationem expedita
-            voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
-            adipisci, voluptate veritatis ex quisquam
-          </p>
-          <strong>Ferramentas de desenvolvimento</strong>
+          <div className="app-title">
+            <Logo src={logzzLogo} /> <h1>Logzz App</h1>
+          </div>
+          <h2>O aplicativo que conecta clientes e entregadores.</h2>
+          <h4>
+            A praticidade chegou pra quem precisa de segurança e confiança!
+          </h4>
           <StacksRow>
             {["html", "php", "css", "sql"].map((item) => {
               return <StacksTag title={item} />;
@@ -82,26 +109,7 @@ function Techs() {
         </ProductColumn>
         <img className="laptop" src={logzz} />
       </ProductRow>
-      <div className="divider" />
-      <ProductRow>
-        <img className="laptop" src={mooncoded} />
-        <ProductColumn>
-          <h1>mooncoded</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            corrupti sunt facilis delectus corporis, exercitationem expedita
-            voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
-            adipisci, voluptate veritatis ex quisquam
-          </p>
-          <strong>Ferramentas de desenvolvimento</strong>
-          <StacksRow>
-            {["react", "styledComponents", "mongo"].map((item) => {
-              return <StacksTag title={item} />;
-            })}
-          </StacksRow>
-        </ProductColumn>
-      </ProductRow>
-      <div className="divider" />
+
       <MobileApp>
         <div className="main-wrapper">
           <AppDetails>
@@ -113,10 +121,10 @@ function Techs() {
               A praticidade chegou pra quem precisa de segurança e confiança!
             </h4>
             <StacksRow>
-            {["html", "php", "css", "sql"].map((item) => {
-              return <StacksTag title={item} />;
-            })}
-          </StacksRow>
+              {["html", "php", "css", "sql"].map((item) => {
+                return <StacksTag title={item} />;
+              })}
+            </StacksRow>
 
             <InBuildBtn>🔨 Em construção</InBuildBtn>
           </AppDetails>

@@ -5,6 +5,7 @@ import AboutRow from "../../components/AboutRow";
 import AboutUs from "../../components/AboutUs";
 import Techs from "../../components/Techs";
 import Support from "../../components/Support";
+import SpecialSupport from "../../components/SpecialSupport";
 
 function Main() {
   return (
@@ -20,6 +21,7 @@ function Main() {
       </svg>
       <AboutUs />
       <Techs />
+      <SpecialSupport />
       <Support />
     </Container>
   );

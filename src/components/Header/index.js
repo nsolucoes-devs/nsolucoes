@@ -76,9 +76,10 @@ function Header() {
             <Dropdown
               show={showDropdown}
               items={[
-                { name: "Desenvolvimento de software", url: "frelf" },
+                { name: "Aplicações Web", url: "frelf" },
+                { name: "Aplicativos Android e IOS", url: "frelf" },
                 { name: "Marketing", url: "frelf" },
-                { name: "Desenvolvimento mobile", url: "frelf" },
+                { name: "Ecommerces e Marketplaces", url: "frelf" },
               ]}
             />
           </Option>

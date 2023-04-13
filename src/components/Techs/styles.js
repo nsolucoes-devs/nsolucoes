@@ -25,20 +25,24 @@ export const Container = styled.div`
     margin-top: 70px;
     overflow-x: auto;
     white-space: nowrap;
-    max-width: 60%;
+    max-width: 80%;
     cursor: pointer;
     gap: 80px;
   }
 `;
 
 export const ProductRow = styled.div`
-  width: 100%;
+  width: 99%;
+  border-radius: 20px;
   display: flex;
   flex-direction: row;
   align-items: center;
   gap: 20px;
   padding: 26px;
   justify-content: center;
+  min-height: 450px;
+  background-color: #09824B;
+  margin-bottom: 70px;
 
   @media (max-width: 1100px) {
     flex-direction: column-reverse;
@@ -49,55 +53,68 @@ export const ProductRow = styled.div`
   }
 
   .laptop {
-    max-width: 40%;
+    max-width: 50%;
+    transform: rotate(2deg);
     cursor: pointer;
+    transition: all .2s;
+
+    :hover {
+      transform: scale(1.05);
+    }
   }
 `;
 
 export const ProductColumn = styled.div`
-  width: 25%;
+  width: 35%;
   display: flex;
   flex-direction: column;
   gap: 15px;
+  color: #fff;
+
+  .app-title {
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+    align-items: center;
+    font-size: 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
+  }
+
+  h4 {
+    font-weight: 500;
+  }
+
+  @media (max-width: 1100px) {
+    min-width: 0% !important;
+
+    .app-title {
+      flex-direction: column;
+    }
+  }
 
   @media (max-width: 1100px) {
     width: 80%;
     text-align: center;
   }
-
-  h1 {
-    text-transform: uppercase;
-  }
-
-  strong {
-    text-transform: uppercase;
-  }
-
-  ul {
-    list-style: none;
-    margin-left: 20px;
-
-    li {
-      margin: 10px 0;
-    }
-  }
 `;
 
 export const MobileApp = styled.div`
-  width: 70%;
-  min-height: 400px;
-  border-radius: 20px;
-  margin-top: 100px;
+  width: 99%;
+  min-height: 450px;
   display: flex;
+  border-radius: 20px;
   flex-direction: row;
   justify-content: center;
   align-items: center;
   padding: 26px;
   background-color: #27272e;
-  border-radius: 20px;
   position: relative;
   -webkit-clip-path: inset(-100vw 0 0 -100vw);
   clip-path: inset(-100vw 0 0 -100vw);
+    margin-bottom: 70px;
 
   .main-wrapper {
     display: flex;
@@ -112,6 +129,7 @@ export const MobileApp = styled.div`
     padding-right: 12px;
     flex: 0 0 50%;
     max-width: 50%;
+    margin-right: ${props => props.left ? "100px" : "0px"};
   }
 
   .phone-holder {
@@ -153,6 +171,7 @@ export const Phone = styled.img`
   width: 100%;
   max-width: 100%;
   cursor: pointer;
+
 
   :hover {
     transform: scale(1.07);

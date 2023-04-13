@@ -4,13 +4,14 @@ import devices from "../../assets/images/devices.png";
 import email from "../../assets/images/email.png";
 import responsive from "../../assets/images/responsive.png";
 import pin from "../../assets/images/pin1.png";
+import coin from "../../assets/images/coin.png"
 
 function Card({ type, image, title, desc }) {
   const images = {
-    devices: devices,
-    email: email,
+    devices,
+    email,
     responsive,
-    responsive,
+    coin
   };
 
   return (
@@ -23,7 +24,7 @@ function Card({ type, image, title, desc }) {
           itaque voluptas commodi
         </p>
       </Container>
-      {image == "responsive" && <Pin src={pin} />}
+      {image == "coin" && <Pin src={pin} />}
     </Wrapper>
   );
 }

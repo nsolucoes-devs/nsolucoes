@@ -10,9 +10,9 @@ function AboutRow() {
       <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
 
       <CardsRow>
-        <Card title="Desenvolvimento Web" type="development" image="devices" />
-        <Card title="Email Corporativo" type="development" image="email" />
-        <Card title="Site Responsivos" type="development" image="responsive" />
+        <Card title="Aplicações Web" type="development" image="devices" />
+        <Card title="Aplicativos Android e IOS" type="development" image="responsive" />
+        <Card title="Ecommerces e Marketplaces" type="development" image="coin" />
       </CardsRow>
     </Container>
   );

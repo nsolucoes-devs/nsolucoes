@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.div`
   width: ${(props) => (props.isOpen ? "100%" : "90%")};
   padding: 10px 24px;
-  background: var(--main-background);
+  background: ${(props) => (props.isOpen ? "transparent" : "#fff")};
   border-radius: 0.4rem;
   margin: ${(props) => (props.isOpen ? "0px auto" : "20px auto")};
   position: fixed;
@@ -11,18 +11,11 @@ export const Container = styled.div`
   margin-right: auto;
   left: 0;
   right: 0;
-  box-shadow: ${(props) =>
-    props.isOpen ? "none" : "rgba(0, 0, 0, 0.1) 0px 4px 12px"};
-  background-color: ${(props) =>
-    props.isOpen ? "transparent" : "rgba(255, 255, 255, 0.70)"};
-  box-shadow: ${(props) =>
-    props.isOpen ? "none" : "0 0 10px 1px rgba(0, 0, 0, 0.25)"};
-  backdrop-filter: blur(10px);
-  border: ${(props) =>
-    props.isOpen ? "none" : "1px solid rgba(255, 255, 255, 0.5)"};
   color: #252525;
   z-index: 9999;
   transition: all 0.5s;
+  box-shadow: ${(props) =>
+    props.isOpen ? "none" : "rgba(99, 99, 99, 0.2) 0px 2px 8px 0px"};
 
   display: flex;
   flex-direction: row;
