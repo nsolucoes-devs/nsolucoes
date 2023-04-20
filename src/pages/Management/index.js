@@ -14,7 +14,7 @@ import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
 import { BsWhatsapp } from "react-icons/bs";
 
-function MobileApps() {
+function Management() {
   const stacks = [
     { name: stack8, size: "100px" },
     { name: stack1, size: "60px" },
@@ -43,7 +43,7 @@ function MobileApps() {
           }}
         >
           <div className="informations">
-            <BsWhatsapp size={30} style={{fill: "#fff"}}></BsWhatsapp>
+            <BsWhatsapp size={30} style={{ fill: "#fff" }}></BsWhatsapp>
             <h1>Faça agora seu orçamento!</h1>
           </div>
           <Button>Clique aqui</Button>
@@ -80,4 +80,4 @@ function MobileApps() {
   );
 }
 
-export default MobileApps;
+export default Management;

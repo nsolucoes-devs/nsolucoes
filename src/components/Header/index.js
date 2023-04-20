@@ -27,14 +27,14 @@ function Header() {
       label: "Apps",
       items: [
         { name: "Android e IOS", url: "apps/mobile" },
-        { name: "UI e UX degign", url: "frelf" }
+        { name: "UI e UX degign", url: "apps/uiux" }
       ]
     },
     {
       label: "Software",
       items: [
-        { name: "Plataformas Web", url: "frelf" },
-        { name: "Gestão e Vendas", url: "frelf" },
+        { name: "Plataformas Web", url: "software/web" },
+        { name: "Gestão e Vendas", url: "software/management" },
         { name: "Controle de Estoque", url: "frelf" },
         { name: "Gestão de Frotas", url: "frelf" }
       ]

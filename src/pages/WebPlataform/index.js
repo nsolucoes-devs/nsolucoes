@@ -12,9 +12,8 @@ import stack6 from "../../assets/images/stack6.png";
 import stack7 from "../../assets/images/stack7.png";
 import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
-import { BsWhatsapp } from "react-icons/bs";
 
-function MobileApps() {
+function WebPlataform() {
   const stacks = [
     { name: stack8, size: "100px" },
     { name: stack1, size: "60px" },
@@ -42,10 +41,7 @@ function MobileApps() {
             marginTop: "70px",
           }}
         >
-          <div className="informations">
-            <BsWhatsapp size={30} style={{fill: "#fff"}}></BsWhatsapp>
-            <h1>Faça agora seu orçamento!</h1>
-          </div>
+          <h1>Faça agora seu orçamento!</h1>
           <Button>Clique aqui</Button>
         </div>
       </Budget>
@@ -71,7 +67,6 @@ function MobileApps() {
           </div>
         ))}
       </ScrollContainer>
-
       <Footer>
         <div className="horizontal-divider" />
         <small>© 2023. Todos os direitos reservados por N Soluções.</small>
@@ -80,4 +75,4 @@ function MobileApps() {
   );
 }
 
-export default MobileApps;
+export default WebPlataform;
