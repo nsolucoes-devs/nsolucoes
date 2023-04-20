@@ -5,6 +5,7 @@ import {
   MainColumn,
   SecundaryColumn,
   SecundaryRow,
+  DivSecundaryRow
 } from "./styles";
 import Title from "../Title";
 import {
@@ -39,27 +40,36 @@ function AboutUs() {
             voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
             adipisci, voluptate veritatis ex quisquam?
           </p>
-          <SecundaryRow>
-            <HiArchiveBox className="products" size={35} />
-            <SecundaryColumn>
-              <strong>Produtos bem Sucedidos.</strong>
-              <small>Todos os nossos produtos foram de grande sucesso!</small>
-            </SecundaryColumn>
-          </SecundaryRow>
-          <SecundaryRow>
-            <RiPieChartFill className="pie" size={35} />
-            <SecundaryColumn>
-              <strong>Estratégias de Negócio.</strong>
-              <small>Todos os nossos produtos foram de grande sucesso!</small>
-            </SecundaryColumn>
-          </SecundaryRow>
-          <SecundaryRow>
-            <IoSpeedometer className="performance" size={35} />
-            <SecundaryColumn>
-              <strong>Performance e SEO.</strong>
-              <small>Todos os nossos produtos foram de grande sucesso!</small>
-            </SecundaryColumn>
-          </SecundaryRow>
+          <DivSecundaryRow>
+            <SecundaryRow>
+              <HiArchiveBox className="products" size={35} />
+              <SecundaryColumn>
+                <strong>Produtos bem Sucedidos.</strong>
+                <small>Todos os nossos produtos foram de grande sucesso!</small>
+              </SecundaryColumn>
+            </SecundaryRow>
+            <SecundaryRow>
+              <RiPieChartFill className="pie" size={35} />
+              <SecundaryColumn>
+                <strong>Estratégias de Negócio.</strong>
+                <small>Todos os nossos produtos foram de grande sucesso!</small>
+              </SecundaryColumn>
+            </SecundaryRow>
+            <SecundaryRow>
+              <IoSpeedometer className="performance" size={35} />
+              <SecundaryColumn>
+                <strong>Performance e SEO.</strong>
+                <small>Todos os nossos produtos foram de grande sucesso!</small>
+              </SecundaryColumn>
+            </SecundaryRow>
+            <SecundaryRow>
+              <IoSpeedometer className="performance" size={35} />
+              <SecundaryColumn>
+                <strong>Performance e SEO.</strong>
+                <small>Todos os nossos produtos foram de grande sucesso!</small>
+              </SecundaryColumn>
+            </SecundaryRow>
+          </DivSecundaryRow>
         </MainColumn>
       </MainRow>
     </Container>

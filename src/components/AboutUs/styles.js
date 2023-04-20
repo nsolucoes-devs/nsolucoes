@@ -40,7 +40,6 @@ export const MainRow = styled.div`
   flex-direction: row;
   padding: 100px 0;
   gap: 70px;
-  flex-wrap: wrap;
   width: 90%;
   justify-content: center;
   z-index: 1;
@@ -82,14 +81,16 @@ export const SecundaryRow = styled.div`
   display: flex;
   flex-direction: row;
   align-items: center;
+  justify-content: space-between;
   gap: 15px;
   margin-top: 15px;
   background-color: var(--main-background);
-  width: fit-content;
+  max-width: 270px;
   padding: 16px;
   border-radius: 20px;
   box-shadow: rgba(17, 12, 46, 0.08) 0px 48px 100px 0px;
   transition: all 0.2s;
+  margin-right: auto;
 
   .products {
     color: #4f48c6;
@@ -108,6 +109,13 @@ export const SecundaryRow = styled.div`
     cursor: pointer;
   }
 `;
+
+export const DivSecundaryRow = styled.div`
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 700px;
+`;
+
 
 const move = keyframes`
   from {
