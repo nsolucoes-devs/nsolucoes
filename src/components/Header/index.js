@@ -22,17 +22,50 @@ import {
 import { Turn as Hamburger } from "hamburger-react";
 
 function Header() {
-  const [showDropdown, setShowDropdown] = useState(false);
+  const options = [
+    {
+      label: "Apps",
+      items: [
+        { name: "Android e IOS", url: "apps/mobile" },
+        { name: "UI e UX degign", url: "frelf" }
+      ]
+    },
+    {
+      label: "Software",
+      items: [
+        { name: "Plataformas Web", url: "frelf" },
+        { name: "Gestão e Vendas", url: "frelf" },
+        { name: "Controle de Estoque", url: "frelf" },
+        { name: "Gestão de Frotas", url: "frelf" }
+      ]
+    },
+    {
+      label: "Web",
+      items: [
+        { name: "Sites e Portais", url: "frelf" },
+        { name: "Ecommerces e Marketplaces", url: "frelf" }
+      ]
+    },
+    {
+      label: "Outsourcing",
+      items: [
+        { name: "Terceirizações e Squads", url: "frelf" },
+        { name: "Suporte a Finitecks", url: "frelf" }
+      ]
+    }
+  ]
+  
+  const [activeDropdown, setActiveDropdown] = useState(null);
   const [open, setOpen] = useState(false);
 
   // função para mostrar o dropdown quando o mouse passar sobre o Option
-  function handleMouseEnter() {
-    setShowDropdown(true);
+  function handleMouseEnter(index) {
+    setActiveDropdown(index);
   }
 
   // função para esconder o dropdown quando o mouse sair do Option
   function handleMouseLeave() {
-    setShowDropdown(false);
+    setActiveDropdown(null);
   }
 
   const [width, setWidth] = useState(window.innerWidth);
@@ -51,8 +84,11 @@ function Header() {
         <MobileHeader>
           <ul>
             <li>Home</li>
-            <li>Serviços</li>
             <li>Conheça</li>
+            <li>Apps</li>
+            <li>Software</li>
+            <li>Web</li>
+            <li>Outsourcing</li>
             <a className="contact" href="tel:+5534996484068">
               <AiFillPhone /> Contato
             </a>
@@ -68,24 +104,19 @@ function Header() {
           <Option>
             <span>Home</span>
           </Option>
-          <Option
-            onMouseEnter={handleMouseEnter}
-            onMouseLeave={handleMouseLeave}
-          >
-            <span>Serviços</span> <RiArrowDropDownLine />
-            <Dropdown
-              show={showDropdown}
-              items={[
-                { name: "Aplicações Web", url: "frelf" },
-                { name: "Aplicativos Android e IOS", url: "frelf" },
-                { name: "Marketing", url: "frelf" },
-                { name: "Ecommerces e Marketplaces", url: "frelf" },
-              ]}
-            />
-          </Option>
           <Option>
             <span>Conheça</span>
           </Option>
+          {options.map((option, index) => (
+            <Option
+              key={index}
+              onMouseEnter={() => handleMouseEnter(index)}
+              onMouseLeave={handleMouseLeave}
+            >
+              <span>{option.label}</span> <RiArrowDropDownLine />
+              <Dropdown show={activeDropdown === index} items={option.items} />
+            </Option>
+          ))}
           <Option>
             <span>Contato</span>
           </Option>
