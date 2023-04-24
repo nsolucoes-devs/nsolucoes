@@ -50,10 +50,10 @@ export const Button = styled.div`
   width: fit-content;
   padding: 20px 75px;
   border-radius: 70px;
-  background-color: #838383;
+  background-color: #fff;
   font-weight: 600;
   font-size: 16px;
-  color: #fff;
+  color: #27272e;
   cursor: pointer;
   box-shadow: 0 20px 84px -15px var(--accent-color);
   -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
@@ -73,7 +73,7 @@ export const Button = styled.div`
     left: 50%;
     width: 0;
     height: 0;
-    background-color: #5b5c69;
+    background-color: #27272e;
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.6s ease-out 0s;
@@ -86,7 +86,6 @@ export const Button = styled.div`
   }
 
   &:hover {
-    background-color: #5b5c69;
     color: #fff;
   }
 `;
