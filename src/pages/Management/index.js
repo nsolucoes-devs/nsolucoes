@@ -43,6 +43,8 @@ function Management() {
       <AboutRow />
 
       <div style={{ marginBottom: "50px" }}></div>
+      
+      <Budget />
 
       <Techs />
 
