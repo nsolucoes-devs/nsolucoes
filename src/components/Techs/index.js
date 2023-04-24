@@ -49,9 +49,13 @@ function Techs(props) {
 
   return (
     <Container>
-      <div className="left">
-        <Title title="Trabalhamos com" />
-      </div>
+
+      {props.titleWork &&(
+        <div className="left">
+          <Title title="Trabalhamos com" />
+        </div>
+      )}
+
 
       <ScrollContainer className="scroll-container">
         {stacks.map((stack) => (
@@ -78,7 +82,8 @@ function Techs(props) {
 
       <br />
 
-      
+      {props.work &&(
+        <>
           <MobileApp style={{ marginTop: "80px" }} left>
             <div className="main-wrapper">
               <div className="right-side">
@@ -156,6 +161,8 @@ function Techs(props) {
               </div>
             </div>
           </MobileApp>
+        </>
+      )}
 
 
     </Container>

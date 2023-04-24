@@ -1,5 +1,5 @@
-import React from "react";
-import { Container, Spacing, } from "./styles";
+import {React, Button} from "react";
+import { Container, Spacing} from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -63,33 +63,8 @@ function Management() {
 
       <Techs />
 
-      {/* Faça seu orçamento */}
-      <Budget />
-
-      <ScrollContainer className="scroll-container">
-        {stacks.map((stack) => (
-          <div
-            key={stacks[stack.name]}
-            style={{
-              scrollBehavior: "smooth",
-              marginBottom: "50px",
-            }}
-          >
-            <img
-              src={stack.name}
-              className="stacks"
-              alt={stack.name}
-              style={{
-                pointerEvents: "none",
-                userSelect: "none",
-                width: stack.size,
-              }}
-            />
-          </div>
-        ))}
-      </ScrollContainer>
-
       <Support copyright/>
+
     </Container>
   );
 }
