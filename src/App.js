@@ -14,6 +14,9 @@ import Finitecks from "./pages/Finitecks";
 import FleetManagement from "./pages/FleetManagement";
 import Websites from "./pages/Websites";
 import Ecommerce from "./pages/Ecommerce";
+import Marketplace from "./pages/Marketplace"
+import Contact from "./pages/Contact";
+import About from "./pages/About";
 
 function App() {
   return (
@@ -32,6 +35,9 @@ function App() {
         <Route element={<FleetManagement />} path="/software/fleet" />
         <Route element={<Websites />} path="/web/sites"/>
         <Route element={<Ecommerce />} path="/web/ecommerce"/>
+        <Route element={<Marketplace />} path="/web/marketplace"/>
+        <Route element={<Contact />} path="/contact"/>
+        <Route element={<About />} path="/about"/>
       </Routes>
       <GlobalStyle />
     </BrowserRouter>

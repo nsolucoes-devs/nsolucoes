@@ -1,7 +1,8 @@
 import React from "react";
-import { Container, Spacing, } from "./styles";
+import { Container, Spacing } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
+import Support from "../../components/Support";
 import ScrollContainer from "react-indiana-drag-scroll";
 import stack1 from "../../assets/images/stack1.png";
 import stack2 from "../../assets/images/stack2.png";
@@ -12,10 +13,9 @@ import stack6 from "../../assets/images/stack6.png";
 import stack7 from "../../assets/images/stack7.png";
 import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
-import Support from '../../components/Support';
 import Budget from "../../components/Budget";
 
-function UIUxDesign() {
+function Contact() {
   const stacks = [
     { name: stack8, size: "100px" },
     { name: stack1, size: "60px" },
@@ -30,13 +30,13 @@ function UIUxDesign() {
       <Spacing />
 
       {/* Sobre nós */}
-      <AboutUs imageright/>
+      <AboutUs imageleft />
 
       {/* Nossos serviços */}
       <AboutRow />
 
       <div style={{ marginBottom: "50px" }}></div>
-      
+
       {/* Faça seu orçamento */}
       <Budget />
 
@@ -62,11 +62,9 @@ function UIUxDesign() {
           </div>
         ))}
       </ScrollContainer>
-
-      <Support copyright/>
-      
+      <Support copyright />
     </Container>
   );
 }
 
-export default UIUxDesign;
+export default Contact;

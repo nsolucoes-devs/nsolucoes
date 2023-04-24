@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing, Budget, Button, Footer } from "./styles";
+import { Container, Spacing, } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -13,6 +13,7 @@ import stack6 from "../../assets/images/stack6.png";
 import stack7 from "../../assets/images/stack7.png";
 import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
+import Budget from "../../components/Budget";
 
 function WebPlataform() {
   const stacks = [
@@ -35,20 +36,10 @@ function WebPlataform() {
       <AboutRow />
 
       <div style={{ marginBottom: "50px" }}></div>
-      <Budget>
-        <div
-          className="main-buget"
-          style={{
-            display: "flex",
-            alignItems: "center;",
-            justifyContent: "space-around",
-            marginTop: "70px",
-          }}
-        >
-          <h1>Faça agora seu orçamento!</h1>
-          <Button>Clique aqui</Button>
-        </div>
-      </Budget>
+
+      {/* Faça seu orçamento */}
+      <Budget />
+      
       <ScrollContainer className="scroll-container">
         {stacks.map((stack) => (
           <div

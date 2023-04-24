@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing, Budget, Button, Footer } from "./styles";
+import { Container, Spacing, } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -16,6 +16,7 @@ import stack12 from "../../assets/images/stack12.png";
 import stack13 from "../../assets/images/stack13.png";
 import { BsWhatsapp } from "react-icons/bs";
 import Techs from "../../components/Techs";
+import Budget from "../../components/Budget";
 
 function Management() {
   const stacks = [
@@ -61,6 +62,32 @@ function Management() {
       </Budget>
 
       <Techs />
+
+      {/* Faça seu orçamento */}
+      <Budget />
+
+      <ScrollContainer className="scroll-container">
+        {stacks.map((stack) => (
+          <div
+            key={stacks[stack.name]}
+            style={{
+              scrollBehavior: "smooth",
+              marginBottom: "50px",
+            }}
+          >
+            <img
+              src={stack.name}
+              className="stacks"
+              alt={stack.name}
+              style={{
+                pointerEvents: "none",
+                userSelect: "none",
+                width: stack.size,
+              }}
+            />
+          </div>
+        ))}
+      </ScrollContainer>
 
       <Support copyright/>
     </Container>
