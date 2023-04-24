@@ -29,16 +29,16 @@ import StacksTag from "../StacksTag";
 
 function Techs(props) {
   const stacks = [
-    { name: stack1, size: "100px" },
-    { name: stack2, size: "60px" },
-    { name: stack9, size: "100px" },
-    { name: stack13, size: "200px" },
-    { name: stack3, size: "200px" },
-    { name: stack6, size: "200px" },
-    { name: stack10, size: "200px" },
-    { name: stack7, size: "150px" },
-    { name: stack11, size: "200px" },
-    { name: stack12, size: "150px" },
+    { name: stack1, size: "60px" },
+    { name: stack2, size: "40px" },
+    { name: stack9, size: "60px" },
+    { name: stack13, size: "100px" },
+    { name: stack3, size: "100px" },
+    { name: stack6, size: "120px" },
+    { name: stack10, size: "150px" },
+    { name: stack7, size: "100px" },
+    { name: stack11, size: "100px" },
+    { name: stack12, size: "80px" },
   ];
 
   return (
