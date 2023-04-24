@@ -43,23 +43,6 @@ function Management() {
       <AboutRow />
 
       <div style={{ marginBottom: "50px" }}></div>
-      <Budget>
-        <div
-          className="main-buget"
-          style={{
-            display: "flex",
-            alignItems: "center;",
-            justifyContent: "space-around",
-            marginTop: "70px",
-          }}
-        >
-          <div className="informations">
-            <BsWhatsapp size={30} style={{ fill: "#fff" }}></BsWhatsapp>
-            <h1>Faça agora seu orçamento!</h1>
-          </div>
-          <Button>Clique aqui</Button>
-        </div>
-      </Budget>
 
       <Techs />
 

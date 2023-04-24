@@ -105,15 +105,9 @@ function Header() {
           <Option>
             <span>Home</span>
           </Option>
-<<<<<<< Updated upstream
-          {/* <Option>
-            <span>Conheça</span>
-          </Option> */}
-=======
           <Option>
             <span onClick={() => window.location.href='/about'}>Conheça</span>
           </Option>
->>>>>>> Stashed changes
           {options.map((option, index) => (
             <Option
               key={index}
@@ -124,15 +118,9 @@ function Header() {
               <Dropdown show={activeDropdown === index} items={option.items} />
             </Option>
           ))}
-<<<<<<< Updated upstream
-          {/* <Option>
-            <span>Contato</span>
-          </Option> */}
-=======
           <Option>
             <span onClick={() => window.location.href='/contact'}>Contato</span>
           </Option>
->>>>>>> Stashed changes
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>
