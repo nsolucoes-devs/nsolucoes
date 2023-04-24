@@ -4,7 +4,7 @@ import { MapContainer } from "react-leaflet";
 export const Container = styled.div`
   background-color: var(--secundary-background);
   width: 100%;
-  padding: 80px 40px;
+  padding: 0px 40px;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
