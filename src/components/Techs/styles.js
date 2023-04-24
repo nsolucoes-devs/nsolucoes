@@ -29,7 +29,6 @@ export const Container = styled.div`
     display: flex;
     flex-direction: row;
     gap: 25px;
-    margin-top: 70px;
     overflow-x: auto;
     white-space: nowrap;
     max-width: 80%;
