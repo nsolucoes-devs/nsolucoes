@@ -38,7 +38,7 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.03);
     margin: 20px 0;
   }
-  
+
 `;
 
 export const ProductRow = styled.div`
