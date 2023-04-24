@@ -1,20 +1,15 @@
 import React, { useRef, useState, useEffect } from "react";
 import {
   Container,
-  ProductColumn,
   ProductRow,
-  TechRow,
   MobileApp,
-  BackgroundMobile,
   AppDetails,
   Phone,
   Logo,
   InBuildBtn,
-  StacksRow,
-  Div
+  StacksRow
 } from "./styles";
 import Title from "../Title";
-import { IoLogoReact } from "../../styles/Icons";
 import stack1 from "../../assets/images/stack1.png";
 import stack2 from "../../assets/images/stack2.png";
 import stack3 from "../../assets/images/stack3.png";
@@ -27,7 +22,6 @@ import stack12 from "../../assets/images/stack12.png";
 import stack13 from "../../assets/images/stack13.png";
 import ScrollContainer from "react-indiana-drag-scroll";
 import logzz from "../../assets/images/logzz.png";
-import mooncoded from "../../assets/images/mooncoded.png";
 import phoneMockup from "../../assets/images/phone-mockup.png";
 import phoneMockup2 from "../../assets/images/phone_mockup2.png";
 import logzzLogo from "../../assets/images/logzz-logo.png";
@@ -80,10 +74,9 @@ function Techs(props) {
         ))}
       </ScrollContainer>
 
-      <br />
-
       {props.work &&(
         <>
+        <br />
           <MobileApp style={{ marginTop: "80px" }} left>
             <div className="main-wrapper">
               <div className="right-side">
