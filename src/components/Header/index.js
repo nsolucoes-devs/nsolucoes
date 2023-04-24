@@ -105,9 +105,9 @@ function Header() {
           <Option>
             <span>Home</span>
           </Option>
-          {/* <Option>
-            <span>Conheça</span>
-          </Option> */}
+          <Option>
+            <span onClick={() => window.location.href='/about'}>Conheça</span>
+          </Option>
           {options.map((option, index) => (
             <Option
               key={index}
@@ -118,9 +118,9 @@ function Header() {
               <Dropdown show={activeDropdown === index} items={option.items} />
             </Option>
           ))}
-          {/* <Option>
-            <span>Contato</span>
-          </Option> */}
+          <Option>
+            <span onClick={() => window.location.href='/contact'}>Contato</span>
+          </Option>
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>
