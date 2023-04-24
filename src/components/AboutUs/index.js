@@ -20,7 +20,9 @@ function AboutUs(props) {
 
   return (
     <Container>
-      <Title icon={<TiInfoLargeOutline size={100} />} title="SOBRE NÓS" />
+      <div className="left">
+        <Title icon={<TiInfoLargeOutline size={100} />} title="SOBRE NÓS" />
+      </div>
       {props.imageleft && (
         <MainRow>
           <StockCard />

@@ -9,6 +9,12 @@ export const Container = styled.div`
     padding: 70px 0 0 0;
     gap: 60px;
     text-align: center;
+
+    .left {
+    margin-left: 10rem;
+    align-self: flex-start;
+  }
+  
 `;
 
 export const CardsRow = styled.div`

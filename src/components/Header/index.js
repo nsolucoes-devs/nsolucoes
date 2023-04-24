@@ -49,7 +49,7 @@ function Header() {
     {
       label: "Outsourcing",
       items: [
-        { name: "Terceirizações e Squads", url: "outsourcing/websites" },
+        { name: "Terceirizações e Squads", url: "outsourcing/squads" },
         { name: "Suporte a Finitecks", url: "outsourcing/finitecks" }
       ]
     }

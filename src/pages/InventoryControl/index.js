@@ -15,7 +15,7 @@ import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
 import { BsWhatsapp } from "react-icons/bs";
 
-function Management() {
+function InventoryControl() {
   const stacks = [
     { name: stack8, size: "100px" },
     { name: stack1, size: "60px" },
@@ -83,4 +83,4 @@ function Management() {
   );
 }
 
-export default Management;
+export default InventoryControl;

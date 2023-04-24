@@ -7,6 +7,11 @@ export const Container = styled.div`
   background-color: var(--secundary-background);
   z-index: 0;
 
+  .left {
+    margin-left: 10rem;
+    align-self: flex-start;
+  }
+
   .triangle {
     position: relative;
     margin-top: 25px;

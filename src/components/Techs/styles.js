@@ -12,7 +12,7 @@ export const Container = styled.div`
   }
 
   .left {
-    margin-left: 12rem;
+    margin-left: 10rem;
     align-self: flex-start;
   }
 

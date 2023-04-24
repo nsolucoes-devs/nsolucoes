@@ -9,7 +9,9 @@ function AboutRow(props) {
     <Container>
 
       {props.titleservices && (
-        <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
+        <div className="left">
+          <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
+        </div>
       )}
 
       <CardsRow>

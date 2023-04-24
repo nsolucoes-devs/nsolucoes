@@ -8,6 +8,7 @@ import AndroidIos from "./pages/MobileApps/index";
 import UiUx from "./pages/UIUxDesign/index";
 import Web from "./pages/WebPlataform/index";
 import Management from "./pages/Management";
+import InventoryControl from "./pages/InventoryControl";
 
 function App() {
   return (
@@ -20,6 +21,7 @@ function App() {
         <Route element={<UiUx />} path="/apps/uiux" />
         <Route element={<Web />} path="/software/web" />
         <Route element={<Management />} path="/software/management" />
+        <Route element={<InventoryControl />} path="/software/inventory" />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>
