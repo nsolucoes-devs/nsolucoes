@@ -24,10 +24,6 @@ import { Turn as Hamburger } from "hamburger-react";
 function Header() {
   const options = [
     {
-      label: "Conheça",
-      url: "about",
-    },
-    {
       label: "Apps",
       items: [
         { name: "Android e IOS", url: "apps/mobile" },
@@ -56,10 +52,6 @@ function Header() {
         { name: "Terceirizações e Squads", url: "outsourcing/squads" },
         { name: "Suporte a Finitecks", url: "outsourcing/finitecks" }
       ]
-    },
-    {
-      label: "Contato",
-      url: "contact",
     }
   ]
   
