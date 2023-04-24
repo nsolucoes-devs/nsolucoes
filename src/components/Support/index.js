@@ -1,6 +1,7 @@
 import React from "react";
 import {
   Container,
+  Div,
   Map,
   ContactForm,
   FirstRow,
@@ -44,7 +45,7 @@ function Support(props) {
 
     <Container>
       {props.allsupport && (
-        <Container>
+        <Div>
           <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
           <SocialRow>
             <BsLinkedin size={30} />
@@ -88,17 +89,17 @@ function Support(props) {
               </Column>
             </Column>
           </Row>
-        </Container>
+        </Div>
       )}
 
       {props.copyright && (
-        <Container>
+        <Div>
           <div className="horizontal-divider" />
 
           <Footer>
             <small>© 2023. Todos os direitos reservados por N Soluções.</small>
           </Footer>
-        </Container>
+        </Div>
       )}
 
     {/* <FirstRow>

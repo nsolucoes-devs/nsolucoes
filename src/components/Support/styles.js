@@ -36,6 +36,14 @@ export const Container = styled.div`
   }
 `;
 
+export const Div = styled.div`
+  width: 100%;
+  padding: 0px 0px;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+`;
+
 export const Map = styled(MapContainer)`
   width: 50%;
   border-radius: 20px;
