@@ -35,6 +35,7 @@ export const Container = styled.div`
     cursor: pointer;
     gap: 80px;
     align-items: center;
+    padding: 60px 0;
   }
 `;
 
