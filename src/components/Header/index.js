@@ -42,7 +42,7 @@ function Header() {
     {
       label: "Web",
       items: [
-        { name: "Sites e Portais", url: "web/websites" },
+        { name: "Sites e Portais", url: "web/sites" },
         { name: "Ecommerces e Marketplaces", url: "web/ecommerce" }
       ]
     },
