@@ -9,6 +9,8 @@ import UiUx from "./pages/UIUxDesign/index";
 import Web from "./pages/WebPlataform/index";
 import Management from "./pages/Management";
 import InventoryControl from "./pages/InventoryControl";
+import Squads from "./pages/Squads";
+import Finitecks from "./pages/Finitecks";
 
 function App() {
   return (
@@ -22,6 +24,8 @@ function App() {
         <Route element={<Web />} path="/software/web" />
         <Route element={<Management />} path="/software/management" />
         <Route element={<InventoryControl />} path="/software/inventory" />
+        <Route element={<Squads />} path="outsourcing/squads" />
+        <Route element={<Finitecks />} path="outsourcing/finitecks" />
       </Routes>
       <GlobalStyle />
     </BrowserRouter>
