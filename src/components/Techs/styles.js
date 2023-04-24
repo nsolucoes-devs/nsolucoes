@@ -13,9 +13,23 @@ export const Container = styled.div`
     margin-bottom: 0px;
   }
 
+  .scroll-container {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 80%;
+    cursor: pointer;
+    gap: 80px;
+    align-items: center;
+  }
+
   .left {
     margin-left: 10rem;
     align-self: flex-start;
+    margin-bottom: 2rem;
   }
 
   .divider {
@@ -24,18 +38,7 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.03);
     margin: 20px 0;
   }
-
-  .scroll-container {
-    display: flex;
-    flex-direction: row;
-    gap: 25px;
-    overflow-x: auto;
-    white-space: nowrap;
-    max-width: 80%;
-    cursor: pointer;
-    gap: 80px;
-    align-items: center;
-  }
+  
 `;
 
 export const ProductRow = styled.div`

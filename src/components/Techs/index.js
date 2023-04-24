@@ -41,6 +41,8 @@ function Techs(props) {
     { name: stack12, size: "80px" },
   ];
 
+  const scrollContainerRef = useRef(null);
+
   return (
     <Container>
 
@@ -54,7 +56,7 @@ function Techs(props) {
       <ScrollContainer className="scroll-container">
         {stacks.map((stack) => (
           <div
-            key={stacks[stack.name]}
+            key={stack.name}
             style={{
               scrollBehavior: "smooth",
               height: "100%"

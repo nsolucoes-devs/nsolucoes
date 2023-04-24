@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState, useEffect} from "react";
 import {
   Container,
   Div,
@@ -40,6 +40,16 @@ function Support(props) {
     iconAnchor: [12, 12],
     popupAnchor: [0, 0],
   });
+
+  const [year, setYear] = useState(new Date().getFullYear());
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setYear(new Date().getFullYear());
+    }, 1000 * 60 * 60 * 24 * 365); // atualiza a cada ano
+
+    return () => clearInterval(interval);
+  }, []);
 
   return (
 
@@ -97,7 +107,7 @@ function Support(props) {
           <div className="horizontal-divider" />
 
           <Footer>
-            <small>© 2023. Todos os direitos reservados por N Soluções.</small>
+            <small>© {year}. Todos os direitos reservados por N Soluções.</small>
           </Footer>
         </Div>
       )}

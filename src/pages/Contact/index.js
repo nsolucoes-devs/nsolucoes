@@ -10,13 +10,12 @@ function Contact() {
 
   return (
     <Container>
-      <Spacing />
 
-      {/* Sobre nós */}
-      <AboutUs imageleft />
+      <div className="margin-contact">
+        <Support allsupport />
+      </div>
 
-      {/* Nossos serviços */}
-      <AboutRow />
+      <AboutRow titleservices/>
 
       <Budget />
 
