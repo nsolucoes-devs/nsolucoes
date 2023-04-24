@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing, Budget, Button, Footer } from "./styles";
+import { Container, Spacing, } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -13,7 +13,7 @@ import stack6 from "../../assets/images/stack6.png";
 import stack7 from "../../assets/images/stack7.png";
 import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
-import { BsWhatsapp } from "react-icons/bs";
+import Budget from "../../components/Budget";
 
 function Squads() {
   const stacks = [
@@ -36,23 +36,9 @@ function Squads() {
       <AboutRow />
 
       <div style={{ marginBottom: "50px" }}></div>
-      <Budget>
-        <div
-          className="main-buget"
-          style={{
-            display: "flex",
-            alignItems: "center;",
-            justifyContent: "space-around",
-            marginTop: "70px",
-          }}
-        >
-          <div className="informations">
-            <BsWhatsapp size={30} style={{fill: "#fff"}}></BsWhatsapp>
-            <h1>Faça agora seu orçamento!</h1>
-          </div>
-          <Button>Clique aqui</Button>
-        </div>
-      </Budget>
+
+      {/* Faça seu orçamento */}
+      <Budget />
 
       <ScrollContainer className="scroll-container">
         {stacks.map((stack) => (
