@@ -43,7 +43,9 @@ function Techs() {
 
   return (
     <Container>
-      <Title title="Trabalhamos com" />
+      <div className="left">
+        <Title title="Trabalhamos com" />
+      </div>
       <ScrollContainer className="scroll-container">
         {stacks.map((stack) => (
           <div

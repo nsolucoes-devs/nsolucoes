@@ -12,6 +12,7 @@ import stack6 from "../../assets/images/stack6.png";
 import stack7 from "../../assets/images/stack7.png";
 import stack8 from "../../assets/images/stack8.png";
 import stack9 from "../../assets/images/stack9.png";
+import Support from '../../components/Support';
 
 function UIUxDesign() {
   const stacks = [
@@ -26,10 +27,13 @@ function UIUxDesign() {
   return (
     <Container>
       <Spacing />
+
       {/* Sobre nós */}
-      <AboutUs />
+      <AboutUs imageright/>
+
       {/* Nossos serviços */}
       <AboutRow />
+
       <div style={{ marginBottom: "50px" }}></div>
       <Budget>
         <div
@@ -67,10 +71,9 @@ function UIUxDesign() {
           </div>
         ))}
       </ScrollContainer>
-      <Footer>
-        <div className="horizontal-divider" />
-        <small>© 2023. Todos os direitos reservados por N Soluções.</small>
-      </Footer>
+
+      <Support copyright/>
+      
     </Container>
   );
 }

@@ -2,6 +2,7 @@ import React from "react";
 import { Container, Spacing, Budget, Button, Footer } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
+import Support from "../../components/Support";
 import ScrollContainer from "react-indiana-drag-scroll";
 import stack1 from "../../assets/images/stack1.png";
 import stack2 from "../../assets/images/stack2.png";
@@ -26,10 +27,13 @@ function WebPlataform() {
   return (
     <Container>
       <Spacing />
+
       {/* Sobre nós */}
-      <AboutUs />
+      <AboutUs imageleft/>
+
       {/* Nossos serviços */}
       <AboutRow />
+
       <div style={{ marginBottom: "50px" }}></div>
       <Budget>
         <div
@@ -67,10 +71,7 @@ function WebPlataform() {
           </div>
         ))}
       </ScrollContainer>
-      <Footer>
-        <div className="horizontal-divider" />
-        <small>© 2023. Todos os direitos reservados por N Soluções.</small>
-      </Footer>
+      <Support copyright/>
     </Container>
   );
 }

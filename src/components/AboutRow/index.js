@@ -4,10 +4,13 @@ import Card from "../Card";
 import { MdWorkOutline } from "../../styles/Icons";
 import Title from "../Title";
 
-function AboutRow() {
+function AboutRow(props) {
   return (
     <Container>
-      <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
+
+      {props.titleservices && (
+        <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
+      )}
 
       <CardsRow>
         <Card title="Aplicações Web" type="development" image="devices" />

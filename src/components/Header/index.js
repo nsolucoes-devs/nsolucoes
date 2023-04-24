@@ -35,22 +35,22 @@ function Header() {
       items: [
         { name: "Plataformas Web", url: "software/web" },
         { name: "Gestão e Vendas", url: "software/management" },
-        { name: "Controle de Estoque", url: "frelf" },
-        { name: "Gestão de Frotas", url: "frelf" }
+        { name: "Controle de Estoque", url: "software/inventory" },
+        { name: "Gestão de Frotas", url: "software/fleet" }
       ]
     },
     {
       label: "Web",
       items: [
-        { name: "Sites e Portais", url: "frelf" },
-        { name: "Ecommerces e Marketplaces", url: "frelf" }
+        { name: "Sites e Portais", url: "web/websites" },
+        { name: "Ecommerces e Marketplaces", url: "web/ecommerce" }
       ]
     },
     {
       label: "Outsourcing",
       items: [
-        { name: "Terceirizações e Squads", url: "frelf" },
-        { name: "Suporte a Finitecks", url: "frelf" }
+        { name: "Terceirizações e Squads", url: "outsourcing/websites" },
+        { name: "Suporte a Finitecks", url: "outsourcing/finitecks" }
       ]
     }
   ]

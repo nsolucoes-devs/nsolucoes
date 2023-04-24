@@ -16,62 +16,119 @@ import {
 } from "../../styles/Icons";
 import StockCard from "../StockCard";
 
-function AboutUs() {
+function AboutUs(props) {
+
   return (
     <Container>
       <Title icon={<TiInfoLargeOutline size={100} />} title="SOBRE NÓS" />
+      {props.imageleft && (
+        <MainRow>
+          <StockCard />
+          <MainColumn>
+            <h1>Um novo site pra sua empresa? Está aqui.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              corrupti sunt facilis delectus corporis, exercitationem expedita
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              corrupti sunt facilis delectus corporis, exercitationem expedita
+              voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <DivSecundaryRow>
+              <SecundaryRow>
+                <HiArchiveBox className="products" size={35} />
+                <SecundaryColumn>
+                  <strong>Produtos bem Sucedidos.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <RiPieChartFill className="pie" size={35} />
+                <SecundaryColumn>
+                  <strong>Estratégias de Negócio.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <IoSpeedometer className="performance" size={35} />
+                <SecundaryColumn>
+                  <strong>Performance e SEO.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <IoSpeedometer className="performance" size={35} />
+                <SecundaryColumn>
+                  <strong>Performance e SEO.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+            </DivSecundaryRow>
+          </MainColumn>
+        </MainRow>
+      )}
 
-      <MainRow>
-        <StockCard />
-        <MainColumn>
-          <h1>Um novo site pra sua empresa? Está aqui.</h1>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            adipisci, voluptate veritatis ex quisquam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            corrupti sunt facilis delectus corporis, exercitationem expedita
-            adipisci, voluptate veritatis ex quisquam?
-          </p>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
-            corrupti sunt facilis delectus corporis, exercitationem expedita
-            voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
-            adipisci, voluptate veritatis ex quisquam?
-          </p>
-          <DivSecundaryRow>
-            <SecundaryRow>
-              <HiArchiveBox className="products" size={35} />
-              <SecundaryColumn>
-                <strong>Produtos bem Sucedidos.</strong>
-                <small>Todos os nossos produtos foram de grande sucesso!</small>
-              </SecundaryColumn>
-            </SecundaryRow>
-            <SecundaryRow>
-              <RiPieChartFill className="pie" size={35} />
-              <SecundaryColumn>
-                <strong>Estratégias de Negócio.</strong>
-                <small>Todos os nossos produtos foram de grande sucesso!</small>
-              </SecundaryColumn>
-            </SecundaryRow>
-            <SecundaryRow>
-              <IoSpeedometer className="performance" size={35} />
-              <SecundaryColumn>
-                <strong>Performance e SEO.</strong>
-                <small>Todos os nossos produtos foram de grande sucesso!</small>
-              </SecundaryColumn>
-            </SecundaryRow>
-            <SecundaryRow>
-              <IoSpeedometer className="performance" size={35} />
-              <SecundaryColumn>
-                <strong>Performance e SEO.</strong>
-                <small>Todos os nossos produtos foram de grande sucesso!</small>
-              </SecundaryColumn>
-            </SecundaryRow>
-          </DivSecundaryRow>
-        </MainColumn>
-      </MainRow>
+      {props.imageright  && (
+        <MainRow>          
+          <MainColumn>
+            <h1>Um novo site pra sua empresa? Está aqui.</h1>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              corrupti sunt facilis delectus corporis, exercitationem expedita
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Eveniet
+              corrupti sunt facilis delectus corporis, exercitationem expedita
+              voluptas fuga quaerat quos facere doloremque, iste fugiat dicta
+              adipisci, voluptate veritatis ex quisquam?
+            </p>
+            <DivSecundaryRow>
+              <SecundaryRow>
+                <HiArchiveBox className="products" size={35} />
+                <SecundaryColumn>
+                  <strong>Produtos bem Sucedidos.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <RiPieChartFill className="pie" size={35} />
+                <SecundaryColumn>
+                  <strong>Estratégias de Negócio.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <IoSpeedometer className="performance" size={35} />
+                <SecundaryColumn>
+                  <strong>Performance e SEO.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+              <SecundaryRow>
+                <IoSpeedometer className="performance" size={35} />
+                <SecundaryColumn>
+                  <strong>Performance e SEO.</strong>
+                  <small>Todos os nossos produtos foram de grande sucesso!</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+            </DivSecundaryRow>
+          </MainColumn>
+          <StockCard />
+        </MainRow>
+      )}
+
     </Container>
   );
 }

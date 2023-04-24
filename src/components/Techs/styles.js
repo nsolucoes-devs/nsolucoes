@@ -11,6 +11,11 @@ export const Container = styled.div`
     height: auto;
   }
 
+  .left {
+    margin-left: 12rem;
+    align-self: flex-start;
+  }
+
   .divider {
     width: 90%;
     height: 2px;
