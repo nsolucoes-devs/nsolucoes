@@ -56,7 +56,9 @@ function Support(props) {
     <Container>
       {props.allsupport && (
         <Div>
-          <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
+          <div className="margin-support">
+            <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
+          </div>
           <SocialRow>
             <BsLinkedin size={30} />
             <AiFillInstagram size={38} />

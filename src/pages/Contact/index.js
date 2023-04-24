@@ -10,14 +10,10 @@ function Contact() {
 
   return (
     <Container>
-
+      
       <div className="margin-contact">
         <Support allsupport />
       </div>
-
-      <AboutRow titleservices/>
-
-      <Budget />
 
       <Techs />
 

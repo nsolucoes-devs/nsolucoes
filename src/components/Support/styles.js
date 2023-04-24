@@ -10,6 +10,10 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
 
+  .margin-support {
+      margin-top: 5rem;
+  }
+
   .vertical-divider {
     height: 80%;
     align-self: flex-start;
