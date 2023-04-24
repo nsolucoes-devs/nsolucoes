@@ -5,6 +5,7 @@ export const Container = styled.div`
   background-color: var(--secundary-background);
   width: 100%;
   padding: 80px 40px;
+  padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -18,7 +19,7 @@ export const Container = styled.div`
   .horizontal-divider {
     height: 2px;
     width: 80%;
-    margin: 50px 0;
+    margin: 30px 0;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
