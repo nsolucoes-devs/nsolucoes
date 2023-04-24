@@ -20,7 +20,7 @@ function Main() {
         ></path>
       </svg>
       <AboutUs imageleft/>
-      <Techs />
+      <Techs work/>
       {/* <SpecialSupport /> */}
       <Support allsupport copyright/>
     </Container>

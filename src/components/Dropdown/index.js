@@ -13,7 +13,7 @@ function Dropdown({ show, items }) {
     <Container className={`dropdown ${show ? "show" : ""}`} onAnimationEnd={onAnimationEnd}>
       {items.map((item, index) => {
         return (
-          <ItemLi key={index} onClick={() => window.open(item.url)} style={{ animationDelay: `${index * 50}ms` }} className={`dropdown-item ${show ? "animate-in" : ""}`}>
+          <ItemLi key={index} onClick={() => window.location = item.url} style={{ animationDelay: `${index * 50}ms` }} className={`dropdown-item ${show ? "animate-in" : ""}`}>
             {item.name}
           </ItemLi>
         );

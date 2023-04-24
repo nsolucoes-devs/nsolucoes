@@ -24,6 +24,10 @@ import { Turn as Hamburger } from "hamburger-react";
 function Header() {
   const options = [
     {
+      label: "Conheça",
+      url: "about",
+    },
+    {
       label: "Apps",
       items: [
         { name: "Android e IOS", url: "apps/mobile" },
@@ -52,6 +56,10 @@ function Header() {
         { name: "Terceirizações e Squads", url: "outsourcing/squads" },
         { name: "Suporte a Finitecks", url: "outsourcing/finitecks" }
       ]
+    },
+    {
+      label: "Contato",
+      url: "contact",
     }
   ]
   
@@ -104,9 +112,9 @@ function Header() {
           <Option>
             <span>Home</span>
           </Option>
-          <Option>
+          {/* <Option>
             <span>Conheça</span>
-          </Option>
+          </Option> */}
           {options.map((option, index) => (
             <Option
               key={index}
@@ -117,9 +125,9 @@ function Header() {
               <Dropdown show={activeDropdown === index} items={option.items} />
             </Option>
           ))}
-          <Option>
+          {/* <Option>
             <span>Contato</span>
-          </Option>
+          </Option> */}
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>

@@ -1,5 +1,9 @@
 import styled from "styled-components";
 
+export const Div = styled.div`
+  
+`;
+
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -9,6 +13,7 @@ export const Container = styled.div`
   .stacks {
     width: 120px;
     height: auto;
+    margin-bottom: 0px;
   }
 
   .left {
@@ -33,6 +38,7 @@ export const Container = styled.div`
     max-width: 80%;
     cursor: pointer;
     gap: 80px;
+    align-items: center;
   }
 `;
 

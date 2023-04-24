@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
 
   .scroll-container {
+    align-items: center;
     display: flex;
     flex-direction: row;
     gap: 25px;
@@ -20,6 +21,7 @@ export const Container = styled.div`
   .stacks {
     width: 120px;
     height: auto;
+    margin-bottom: 0px;
   }
 `;
 
