@@ -4,18 +4,32 @@ import { MapContainer } from "react-leaflet";
 export const Container = styled.div`
   background-color: var(--secundary-background);
   width: 100%;
-  padding: 0px 40px;
+  padding: 20px 0 0 0;
   padding-bottom: 20px;
   display: flex;
   flex-direction: column;
   align-items: center;
+  z-index: 0;
 
-  .margin-support {
-      margin-top: 5rem;
+  .left {
+    margin-left: 10rem;
+    align-self: flex-start;
+  }
+
+  .social-contact {
+    font-size: 25px;
+    text-transform: uppercase;
+    font-weight: 900;
+    text-align: center;
+    position: relative;
+    color: #252525;
+    max-width: 95vw;
+    margin-top: 7rem;
+    margin-bottom: 30px;    
   }
 
   .vertical-divider {
-    height: 80%;
+    height: 100%;
     align-self: flex-start;
     width: 1px;
     background-color: rgba(0, 0, 0, 0.1);
@@ -39,14 +53,6 @@ export const Container = styled.div`
       display: none;
     }
   }
-`;
-
-export const Div = styled.div`
-  width: 100%;
-  padding: 0px 0px;
-  align-items: center;
-  display: flex;
-  flex-direction: column;
 `;
 
 export const Map = styled(MapContainer)`
@@ -193,6 +199,14 @@ export const Column = styled.div`
   gap: 10px;
   height: 100%;
 
+  .support {
+    color: #1e8a4d;
+  }
+
+  .address {
+    color: #8b0000;
+  }
+
   ul {
     list-style: none;
 
@@ -236,19 +250,30 @@ export const SocialRow = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  margin: 30px 0;
-
+  margin-left: 1.5rem;
+  
+  
   @media (max-width: 500px) {
     margin-bottom: 10px;
   }
 
-  svg {
-    color: #d9d9d9;
+  .linkedin {
+    color: #1e8a4d;
     transition: all 0.2s;
     cursor: pointer;
 
     :hover {
-      color: #252525;
+      color: black;
+      transform: scale(1.05);
+    }
+  }
+
+  .instagram {
+    color: #1e8a4d;
+    cursor: pointer;
+
+    :hover {
+      color: black;
       transform: scale(1.05);
     }
   }
@@ -268,6 +293,10 @@ export const MessageBtn = styled.div`
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+
+  .whatsapp {
+    color: #25D366;
+  }
 `;
 
 export const MessageInput = styled.input`

@@ -47,38 +47,66 @@ function Techs(props) {
     <Container>
 
       {props.titleWork &&(
-        <div className="left">
-          <Title title="Trabalhamos com" />
-        </div>
+        <>
+          <div className="left">
+            <Title title="Trabalhamos com" />
+          </div>
+          <ScrollContainer className="scroll-container-work">
+            {stacks.map((stack) => (
+              <div
+                key={stack.name}
+                style={{
+                  scrollBehavior: "smooth",
+                  height: "100%"
+                }}
+              >
+                <img
+                  src={stack.name}
+                  className="stacks"
+                  alt={stack.name}
+                  style={{
+                    pointerEvents: "none",
+                    userSelect: "none",
+                    width: stack.size,
+                  }}
+                />
+              </div>
+            ))}
+          </ScrollContainer>
+        </>
       )}
 
-
-      <ScrollContainer className="scroll-container">
-        {stacks.map((stack) => (
-          <div
-            key={stack.name}
-            style={{
-              scrollBehavior: "smooth",
-              height: "100%"
-            }}
-          >
-            <img
-              src={stack.name}
-              className="stacks"
-              alt={stack.name}
-              style={{
-                pointerEvents: "none",
-                userSelect: "none",
-                width: stack.size,
-              }}
-            />
-          </div>
-        ))}
-      </ScrollContainer>
-
       {props.work &&(
+        <ScrollContainer className="scroll-container">
+          {stacks.map((stack) => (
+            <div
+              key={stack.name}
+              style={{
+                scrollBehavior: "smooth",
+                height: "100%"
+              }}
+            >
+              <img
+                src={stack.name}
+                className="stacks"
+                alt={stack.name}
+                style={{
+                  pointerEvents: "none",
+                  userSelect: "none",
+                  width: stack.size,
+                }}
+              />
+            </div>
+          ))}
+        </ScrollContainer>        
+      )}
+
+      {props.caseWork &&(
         <>
         <br />
+          <div className="left case-title">
+            <Title title="Nossas Cases" />
+          </div>
           <MobileApp style={{ marginTop: "80px" }} left>
             <div className="main-wrapper">
               <div className="right-side">

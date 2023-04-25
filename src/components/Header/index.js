@@ -26,32 +26,32 @@ function Header() {
     {
       label: "Apps",
       items: [
-        { name: "Android e IOS", url: "apps/mobile" },
-        { name: "UI e UX degign", url: "apps/uiux" }
+        { name: "Android e IOS", url: "/apps/mobile" },
+        { name: "UI e UX degign", url: "/apps/uiux" }
       ]
     },
     {
       label: "Software",
       items: [
-        { name: "Plataformas Web", url: "software/web" },
-        { name: "Gestão e Vendas", url: "software/management" },
-        { name: "Controle de Estoque", url: "software/inventory" },
-        { name: "Gestão de Frotas", url: "software/fleet" }
+        { name: "Plataformas Web", url: "/software/web" },
+        { name: "Gestão e Vendas", url: "/software/management" },
+        { name: "Controle de Estoque", url: "/software/inventory" },
+        { name: "Gestão de Frotas", url: "/software/fleet" }
       ]
     },
     {
       label: "Web",
       items: [
-        { name: "Sites e Portais", url: "web/sites" },
-        { name: "Ecommerces", url: "web/ecommerce" },
-        { name: "Marketplaces", url: "web/marketplace" }
+        { name: "Sites e Portais", url: "/web/sites" },
+        { name: "Ecommerces", url: "/web/ecommerce" },
+        { name: "Marketplaces", url: "/web/marketplace" }
       ]
     },
     {
       label: "Outsourcing",
       items: [
-        { name: "Terceirizações e Squads", url: "outsourcing/squads" },
-        { name: "Suporte a Finitecks", url: "outsourcing/finitecks" }
+        { name: "Terceirizações e Squads", url: "/outsourcing/squads" },
+        { name: "Suporte a Finitecks", url: "/outsourcing/finitecks" }
       ]
     }
   ]
@@ -97,13 +97,13 @@ function Header() {
         </MobileHeader>
       )}
       <Container isOpen={open}>
-        <LogoWrapper>
+        <LogoWrapper onClick={() => window.location.href='/'}>
           <Logo src={logo} />
           <LogoName className="logo-name" src={logo_name} />
         </LogoWrapper>
         <OptionsRow>
           <Option>
-            <span>Home</span>
+            <span onClick={() => window.location.href='/'}>Home</span>
           </Option>
           <Option>
             <span onClick={() => window.location.href='/about'}>Conheça</span>

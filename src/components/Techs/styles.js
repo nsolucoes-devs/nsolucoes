@@ -5,7 +5,7 @@ export const Container = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 60px 0;
+  padding: 0 0;
 
   .stacks {
     width: 120px;
@@ -14,6 +14,7 @@ export const Container = styled.div`
   }
 
   .scroll-container {
+    padding: 60px 0;
     display: flex;
     flex-wrap: nowrap;
     overflow-x: scroll;
@@ -26,9 +27,27 @@ export const Container = styled.div`
     align-items: center;
   }
 
+  .scroll-container-work {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: scroll;
+    flex-direction: row;
+    overflow-x: auto;
+    white-space: nowrap;
+    max-width: 80%;
+    cursor: pointer;
+    gap: 80px;
+    align-items: center;
+    padding: 60px 0;
+  }
+
   .left {
     margin-left: 10rem;
     align-self: flex-start;
+  }
+
+  .case-title {
+    padding-top: 60px;
     margin-bottom: 2rem;
   }
 

@@ -30,8 +30,8 @@ function App() {
         <Route element={<Web />} path="/software/web" />
         <Route element={<Management />} path="/software/management" />
         <Route element={<InventoryControl />} path="/software/inventory" />
-        <Route element={<Squads />} path="outsourcing/squads" />
-        <Route element={<Finitecks />} path="outsourcing/finitecks" />
+        <Route element={<Squads />} path="/outsourcing/squads" />
+        <Route element={<Finitecks />} path="/outsourcing/finitecks" />
         <Route element={<FleetManagement />} path="/software/fleet" />
         <Route element={<Websites />} path="/web/sites"/>
         <Route element={<Ecommerce />} path="/web/ecommerce"/>

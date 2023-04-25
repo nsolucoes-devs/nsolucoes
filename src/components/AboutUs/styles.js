@@ -12,6 +12,11 @@ export const Container = styled.div`
     align-self: flex-start;
   }
 
+  .color-title {
+    margin-top: 10rem;
+    z-index: 0;
+  }
+
   .triangle {
     position: relative;
     margin-top: 25px;

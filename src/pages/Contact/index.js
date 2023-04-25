@@ -12,10 +12,10 @@ function Contact() {
     <Container>
       
       <div className="margin-contact">
-        <Support allsupport />
+        <Support supportContact />
       </div>
 
-      <Techs />
+      <Techs work/>
 
       <Support copyright />
 

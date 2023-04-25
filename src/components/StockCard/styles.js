@@ -1,5 +1,4 @@
 import styled, { keyframes } from "styled-components";
-import stock from "../../assets/images/stock-man.jpg";
 
 const move = keyframes`
   0% {
@@ -24,7 +23,7 @@ export const Container = styled.div`
   cursor: pointer;
   box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
   animation: ${move} 10s ease-in-out infinite;
-  background-image: url(${stock});
+  background-image: url(${props => props.image});
   background-position: center;
   background-size: cover;
 

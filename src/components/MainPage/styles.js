@@ -149,10 +149,10 @@ export const MiddleButton = styled.div`
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  box-shadow: 0 20px 84px -15px var(--accent-color);
+  /* box-shadow: 0 20px 84px -15px var(--accent-color);
   -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
   -moz-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
-  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
+  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37); */
   text-transform: uppercase;
   letter-spacing: 3px;
   position: relative;

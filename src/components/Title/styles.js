@@ -6,7 +6,7 @@ export const Container = styled.div`
   align-items: center;
 
   h1 {
-    font-size: 45px;
+    font-size: 40px;
     text-transform: uppercase;
     font-weight: 900;
     text-align: center;

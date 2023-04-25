@@ -1,13 +1,14 @@
 import React from "react";
-import { Container, MainContainer, Wrapper, Pin } from "./styles";
+import { Container, Wrapper, Pin } from "./styles";
 import devices from "../../assets/images/devices.png";
 import email from "../../assets/images/email.png";
 import responsive from "../../assets/images/responsive.png";
 import pin from "../../assets/images/pin1.png";
 import coin from "../../assets/images/coin.png"
 
-function Card({ type, image, title, desc }) {
+function Card({ type, image, title, desc, text }) {
   const images = {
+    pin,
     devices,
     email,
     responsive,
@@ -20,8 +21,7 @@ function Card({ type, image, title, desc }) {
         <img src={images[image]} />
         <h2>{title}</h2>
         <p>
-          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Voluptatem
-          itaque voluptas commodi
+          {text}
         </p>
       </Container>
       {image == "coin" && <Pin src={pin} />}

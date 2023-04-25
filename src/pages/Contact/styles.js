@@ -5,7 +5,7 @@ export const Container = styled.div`
     flex-direction: column;
 
     .margin-contact {
-      margin-top: 5rem;
+      padding: 0 0 0 0;
     }
 `;
 

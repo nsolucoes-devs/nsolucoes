@@ -1,23 +1,14 @@
 import {React, useState, useEffect} from "react";
 import {
   Container,
-  Div,
-  Map,
-  ContactForm,
-  FirstRow,
-  Form,
   Row,
-  InputData,
-  Input,
   Column,
-  SubmitButton,
-  TextArea,
   MessageBtn,
   MessageInput,
   SocialRow,
   Footer,
 } from "./styles";
-import Title from "../Title";
+import Title from "../../components/Title";
 import {
   BiSupport,
   MdEmail,
@@ -26,10 +17,9 @@ import {
   BsLinkedin,
   AiFillInstagram,
 } from "../../styles/Icons";
-import { TileLayer, Marker, Popup, MapContainer } from "react-leaflet";
-import { motion } from "framer-motion";
 import L from "leaflet";
 import locationIcon from "../../assets/images/marker.png";
+import { MdWorkOutline } from "../../styles/Icons";
 import { BsWhatsapp } from "react-icons/bs";
 
 function Support(props) {
@@ -54,15 +44,14 @@ function Support(props) {
   return (
 
     <Container>
-      {props.allsupport && (
-        <Div>
-          <div className="margin-support">
+      {props.supportHome && (
+        <>
+          {/* <div className="margin-support">
             <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
-          </div>
-          <SocialRow>
-            <BsLinkedin size={30} />
-            <AiFillInstagram size={38} />
-          </SocialRow>
+          </div> */}
+          {/* <div className="left margin-support">
+            <Title title="FALE CONOSCO" />
+          </div> */}
           <Row className="main-row">
             <Column>
               <h1>Entre em contato!</h1>
@@ -72,7 +61,7 @@ function Support(props) {
               </h3>
               <MessageBtn>
                 <MessageInput placeholder="Envie sua mensagem!" />
-                <BsWhatsapp size={30} />
+                <BsWhatsapp className="whatsapp" size={30} />
               </MessageBtn>
             </Column>
             <div className="vertical-divider" />
@@ -81,17 +70,75 @@ function Support(props) {
                 <strong>Suporte</strong>
                 <ul>
                   <li>
-                    <MdEmail />
+                    <MdEmail className="support"/>
                     suporte@nsolucoes.digital
                   </li>
                   <li>
-                    <AiFillPhone /> (34) 9 98942-7824
+                    <AiFillPhone className="support"/> (34) 9 98942-7824
                   </li>
                 </ul>
               </Column>
               <Column>
                 <strong>
-                  <FaMapMarkerAlt /> Endereço
+                  <FaMapMarkerAlt className="address"/> Endereço
+                </strong>
+                <ul>
+                  <li>
+                    R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG, 38060-360
+                  </li>
+                </ul>
+              </Column>
+              <Column>
+                <strong> Siga nossas redes </strong>
+                <SocialRow>
+                  <BsLinkedin className="linkedin" size={30} />
+                  <AiFillInstagram className="instagram" size={38} />
+                </SocialRow>
+              </Column>
+            </Column>
+          </Row>
+        </>
+      )}
+
+      {props.supportContact && (
+        <>
+          <div className="social-contact">
+            <h1>FALE CONOSCO</h1>
+            {/* <Title title="" icon={<BiSupport size={100} />} /> */}
+          </div>
+            <SocialRow>
+              <BsLinkedin className="linkedin" size={30} />
+              <AiFillInstagram className="instagram" size={38} />
+            </SocialRow>
+          <Row className="main-row">
+            <Column>
+              <h1>Entre em contato!</h1>
+              <h3>
+                Fusce varius, dolor tempor interdum tristique, dui urna bib endum
+                magna, ut ullamcorper purus
+              </h3>
+              <MessageBtn>
+                <MessageInput placeholder="Envie sua mensagem!" />
+                <BsWhatsapp className="whatsapp" size={30} />
+              </MessageBtn>
+            </Column>
+            <div className="vertical-divider" />
+            <Column>
+              <Column>
+                <strong>Suporte</strong>
+                <ul>
+                  <li>
+                    <MdEmail className="support"/>
+                    suporte@nsolucoes.digital
+                  </li>
+                  <li>
+                    <AiFillPhone className="support"/> (34) 9 98942-7824
+                  </li>
+                </ul>
+              </Column>
+              <Column>
+                <strong>
+                  <FaMapMarkerAlt className="address"/> Endereço
                 </strong>
                 <ul>
                   <li>
@@ -101,17 +148,17 @@ function Support(props) {
               </Column>
             </Column>
           </Row>
-        </Div>
+        </>
       )}
 
       {props.copyright && (
-        <Div>
+        <>
           <div className="horizontal-divider" />
 
           <Footer>
             <small>© {year}. Todos os direitos reservados por N Soluções.</small>
           </Footer>
-        </Div>
+        </>
       )}
 
     {/* <FirstRow>
