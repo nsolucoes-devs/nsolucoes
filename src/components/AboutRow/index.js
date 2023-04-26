@@ -15,12 +15,12 @@ function AboutRow(props) {
             <Title icon={<MdWorkOutline size={100} />} title="nossas soluções" />
           </div>
           <CardsRow>
-            <Card title="Aplicativos Android e IOS" type="development" image="responsive" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Desenvolvimento sob Medida" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Ecommerces e Marketplaces" type="development" image="coin" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Terceirizações de Squads" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Suporte a FinTechs" type="development" image="responsive" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Integração de Sistemas (API)" type="development" image="coin" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
+            <Card title="Aplicativos Android e IOS" type="development" image="responsive" text="Desenvolva aplicativos personalizados para atender às necessidades específicas da sua empresa, utilizando as plataformas Android e IOS." />
+            <Card title="Desenvolvimento sob Medida" type="development" image="devices" text="Criamos soluções personalizadas para atender às necessidades exclusivas da sua empresa, com base em tecnologias modernas e melhores práticas de desenvolvimento." />
+            <Card title="Ecommerces e Marketplaces" type="development" image="coin" text="Crie uma loja virtual ou marketplace para sua empresa e comece a vender online, com integração de pagamentos e ferramentas de gestão de estoque." />
+            <Card title="Terceirizações de Squads" type="development" image="squad" text="Monte uma equipe completa de desenvolvimento de software para sua empresa, sem se preocupar com a contratação e gerenciamento de profissionais especializados." />
+            <Card title="Suporte a FinTechs" type="development" image="responsive" text="Oferecemos suporte técnico e estratégico para startups de tecnologia financeira (FinTechs), ajudando a desenvolver soluções inovadoras e escaláveis." />
+            <Card title="Integração de Sistemas (API)" type="development" image="api" text="Integre seus sistemas internos e externos com outras plataformas, utilizando APIs e tecnologias modernas de integração." />
           </CardsRow>
         </>
       )}

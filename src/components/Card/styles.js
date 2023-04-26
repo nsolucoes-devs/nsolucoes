@@ -61,7 +61,9 @@ export const Container = styled.div`
       (props.imageType == "email" && "70%") ||
       (props.imageType == "devices" && "90%") ||
       (props.imageType == "responsive" && "80%") ||
-      (props.imageType == "coin" && "65%")};
+      (props.imageType == "coin" && "65%") ||
+      (props.imageType == "squad" && "70%") ||
+      (props.imageType == "api" && "69%")};
     transition: all 0.3s;
   }
 

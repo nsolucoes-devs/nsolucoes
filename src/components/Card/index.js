@@ -5,6 +5,8 @@ import email from "../../assets/images/email.png";
 import responsive from "../../assets/images/responsive.png";
 import pin from "../../assets/images/pin1.png";
 import coin from "../../assets/images/coin.png"
+import squad from "../../assets/images/squads.png";
+import api from "../../assets/images/api.png";
 
 function Card({ type, image, title, desc, text }) {
   const images = {
@@ -12,7 +14,9 @@ function Card({ type, image, title, desc, text }) {
     devices,
     email,
     responsive,
-    coin
+    coin,
+    squad,
+    api
   };
 
   return (
