@@ -319,8 +319,19 @@ export const MessageInput = styled.input`
 
 export const Footer = styled.div`
   display: flex;
-  width: 100%;
-  justify-content: center;
+  width: 80%;
   align-items: center;
   text-align: center;
+  
+  .width-logo {
+    width: 30px;
+  }
+  
+  .logo-name {
+    width: 100px;
+  }
+
+  small {
+    width: 75%
+  }
 `;
