@@ -58,6 +58,11 @@ export const MainRow = styled.div`
   @media (max-width: 1100px) {
     text-align: center;
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const MainColumn = styled.div`
@@ -78,6 +83,14 @@ export const MainColumn = styled.div`
     white-space: pre-wrap;
     word-break: break-word; /* Adicione esta linha */
     margin-bottom: 1rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    padding: 0 5px;
+
+    p {
+      text-align: justify;
+    }
   }
 `;
 
@@ -124,6 +137,11 @@ export const DivSecundaryRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
+`;
+
+export const DivMobile = styled.div`
+  display: flex;
+  justify-content: center;
 `;
 
 

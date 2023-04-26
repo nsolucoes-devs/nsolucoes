@@ -5,7 +5,7 @@ import {
   MainColumn,
   SecundaryColumn,
   SecundaryRow,
-  DivSecundaryRow
+  DivSecundaryRow,
 } from "./styles";
 import Title from "../Title";
 import {
@@ -33,18 +33,18 @@ function AboutUs(props) {
               <p>{props.paragraph1}</p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
-              <DivSecundaryRow>
-                {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow>
-                    {console.log(card.title, card)}
-                    {card.icon}
-                    <SecundaryColumn>
-                      <strong title={card.title}>{card.title}</strong>
-                      <small>{card.description}</small>
-                    </SecundaryColumn>
-                  </SecundaryRow>
-                ))}
-              </DivSecundaryRow>
+                <DivSecundaryRow>
+                  {(props.cardIcon || []).map((card) => (
+                    <SecundaryRow>
+                      {console.log(card.title, card)}
+                      {card.icon}
+                      <SecundaryColumn>
+                        <strong title={card.title}>{card.title}</strong>
+                        <small>{card.description}</small>
+                      </SecundaryColumn>
+                    </SecundaryRow>
+                  ))}
+                </DivSecundaryRow>
             </MainColumn>
           </MainRow>
         </>

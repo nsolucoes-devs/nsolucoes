@@ -333,4 +333,12 @@ export const Footer = styled.div`
     width: 75%;
     font-weight: 600;
   }
+
+  @media only screen and (max-width: 768px) {
+    flex-direction: column;
+
+    .width-logo {
+      margin-bottom: 15px;
+    }
+  }
 `;

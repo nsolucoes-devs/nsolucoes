@@ -110,6 +110,12 @@ export const ProductRow = styled.div`
     }
   }
 
+  @media only screen and (max-width: 768px) {
+    .phone-holder {
+      display: none;
+    }
+  }
+
   @media (max-width: 900px) {
     flex-direction: column;
     width: 90%;
@@ -212,6 +218,12 @@ export const MobileApp = styled.div`
     width: 130%;
     max-width: 130%;
     top: -16rem;
+  }
+
+  @media only screen and (max-width: 768px) {
+    .phone-holder {
+      display: none;
+    }
   }
 
   @media (max-width: 900px) {
