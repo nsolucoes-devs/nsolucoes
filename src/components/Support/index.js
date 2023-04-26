@@ -8,9 +8,7 @@ import {
   SocialRow,
   Footer,
 } from "./styles";
-import Title from "../../components/Title";
 import {
-  BiSupport,
   MdEmail,
   AiFillPhone,
   FaMapMarkerAlt,
@@ -19,7 +17,6 @@ import {
 } from "../../styles/Icons";
 import L from "leaflet";
 import locationIcon from "../../assets/images/marker.png";
-import { MdWorkOutline } from "../../styles/Icons";
 import { BsWhatsapp } from "react-icons/bs";
 
 function Support(props) {
@@ -91,8 +88,12 @@ function Support(props) {
               <Column>
                 <strong> Siga nossas redes </strong>
                 <SocialRow>
-                  <BsLinkedin className="linkedin" size={30} />
-                  <AiFillInstagram className="instagram" size={38} />
+                  <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
+                    <BsLinkedin className="linkedin" size={30} />
+                  </a>
+                  <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
+                    <AiFillInstagram className="instagram" size={38} />
+                  </a>
                 </SocialRow>
               </Column>
             </Column>
@@ -106,10 +107,14 @@ function Support(props) {
             <h1>FALE CONOSCO</h1>
             {/* <Title title="" icon={<BiSupport size={100} />} /> */}
           </div>
-            <SocialRow>
+          <SocialRow>
+            <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
               <BsLinkedin className="linkedin" size={30} />
+            </a>
+            <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
               <AiFillInstagram className="instagram" size={38} />
-            </SocialRow>
+            </a>
+          </SocialRow>
           <Row className="main-row">
             <Column>
               <h1>Entre em contato!</h1>
