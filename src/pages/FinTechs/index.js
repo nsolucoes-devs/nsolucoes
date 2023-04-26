@@ -9,7 +9,7 @@ import { HiArchiveBox } from "react-icons/hi2";
 import { RiPieChartFill } from "react-icons/ri";
 import { IoSpeedometer } from "react-icons/io5";
 
-function Finitecks() {
+function FinTechs() {
 
   const cardInfo = [
     {
@@ -88,4 +88,4 @@ function Finitecks() {
   
 }
 
-export default Finitecks;
+export default FinTechs;
