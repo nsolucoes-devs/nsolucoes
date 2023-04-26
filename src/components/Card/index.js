@@ -7,6 +7,7 @@ import pin from "../../assets/images/pin1.png";
 import coin from "../../assets/images/coin.png"
 import squad from "../../assets/images/squads.png";
 import api from "../../assets/images/api.png";
+import fintech from "../../assets/images/fintech.png";
 
 function Card({ type, image, title, desc, text }) {
   const images = {
@@ -16,7 +17,8 @@ function Card({ type, image, title, desc, text }) {
     responsive,
     coin,
     squad,
-    api
+    api,
+    fintech
   };
 
   return (

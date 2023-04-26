@@ -19,7 +19,7 @@ function AboutRow(props) {
             <Card title="Desenvolvimento sob Medida" type="development" image="devices" text="Criamos soluções personalizadas para atender às necessidades exclusivas da sua empresa, com base em tecnologias modernas e melhores práticas de desenvolvimento." />
             <Card title="Ecommerces e Marketplaces" type="development" image="coin" text="Crie uma loja virtual ou marketplace para sua empresa e comece a vender online, com integração de pagamentos e ferramentas de gestão de estoque." />
             <Card title="Terceirizações de Squads" type="development" image="squad" text="Monte uma equipe completa de desenvolvimento de software para sua empresa, sem se preocupar com a contratação e gerenciamento de profissionais especializados." />
-            <Card title="Suporte a FinTechs" type="development" image="responsive" text="Oferecemos suporte técnico e estratégico para startups de tecnologia financeira (FinTechs), ajudando a desenvolver soluções inovadoras e escaláveis." />
+            <Card title="Suporte a FinTechs" type="development" image="fintech" text="Oferecemos suporte técnico e estratégico para startups de tecnologia financeira (FinTechs), ajudando a desenvolver soluções inovadoras e escaláveis." />
             <Card title="Integração de Sistemas (API)" type="development" image="api" text="Integre seus sistemas internos e externos com outras plataformas, utilizando APIs e tecnologias modernas de integração." />
           </CardsRow>
         </>

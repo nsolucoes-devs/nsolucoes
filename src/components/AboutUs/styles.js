@@ -67,7 +67,7 @@ export const MainColumn = styled.div`
 
   h1 {
     font-weight: 600;
-    font-size: 2.5rem;
+    font-size: 2rem;
     max-width: 600px;
     margin-bottom: 50px;
   }
