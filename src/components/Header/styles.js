@@ -21,6 +21,13 @@ export const Container = styled.div`
   flex-direction: row;
   /* justify-content: space-between; */
   align-items: center;
+
+  @media only screen and (max-width: 768px) {
+    width: 95%;
+    margin-left: 10px;
+    margin-top: 20px;
+  }
+
 `;
 
 export const OptionsRow = styled.ul`
@@ -232,4 +239,9 @@ export const MiddleButton = styled.div`
   &:hover {
     background-color: #1e8a4d;
   }
+
+  @media only screen and (max-width: 768px) {
+    display: none;
+  }
+
 `;

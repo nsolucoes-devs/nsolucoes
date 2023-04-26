@@ -91,8 +91,9 @@ function Header() {
             <li>Software</li>
             <li>Web</li>
             <li>Outsourcing</li>
+            <li>Contato</li>
             <a className="contact" href="tel:+5534996484068">
-              <AiFillPhone /> Contato
+              Agendar Reunião
             </a>
           </ul>
         </MobileHeader>
@@ -122,10 +123,10 @@ function Header() {
           <Option>
             <span onClick={() => window.location.href='/contact'}>Contato</span>
           </Option>
+            <MiddleButton className="mobile-button">Agendar Reunião</MiddleButton>
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>
-          <MiddleButton>Agendar Reunião</MiddleButton>
         </OptionsRow>
       </Container>
     </>

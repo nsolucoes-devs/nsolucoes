@@ -185,8 +185,8 @@ export const Row = styled.div`
   gap: 50px;
   width: 100%;
   height: 250px;
-  margin-top: 2rem ;
-    margin-bottom: 2rem ;
+  margin-top: 1rem ;
+  margin-bottom: 2rem ;
 
   @media (max-width: 500px) {
     height: fit-content;
@@ -210,8 +210,9 @@ export const Column = styled.div`
   }
 
   .contact {
-    margin-top: 2.5rem;
+    margin-top: 2rem;
   }
+
 
   .address {
     color: #8b0000;
@@ -252,6 +253,8 @@ export const Column = styled.div`
 
   h3 {
     max-width: 400px;
+    font-weight: 300;
+    color: black;
   }
 `;
 
@@ -260,7 +263,6 @@ export const SocialRow = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  margin-left: 6.5rem;
   
   
   @media (max-width: 500px) {
@@ -303,10 +305,6 @@ export const MessageBtn = styled.div`
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
-
-  .whatsapp {
-    color: #25D366;
-  }
 `;
 
 export const MessageInput = styled.input`
@@ -332,6 +330,7 @@ export const Footer = styled.div`
   }
 
   small {
-    width: 75%
+    width: 75%;
+    font-weight: 600;
   }
 `;

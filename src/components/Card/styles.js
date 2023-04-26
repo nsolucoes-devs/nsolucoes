@@ -88,7 +88,7 @@ export const Container = styled.div`
   }
 
   p {
-    text-align: center;
+    text-align: start;
     margin-top: 30px;
     width: 90%;
     transition: all 0.3s;

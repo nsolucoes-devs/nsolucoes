@@ -54,13 +54,15 @@ function Support(props) {
           </div> */}
           <Row className="main-row support-home">
             <Column>
-              <h1>Vamos conversar!</h1>
-              <h3>Converse com um de nossos especialistas em desenvolvimento agora mesmo e saiba como podemos ajudar a tornar sua ideia realidade.</h3>
-              {/* <h3> Fale agora mesmo com um de nossos especialistas em desenvolvimento, vamos conhecer mais da sua ideia. </h3> */}
-              <MessageBtn>
-                <MessageInput placeholder="Envie sua mensagem!" />
-                <BsWhatsapp className="whatsapp" size={30} />
-              </MessageBtn>
+              <Column className="contact">
+                <h1>Vamos conversar!</h1>
+                <h3>Fale com um de nossos especialistas agora mesmo, vamos tornar sua ideia em realidade!</h3>
+                {/* <h3> Fale agora mesmo com um de nossos especialistas em desenvolvimento, vamos conhecer mais da sua ideia. </h3> */}
+                <MessageBtn>
+                  <MessageInput placeholder="Envie sua mensagem!" />
+                  <BsWhatsapp className="support" size={35} />
+                </MessageBtn>
+              </Column>
             </Column>
             <div className="vertical-divider" />
             <Column>
@@ -71,6 +73,8 @@ function Support(props) {
                     <MdEmail className="support"/>
                     contato@nsolucoes.digital
                   </li>
+                  </ul>
+                  <ul>
                   <li>
                     <AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226
                   </li>
@@ -88,7 +92,7 @@ function Support(props) {
                   </li>
                 </ul>
               </Column>
-              <Column>
+              <Column className="icon-social">
                 {/* <strong> Siga nossas redes </strong> */}
                 <SocialRow>
                   <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">

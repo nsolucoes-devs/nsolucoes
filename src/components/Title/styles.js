@@ -32,4 +32,16 @@ export const Container = styled.div`
       z-index: -1;
     }
   }
+
+  @media only screen and (max-width: 768px) {
+    h1 {
+      font-size: 20px;
+    }
+
+    
+      margin-left: 0;
+      text-align: left;
+    
+  }
+
 `;

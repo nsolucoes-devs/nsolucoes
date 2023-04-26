@@ -47,11 +47,11 @@ function CustomCursor() {
 
   return (
     <Container>
-      <motion.div
+      {/* <motion.div
         className="cursor"
         variants={variants}
         animate={cursorVariant}
-      />
+      /> */}
     </Container>
   );
 }

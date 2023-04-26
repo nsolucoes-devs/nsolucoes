@@ -24,4 +24,5 @@ export const CardsRow = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    
 `
