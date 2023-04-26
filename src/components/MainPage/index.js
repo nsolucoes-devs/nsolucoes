@@ -60,19 +60,19 @@ function MainPage() {
       <Wrapper>
         <MiddleContainer>
           <Title>
-            <span className="underline">Transformando</span>
-            <span>Negócios com programação e</span>
+            <span >Soluções Inovadoras para</span>
+            {/* <span>Inovadoras para </span> */}
             <span className="type-writter">
               <Typewriter
                 options={{
-                  strings: ["Inteligência", "Cuidado", "Responsabilidade"],
+                  strings: ["FinTechs", "StartUps", "Empresas", "Negócios Locais"],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </span>
           </Title>
-          <MiddleButton>Saiba Mais!</MiddleButton>
+            <MiddleButton>Saiba Mais</MiddleButton>
         </MiddleContainer>
         <Pin src={pin} />
       </Wrapper>

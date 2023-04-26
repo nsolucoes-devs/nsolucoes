@@ -19,7 +19,7 @@ export const Container = styled.div`
 
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
 `;
 
@@ -29,8 +29,9 @@ export const OptionsRow = styled.ul`
   flex-direction: row;
   font-weight: 700;
   font-size: 15px;
-  gap: 40px;
+  gap: 30px;
   align-items: center;
+  margin-left: 4rem;
 `;
 
 export const Option = styled.li`
@@ -81,19 +82,19 @@ export const LogoWrapper = styled.div`
   gap: 10px;
   cursor: pointer;
 
-  &:hover .logo-name {
+  /* &:hover .logo-name {
     animation-play-state: running;
     opacity: 1;
     transform: translate(0px);
-  }
+  } */
 `;
 
 export const LogoName = styled.img`
   width: 140px;
-  transition: 0.4s;
-  opacity: 0;
+  /* transition: 0.4s; */
+  /* opacity: 0; */
   animation: popIn 1s paused;
-  transform: translate(-10px);
+  /* transform: translate(-10px); */
   margin-bottom: 10px;
 `;
 
@@ -190,5 +191,45 @@ export const Menu = styled.div`
 
   @media (max-width: 1100px) {
     display: flex;
+  }
+`;
+
+export const MiddleButton = styled.div`
+  width: fit-content;
+  padding: 15px 24px;
+  border-radius: 70px;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  cursor: pointer;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  position: relative;
+  overflow: hidden;
+  transition: background-color 0.3s ease-out 0.2s;
+  z-index: 1;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #18693b;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-out 0s;
+    z-index: -1;
+  }
+
+  &:hover:before {
+    width: 500px;
+    height: 500px;
+  }
+
+  &:hover {
+    background-color: #1e8a4d;
   }
 `;

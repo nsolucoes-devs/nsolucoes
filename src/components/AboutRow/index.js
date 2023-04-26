@@ -12,15 +12,15 @@ function AboutRow(props) {
       {props.services && (
         <>
           <div className="left">
-            <Title icon={<MdWorkOutline size={100} />} title="nossos serviços" />
+            <Title icon={<MdWorkOutline size={100} />} title="nossas soluções" />
           </div>
           <CardsRow>
-            <Card title="Aplicações Web" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
             <Card title="Aplicativos Android e IOS" type="development" image="responsive" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
+            <Card title="Desenvolvimento sob Medida" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
             <Card title="Ecommerces e Marketplaces" type="development" image="coin" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Aplicações Web" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Aplicativos Android e IOS" type="development" image="responsive" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
-            <Card title="Ecommerces e Marketplaces" type="development" image="coin" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
+            <Card title="Terceirizações de Squads" type="development" image="devices" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
+            <Card title="Suporte a FinTechs" type="development" image="responsive" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
+            <Card title="Integração de Sistemas (API)" type="development" image="coin" text="Lorem Ipsum is simply dummy text of the printing and typesetting industry" />
           </CardsRow>
         </>
       )}

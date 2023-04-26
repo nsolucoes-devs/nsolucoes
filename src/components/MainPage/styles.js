@@ -40,6 +40,7 @@ export const MiddleContainer = styled.div`
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.25);
   backdrop-filter: blur(15px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  display: flex;
 
   h1 {
     font-size: 3rem;
@@ -141,9 +142,10 @@ export const Title = styled.h1`
 
 export const MiddleButton = styled.div`
   width: fit-content;
-  padding: 20px 75px;
+  padding: 20px 40px;
   border-radius: 70px;
-  margin-top: 40px;
+  margin-left: -12rem;
+  margin-top: 80px;
   background-color: var(--accent-color);
   font-weight: 600;
   font-size: 16px;

@@ -8,6 +8,7 @@ import {
   LogoName,
   Menu,
   MobileHeader,
+  MiddleButton
 } from "./styles";
 import { RiArrowDropDownLine } from "../../styles/Icons";
 import logo from "../../assets/images/just-logo.png";
@@ -85,7 +86,7 @@ function Header() {
         <MobileHeader>
           <ul>
             <li>Home</li>
-            <li>Conheça</li>
+            <li>Nós</li>
             <li>Apps</li>
             <li>Software</li>
             <li>Web</li>
@@ -106,7 +107,7 @@ function Header() {
             <span onClick={() => window.location.href='/'}>Home</span>
           </Option>
           <Option>
-            <span onClick={() => window.location.href='/about'}>Conheça</span>
+            <span onClick={() => window.location.href='/about'}>Nós</span>
           </Option>
           {options.map((option, index) => (
             <Option
@@ -124,6 +125,7 @@ function Header() {
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>
+          <MiddleButton>Agendar Reunião</MiddleButton>
         </OptionsRow>
       </Container>
     </>

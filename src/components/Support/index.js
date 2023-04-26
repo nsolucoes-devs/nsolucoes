@@ -18,6 +18,9 @@ import {
 import L from "leaflet";
 import locationIcon from "../../assets/images/marker.png";
 import { BsWhatsapp } from "react-icons/bs";
+import logo from "../../assets/images/just-logo.png";
+import logo_name from "../../assets/images/logo-name.png";
+import {LogoWrapper, Logo, LogoName} from "../Header/styles";
 
 function Support(props) {
 
@@ -49,13 +52,11 @@ function Support(props) {
           {/* <div className="left margin-support">
             <Title title="FALE CONOSCO" />
           </div> */}
-          <Row className="main-row">
+          <Row className="main-row support-home">
             <Column>
-              <h1>Entre em contato!</h1>
-              <h3>
-                Fusce varius, dolor tempor interdum tristique, dui urna bib endum
-                magna, ut ullamcorper purus
-              </h3>
+              <h1>Vamos conversar!</h1>
+              <h3>Converse com um de nossos especialistas em desenvolvimento agora mesmo e saiba como podemos ajudar a tornar sua ideia realidade.</h3>
+              {/* <h3> Fale agora mesmo com um de nossos especialistas em desenvolvimento, vamos conhecer mais da sua ideia. </h3> */}
               <MessageBtn>
                 <MessageInput placeholder="Envie sua mensagem!" />
                 <BsWhatsapp className="whatsapp" size={30} />
@@ -63,30 +64,32 @@ function Support(props) {
             </Column>
             <div className="vertical-divider" />
             <Column>
-              <Column>
-                <strong>Suporte</strong>
+              <Column className="contact">
+                {/* <strong>Suporte</strong> */}
                 <ul>
                   <li>
                     <MdEmail className="support"/>
-                    suporte@nsolucoes.digital
+                    contato@nsolucoes.digital
                   </li>
                   <li>
-                    <AiFillPhone className="support"/> (34) 9 98942-7824
+                    <AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226
                   </li>
                 </ul>
               </Column>
               <Column>
-                <strong>
-                  <FaMapMarkerAlt className="address"/> Endereço
-                </strong>
+                {/* <strong>
+                   Endereço
+                </strong> */}
                 <ul>
                   <li>
-                    R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG, 38060-360
+                  <FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião, 
+                    </li>
+                    <li>Uberaba - MG, 38060-360
                   </li>
                 </ul>
               </Column>
               <Column>
-                <strong> Siga nossas redes </strong>
+                {/* <strong> Siga nossas redes </strong> */}
                 <SocialRow>
                   <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
                     <BsLinkedin className="linkedin" size={30} />
@@ -161,7 +164,11 @@ function Support(props) {
           <div className="horizontal-divider" />
 
           <Footer>
-            <small>© {year}. Todos os direitos reservados por N Soluções.</small>
+            <LogoWrapper onClick={() => window.location.href='/'}>
+              <Logo src={logo} />
+              <LogoName className="logo-name" src={logo_name} />
+            </LogoWrapper>
+            <small>© {year}. N Soluções, todos os direitos reservados.</small>
           </Footer>
         </>
       )}

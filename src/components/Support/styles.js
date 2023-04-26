@@ -30,8 +30,8 @@ export const Container = styled.div`
 
   .vertical-divider {
     height: 100%;
-    align-self: flex-start;
-    width: 1px;
+    /* align-self: flex-start; */
+    width: 2px;
     background-color: rgba(0, 0, 0, 0.1);
   }
   .horizontal-divider {
@@ -184,11 +184,17 @@ export const Row = styled.div`
   align-items: center;
   gap: 50px;
   width: 100%;
-  height: 350px;
-  margin-top: 50px;
+  height: 250px;
+  margin-top: 2rem ;
+    margin-bottom: 2rem ;
 
   @media (max-width: 500px) {
     height: fit-content;
+  }
+
+  .support-home {
+    margin-top: 2rem !important;
+    margin-bottom: 2rem !important;  
   }
 `;
 
@@ -201,6 +207,10 @@ export const Column = styled.div`
 
   .support {
     color: #1e8a4d;
+  }
+
+  .contact {
+    margin-top: 2.5rem;
   }
 
   .address {
@@ -250,7 +260,7 @@ export const SocialRow = styled.div`
   flex-direction: row;
   gap: 20px;
   align-items: center;
-  margin-left: 1.5rem;
+  margin-left: 6.5rem;
   
   
   @media (max-width: 500px) {

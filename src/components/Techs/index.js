@@ -33,12 +33,12 @@ function Techs(props) {
     { name: stack2, size: "40px" },
     { name: stack9, size: "60px" },
     { name: stack13, size: "100px" },
+    { name: stack11, size: "100px" },
+    { name: stack12, size: "80px" },
     { name: stack3, size: "100px" },
     { name: stack6, size: "120px" },
     { name: stack10, size: "150px" },
     { name: stack7, size: "100px" },
-    { name: stack11, size: "100px" },
-    { name: stack12, size: "80px" },
   ];
 
   const scrollContainerRef = useRef(null);
@@ -49,7 +49,7 @@ function Techs(props) {
       {props.titleWork &&(
         <>
           <div className="left">
-            <Title title="Trabalhamos com" />
+            <Title title="Desenvolvemos em" />
           </div>
           <ScrollContainer className="scroll-container-work">
             {stacks.map((stack) => (
