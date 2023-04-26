@@ -165,7 +165,7 @@ function Support(props) {
 
           <Footer>
             <LogoWrapper onClick={() => window.location.href='/'}>
-              <Logo src={logo} />
+              <Logo className='width-logo' src={logo} />
               <LogoName className="logo-name" src={logo_name} />
             </LogoWrapper>
             <small>© {year}. N Soluções, todos os direitos reservados.</small>
