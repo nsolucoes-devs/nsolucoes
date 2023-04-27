@@ -78,6 +78,11 @@ export const MainRow = styled.div`
     flex-direction: column;
     align-items: center;
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 export const MainColumn = styled.div`
@@ -116,6 +121,24 @@ export const MainColumn = styled.div`
       max-width: 600px;
       margin-bottom: 50px;
     }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
+    align-items: center;
+  }
+
+  p {
+    font-size: 25px;
+    text-align: start;
+    font-weight: 300;
+      color: black;
+  }
+
+  h1 {
+    font-weight: 600;
+    font-size: 2.5rem;
+    max-width: 600px;
+    margin-bottom: 50px;
   }
 `;
 

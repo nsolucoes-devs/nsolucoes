@@ -213,6 +213,10 @@ export const Row = styled.div`
     height: fit-content;
   }
 
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
+    width: 80%;
+  }
+
   .support-home {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;  
@@ -258,6 +262,12 @@ export const Column = styled.div`
         align-items: center;
         display: block;
       }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
+    ul li {
+      width: 125%;
+    }
   }
 
   @media (max-width: 750px) {

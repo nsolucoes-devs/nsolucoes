@@ -139,6 +139,12 @@ export const ProductRow = styled.div`
     }
   }
 
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
+    .phone-holder {
+      display: none;
+    }
+  }
+
   @media (max-width: 900px) {
     flex-direction: column;
     width: 90%;
@@ -244,6 +250,12 @@ export const MobileApp = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .phone-holder {
+      display: none;
+    }
+  }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px){
     .phone-holder {
       display: none;
     }
