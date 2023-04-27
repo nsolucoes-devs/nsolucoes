@@ -184,6 +184,11 @@ export const SecundaryRow = styled.div`
     margin-right: 0;
   }
 
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    margin-right: 1rem;
+    margin-left: 1rem;
+  }
+
 `;
 
 export const DivSecundaryRow = styled.div`
@@ -192,6 +197,11 @@ export const DivSecundaryRow = styled.div`
   max-width: 700px;
 
   @media only screen and (max-width: 768px) {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
     justify-content: center;
     margin-top: 1rem;
   }

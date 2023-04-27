@@ -26,7 +26,7 @@ function AboutUs(props) {
           <div className="left">
             <Title title={props.title} />
           </div>
-          <MainRow>
+          <MainRow> 
             <StockCard image={props.url} />
             <MainColumn>
               <h1>{props.subtitle}</h1>
