@@ -197,7 +197,9 @@ export const MobileHeader = styled.nav`
       text-decoration: none;
       color: white;
       font-size: 16pt;
-      font-weight: 500;
+        font-weight: 600;
+        margin-top: 3rem;
+        padding: 1rem;
     }
   }
   @media (min-width: 1024px) {
