@@ -72,7 +72,9 @@ function MainPage() {
               />
             </span>
           </Title>
+          <div className="button-center">
             <MiddleButton>Saiba Mais</MiddleButton>
+          </div>
         </MiddleContainer>
         <Pin src={pin} />
       </Wrapper>
@@ -80,7 +82,7 @@ function MainPage() {
       <BackgroundVideo>
         <img className="wave" src={wave} />
         <Overlay className="overlay" />
-
+ 
         <video
           onCanPlay={() => setPlayBackRate()}
           ref={videoRef}

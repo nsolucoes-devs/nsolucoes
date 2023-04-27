@@ -103,11 +103,10 @@ function Techs(props) {
 
       {props.caseWork &&(
         <>
-        <br />
           <div className="left case-title">
             <Title title="Nossas Cases" />
           </div>
-          <MobileApp style={{ marginTop: "80px" }} left>
+          <MobileApp>
             <div className="main-wrapper">
               <div className="right-side">
                 <div className="phone-holder">

@@ -30,6 +30,22 @@ export const ButtonBudget = styled.div`
   .button-manegement svg {
     margin-right: 8px;
   }
+
+  @media only screen and (max-width: 768px) {
+
+    .main-budget {
+      display: block;
+      height: 100%;
+      text-align: center;
+      margin-top: 2rem;
+    }
+
+    h1 {
+      font-size: 25px;
+      padding-top: 2rem;
+    }
+  }
+
 `;
 
 export const Button = styled.div`
@@ -74,4 +90,10 @@ export const Button = styled.div`
   &:hover {
     color: #fff;
   }
+
+  @media only screen and (max-width: 768px) {
+    margin-left: 3rem;
+    margin-top: 2rem;
+  }
+
 `;

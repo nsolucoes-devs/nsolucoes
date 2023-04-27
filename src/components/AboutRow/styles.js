@@ -14,6 +14,13 @@ export const Container = styled.div`
     margin-left: 10rem;
     align-self: flex-start;
   }
+
+  @media only screen and (max-width: 768px) {
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }    
+  }
   
 `;
 
@@ -24,5 +31,9 @@ export const CardsRow = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+
+    @media only screen and (max-width: 768px) {
+      margin-top: 0px;
+    }
     
 `

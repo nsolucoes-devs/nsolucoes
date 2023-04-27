@@ -16,7 +16,7 @@ import logo_name from "../../assets/images/logo-name.png";
 import Dropdown from "../Dropdown";
 import {
   AiOutlineInfoCircle,
-  GiTicket,
+  GiTicket, 
   IoMapSharp,
   AiFillPhone,
 } from "../../styles/Icons";
@@ -85,14 +85,20 @@ function Header() {
       {open && (
         <MobileHeader>
           <ul>
-            <li>Home</li>
-            <li>Nós</li>
-            <li>Apps</li>
-            <li>Software</li>
-            <li>Web</li>
-            <li>Outsourcing</li>
-            <li>Contato</li>
-            <a className="contact" href="tel:+5534996484068">
+            <li onClick={() => window.location.href='/'}>Home</li>
+            <li onClick={() => window.location.href='/about'}>Nós</li>
+            {options.map((option, index) => (
+              <li
+                key={index}
+                onMouseEnter={() => handleMouseEnter(index)}
+                onMouseLeave={handleMouseLeave}
+              >
+                <span>{option.label}</span> <RiArrowDropDownLine />
+                <Dropdown show={activeDropdown === index} items={option.items} />
+              </li>
+          ))}
+            <li onClick={() => window.location.href='/contact'}>Contato</li>
+            <a className="contact" onClick={() => window.location.href='/contact'}>
               Agendar Reunião
             </a>
           </ul>

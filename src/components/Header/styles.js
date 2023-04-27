@@ -28,6 +28,10 @@ export const Container = styled.div`
     margin-top: 20px;
   }
 
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    width: 90%;
+  }
+
 `;
 
 export const OptionsRow = styled.ul`
@@ -80,6 +84,10 @@ export const Option = styled.li`
 
 export const Logo = styled.img`
   width: 50px;
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    width: 5rem;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -103,6 +111,10 @@ export const LogoName = styled.img`
   animation: popIn 1s paused;
   /* transform: translate(-10px); */
   margin-bottom: 10px;
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    width: 10rem;
+  }
 `;
 
 export const MobileHeader = styled.nav`
@@ -188,9 +200,58 @@ export const MobileHeader = styled.nav`
       font-weight: 500;
     }
   }
-  @media (min-width: 750px) {
+  @media (min-width: 1024px) {
     display: none;
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    ul {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 20px;
+
+      li {
+        text-transform: uppercase;
+        font-size: 35pt;
+        font-weight: 500;
+        cursor: pointer;
+        padding: 5px 15px;
+        color: #666;
+        display: flex;
+        align-items: center;
+        gap: 20px;
+        background-image: linear-gradient(
+          var(--accent-color),
+          var(--accent-color)
+        );
+        background-size: 0% 3px;
+        background-repeat: no-repeat;
+        transition: background-size 0.3s;
+        margin: 5px 0;
+        background-position: 50% calc(100% - 0px);
+        :hover {
+          background-size: 100% 3px;
+        }
+      }
+      .contact {
+        background-color: var(--accent-color);
+        border-radius: 12px;
+        transition: 0.2s;
+        background-image: none;
+        display: flex;
+        align-items: center;
+        text-transform: uppercase;
+        text-decoration: none;
+        color: white;
+        font-size: 28pt;
+        font-weight: 600;
+        margin-top: 3rem;
+        padding: 1rem;
+      }
+    }
+  }
+
 `;
 
 export const Menu = styled.div`
@@ -198,7 +259,12 @@ export const Menu = styled.div`
 
   @media (max-width: 1100px) {
     display: flex;
+    margin-left: 2rem;
   }
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    margin-left: 20rem;
+  } 
 `;
 
 export const MiddleButton = styled.div`
@@ -242,6 +308,10 @@ export const MiddleButton = styled.div`
 
   @media only screen and (max-width: 768px) {
     display: none;
-  }
+  } 
+
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    display: none;
+  } 
 
 `;

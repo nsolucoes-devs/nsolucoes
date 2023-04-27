@@ -41,18 +41,39 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  @media (max-width: 750px) {
+  @media only screen and (max-width: 768px) {
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }
+    
     .main-row {
       flex-direction: column;
-      margin: 40px 0;
       text-align: center;
       align-items: center;
+      margin-bottom: 0;
+    }
+
+    .social-contact {
+      margin-bottom: 0px;    
     }
 
     .vertical-divider {
       display: none;
     }
+
+    h1 {
+      font-size: 30px;
+    }
+
+    h3 {
+      font-size: 20px;
+      font-weight: 300;
+
+    }
+
   }
+
 `;
 
 export const Map = styled(MapContainer)`
@@ -213,6 +234,9 @@ export const Column = styled.div`
     margin-top: 2rem;
   }
 
+  .contact-column {
+    margin-top: 2.5rem;
+  }
 
   .address {
     color: #8b0000;
@@ -228,6 +252,12 @@ export const Column = styled.div`
       gap: 8px;
       max-width: 350px;
     }
+  }
+  @media only screen and (max-width: 768px) {
+    .address-li {
+        align-items: center;
+        display: block;
+      }
   }
 
   @media (max-width: 750px) {
@@ -256,6 +286,24 @@ export const Column = styled.div`
     font-weight: 300;
     color: black;
   }
+
+  @media only screen and (max-width: 768px) {
+
+    gap: 0px;
+
+    h3 {
+      max-width: 400px;
+      font-weight: 300;
+      color: black;
+      margin-left: 1.8rem;
+      margin-right: 1.8rem;
+    }
+
+    .contact {
+    margin-top: 0;
+    }
+  }
+
 `;
 
 export const SocialRow = styled.div`
@@ -305,6 +353,11 @@ export const MessageBtn = styled.div`
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+
+  @media only screen and (max-width: 768px) {
+    width: 85%;
+  }
+
 `;
 
 export const MessageInput = styled.input`
@@ -339,6 +392,10 @@ export const Footer = styled.div`
 
     .width-logo {
       margin-bottom: 15px;
+    }
+
+    small {
+      width: 100%;
     }
   }
 `;

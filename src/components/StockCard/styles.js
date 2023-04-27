@@ -29,13 +29,17 @@ export const Container = styled.div`
 
   transition: all .2s;
 
-  @media (max-width: 700px) {
-    max-width: 90%;
-  }
-
   :hover {
     transform: scale(1.07);
   }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 20rem;
+    max-height: 24rem;
+    width: 20rem;
+    height: 24rem;   
+  }
+
 `;
 
 export const Blob = styled.div`

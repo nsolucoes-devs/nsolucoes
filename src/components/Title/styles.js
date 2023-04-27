@@ -14,12 +14,6 @@ export const Container = styled.div`
     color: #252525;
     max-width: 95vw;
 
-    @media (max-width: 900px) {
-      :before {
-        display: none;
-      }
-    }
-
     :before {
       content: "";
       position: absolute;
@@ -35,12 +29,8 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     h1 {
-      font-size: 20px;
+      font-size: 30px;
     }
-
-    
-      margin-left: 0;
-      text-align: left;
     
   }
 

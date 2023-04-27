@@ -43,6 +43,14 @@ export const Container = styled.div`
     -webkit-transform: rotate(45deg);
     -webkit-transition: border-color 0.3s;
   }
+
+  @media only screen and (max-width: 768px) {
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }    
+  }
+
 `;
 
 export const MainRow = styled.div`
@@ -89,7 +97,17 @@ export const MainColumn = styled.div`
     padding: 0 5px;
 
     p {
-      text-align: justify;
+      font-size: 18px;
+      text-align: start;
+      font-weight: 300;
+      color: black;
+    }
+
+    h1 {
+      font-weight: 600;
+      font-size: 1.5rem;
+      max-width: 600px;
+      margin-bottom: 50px;
     }
   }
 `;
@@ -131,12 +149,23 @@ export const SecundaryRow = styled.div`
     transform: scale(1.03);
     cursor: pointer;
   }
+
+  @media only screen and (max-width: 768px) {
+    margin-right: 0;
+  }
+
 `;
 
 export const DivSecundaryRow = styled.div`
   display: flex;
   flex-wrap: wrap;
   max-width: 700px;
+
+  @media only screen and (max-width: 768px) {
+    justify-content: center;
+    margin-top: 1rem;
+  }
+
 `;
 
 export const DivMobile = styled.div`

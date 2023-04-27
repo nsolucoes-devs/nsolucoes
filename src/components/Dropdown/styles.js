@@ -26,6 +26,17 @@ export const Container = styled.div`
     left: 0;
     transform: translateX(0);
   }
+
+  @media only screen and (max-width: 768px) {
+    &.show {
+    opacity: 1;
+    visibility: visible;
+    left: 4rem;
+    transform: translateX(0);
+  }
+
+  }
+
 `;
 
 export const ItemLi = styled.li`

@@ -58,6 +58,17 @@ export const Container = styled.div`
     margin: 20px 0;
   }
 
+  @media only screen and (max-width: 768px) {
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }   
+    
+    .case-title {
+      margin-bottom: 3rem;
+    }
+  }
+
 `;
 
 export const ProductRow = styled.div`

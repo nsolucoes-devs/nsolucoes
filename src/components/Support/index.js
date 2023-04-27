@@ -69,27 +69,14 @@ function Support(props) {
               <Column className="contact">
                 {/* <strong>Suporte</strong> */}
                 <ul>
-                  <li>
-                    <MdEmail className="support"/>
-                    contato@nsolucoes.digital
-                  </li>
-                  </ul>
-                  <ul>
-                  <li>
-                    <AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226
-                  </li>
+                  <li><MdEmail className="support"/>contato@nsolucoes.digital</li>
                 </ul>
-              </Column>
-              <Column>
-                {/* <strong>
-                   Endereço
-                </strong> */}
                 <ul>
-                  <li>
-                  <FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião, 
-                    </li>
-                    <li>Uberaba - MG, 38060-360
-                  </li>
+                  <li><AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226</li>
+                </ul>
+                <ul>
+                  <li className="address-li"><FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião,</li>                    
+                  <li className="address-li">Uberaba - MG, 38060-360</li>
                 </ul>
               </Column>
               <Column className="icon-social">
@@ -108,7 +95,7 @@ function Support(props) {
         </>
       )}
 
-      {props.supportContact && (
+      {props.supportReserva && (
         <>
           <div className="social-contact">
             <h1>FALE CONOSCO</h1>
@@ -157,6 +144,54 @@ function Support(props) {
                     R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG, 38060-360
                   </li>
                 </ul>
+              </Column>
+            </Column>
+          </Row>
+        </>
+      )}
+
+      {props.supportContact && (
+        <>
+          <div className="social-contact">
+          <h1>Vamos conversar!</h1>
+            {/* <Title title="" icon={<BiSupport size={100} />} /> */}
+          </div>
+          <Row className="main-row">
+            <Column>
+              <Column className="contact-column">
+                
+                <h3>Fale com um de nossos especialistas agora mesmo, vamos tornar sua ideia em realidade!</h3>
+                <MessageBtn>
+                <MessageInput placeholder="Envie sua mensagem!" />
+                    <BsWhatsapp className="support" size={35} />
+                </MessageBtn>
+              </Column>
+            </Column>
+            <div className="vertical-divider" />
+            <Column>
+              <Column className="contact">
+                {/* <strong>Suporte</strong> */}
+                <ul>
+                  <li><MdEmail className="support"/>contato@nsolucoes.digital</li>
+                </ul>
+                <ul>
+                  <li><AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226</li>
+                </ul>
+                <ul>
+                  <li className="address-li"><FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião,</li>                    
+                  <li className="address-li">Uberaba - MG, 38060-360</li>
+                </ul>
+              </Column>
+              <Column className="icon-social">
+                {/* <strong> Siga nossas redes </strong> */}
+                <SocialRow>
+                  <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
+                    <BsLinkedin className="linkedin" size={30} />
+                  </a>
+                  <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
+                    <AiFillInstagram className="instagram" size={38} />
+                  </a>
+                </SocialRow>
               </Column>
             </Column>
           </Row>
