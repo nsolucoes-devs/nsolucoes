@@ -69,6 +69,18 @@ export const Container = styled.div`
     }
   }
 
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+
+    .case-title {
+      margin-bottom: 3rem;
+    }
+    
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }  
+  }
+
 `;
 
 export const ProductRow = styled.div`

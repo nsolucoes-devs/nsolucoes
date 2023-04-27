@@ -76,6 +76,7 @@ export const MiddleContainer = styled.div`
   } */
 
   @media only screen and (max-width: 768px) {
+    padding: 60px 25px;
     background-color: #1e8a4d;
     margin-top: 0;
     margin-bottom: 0;
@@ -87,8 +88,9 @@ export const MiddleContainer = styled.div`
     }
 
     .button-center {
-      /* margin-left: -15rem;
-      margin-right: 3rem; */
+      z-index: 99;
+      margin-left: -5.5rem;
+      margin-right: 0rem;
     }
   }
 
@@ -126,6 +128,16 @@ export const Wrapper = styled.div`
   margin-left: 10%;
 
   @media only screen and (max-width: 768px) {
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    position: relative;
+    width: 90%;
+    height: auto;
+    top: 50%;
+    transform: translateY(-50%);
     margin-left: 1rem;
     margin-right: 1rem;
   }
@@ -258,9 +270,11 @@ export const MiddleButton = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 10rem;
-    margin-bottom: -7rem;
+    margin-top: 7rem;
+    margin-bottom: -10rem;
+    padding: 20px 58px;
     background-color: white;
+    font-size: 20px;
     color: var(--accent-color);
     width: 16rem;
     height: 4rem;
@@ -268,7 +282,7 @@ export const MiddleButton = styled.div`
     box-shadow: 0 20px 84px -15px var(--accent-color);
     -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
     -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
     
     &:hover {
       background-color: #1e8a4d;

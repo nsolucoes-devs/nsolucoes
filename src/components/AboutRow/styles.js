@@ -21,6 +21,13 @@ export const Container = styled.div`
       align-self: center;
     }    
   }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    .left {
+      margin-left: 0;
+      align-self: center;
+    }  
+  }
   
 `;
 
