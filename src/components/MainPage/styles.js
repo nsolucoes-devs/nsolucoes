@@ -158,6 +158,7 @@ export const Wrapper = styled.div`
     transform: translateY(-50%);
     margin-left: 5rem;
     margin-right: 5rem;
+    flex-direction: column;
   }
 `;
 
