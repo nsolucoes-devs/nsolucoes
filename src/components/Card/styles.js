@@ -8,6 +8,17 @@ export const Wrapper = styled.div`
   margin: 25px;
   position: relative;
   cursor: pointer;
+
+  @media screen and (min-width: 360px) and (max-width: 760px){
+    max-width: 300px;
+    min-width: 300px;
+  }
+
+  @media only screen and (max-width: 768px) {
+    max-width: 350px;
+    min-width: 350px;
+  }
+
 `;
 
 export const MainContainer = styled.div`
