@@ -1,6 +1,5 @@
 import styled from "styled-components";
 
-
 export const Container = styled.div`
   display: flex;
   flex-direction: column;
@@ -62,25 +61,23 @@ export const Container = styled.div`
     .left {
       margin-left: 0;
       align-self: center;
-    }   
-    
+    }
+
     .case-title {
       margin-bottom: 3rem;
     }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
-
     .case-title {
       margin-bottom: 3rem;
     }
-    
+
     .left {
       margin-left: 0;
       align-self: center;
-    }  
+    }
   }
-
 `;
 
 export const ProductRow = styled.div`
@@ -139,7 +136,7 @@ export const ProductRow = styled.div`
     }
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1023px){
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .phone-holder {
       display: none;
     }
@@ -244,7 +241,7 @@ export const MobileApp = styled.div`
 
   .phone-holder {
     position: absolute;
-    width: 130%;
+    width: 90%;
     max-width: 130%;
     top: -16rem;
   }
@@ -255,7 +252,7 @@ export const MobileApp = styled.div`
     }
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1023px){
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
     .phone-holder {
       display: none;
     }
