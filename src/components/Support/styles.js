@@ -408,4 +408,12 @@ export const Footer = styled.div`
       width: 100%;
     }
   }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    small {
+      width: 65%;
+      font-weight: 600;
+    }
+  }
+  
 `;

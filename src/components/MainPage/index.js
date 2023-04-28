@@ -89,7 +89,7 @@ function MainPage() {
           autoPlay={true}
           playsInline
           muted
-          preload
+          preload="true"
           onEnded={handleVideoEnded}
         >
           <source src={background2} />

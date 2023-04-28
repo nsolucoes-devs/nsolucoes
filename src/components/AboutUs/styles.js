@@ -124,22 +124,23 @@ export const MainColumn = styled.div`
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px){
-    align-items: center;
-  }
+    align-items: center; 
 
-  p {
-    font-size: 25px;
-    text-align: start;
-    font-weight: 300;
-      color: black;
-  }
+    p {
+      font-size: 25px;
+      text-align: start;
+      font-weight: 300;
+        color: black;
+    }
 
-  h1 {
-    font-weight: 600;
-    font-size: 2.5rem;
-    max-width: 600px;
-    margin-bottom: 50px;
+    h1 {
+      font-weight: 600;
+      font-size: 2.5rem;
+      max-width: 600px;
+      margin-bottom: 50px;
+    }
   }
+  
 `;
 
 export const SecundaryColumn = styled.div`
