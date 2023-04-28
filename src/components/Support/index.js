@@ -1,4 +1,4 @@
-import {React, useState, useEffect} from "react";
+import { React, useState, useEffect } from "react";
 import {
   Container,
   Row,
@@ -20,10 +20,10 @@ import locationIcon from "../../assets/images/marker.png";
 import { BsWhatsapp } from "react-icons/bs";
 import logo from "../../assets/images/just-logo.png";
 import logo_name from "../../assets/images/logo-name.png";
-import {LogoWrapper, Logo, LogoName} from "../Header/styles";
+import { LogoWrapper, Logo, LogoName } from "../Header/styles";
+import { AiOutlineSend } from "react-icons/ai";
 
 function Support(props) {
-
   const MarkerIcon = L.icon({
     iconUrl: locationIcon,
     iconSize: [40, 40],
@@ -41,8 +41,26 @@ function Support(props) {
     return () => clearInterval(interval);
   }, []);
 
-  return (
+  const [message, setMessage] = useState("");
+  const [isSending, setIsSending] = useState(false);
 
+  const handleMessageChange = (event) => {
+    const { value } = event.target;
+    setMessage(value);
+    setIsSending(value.length > 0);
+  };
+
+  const handleWhatsAppClick = () => {
+    const encodedMessage = encodeURIComponent(message);
+    window.open(
+      `https://wa.me/5534991601226/?text=${encodedMessage}`,
+      "_blank"
+    );
+    setMessage("");
+    setIsSending(false);
+  };
+
+  return (
     <Container>
       {props.supportHome && (
         <>
@@ -56,11 +74,30 @@ function Support(props) {
             <Column>
               <Column className="contact">
                 <h1>Vamos conversar!</h1>
-                <h3>Fale com um de nossos especialistas agora mesmo, vamos tornar sua ideia em realidade!</h3>
+                <h3>
+                  Fale com um de nossos especialistas agora mesmo, vamos tornar
+                  sua ideia em realidade!
+                </h3>
                 {/* <h3> Fale agora mesmo com um de nossos especialistas em desenvolvimento, vamos conhecer mais da sua ideia. </h3> */}
                 <MessageBtn>
-                  <MessageInput placeholder="Envie sua mensagem!" />
-                  <BsWhatsapp className="support" size={35} />
+                  <MessageInput
+                    placeholder="Envie sua mensagem!"
+                    value={message}
+                    onChange={handleMessageChange}
+                  />
+                  {isSending ? (
+                    <button className="send" onClick={handleWhatsAppClick}>
+                      Enviar
+                      <AiOutlineSend />
+                    </button>
+                  ) : (
+                    <BsWhatsapp
+                      className="support"
+                      size={35}
+                      onClick={handleWhatsAppClick}
+                    />
+                  )}
+                  {/* <BsWhatsapp className="support" size={35} /> */}
                 </MessageBtn>
               </Column>
             </Column>
@@ -69,23 +106,38 @@ function Support(props) {
               <Column className="contact">
                 {/* <strong>Suporte</strong> */}
                 <ul>
-                  <li><MdEmail className="support"/>contato@nsolucoes.digital</li>
+                  <li>
+                    <MdEmail className="support" />
+                    contato@nsolucoes.digital
+                  </li>
                 </ul>
                 <ul>
-                  <li><AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226</li>
+                  <li>
+                    <AiFillPhone className="support" /> (34) 3338-9349{" "}
+                    <BsWhatsapp className="support" /> (34) 99160-1226
+                  </li>
                 </ul>
                 <ul>
-                  <li className="address-li"><FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião,</li>                    
+                  <li className="address-li">
+                    <FaMapMarkerAlt className="address" />
+                    Rua Irmão Afonso, 326 - São Sebastião,
+                  </li>
                   <li className="address-li">Uberaba - MG, 38060-360</li>
                 </ul>
               </Column>
               <Column className="icon-social">
                 {/* <strong> Siga nossas redes </strong> */}
                 <SocialRow>
-                  <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/nsolucoes-digital/people/"
+                    target="_blank"
+                  >
                     <BsLinkedin className="linkedin" size={30} />
                   </a>
-                  <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/nsolucoesagenciadigital/"
+                    target="_blank"
+                  >
                     <AiFillInstagram className="instagram" size={38} />
                   </a>
                 </SocialRow>
@@ -102,10 +154,16 @@ function Support(props) {
             {/* <Title title="" icon={<BiSupport size={100} />} /> */}
           </div>
           <SocialRow>
-            <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
+            <a
+              href="https://www.linkedin.com/company/nsolucoes-digital/people/"
+              target="_blank"
+            >
               <BsLinkedin className="linkedin" size={30} />
             </a>
-            <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
+            <a
+              href="https://www.instagram.com/nsolucoesagenciadigital/"
+              target="_blank"
+            >
               <AiFillInstagram className="instagram" size={38} />
             </a>
           </SocialRow>
@@ -113,8 +171,8 @@ function Support(props) {
             <Column>
               <h1>Entre em contato!</h1>
               <h3>
-                Fusce varius, dolor tempor interdum tristique, dui urna bib endum
-                magna, ut ullamcorper purus
+                Fusce varius, dolor tempor interdum tristique, dui urna bib
+                endum magna, ut ullamcorper purus
               </h3>
               <MessageBtn>
                 <MessageInput placeholder="Envie sua mensagem!" />
@@ -127,21 +185,22 @@ function Support(props) {
                 <strong>Suporte</strong>
                 <ul>
                   <li>
-                    <MdEmail className="support"/>
+                    <MdEmail className="support" />
                     suporte@nsolucoes.digital
                   </li>
                   <li>
-                    <AiFillPhone className="support"/> (34) 9 98942-7824
+                    <AiFillPhone className="support" /> (34) 9 98942-7824
                   </li>
                 </ul>
               </Column>
               <Column>
                 <strong>
-                  <FaMapMarkerAlt className="address"/> Endereço
+                  <FaMapMarkerAlt className="address" /> Endereço
                 </strong>
                 <ul>
                   <li>
-                    R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG, 38060-360
+                    R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG,
+                    38060-360
                   </li>
                 </ul>
               </Column>
@@ -153,17 +212,19 @@ function Support(props) {
       {props.supportContact && (
         <>
           <div className="social-contact">
-          <h1>Vamos conversar!</h1>
+            <h1>Vamos conversar!</h1>
             {/* <Title title="" icon={<BiSupport size={100} />} /> */}
           </div>
           <Row className="main-row">
             <Column>
               <Column className="contact-column">
-                
-                <h3>Fale com um de nossos especialistas agora mesmo, vamos tornar sua ideia em realidade!</h3>
+                <h3>
+                  Fale com um de nossos especialistas agora mesmo, vamos tornar
+                  sua ideia em realidade!
+                </h3>
                 <MessageBtn>
-                <MessageInput placeholder="Envie sua mensagem!" />
-                    <BsWhatsapp className="support" size={35} />
+                  <MessageInput placeholder="Envie sua mensagem!" />
+                  <BsWhatsapp className="support" size={35} />
                 </MessageBtn>
               </Column>
             </Column>
@@ -172,23 +233,38 @@ function Support(props) {
               <Column className="contact">
                 {/* <strong>Suporte</strong> */}
                 <ul>
-                  <li><MdEmail className="support"/>contato@nsolucoes.digital</li>
+                  <li>
+                    <MdEmail className="support" />
+                    contato@nsolucoes.digital
+                  </li>
                 </ul>
                 <ul>
-                  <li><AiFillPhone className="support"/> (34) 3338-9349 <BsWhatsapp className="support" /> (34) 99160-1226</li>
+                  <li>
+                    <AiFillPhone className="support" /> (34) 3338-9349{" "}
+                    <BsWhatsapp className="support" /> (34) 99160-1226
+                  </li>
                 </ul>
                 <ul>
-                  <li className="address-li"><FaMapMarkerAlt className="address"/>Rua Irmão Afonso, 326 - São Sebastião,</li>                    
+                  <li className="address-li">
+                    <FaMapMarkerAlt className="address" />
+                    Rua Irmão Afonso, 326 - São Sebastião,
+                  </li>
                   <li className="address-li">Uberaba - MG, 38060-360</li>
                 </ul>
               </Column>
               <Column className="icon-social">
                 {/* <strong> Siga nossas redes </strong> */}
                 <SocialRow>
-                  <a href="https://www.linkedin.com/company/nsolucoes-digital/people/" target="_blank">
+                  <a
+                    href="https://www.linkedin.com/company/nsolucoes-digital/people/"
+                    target="_blank"
+                  >
                     <BsLinkedin className="linkedin" size={30} />
                   </a>
-                  <a href="https://www.instagram.com/nsolucoesagenciadigital/" target="_blank">
+                  <a
+                    href="https://www.instagram.com/nsolucoesagenciadigital/"
+                    target="_blank"
+                  >
                     <AiFillInstagram className="instagram" size={38} />
                   </a>
                 </SocialRow>
@@ -203,8 +279,8 @@ function Support(props) {
           <div className="horizontal-divider" />
 
           <Footer>
-            <LogoWrapper onClick={() => window.location.href='/'}>
-              <Logo className='width-logo' src={logo} />
+            <LogoWrapper onClick={() => (window.location.href = "/")}>
+              <Logo className="width-logo" src={logo} />
               <LogoName className="logo-name" src={logo_name} />
             </LogoWrapper>
             <small>© {year}. N Soluções, todos os direitos reservados.</small>
@@ -212,7 +288,7 @@ function Support(props) {
         </>
       )}
 
-    {/* <FirstRow>
+      {/* <FirstRow>
       <ContactForm>
         <Form>
           <Row>
@@ -321,9 +397,7 @@ function Support(props) {
         </Marker>
       </Map>
     </FirstRow> */}
-
     </Container>
-    
   );
 }
 
