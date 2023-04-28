@@ -259,7 +259,7 @@ export const MobileHeader = styled.nav`
 export const Menu = styled.div`
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: 835px) {
     display: flex;
     /* margin-left: 2rem; */
   }
@@ -282,6 +282,7 @@ export const MiddleButton = styled.div`
   letter-spacing: 3px;
   position: relative;
   overflow: hidden;
+  text-align: center;
   transition: background-color 0.3s ease-out 0.2s;
   z-index: 1;
 
