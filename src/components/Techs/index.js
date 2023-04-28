@@ -29,16 +29,16 @@ import StacksTag from "../StacksTag";
 
 function Techs(props) {
   const stacks = [
-    { name: stack1, size: "60px" },
-    { name: stack2, size: "40px" },
-    { name: stack9, size: "60px" },
-    { name: stack13, size: "100px" },
-    { name: stack11, size: "100px" },
-    { name: stack12, size: "80px" },
-    { name: stack3, size: "100px" },
-    { name: stack6, size: "120px" },
-    { name: stack10, size: "150px" },
-    { name: stack7, size: "100px" },
+    { id: 1, name: stack1, size: "60px" },
+    { id: 2, name: stack2, size: "40px" },
+    { id: 3, name: stack9, size: "60px" },
+    { id: 4, name: stack13, size: "100px" },
+    { id: 5, name: stack11, size: "100px" },
+    { id: 6, name: stack12, size: "80px" },
+    { id: 7, name: stack3, size: "100px" },
+    { id: 8, name: stack6, size: "120px" },
+    { id: 9, name: stack10, size: "150px" },
+    { id: 10, name: stack7, size: "100px" },
   ];
 
   const scrollContainerRef = useRef(null);
@@ -123,7 +123,7 @@ function Techs(props) {
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
-                    return <StacksTag title={item} />;
+                    return <StacksTag key={item} title={item} />;
                   })}
                 </StacksRow>
 
@@ -144,7 +144,7 @@ function Techs(props) {
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
-                    return <StacksTag title={item} />;
+                    return <StacksTag key={item} title={item} />;
                   })}
                 </StacksRow>
 
@@ -170,7 +170,7 @@ function Techs(props) {
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
-                    return <StacksTag title={item} />;
+                    return <StacksTag key={item} title={item} />;
                   })}
                 </StacksRow>
 

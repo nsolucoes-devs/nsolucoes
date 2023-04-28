@@ -1,4 +1,4 @@
-import React from "react";
+import {React, useState } from "react";
 import { Container } from "./styles";
 import MainPage from "../../components/MainPage";
 import AboutRow from "../../components/AboutRow";
@@ -11,28 +11,32 @@ import { IoSpeedometer } from "react-icons/io5";
 
 function Main() {
 
-  const cardIcon = [
+  const cardIcon = useState([
     {
+      id: 1,
       icon: <HiArchiveBox className="products" size={35} />,
       title: "teste",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
+      id: 2,
       icon: <RiPieChartFill className="pie" size={35} />,
       title: "teste 2",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
+      id: 3,
       icon: <IoSpeedometer className="performance" size={35} />,
       title: "teste 3",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
+      id: 4,
       icon: <HiArchiveBox className="products" size={35} />,
       title: "teste 4",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },    
-  ]
+  ]);
 
   return (
     <Container>
@@ -50,7 +54,7 @@ function Main() {
       </svg>
 
       <AboutUs home
-        cardIcon={cardIcon}
+        cardIcon={cardIcon[0                                                                                                                                                                                ]}
         title="Quem somos"
         url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
         subtitle="Uma equipe criativa que constrói soluções eficientes e inovadoras"

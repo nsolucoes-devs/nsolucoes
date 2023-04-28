@@ -35,8 +35,7 @@ function AboutUs(props) {
               <p>{props.paragraph3}</p>
                 <DivSecundaryRow>
                   {(props.cardIcon || []).map((card) => (
-                    <SecundaryRow>
-                      {console.log(card.title, card)}
+                    <SecundaryRow key={card.id}>
                       {card.icon}
                       <SecundaryColumn>
                         <strong title={card.title}>{card.title}</strong>
@@ -64,8 +63,7 @@ function AboutUs(props) {
               <p>{props.paragraph3}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow>
-                    {console.log(card.title, card)}
+                  <SecundaryRow key={card.id}>
                     {card.icon}
                     <SecundaryColumn>
                       <strong title={card.title}>{card.title}</strong>
@@ -93,9 +91,8 @@ function AboutUs(props) {
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
                   <SecundaryRow>
-                    {console.log(card.title, card)}
                     {card.icon}
-                    <SecundaryColumn>
+                    <SecundaryColumn key={card.id}>
                       <strong title={card.title}>{card.title}</strong>
                       <small>{card.description}</small>
                     </SecundaryColumn>
