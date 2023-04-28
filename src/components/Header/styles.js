@@ -26,10 +26,12 @@ export const Container = styled.div`
     width: 95%;
     margin-left: 10px;
     margin-top: 20px;
+    justify-content: space-between;
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     width: 90%;
+    justify-content: space-between;
   }
 
 `;
