@@ -263,7 +263,7 @@ export const Menu = styled.div`
 
   @media (max-width: 768px) {
     display: flex;
-    margin-left: 2rem;
+    /* margin-left: 2rem; */
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {

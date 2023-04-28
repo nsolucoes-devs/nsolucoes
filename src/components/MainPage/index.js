@@ -7,7 +7,9 @@ import {
   Title,
   MiddleButton,
   Pin,
-  Wrapper
+  Wrapper,
+  Button,
+  ButtonRow
 } from "./styles";
 import background from "../../assets/videos/video1.mp4";
 import background2 from "../../assets/videos/video2.mp4";
@@ -77,6 +79,9 @@ function MainPage() {
           </div>
         </MiddleContainer>
         <Pin src={pin} />
+      <ButtonRow>
+        <Button>Saiba Mais</Button>
+      </ButtonRow>
       </Wrapper>
 
       <BackgroundVideo>

@@ -88,9 +88,9 @@ export const MiddleContainer = styled.div`
     }
 
     .button-center {
-      z-index: 99;
+      /* z-index: 99;
       margin-left: -5.5rem;
-      margin-right: 0rem;
+      margin-right: 0rem; */
     }
   }
 
@@ -100,6 +100,8 @@ export const MiddleContainer = styled.div`
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
+    display: grid;
+    justify-items: center;
     
     h1 {
       font-size: 3rem;
@@ -130,7 +132,7 @@ export const Wrapper = styled.div`
   @media only screen and (max-width: 768px) {
     display: flex;
     -webkit-box-pack: center;
-    justify-content: center;
+    /* justify-content: center; */
     -webkit-box-align: center;
     align-items: center;
     position: relative;
@@ -138,8 +140,9 @@ export const Wrapper = styled.div`
     height: auto;
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 1rem;
-    margin-right: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    flex-direction: column;
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -235,10 +238,6 @@ export const MiddleButton = styled.div`
   font-size: 16px;
   color: #fff;
   cursor: pointer;
-  /* box-shadow: 0 20px 84px -15px var(--accent-color);
-  -webkit-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
-  -moz-box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37);
-  box-shadow: 10px 10px 29px 0px rgba(0, 0, 0, 0.37); */
   text-transform: uppercase;
   letter-spacing: 3px;
   position: relative;
@@ -270,44 +269,114 @@ export const MiddleButton = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    margin-top: 7rem;
-    margin-bottom: -10rem;
-    padding: 20px 58px;
-    background-color: white;
-    font-size: 20px;
-    color: var(--accent-color);
-    width: 16rem;
-    height: 4rem;
-    z-index: 5;
-    box-shadow: 0 20px 84px -15px var(--accent-color);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    
-    &:hover {
-      background-color: #1e8a4d;
-      color: white;
-    }
+    display: none;
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
-    margin-top: 10rem;
-    margin-bottom: -7rem;
-    background-color: white;
-    color: var(--accent-color);
-    width: 16rem;
-    height: 4rem;
-    z-index: 5;
-    box-shadow: 0 20px 84px -15px var(--accent-color);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
-    font-size: 25px;
-    font-weight: 600;
+    display: none;
+  }
+`;
 
-    &:hover {
-      background-color: #1e8a4d;
-      color: white;
+export const ButtonRow = styled.div`
+  display: flex;
+  justify-content: center;
+  margin-top: -2rem;
+`;
+
+export const Button = styled.div`
+  
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }  
+
+    @media only screen and (max-width: 768px) {
+      width: fit-content;
+      padding: 20px 40px;
+      border-radius: 70px;
+      background-color: white;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--accent-color);
+      cursor: pointer;
+      box-shadow: 0 20px 84px -15px var(--accent-color);
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-out 0.2s;
+      z-index: 10;
+      
+      &:hover {
+        background-color: #1e8a4d;
+        color: white;
+      }
+
+      &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: #18693b;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.6s ease-out 0s;
+      z-index: -1;
+    }
+
+    &:hover:before {
+      width: 500px;
+      height: 500px;
+    }
+
+  }
+
+  @media screen and (min-width: 769px) and (max-width: 1023px) {
+    width: fit-content;
+      padding: 20px 40px;
+      border-radius: 70px;
+      background-color: white;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--accent-color);
+      cursor: pointer;
+      box-shadow: 0 20px 84px -15px var(--accent-color);
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-out 0.2s;
+      z-index: 10;
+      
+      &:hover {
+        background-color: #1e8a4d;
+        color: white;
+      }
+
+      &:before {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 0;
+      height: 0;
+      background-color: #18693b;
+      border-radius: 50%;
+      transform: translate(-50%, -50%);
+      transition: all 0.6s ease-out 0s;
+      z-index: -1;
+    }
+
+    &:hover:before {
+      width: 500px;
+      height: 500px;
     }
   }
 `;
