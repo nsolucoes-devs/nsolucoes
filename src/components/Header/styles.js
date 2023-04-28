@@ -33,7 +33,6 @@ export const Container = styled.div`
     width: 90%;
     justify-content: space-between;
   }
-
 `;
 
 export const OptionsRow = styled.ul`
@@ -166,10 +165,10 @@ export const MobileHeader = styled.nav`
     li {
       text-transform: uppercase;
       font-size: 16pt;
-      font-weight: 500;
+      font-weight: 600;
       cursor: pointer;
       padding: 5px 15px;
-      color: #666;
+      color: black;
       display: flex;
       align-items: center;
       gap: 8px;
@@ -199,9 +198,9 @@ export const MobileHeader = styled.nav`
       text-decoration: none;
       color: white;
       font-size: 16pt;
-        font-weight: 600;
-        margin-top: 3rem;
-        padding: 1rem;
+      font-weight: 600;
+      margin-top: 3rem;
+      padding: 1rem;
     }
   }
   @media (min-width: 1024px) {
@@ -218,10 +217,10 @@ export const MobileHeader = styled.nav`
       li {
         text-transform: uppercase;
         font-size: 35pt;
-        font-weight: 500;
+        font-weight: 600;
         cursor: pointer;
         padding: 5px 15px;
-        color: #666;
+        color: black;
         display: flex;
         align-items: center;
         gap: 20px;
@@ -255,7 +254,6 @@ export const MobileHeader = styled.nav`
       }
     }
   }
-
 `;
 
 export const Menu = styled.div`
@@ -268,7 +266,7 @@ export const Menu = styled.div`
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     margin-left: 20rem;
-  } 
+  }
 `;
 
 export const MiddleButton = styled.div`
@@ -295,7 +293,7 @@ export const MiddleButton = styled.div`
     width: 0;
     height: 0;
     background-color: #18693b;
-    
+
     border-radius: 50%;
     transform: translate(-50%, -50%);
     transition: all 0.6s ease-out 0s;
@@ -313,10 +311,9 @@ export const MiddleButton = styled.div`
 
   @media only screen and (max-width: 768px) {
     display: none;
-  } 
+  }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     display: none;
-  } 
-
+  }
 `;
