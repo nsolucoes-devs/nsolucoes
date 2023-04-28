@@ -5,7 +5,7 @@ import { BsWhatsapp } from "react-icons/bs";
 function Budget() {
   return (
     <Container>
-        <ButtonBudget>
+        <ButtonBudget> 
             <div className="main-budget">
               <h1>Faça agora seu orçamento!</h1>
                 <Button>

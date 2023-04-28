@@ -27,17 +27,18 @@ export const ButtonBudget = styled.div`
     align-items: center;
   }
 
-  .button-manegement svg {
+  /* .button-manegement svg {
     margin-right: 8px;
-  }
+  } */
 
   @media only screen and (max-width: 768px) {
 
     .main-budget {
-      display: block;
+      display: grid;
       height: 100%;
       text-align: center;
       margin-top: 2rem;
+      justify-items: center;
     }
 
     h1 {
@@ -92,8 +93,6 @@ export const Button = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
-    margin-left: 3rem;
-    margin-top: 2rem;
   }
 
 `;
