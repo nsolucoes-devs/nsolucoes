@@ -75,8 +75,18 @@ export const MiddleContainer = styled.div`
     }
   } */
 
-  @media only screen and (max-width: 768px) {
-    padding: 60px 25px;
+  @media only screen and (min-width: 360px) and (max-width: 760px) {
+
+    
+
+    h1 {
+      font-size: 1rem;
+      color: white;
+    }
+  }
+
+  @media only screen and (min-width: 0px) and (max-width: 768px) {
+    padding: 50px 8px;
     background-color: #1e8a4d;
     margin-top: 0;
     margin-bottom: 0;
@@ -104,7 +114,7 @@ export const MiddleContainer = styled.div`
     justify-items: center;
     
     h1 {
-      font-size: 3rem;
+      font-size: 2.7rem;
       color: white;
     }
 
