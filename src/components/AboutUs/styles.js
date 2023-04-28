@@ -48,16 +48,15 @@ export const Container = styled.div`
     .left {
       margin-left: 0;
       align-self: center;
-    }    
+    }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
     .left {
       margin-left: 0;
       align-self: center;
-    }  
+    }
   }
-
 `;
 
 export const MainRow = styled.div`
@@ -79,7 +78,7 @@ export const MainRow = styled.div`
     align-items: center;
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1023px){
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
     flex-direction: column;
     align-items: center;
   }
@@ -107,6 +106,7 @@ export const MainColumn = styled.div`
 
   @media only screen and (max-width: 768px) {
     padding: 0 5px;
+    align-items: center;
 
     p {
       font-size: 18px;
@@ -123,14 +123,14 @@ export const MainColumn = styled.div`
     }
   }
 
-  @media only screen and (min-width: 769px) and (max-width: 1023px){
-    align-items: center; 
+  @media only screen and (min-width: 769px) and (max-width: 1023px) {
+    align-items: center;
 
     p {
       font-size: 25px;
       text-align: start;
       font-weight: 300;
-        color: black;
+      color: black;
     }
 
     h1 {
@@ -140,7 +140,6 @@ export const MainColumn = styled.div`
       margin-bottom: 50px;
     }
   }
-  
 `;
 
 export const SecundaryColumn = styled.div`
@@ -189,7 +188,6 @@ export const SecundaryRow = styled.div`
     margin-right: 1rem;
     margin-left: 1rem;
   }
-
 `;
 
 export const DivSecundaryRow = styled.div`
@@ -198,22 +196,20 @@ export const DivSecundaryRow = styled.div`
   max-width: 700px;
 
   @media only screen and (max-width: 768px) {
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 1rem;
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
-    justify-content: center;
+    justify-content: space-around;
     margin-top: 1rem;
   }
-
 `;
 
 export const DivMobile = styled.div`
   display: flex;
   justify-content: center;
 `;
-
 
 const move = keyframes`
   from {
