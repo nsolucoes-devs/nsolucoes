@@ -36,7 +36,7 @@ function Main() {
       title: "teste 4",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },    
-  ]);
+  ]); 
 
   return (
     <Container>
@@ -54,7 +54,7 @@ function Main() {
       </svg>
 
       <AboutUs home
-        cardIcon={cardIcon[0                                                                                                                                                                                ]}
+        cardIcon={cardIcon[0]}                                                                                                                                                                                
         title="Quem somos"
         url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
         subtitle="Uma equipe criativa que constrói soluções eficientes e inovadoras"
