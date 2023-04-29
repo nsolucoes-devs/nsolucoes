@@ -7,6 +7,7 @@ import {
   MessageInput,
   SocialRow,
   Footer,
+  ButtonSend,
 } from "./styles";
 import {
   MdEmail,
@@ -86,18 +87,15 @@ function Support(props) {
                     onChange={handleMessageChange}
                   />
                   {isSending ? (
-                    <button className="send" onClick={handleWhatsAppClick}>
-                      Enviar
-                      <AiOutlineSend />
-                    </button>
+                    <ButtonSend className="send" onClick={handleWhatsAppClick}>
+                      <AiOutlineSend className="icon-send" size={30}/>
+                    </ButtonSend>
                   ) : (
                     <BsWhatsapp
                       className="support"
                       size={35}
-                      onClick={handleWhatsAppClick}
                     />
                   )}
-                  {/* <BsWhatsapp className="support" size={35} /> */}
                 </MessageBtn>
               </Column>
             </Column>

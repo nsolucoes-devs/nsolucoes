@@ -41,7 +41,7 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.1);
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (max-width: 767px) {
     .left {
       margin-left: 0;
       align-self: center;
@@ -69,6 +69,12 @@ export const Container = styled.div`
     h3 {
       font-size: 20px;
       font-weight: 300;
+    }
+  }
+
+  @media only screen and (min-width: 768px) {
+    .support-home {
+      width: 80%;
     }
   }
 `;
@@ -183,6 +189,19 @@ export const SubmitButton = styled.button`
 
   :hover {
     transform: scale(1.05);
+  }
+`;
+
+export const ButtonSend = styled.button`
+  background-color: white;
+  border-color: transparent;
+  
+  &:hover {
+    cursor: pointer;
+  }
+
+  .icon-send {
+    fill: rgb(30, 138, 77);
   }
 `;
 
@@ -360,34 +379,6 @@ export const MessageBtn = styled.div`
 
   @media only screen and (max-width: 768px) {
     width: 85%;
-  }
-
-  .send {
-    display: flex;
-    padding: 5px 10px;
-    border-radius: 10px;
-    background-color: var(--accent-color);
-    text-align: center;
-    font-weight: 200;
-    align-items: center;
-    font-size: 15px;
-    color: rgb(255, 255, 255);
-    transition: background-color 0.3s ease-out 0.2s;
-  }
-
-  &:before {
-    content: "";
-    width: 0px;
-    height: 0px;
-    background-color: rgb(24, 105, 59);
-    border-radius: 50%;
-    transform: translate(-50%, -50%);
-    transition: all 0.6s ease-out 0s;
-    z-index: -1;
-  }
-
-  .send svg {
-    margin-left: 5px;
   }
 `;
 
