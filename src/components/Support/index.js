@@ -88,7 +88,7 @@ function Support(props) {
                   />
                   {isSending ? (
                     <ButtonSend className="send" onClick={handleWhatsAppClick}>
-                      <AiOutlineSend className="icon-send" size={30}/>
+                      <AiOutlineSend className="icon-send" size={28}/>
                     </ButtonSend>
                   ) : (
                     <BsWhatsapp
