@@ -28,7 +28,9 @@ function AboutRow(props) {
       {props.aService && (
         <CardsRow>
           {props.cardInfo.map((card) => (
-            <Card title={card.title} type={card.type} image={card.image} text={card.text} />
+            <a href={card.url}>
+              <Card title={card.title} type={card.type} image={card.image} text={card.text} />
+            </a>
           ))}
           {/* <Card title={props.title1} type={props.type1} image={props.image1} text={props.text1} />
           <Card title={props.title2} type={props.type2} image={props.image2} text={props.text2} />

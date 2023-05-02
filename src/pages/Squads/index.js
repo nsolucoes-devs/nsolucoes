@@ -5,53 +5,56 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { FaCogs } from "react-icons/fa";
+import { FiCheckCircle, FiClock, FiEye } from "react-icons/fi";
 
 function Squads() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Suporte a FinTechs",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado."
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "MarketPlaces",
+      url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
-      title: "Ui/Ux Design",
+      id: 3,
+      title: "Ecommerces",
       type: "development",
-      image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      image: "responsive",
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaCogs className="products" size={45} />,
+      title: "Flexibilidade",
+      description: "Times ágeis e multidisciplinares, capazes de se adaptar rapidamente às necessidades do projeto."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FiCheckCircle className="pie" size={40} />,
+      title: "Foco na qualidade",
+      description: "Entrega de projetos com alto nível de qualidade e satisfação do cliente."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FiClock  className="performance" size={45} />,
+      title: "Produtividade",
+      description: "Otimização do tempo e recursos para garantir a entrega dentro do prazo estabelecido."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FiEye  className="products" size={50} />,
+      title: "Transparência",
+      description: "Comunicação aberta e clara sobre o andamento do projeto e tomada de decisões conjuntas com o cliente."
     },    
   ]
 
@@ -62,12 +65,12 @@ function Squads() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Terceirizações e Squads"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Potencialize sua equipe com a alocação de squads terceirizados"
+          paragraph1="A alocação de squad é um modelo de gestão de projetos que tem ganhado cada vez mais destaque no mercado. Com este modelo, você contrata uma equipe especializada para trabalhar em seu projeto, deixando toda a gestão nas mãos da nossa agência. Na nossa agência, oferecemos soluções de alocação de squad para empresas de diversos segmentos, com o objetivo de otimizar processos e aumentar a eficiência."
+          paragraph2="Contamos com uma equipe de especialistas altamente qualificada e experiente em gerenciamento de projetos, design e desenvolvimento, garantindo que seu projeto seja entregue com qualidade e eficiência. Ao optar pela alocação de squad, você tem a flexibilidade de escolher a equipe que melhor atenda às suas necessidades específicas. Além disso, você pode contar com um modelo de gestão que garante a entrega de projetos no prazo e dentro do orçamento, permitindo que você se concentre em outras áreas do seu negócio."
+          paragraph3="Nossa equipe de profissionais experientes garante a gestão completa do projeto, desde a concepção até a entrega final, com transparência e comunicação constante com o cliente. Dessa forma, você tem a garantia de que seu projeto está em boas mãos, enquanto se concentra em suas atividades cotidianas. Se você está procurando uma solução eficiente e econômica para seus projetos, a alocação de squad é a escolha certa. Entre em contato conosco para saber mais sobre nossos serviços de alocação de squad e como podemos ajudá-lo a alcançar seus objetivos de negócios."
         />
       </div>
 

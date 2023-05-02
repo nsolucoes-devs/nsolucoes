@@ -39,6 +39,11 @@ export const CardsRow = styled.div`
     flex-wrap: wrap;
     margin-top: 50px;
 
+    a {
+      text-decoration: none;
+      color: rgb(91, 92, 105);
+    }
+
     @media only screen and (max-width: 768px) {
       margin-top: 0px;
     }

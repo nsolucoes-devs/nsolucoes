@@ -5,53 +5,56 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { FaHandsHelping, FaShieldAlt } from "react-icons/fa";
+import { MdPalette } from "react-icons/md";
+import { IoIosFlash } from "react-icons/io";
 
 function FinTechs() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Terceirizações e Squads",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Descubra como a terceirização de squads pode otimizar sua produtividade e reduzir custos. Conheça nossa abordagem colaborativa e flexível para desenvolver soluções sob medida para sua empresa. "
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "Gestão e Vendas",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online."
     },
     {
-      title: "Ui/Ux Design",
+      id: 3,
+      title: "Plataformas Webs",
       type: "development",
-      image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      image: "devices",
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaHandsHelping className="products" size={50} />,
+      title: "Experiência em Fintechs",
+      description: "Equipe especializada e com experiência em atender as necessidades específicas de startups financeiras."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <MdPalette className="pie" size={50} />,
+      title: "Personalização",
+      description: "Soluções personalizadas para atender as demandas únicas de cada Fintech."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <IoIosFlash className="performance" size={70} />,
+      title: "Suporte ágil e eficiente",
+      description: " Atendimento rápido e eficiente para ajudar as Fintechs a solucionar problemas e tomar decisões estratégicas."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaShieldAlt className="products" size={70} />,
+      title: "Compliance e segurança",
+      description: "Suporte em compliance e segurança para garantir que as Fintechs estejam em conformidade com as regulamentações e tenham uma estrutura segura."
     },    
   ]
 
@@ -62,12 +65,12 @@ function FinTechs() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Suporte a FinTechs"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Expanda sua fintech com a ajuda da nossa Inovação e Tecnologia para Fintechs"
+          paragraph1="Na nossa agência, temos um suporte especializado para as fintechs, que são empresas que utilizam tecnologia para oferecer serviços financeiros de forma mais ágil e eficiente. Sabemos que essas empresas precisam de soluções específicas para atender as demandas do mercado financeiro e, por isso, estamos preparados para oferecer todo o suporte necessário."
+          paragraph2="Nossa equipe conta com profissionais experientes e capacitados para atender as demandas das fintechs. Oferecemos desde soluções para a construção de plataformas de pagamento até a criação de aplicativos de investimento, passando por serviços de consultoria em segurança e compliance. Além disso, nosso suporte está sempre disponível para esclarecer dúvidas e fornecer suporte técnico em todas as etapas do desenvolvimento do projeto."
+          paragraph3="Nosso objetivo é ajudar as fintechs a atingir seus objetivos e se destacar em um mercado cada vez mais competitivo. Estamos comprometidos em oferecer soluções inovadoras e de qualidade, que atendam às necessidades específicas de cada cliente. Com nossa experiência e conhecimento técnico, podemos ajudar as fintechs a alcançar o sucesso que elas merecem."
         />
       </div>
 

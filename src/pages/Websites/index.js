@@ -5,53 +5,59 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from '../../components/Budget';
 import Techs from '../../components/Techs';
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { RiDatabase2Line } from 'react-icons/ri';
+import { HiOutlineAdjustments } from 'react-icons/hi';
+import { FiMonitor } from 'react-icons/fi';
+import { BsCodeSlash } from 'react-icons/bs';
+import { ImLock } from 'react-icons/im';
 
 function Websites() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
-      type: "development",
-      image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-    },
-    {
-      title: "Mobile App",
+      id: 1,
+      title: "MarketPlaces",
+      url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
-      title: "Ui/Ux Design",
+      id: 2,
+      title: "Ecommerces",
       type: "development",
-      image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      image: "responsive",
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
+    },
+    {
+      id: 3,
+      title: "Suporte a FinTechs",
+      type: "development",
+      image: "devices",
+      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado."
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <RiDatabase2Line className="products" size={45} />,
+      title: "Atendimento ágil",
+      description: "Suporte rápido e eficiente para resolver os problemas dos clientes."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <HiOutlineAdjustments className="pie" size={45} />,
+      title: "Customização flexível",
+      description: "Possibilidade de personalização de acordo com as necessidades do cliente."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FiMonitor className="performance" size={45} />,
+      title: "Monitoramento constante",
+      description: "Acompanhamento contínuo do site/portal para garantir seu funcionamento adequado."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <ImLock className="products" size={45} />,
+      title: "Segurança garantida",
+      description: "Implementação de medidas de segurança para proteção dos dados dos usuários e da empresa."
     },    
   ]
 
@@ -62,12 +68,12 @@ function Websites() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Sites e Portais"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Alavanque sua presença digital com nossos sites e portais personalizados"
+          paragraph1="Nós da agência de desenvolvimento de sites e portais, temos o compromisso de fornecer soluções completas e personalizadas para nossos clientes. Com a crescente demanda por presença online, nossos profissionais altamente capacitados estão prontos para criar e desenvolver projetos que atendam às suas necessidades específicas."
+          paragraph2="Desde a criação de sites institucionais, e-commerce, landing pages, até portais complexos, temos o expertise necessário para garantir a melhor performance, navegabilidade e usabilidade para os usuários."
+          paragraph3="Conte com nossa equipe para trazer a sua ideia para o mundo digital de forma inovadora e eficiente. Entre em contato conosco e veja como podemos ajudá-lo a impulsionar o seu negócio online."
         />
       </div>
 

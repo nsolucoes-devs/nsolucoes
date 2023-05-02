@@ -98,12 +98,6 @@ export const MiddleContainer = styled.div`
       margin-left: auto;
       margin-right: auto;
     }
-
-    .button-center {
-      /* z-index: 99;
-      margin-left: -5.5rem;
-      margin-right: 0rem; */
-    }
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
@@ -118,11 +112,6 @@ export const MiddleContainer = styled.div`
     h1 {
       font-size: 2.7rem;
       color: white;
-    }
-
-    .button-center {
-      margin-left: -15rem;
-      margin-right: 3rem;
     }
   }
 

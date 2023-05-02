@@ -5,57 +5,59 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { FaHandPointer, FaPuzzlePiece, FaCloud, FaLock } from "react-icons/fa";
 
 function MobileApps() {
   
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Plataformas Webs",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "Gestão e Vendas",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online."
     },
     {
+      id: 3,
       title: "Ui/Ux Design",
+      url: "/apps/uiux",
       type: "development",
       image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Atraia, encante e fidelize seus clientes com um design de interface intuitivo, agradável e eficiente. Nós oferecemos soluções completas de design para garantir a melhor experiência do usuário em seu site ou aplicativo."
     },
   ];
 
   const cardIcon = useState([
     {
       id: 1,
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaHandPointer className="products" size={45} />,
+      title: "Intuitivo",
+      description: "Um aplicativo com interface fácil de usar e que permita a realização das tarefas com rapidez e facilidade."
     },
     {
       id: 2,
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaPuzzlePiece className="pie" size={45} />,
+      title: "Personalizado",
+      description: "O aplicativo é desenvolvido de acordo com as necessidades e objetivos do cliente."
     },
     {
       id: 3,
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaCloud className="performance" size={45} />,
+      title: "Conectado",
+      description: "Integração com redes sociais e outras plataformas para melhorar a interação com o usuário."
     },
     {
       id: 4,
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaLock className="products" size={35} />,
+      title: "Seguro",
+      description: "Proteção das informações do usuário e das transações realizadas pelo aplicativo."
     },    
   ]); 
 
@@ -66,12 +68,12 @@ function MobileApps() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon[0]} 
-          title="Teste Título"
+          title="Android e IOS"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Transforme sua ideia em um aplicativo de sucesso com nossos serviços de desenvolvimento mobile"
+          paragraph1="Os aplicativos mobile estão sendo cada vez mais utilizados e estão mudando a maneira como as pessoas interagem com seus dispositivos móveis. Nós acreditamos que um bom aplicativo mobile deve ser fácil de usar, intuitivo e seguro."
+          paragraph2="Por isso, trabalhamos desenvolvendo com as melhores tecnologias disponíveis no mercado para criar aplicativos que atendam às necessidades dos nossos clientes. Nosso foco está em criar aplicativos responsivos que sejam compatíveis com todos os dispositivos móveis e sistemas operacionais."
+          paragraph3="Trabalhamos com diversas plataformas de desenvolvimento de aplicativos, como Android, iOS, React Native, entre outras. Nosso objetivo é fornecer ao cliente a melhor solução possível para o seu projeto."
         />
       </div>
 

@@ -74,9 +74,7 @@ function MainPage() {
               />
             </span>
           </Title>
-          <div className="button-center">
-            <MiddleButton>Saiba Mais</MiddleButton>
-          </div>
+          <MiddleButton>Saiba Mais</MiddleButton>
         </MiddleContainer>
         <Pin src={pin} />
       <ButtonRow>
