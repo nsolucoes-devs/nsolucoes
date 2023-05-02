@@ -95,6 +95,8 @@ export const MiddleContainer = styled.div`
     h1 {
       font-size: 1.5rem;
       color: white;
+      margin-left: auto;
+      margin-right: auto;
     }
 
     .button-center {
