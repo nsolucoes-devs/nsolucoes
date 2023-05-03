@@ -80,7 +80,7 @@ function Squads() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Terceirizações e Squads"/>
 
       <Techs work/>
 

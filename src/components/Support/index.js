@@ -8,6 +8,8 @@ import {
   SocialRow,
   Footer,
   ButtonSend,
+  WhatsappIcon,
+  SendButton
 } from "./styles";
 import {
   MdEmail,
@@ -42,35 +44,25 @@ function Support(props) {
     return () => clearInterval(interval);
   }, []);
 
-  const [message, setMessage] = useState("");
-  const [isSending, setIsSending] = useState(false);
+  const [message, setMessage] = useState('');
+  const [isTyping, setIsTyping] = useState(false);
 
-  const handleMessageChange = (event) => {
-    const { value } = event.target;
-    setMessage(value);
-    setIsSending(value.length > 0);
+  const handleInputChange = (event) => {
+    setMessage(event.target.value);
+    setIsTyping(true);
   };
 
-  const handleWhatsAppClick = () => {
-    const encodedMessage = encodeURIComponent(message);
-    window.open(
-      `https://wa.me/5534991601226/?text=${encodedMessage}`,
-      "_blank"
-    );
-    setMessage("");
-    setIsSending(false);
+  const handleSendClick = () => {
+    const phoneNumber = '5534991601226';
+    const pre = 'Estou no site da N Soluções:';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent( `${pre} ${message}`)}`;
+    window.open(url);
   };
 
   return (
     <Container>
       {props.supportHome && (
         <>
-          {/* <div className="margin-support">
-            <Title title="FALE CONOSCO" icon={<BiSupport size={100} />} />
-          </div> */}
-          {/* <div className="left margin-support">
-            <Title title="FALE CONOSCO" />
-          </div> */}
           <Row className="main-row support-home">
             <Column>
               <Column className="contact">
@@ -84,17 +76,12 @@ function Support(props) {
                   <MessageInput
                     placeholder="Envie sua mensagem!"
                     value={message}
-                    onChange={handleMessageChange}
+                    onChange={handleInputChange}
                   />
-                  {isSending ? (
-                    <ButtonSend className="send" onClick={handleWhatsAppClick}>
-                      <AiOutlineSend className="icon-send" size={28}/>
-                    </ButtonSend>
+                  {isTyping ? (
+                    <SendButton onClick={handleSendClick}>Enviar</SendButton>
                   ) : (
-                    <BsWhatsapp
-                      className="support"
-                      size={35}
-                    />
+                    <WhatsappIcon />
                   )}
                 </MessageBtn>
               </Column>
@@ -145,68 +132,6 @@ function Support(props) {
         </>
       )}
 
-      {props.supportReserva && (
-        <>
-          <div className="social-contact">
-            <h1>FALE CONOSCO</h1>
-            {/* <Title title="" icon={<BiSupport size={100} />} /> */}
-          </div>
-          <SocialRow>
-            <a
-              href="https://www.linkedin.com/company/nsolucoes-digital/people/"
-              target="_blank"
-            >
-              <BsLinkedin className="linkedin" size={30} />
-            </a>
-            <a
-              href="https://www.instagram.com/nsolucoesagenciadigital/"
-              target="_blank"
-            >
-              <AiFillInstagram className="instagram" size={38} />
-            </a>
-          </SocialRow>
-          <Row className="main-row">
-            <Column>
-              <h1>Entre em contato!</h1>
-              <h3>
-                Fusce varius, dolor tempor interdum tristique, dui urna bib
-                endum magna, ut ullamcorper purus
-              </h3>
-              <MessageBtn>
-                <MessageInput placeholder="Envie sua mensagem!" />
-                <BsWhatsapp className="whatsapp" size={30} />
-              </MessageBtn>
-            </Column>
-            <div className="vertical-divider" />
-            <Column>
-              <Column>
-                <strong>Suporte</strong>
-                <ul>
-                  <li>
-                    <MdEmail className="support" />
-                    suporte@nsolucoes.digital
-                  </li>
-                  <li>
-                    <AiFillPhone className="support" /> (34) 9 98942-7824
-                  </li>
-                </ul>
-              </Column>
-              <Column>
-                <strong>
-                  <FaMapMarkerAlt className="address" /> Endereço
-                </strong>
-                <ul>
-                  <li>
-                    R. Irmão Afonso, 326 - São Sebastiao, Uberaba - MG,
-                    38060-360
-                  </li>
-                </ul>
-              </Column>
-            </Column>
-          </Row>
-        </>
-      )}
-
       {props.supportContact && (
         <>
           <div className="social-contact">
@@ -221,8 +146,16 @@ function Support(props) {
                   sua ideia em realidade!
                 </h3>
                 <MessageBtn>
-                  <MessageInput placeholder="Envie sua mensagem!" />
-                  <BsWhatsapp className="support" size={35} />
+                  <MessageInput
+                    placeholder="Envie sua mensagem!"
+                    value={message}
+                    onChange={handleInputChange}
+                  />
+                  {isTyping ? (
+                    <SendButton onClick={handleSendClick}>Enviar</SendButton>
+                  ) : (
+                    <WhatsappIcon />
+                  )}
                 </MessageBtn>
               </Column>
             </Column>

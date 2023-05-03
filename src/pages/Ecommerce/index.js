@@ -6,9 +6,8 @@ import Support from "../../components/Support";
 import Budget from '../../components/Budget';
 import Techs from '../../components/Techs';
 import { ImLock } from 'react-icons/im';
-import { FcCellPhone } from 'react-icons/fc';
 import { BsFillGearFill } from 'react-icons/bs';
-import { FaChartBar } from 'react-icons/fa';
+import { FaChartBar, FaMobileAlt } from 'react-icons/fa';
 
 function Ecommerce() {
 
@@ -46,7 +45,7 @@ function Ecommerce() {
       description: "Proteção dos dados do cliente através de protocolos de segurança."
     },
     {
-      icon: <FcCellPhone className="pie" size={50} />,
+      icon: <FaMobileAlt className="pie" size={35} />,
       title: "Mobilidade",
       description: "Acesso ao e-commerce através de dispositivos móveis, como smartphones e tablets."
     },
@@ -84,7 +83,7 @@ function Ecommerce() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="E-commerce" />
 
       <Techs work/>
 

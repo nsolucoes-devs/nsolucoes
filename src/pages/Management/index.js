@@ -5,53 +5,58 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Techs from "../../components/Techs";
 import Budget from "../../components/Budget";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { RiTimeLine } from "react-icons/ri";
+import { GrDashboard } from "react-icons/gr";
+import { TbSettingsAutomation } from "react-icons/tb";
+import { BiShareAlt } from "react-icons/bi";
+
 
 function Management() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Controle de Estoque",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Com nosso sistema de Controle de Estoque, você tem a garantia de que seus produtos estarão sempre organizados e disponíveis. Tenha controle total sobre entrada e saída de produtos, evitando desperdícios e prejuízos."
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "Plataformas Webs",
       type: "development",
-      image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      image: "devices",
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
     },
     {
-      title: "Ui/Ux Design",
+      id: 3,
+      title: "Gestão de Frotas",
       type: "development",
       image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro."
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <GrDashboard className="products" size={60} />,
+      title: "Eficiência",
+      description: "Uma gestão eficiente de vendas permite maximizar o potencial de vendas e gerenciar o processo de vendas de forma mais eficaz."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <RiTimeLine className="pie" size={75} />,
+      title: "Relatórios em Tempo Real",
+      description: "Relatórios em tempo real fornecem dados valiosos para a equipe de vendas, permitindo que tomem decisões informadas para melhorar as vendas."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <TbSettingsAutomation className="performance" size={75} />,
+      title: "Automação de Vendas",
+      description: "A automação de vendas ajuda a simplificar o processo de vendas, permitindo que as equipes de vendas foquem no atendimento ao cliente."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <BiShareAlt className="products" size={60} />,
+      title: "Integração",
+      description: "A integração de diferentes ferramentas e plataformas de vendas permite uma gestão mais eficiente e maior facilidade na tomada de decisões."
     },    
   ]
 
@@ -62,12 +67,12 @@ function Management() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Gestão e Vendas"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
           subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          paragraph1="Na nossa agência, acreditamos que a Gestão e Vendas são áreas cruciais para o sucesso de qualquer negócio, e por isso, oferecemos soluções personalizadas e eficazes para atender às necessidades específicas dos nossos clientes. Com o nosso know-how e experiência, trabalhamos para ajudar a gerenciar a rotina de vendas e proporcionar informações valiosas para tomadas de decisões estratégicas."
+          paragraph2="Além disso, nossa equipe é especializada em desenvolver sistemas de gestão que automatizam processos, otimizam a produtividade e reduzem custos operacionais, aumentando assim a eficiência e a rentabilidade da sua empresa. Por meio de soluções inteligentes de gestão, oferecemos um controle completo do seu negócio, desde o gerenciamento de estoque e financeiro até a administração de contratos e vendas."
+          paragraph3="Por fim, nos orgulhamos em oferecer aos nossos clientes serviços de consultoria em vendas, que incluem análise de mercado, identificação de oportunidades, treinamento de equipe e implementação de estratégias eficazes de vendas. Com a nossa consultoria, você pode ter a certeza de que estará tomando as melhores decisões para o seu negócio e impulsionando o seu crescimento."
         />
       </div>
 
@@ -77,7 +82,7 @@ function Management() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Gestão e Vendas"/>
 
       <Techs work/>
 

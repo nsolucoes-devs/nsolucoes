@@ -5,53 +5,57 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { FaMobileAlt  } from "react-icons/fa";
+import { AiFillThunderbolt } from "react-icons/ai";
+import { FiLock } from "react-icons/fi";
+import { BiTargetLock } from "react-icons/bi";
 
 function WebPlataform() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Controle de Estoque",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Com nosso sistema de Controle de Estoque, você tem a garantia de que seus produtos estarão sempre organizados e disponíveis. Tenha controle total sobre entrada e saída de produtos, evitando desperdícios e prejuízos."
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "Gestão e Vendas",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online."
     },
     {
-      title: "Ui/Ux Design",
+      id: 3,
+      title: "Gestão de Frotas",
       type: "development",
       image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro."
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FaMobileAlt className="products" size={35} />,
+      title: "Responsividade",
+      description: "Responsiva para sempre se adaptar a diferentes tamanhos de tela e dispositivos."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <AiFillThunderbolt className="pie" size={55} />,
+      title: "Performance",
+      description: "Ter um desempenho rápido e eficiente para garantir uma experiência de usuário satisfatória."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <FiLock className="performance" size={55} />,
+      title: "Segurança",
+      description: "Protegendo tanto os dados dos usuários quanto do próprio site contra possíveis ameaças."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <BiTargetLock  className="products" size={65} />,
+      title: "Usabilidade",
+      description: " a plataforma web deve ser fácil de usar e permitir que os usuários encontrem o que precisam com facilidade."
     },    
   ]
 
@@ -62,12 +66,12 @@ function WebPlataform() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Plataformas Web"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Descubra como nossa plataforma web pode melhorar sua presença online e aumentar seus resultados"
+          paragraph1="Na nossa agência de desenvolvimento de sites, somos especialistas em criar plataformas web incríveis para nossos clientes. Nós nos preocupamos em criar experiências únicas para cada usuário, levando em conta suas necessidades específicas. Utilizamos tecnologias de ponta para desenvolver plataformas web de alto desempenho, com interfaces amigáveis e design moderno."
+          paragraph2="Tudo é feito pensando na usabilidade e na experiência do usuário final. Além disso, oferecemos uma ampla variedade de recursos personalizáveis, que permitem que nossos clientes criem uma plataforma web totalmente adaptada às suas necessidades específicas. Isso inclui desde a criação de layouts personalizados até a integração de recursos como formulários, chats e sistemas de pagamento."
+          paragraph3="Nossa equipe altamente qualificada está sempre pronta para ajudar nossos clientes em todas as etapas do desenvolvimento da plataforma web, desde a concepção até a implementação e manutenção. Nós oferecemos um atendimento personalizado, que visa entender as necessidades de cada cliente e propor soluções sob medida para cada projeto. Se você está procurando uma plataforma web de alto desempenho e que proporcione uma experiência única para os seus usuários, entre em contato conosco e vamos conversar sobre como podemos ajudá-lo."
         />
       </div>
 
@@ -77,7 +81,7 @@ function WebPlataform() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Plataformas Web" />
 
       <Techs work/>
 

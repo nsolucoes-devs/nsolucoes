@@ -5,53 +5,57 @@ import AboutRow from "../../components/AboutRow";
 import Support from '../../components/Support';
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
-import { RiPieChartFill } from "react-icons/ri";
-import { IoSpeedometer } from "react-icons/io5";
+import { AiOutlineBulb, AiFillEye } from "react-icons/ai";
+import { BsPencilSquare, BsSpeedometer2 } from "react-icons/bs";
+
 
 function UIUxDesign() {
 
   const cardInfo = [
     {
-      title: "Aplicações Web",
+      id: 1,
+      title: "Android e IOS",
       type: "development",
       image: "devices",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Descubra como alcançar ainda mais pessoas com o seu negócio através de aplicativos Android e iOS. Aprenda sobre as possibilidades de desenvolvimento de aplicativos para dispositivos móveis e como isso pode alavancar suas vendas e visibilidade no mercado. "
     },
     {
-      title: "Mobile App",
+      id: 2,
+      title: "MarketPlaces",
+      url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
-      title: "Ui/Ux Design",
+      id: 3,
+      title: "Ecommerces",
       type: "development",
-      image: "email",
-      text: "Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
+      image: "responsive",
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
     },
   ]
 
   const cardIcon = [
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <AiOutlineBulb className="products" size={55} />,
+      title: "Design intuitivo",
+      description: "A facilidade de uso é fundamental em um design intuitivo, permitindo que os usuários encontrem rapidamente o que precisam."
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <BsPencilSquare className="pie" size={55} />,
+      title: "Atraente",
+      description: "Um design atraente e visualmente agradável pode capturar a atenção do usuário e tornar a experiência mais agradável."
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <AiFillEye className="performance" size={55} />,
+      title: "Acessível",
+      description: "O design acessível é pensado para proporcionar uma experiência positiva para todos, independentemente de suas habilidades físicas ou cognitivas."
     },
     {
-      icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
-      description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
+      icon: <BsSpeedometer2  className="products" size={55} />,
+      title: "Consistente",
+      description: "A consistência é vital em um design, garantindo que o usuário possa navegar facilmente e encontrar o que está procurando."
     },    
   ]
 
@@ -62,12 +66,12 @@ function UIUxDesign() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="UI e UX Design"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Como a nossa equipe trabalha para criar sites incríveis"
+          paragraph1="Na nossa agência, o design é levado a sério, e não seria diferente com o UI e UX Design dos seus projetos. Cuidamos de cada detalhe para garantir que a experiência do usuário seja a melhor possível. Desde a escolha das cores e tipografias, até a arquitetura da informação e a usabilidade do site, tudo é pensado para transmitir a mensagem desejada e facilitar a navegação do usuário."
+          paragraph2="Nossos designers têm expertise em criar interfaces intuitivas e agradáveis, além de estarem sempre atualizados nas últimas tendências e melhores práticas de design. Combinando arte e ciência, nossas soluções de UI e UX Design garantem a satisfação do usuário e o sucesso do seu projeto."
+          paragraph3="Com uma equipe altamente qualificada e experiente em design de interface e experiência do usuário, nossos serviços de UI e UX Design vão além da criação de uma simples página. Nós nos esforçamos para criar uma experiência única e agradável para o usuário final, considerando fatores como usabilidade, acessibilidade e interatividade. Além disso, oferecemos suporte e consultoria durante todo o processo de design, garantindo que suas necessidades sejam atendidas e que sua visão se torne realidade."
         />
       </div>
 
@@ -76,7 +80,7 @@ function UIUxDesign() {
 
       <div style={{ marginBottom: "50px" }}></div>
       
-      <Budget />
+      <Budget title="UI e UX Design" />
 
       <Techs work/>
 

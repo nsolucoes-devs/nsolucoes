@@ -83,7 +83,7 @@ function Websites() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Sites e Portais"/>
 
       <Techs work/>
 

@@ -79,7 +79,7 @@ function Marketplace() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Marketplaces"/>
 
       <Techs work/>
 

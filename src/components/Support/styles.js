@@ -1,5 +1,6 @@
 import styled from "styled-components";
 import { MapContainer } from "react-leaflet";
+import { BsWhatsapp } from "react-icons/bs";
 
 export const Container = styled.div`
   background-color: var(--secundary-background);
@@ -383,7 +384,7 @@ export const MessageBtn = styled.div`
 `;
 
 export const MessageInput = styled.input`
-  width: 100%;
+  width: 70%;
   height: 100%;
   border: none;
   outline: none;
@@ -427,4 +428,66 @@ export const Footer = styled.div`
       font-weight: 600;
     }
   }
+`;
+
+export const WhatsappIcon = styled(BsWhatsapp)`
+  position: relative;
+  right: 5px;
+  cursor: pointer;
+  color: #1e8a4d;
+  font-size: 1.7rem;
+`;
+
+export const SendButton = styled.button`
+  position: relative;
+  cursor: pointer;
+  margin-left: 0;
+  width: fit-content;
+  padding: 6px 18px;
+  border-radius: 70px;
+  background-color: var(--accent-color);
+  font-weight: 600;
+  font-size: 12px;
+  color: #fff;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+  overflow: hidden;
+  text-align: center;
+  transition: background-color 0.3s ease-out 0.2s;
+  z-index: 1;
+  height: 150%;
+
+  &:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 0;
+    height: 0;
+    background-color: #18693b;
+
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    transition: all 0.6s ease-out 0s; 
+    z-index: -1;
+  }
+
+  &:hover:before {
+    width: 500px;
+    height: 500px;
+  }
+
+  &:hover {
+    background-color: #1e8a4d;
+  }
+
+  border-right-style: solid;
+  border-right-width: 0px;
+  border-left-style: solid;
+  border-left-width: 0px;
+  border-top-width: 0px;
+  border-top-style: solid;
+  border-bottom-width: 0px;
+  border-bottom-style: solid;
+
 `;

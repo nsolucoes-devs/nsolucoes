@@ -80,7 +80,7 @@ function FinTechs() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Suporte a FinTechs"/>
 
       <Techs work/>
 

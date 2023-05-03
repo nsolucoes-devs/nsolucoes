@@ -28,7 +28,7 @@ function Header() {
       label: "Apps",
       items: [
         { name: "Android e IOS", url: "/apps/mobile" },
-        { name: "UI e UX degign", url: "/apps/uiux" }
+        { name: "UI e UX Design", url: "/apps/uiux" }
       ]
     },
     {
@@ -37,7 +37,8 @@ function Header() {
         { name: "Plataformas Web", url: "/software/web" },
         { name: "Gestão e Vendas", url: "/software/management" },
         { name: "Controle de Estoque", url: "/software/inventory" },
-        { name: "Gestão de Frotas", url: "/software/fleet" }
+        { name: "Gestão de Frotas", url: "/software/fleet" },
+        { name: "Locação de Trajes", url: "/software/fleet" }
       ]
     },
     {
@@ -80,6 +81,13 @@ function Header() {
     return () => window.removeEventListener("resize", handleResize);
   }, [width]);
 
+  const handleSendClick = () => {
+    const phoneNumber = '5534991601226';
+    const message = 'Estou no site da N Soluções e gostaria de agendar uma reunião.';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    window.open(url);
+  };
+
   return (
     <>
       {open && (
@@ -98,7 +106,7 @@ function Header() {
               </li>
           ))}
             <li onClick={() => window.location.href='/contact'}>Contato</li>
-            <a className="contact" onClick={() => window.location.href='/contact'}>
+            <a className="contact" onClick={handleSendClick}>
               Agendar Reunião
             </a>
           </ul>
@@ -129,7 +137,7 @@ function Header() {
           <Option>
             <span onClick={() => window.location.href='/contact'}>Contato</span>
           </Option>
-            <MiddleButton className="mobile-button">Agendar Reunião</MiddleButton>
+            <MiddleButton className="mobile-button" onClick={handleSendClick}>Agendar Reunião</MiddleButton>
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>

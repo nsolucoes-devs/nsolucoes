@@ -83,7 +83,7 @@ function MobileApps() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget />
+      <Budget title="Android e IOS"/>
 
       <Techs work/>
 
