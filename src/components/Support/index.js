@@ -54,7 +54,7 @@ function Support(props) {
 
   const handleSendClick = () => {
     const phoneNumber = '5534991601226';
-    const pre = 'Estou no site da N Soluções:';
+    const pre = 'Mensagem do Site: ';
     const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent( `${pre} ${message}`)}`;
     window.open(url);
   };
