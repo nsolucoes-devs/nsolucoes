@@ -384,7 +384,7 @@ export const MessageBtn = styled.div`
 `;
 
 export const MessageInput = styled.input`
-  width: 70%;
+  width: 100%;
   height: 100%;
   border: none;
   outline: none;
