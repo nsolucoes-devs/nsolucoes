@@ -369,7 +369,6 @@ export const MessageBtn = styled.div`
   padding: 20px 25px;
   border-radius: 20px;
   display: flex;
-  flex-direction: row;
   align-items: center;
   gap: 10px;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -377,6 +376,7 @@ export const MessageBtn = styled.div`
   box-shadow: 0 0 10px 1px rgba(0, 0, 0, 0.15);
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
+  justify-content: space-between;
 
   @media only screen and (max-width: 768px) {
     width: 85%;
@@ -384,7 +384,7 @@ export const MessageBtn = styled.div`
 `;
 
 export const MessageInput = styled.input`
-  width: 100%;
+  width: 70%;
   height: 100%;
   border: none;
   outline: none;
