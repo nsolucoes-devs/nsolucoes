@@ -40,12 +40,12 @@ function About() {
       <div className="margin-about">
         <AboutUs imageleft 
           cardIcon={cardIcon}
-          title="Teste Título"
+          title="Quem somos"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
-          subtitle="Este será o subtitulo"
-          paragraph1="Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book."
-          paragraph2="Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots in a piece of classical Latin literature from 45 BC, making it over 2000 years old. Richard McClintock, a Latin professor at Hampden-Sydney College in Virginia, looked up one of the more obscure Latin words, consectetur, from a Lorem Ipsum passage, and going through the cites of the word in classical literature,"
-          paragraph3="There are many variations of passages of Lorem Ipsum available, but the majority have suffered alteration in some form, by injected humour, or randomised words which don't look even slightly believable."
+          subtitle="Uma equipe criativa que constrói soluções eficientes e inovadoras"
+          paragraph1="Nós somos uma agência digital apaixonada por tecnologia e inovação. Acreditamos que a criatividade é a chave para construir soluções eficientes e inovadoras que atendam às necessidades específicas dos nossos clientes. Somos uma equipe altamente qualificada e comprometida em gerar resultados incríveis para nossos parceiros de negócios."
+          paragraph2="Combinamos design, desenvolvimento e marketing digital para criar experiências digitais excepcionais que elevam a marca dos nossos clientes ao próximo nível. Utilizamos as melhores práticas e tecnologias modernas para garantir que nossas soluções sejam escaláveis, seguras e confiáveis."
+          paragraph3="Nosso objetivo é criar soluções personalizadas e eficientes que atendam às necessidades únicas de cada cliente. Trabalhamos em estreita colaboração com nossos parceiros de negócios para entender seus objetivos e desafios e, em seguida, desenvolvemos soluções criativas e inovadoras que os ajudam a alcançar seus objetivos. Somos apaixonados por tecnologia e estamos sempre em busca de novas maneiras de impulsionar negócios e transformar ideias em realidade."
         />
       </div>
 

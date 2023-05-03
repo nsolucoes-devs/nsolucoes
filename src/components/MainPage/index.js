@@ -74,11 +74,11 @@ function MainPage() {
               />
             </span>
           </Title>
-          <MiddleButton>Saiba Mais</MiddleButton>
+          <MiddleButton onClick={() => window.location.href='/about'}>Saiba Mais</MiddleButton>
         </MiddleContainer>
         <Pin src={pin} />
       <ButtonRow>
-        <Button>Saiba Mais</Button>
+        <Button onClick={() => window.location.href='/about'}>Saiba Mais</Button>
       </ButtonRow>
       </Wrapper>
 
