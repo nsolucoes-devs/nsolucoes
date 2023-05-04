@@ -49,7 +49,7 @@ function About() {
         />
       </div>
 
-      <Budget title="Teste Título"/>
+      <Budget title="meu negócio!"/>
 
       <Techs work/>
 
