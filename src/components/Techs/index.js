@@ -109,7 +109,7 @@ function Techs(props) {
           <MobileApp>
             <div className="main-wrapper">
               <div className="right-side">
-                <div className="phone-holder">
+                <div className="phone-holder img-left">
                   <Phone src={phoneMockup2} />
                 </div>
               </div>
@@ -177,7 +177,7 @@ function Techs(props) {
                 <InBuildBtn>🔨 Em construção</InBuildBtn>
               </AppDetails>
               <div className="right-side">
-                <div className="phone-holder">
+                <div className="phone-holder img-right">
                   <Phone src={phoneMockup} />
                 </div>
               </div>

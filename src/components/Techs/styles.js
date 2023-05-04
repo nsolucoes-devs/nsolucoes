@@ -47,7 +47,7 @@ export const Container = styled.div`
 
   .case-title {
     padding-top: 60px;
-    margin-bottom: 2rem;
+    margin-bottom: 4rem;
   }
 
   .divider {
@@ -239,11 +239,19 @@ export const MobileApp = styled.div`
     margin-right: ${(props) => (props.left ? "100px" : "0px")};
   }
 
+  .img-right {
+    margin-left: 10rem
+  }
+
+  .img-left {
+    margin-left: -10rem;
+  }
+
   .phone-holder {
     position: absolute;
-    width: 90%;
+    width: 130%;
     max-width: 130%;
-    top: -16rem;
+    top: -12rem;
   }
 
   @media only screen and (max-width: 768px) {
