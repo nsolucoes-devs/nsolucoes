@@ -17,9 +17,9 @@ function Budget(props) {
             <div className="main-budget">
               <h1>Faça agora seu orçamento!</h1>
                 <Button>
-                  <div className='button-manegement'>
+                  <div  onClick={handleButtonClick} className='button-manegement'>
                     <BsWhatsapp size={30} />
-                    <h4 onClick={handleButtonClick}>Clique aqui</h4>
+                    <h4>Clique aqui</h4>
                   </div>
                 </Button>
             </div>
