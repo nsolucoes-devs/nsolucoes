@@ -78,6 +78,40 @@ export const Container = styled.div`
       width: 80%;
     }
   }
+
+  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+
+    padding: 59.5px 0 0 0;
+
+    .social-contact {
+      font-size: 25px;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      position: relative;
+      color: #252525;
+      max-width: 95vw;
+      margin-top: 12rem;
+      margin-bottom: 30px;
+    }
+  }
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    padding: 20rem 0 0 0;
+
+    .social-contact {
+      font-size: 4rem;
+      text-transform: uppercase;
+      font-weight: 900;
+      text-align: center;
+      position: relative;
+      color: #252525;
+      max-width: 95vw;
+      margin-top: 15rem;
+      margin-bottom: 30px;
+    }
+  }
+
 `;
 
 export const Map = styled(MapContainer)`
@@ -237,6 +271,10 @@ export const Row = styled.div`
   .support-home {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
+  }
+
+  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+    margin-bottom: 7.3rem;
   }
 `;
 
@@ -425,6 +463,13 @@ export const Footer = styled.div`
   @media screen and (min-width: 769px) and (max-width: 1023px) {
     small {
       width: 65%;
+      font-weight: 600;
+    }
+  }
+
+  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+    small {
+      width: 90%;
       font-weight: 600;
     }
   }

@@ -33,6 +33,19 @@ export const Container = styled.div`
     width: 90%;
     justify-content: space-between;
   }
+
+  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+    width: 90%;
+    justify-content: space-between;
+  }
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    width: 90%;
+    justify-content: space-between;
+
+    padding: 45px 40px;
+    margin: 26px auto;
+  }
 `;
 
 export const OptionsRow = styled.ul`
@@ -44,6 +57,10 @@ export const OptionsRow = styled.ul`
   gap: 30px;
   align-items: center;
   margin-left: 4rem;
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    font-size: 42px;
+  }
 `;
 
 export const Option = styled.li`
@@ -89,6 +106,10 @@ export const Logo = styled.img`
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     width: 5rem;
   }
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    width: 90px;
+  }
 `;
 
 export const LogoWrapper = styled.div`
@@ -115,6 +136,10 @@ export const LogoName = styled.img`
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     width: 10rem;
+  }
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    width: 280px;
   }
 `;
 
@@ -316,5 +341,10 @@ export const MiddleButton = styled.div`
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     display: none;
+  }
+
+  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+    padding: 43px 60px;
+    font-size: 35px;
   }
 `;
