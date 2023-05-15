@@ -48,4 +48,8 @@ export const CardsRow = styled.div`
       margin-top: 0px;
     }
     
+    @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+      padding-left: 12rem;
+      padding-right: 12rem;
+    }
 `

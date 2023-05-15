@@ -92,7 +92,8 @@ export const Button = styled.div`
     color: #fff;
   }
 
-  @media only screen and (max-width: 768px) {
+  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+    letter-spacing: 5px;
   }
 
   h4 {
