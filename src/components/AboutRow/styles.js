@@ -38,6 +38,8 @@ export const CardsRow = styled.div`
     justify-content: center;
     flex-wrap: wrap;
     margin-top: 50px;
+    padding-left: 0rem;
+    padding-right: 0rem;
 
     a {
       text-decoration: none;
@@ -46,9 +48,11 @@ export const CardsRow = styled.div`
 
     @media only screen and (max-width: 768px) {
       margin-top: 0px;
+      padding-left: 0rem;
+      padding-right: 0rem;
     }
     
-    @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+    @media only screen and (min-device-width: 1441px) and (max-device-width: 1920px) and (orientation: landscape) {
       padding-left: 12rem;
       padding-right: 12rem;
     }
