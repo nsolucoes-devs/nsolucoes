@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled from "styled-components";
 
 export const Container = styled.div`
   /* margin-top: 4rem; */
@@ -32,7 +32,6 @@ export const ButtonBudget = styled.div`
   } */
 
   @media only screen and (max-width: 768px) {
-
     .main-budget {
       display: grid;
       height: 100%;
@@ -46,7 +45,6 @@ export const ButtonBudget = styled.div`
       padding-top: 2rem;
     }
   }
-
 `;
 
 export const Button = styled.div`
@@ -99,5 +97,4 @@ export const Button = styled.div`
   h4 {
     margin-left: 5px;
   }
-
 `;

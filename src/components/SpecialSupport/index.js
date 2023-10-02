@@ -9,9 +9,7 @@ function SpecialSupport() {
           <h3>Suporte técnico especializado</h3>
           <h1>Nossa equipe de suporte pronta pra lhe atender</h1>
         </TitleColumn>
-        <ContactsRow>
-
-        </ContactsRow>
+        <ContactsRow></ContactsRow>
       </MainRow>
     </Container>
   );

@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing, } from "./styles";
+import { Container, Spacing } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -11,60 +11,63 @@ import { AiOutlineDashboard } from "react-icons/ai";
 import { BiLinkAlt } from "react-icons/bi";
 
 function InventoryControl() {
-
   const cardInfo = [
     {
       id: 1,
       title: "Gestão e Vendas",
       type: "development",
       image: "responsive",
-      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online."
+      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online.",
     },
     {
       id: 2,
       title: "Plataformas Webs",
       type: "development",
       image: "devices",
-      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem.",
     },
     {
       id: 3,
       title: "Gestão de Frotas",
       type: "development",
       image: "email",
-      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro."
+      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro.",
     },
-  ]
+  ];
 
   const cardIcon = [
     {
-      icon: <AiOutlineUnorderedList   className="products" size={40} />,
+      icon: <AiOutlineUnorderedList className="products" size={40} />,
       title: "Organização",
-      description: "Tenha controle completo sobre o seu estoque, evitando perdas e falta de produtos."
+      description:
+        "Tenha controle completo sobre o seu estoque, evitando perdas e falta de produtos.",
     },
     {
-      icon: <BiBarChartSquare  className="pie" size={40} />,
+      icon: <BiBarChartSquare className="pie" size={40} />,
       title: "Relatórios em Tempo Real",
-      description: "Visualize informações atualizadas sobre seu estoque a qualquer momento."
+      description:
+        "Visualize informações atualizadas sobre seu estoque a qualquer momento.",
     },
     {
-      icon: <AiOutlineDashboard  className="performance" size={50} />,
+      icon: <AiOutlineDashboard className="performance" size={50} />,
       title: "Automação de Processos",
-      description: "Ganhe tempo com a automatização de tarefas repetitivas, como o cadastro de produtos."
+      description:
+        "Ganhe tempo com a automatização de tarefas repetitivas, como o cadastro de produtos.",
     },
     {
       icon: <BiLinkAlt className="products" size={50} />,
       title: "Integração",
-      description: "Integre o controle de estoque com outros sistemas da sua empresa, como o sistema de vendas."
-    },    
-  ]
+      description:
+        "Integre o controle de estoque com outros sistemas da sua empresa, como o sistema de vendas.",
+    },
+  ];
 
   return (
     <Container>
-
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs imageleft 
+        <AboutUs
+          imageleft
           cardIcon={cardIcon}
           title="Controle de Estoque"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -81,12 +84,11 @@ function InventoryControl() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget title="Controle de Estoque"/>
+      <Budget title="Controle de Estoque" />
 
-      <Techs work/>
+      <Techs work />
 
-      <Support copyright/>
-
+      <Support copyright />
     </Container>
   );
 }

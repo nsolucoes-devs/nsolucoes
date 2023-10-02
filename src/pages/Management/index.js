@@ -1,5 +1,5 @@
-import {React, Button} from "react";
-import { Container, Spacing} from "./styles";
+import { React, Button } from "react";
+import { Container, Spacing } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -10,62 +10,64 @@ import { GrDashboard } from "react-icons/gr";
 import { TbSettingsAutomation } from "react-icons/tb";
 import { BiShareAlt } from "react-icons/bi";
 
-
 function Management() {
-
   const cardInfo = [
     {
       id: 1,
       title: "Controle de Estoque",
       type: "development",
       image: "devices",
-      text: "Com nosso sistema de Controle de Estoque, você tem a garantia de que seus produtos estarão sempre organizados e disponíveis. Tenha controle total sobre entrada e saída de produtos, evitando desperdícios e prejuízos."
+      text: "Com nosso sistema de Controle de Estoque, você tem a garantia de que seus produtos estarão sempre organizados e disponíveis. Tenha controle total sobre entrada e saída de produtos, evitando desperdícios e prejuízos.",
     },
     {
       id: 2,
       title: "Plataformas Webs",
       type: "development",
       image: "devices",
-      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem.",
     },
     {
       id: 3,
       title: "Gestão de Frotas",
       type: "development",
       image: "email",
-      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro."
+      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro.",
     },
-  ]
+  ];
 
   const cardIcon = [
     {
       icon: <GrDashboard className="products" size={60} />,
       title: "Eficiência",
-      description: "Uma gestão eficiente de vendas permite maximizar o potencial de vendas e gerenciar o processo de vendas de forma mais eficaz."
+      description:
+        "Uma gestão eficiente de vendas permite maximizar o potencial de vendas e gerenciar o processo de vendas de forma mais eficaz.",
     },
     {
       icon: <RiTimeLine className="pie" size={75} />,
       title: "Relatórios em Tempo Real",
-      description: "Relatórios em tempo real fornecem dados valiosos para a equipe de vendas, permitindo que tomem decisões informadas para melhorar as vendas."
+      description:
+        "Relatórios em tempo real fornecem dados valiosos para a equipe de vendas, permitindo que tomem decisões informadas para melhorar as vendas.",
     },
     {
       icon: <TbSettingsAutomation className="performance" size={75} />,
       title: "Automação de Vendas",
-      description: "A automação de vendas ajuda a simplificar o processo de vendas, permitindo que as equipes de vendas foquem no atendimento ao cliente."
+      description:
+        "A automação de vendas ajuda a simplificar o processo de vendas, permitindo que as equipes de vendas foquem no atendimento ao cliente.",
     },
     {
       icon: <BiShareAlt className="products" size={60} />,
       title: "Integração",
-      description: "A integração de diferentes ferramentas e plataformas de vendas permite uma gestão mais eficiente e maior facilidade na tomada de decisões."
-    },    
-  ]
+      description:
+        "A integração de diferentes ferramentas e plataformas de vendas permite uma gestão mais eficiente e maior facilidade na tomada de decisões.",
+    },
+  ];
 
   return (
     <Container>
-
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs imageleft 
+        <AboutUs
+          imageleft
           cardIcon={cardIcon}
           title="Gestão e Vendas"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -82,12 +84,11 @@ function Management() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget title="Gestão e Vendas"/>
+      <Budget title="Gestão e Vendas" />
 
-      <Techs work/>
+      <Techs work />
 
-      <Support copyright/>
-
+      <Support copyright />
     </Container>
   );
 }

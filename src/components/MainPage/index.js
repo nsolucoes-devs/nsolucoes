@@ -9,7 +9,7 @@ import {
   Pin,
   Wrapper,
   Button,
-  ButtonRow
+  ButtonRow,
 } from "./styles";
 import background from "../../assets/videos/video1.mp4";
 import background2 from "../../assets/videos/video2.mp4";
@@ -62,30 +62,39 @@ function MainPage() {
       <Wrapper>
         <MiddleContainer>
           <Title>
-            <span >Soluções Inovadoras para</span>
+            <span>Soluções Inovadoras para</span>
             {/* <span>Inovadoras para </span> */}
             <span className="type-writter">
               <Typewriter
                 options={{
-                  strings: ["FinTechs", "StartUps", "Empresas", "Negócios Locais"],
+                  strings: [
+                    "FinTechs",
+                    "StartUps",
+                    "Empresas",
+                    "Negócios Locais",
+                  ],
                   autoStart: true,
                   loop: true,
                 }}
               />
             </span>
           </Title>
-          <MiddleButton onClick={() => window.location.href='/about'}>Saiba Mais</MiddleButton>
+          <MiddleButton onClick={() => (window.location.href = "/about")}>
+            Saiba Mais
+          </MiddleButton>
         </MiddleContainer>
         <Pin src={pin} />
-      <ButtonRow>
-        <Button onClick={() => window.location.href='/about'}>Saiba Mais</Button>
-      </ButtonRow>
+        <ButtonRow>
+          <Button onClick={() => (window.location.href = "/about")}>
+            Saiba Mais
+          </Button>
+        </ButtonRow>
       </Wrapper>
 
       <BackgroundVideo>
         <img className="wave" src={wave} />
         <Overlay className="overlay" />
- 
+
         <video
           onCanPlay={() => setPlayBackRate()}
           ref={videoRef}

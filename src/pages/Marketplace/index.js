@@ -5,10 +5,9 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { FaLock, FaShoppingCart, FaChartBar, FaCog } from "react-icons/fa"; 
+import { FaLock, FaShoppingCart, FaChartBar, FaCog } from "react-icons/fa";
 
 function Marketplace() {
-
   const cardInfo = [
     {
       id: 1,
@@ -16,53 +15,57 @@ function Marketplace() {
       url: "/software/web",
       type: "development",
       image: "devices",
-      text: "Tenha uma presença online profissional e impactante com nossos sites e portais personalizados. Conte com um design moderno, tecnologia atualizada e excelente usabilidade para atrair mais clientes e aumentar as vendas."
+      text: "Tenha uma presença online profissional e impactante com nossos sites e portais personalizados. Conte com um design moderno, tecnologia atualizada e excelente usabilidade para atrair mais clientes e aumentar as vendas.",
     },
     {
       id: 2,
       title: "Ecommerces",
       type: "development",
       image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
     },
     {
       id: 3,
       title: "Plataformas Webs",
       type: "development",
       image: "devices",
-      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem."
+      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem.",
     },
-  ]
+  ];
 
   const cardIcon = [
     {
-      icon: <FaShoppingCart  className="products" size={45} />,
+      icon: <FaShoppingCart className="products" size={45} />,
       title: "Variedade",
-      description: "Amplie a oferta de produtos com diferentes fornecedores em uma única plataforma."
+      description:
+        "Amplie a oferta de produtos com diferentes fornecedores em uma única plataforma.",
     },
     {
-      icon: <FaChartBar  className="pie" size={45} />,
+      icon: <FaChartBar className="pie" size={45} />,
       title: "Escalabilidade",
-      description: "Aumente suas vendas sem limitações geográficas ou de estoque."
+      description:
+        "Aumente suas vendas sem limitações geográficas ou de estoque.",
     },
     {
-      icon: <FaCog  className="performance" size={45} />,
+      icon: <FaCog className="performance" size={45} />,
       title: "Flexibilidade",
-      description: "Personalize sua loja virtual com sua marca e escolha as funcionalidades que melhor atendem suas necessidades."
+      description:
+        "Personalize sua loja virtual com sua marca e escolha as funcionalidades que melhor atendem suas necessidades.",
     },
     {
-      icon: <FaLock  className="products" size={35} />,
+      icon: <FaLock className="products" size={35} />,
       title: "Segurança",
-      description: "Garanta a segurança das transações com certificados e tecnologias de criptografia."
-    },    
-  ]
+      description:
+        "Garanta a segurança das transações com certificados e tecnologias de criptografia.",
+    },
+  ];
 
   return (
     <Container>
-
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs imageleft 
+        <AboutUs
+          imageleft
           cardIcon={cardIcon}
           title="Marketplaces"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -79,12 +82,11 @@ function Marketplace() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget title="Marketplaces"/>
+      <Budget title="Marketplaces" />
 
-      <Techs work/>
+      <Techs work />
 
-      <Support copyright/>
-
+      <Support copyright />
     </Container>
   );
 }

@@ -31,7 +31,5 @@ export const Container = styled.div`
     h1 {
       font-size: 30px;
     }
-    
   }
-
 `;

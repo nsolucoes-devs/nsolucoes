@@ -13,7 +13,6 @@ export const Wrapper = styled.div`
     max-width: 300px;
     min-width: 300px;
   }
-
 `;
 
 export const MainContainer = styled.div`

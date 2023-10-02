@@ -4,18 +4,15 @@ import Support from "../../components/Support";
 import Techs from "../../components/Techs";
 
 function Contact() {
-
   return (
     <Container>
-      
       <div className="margin-contact">
         <Support supportContact />
       </div>
 
-      <Techs work/>
+      <Techs work />
 
       <Support copyright />
-
     </Container>
   );
 }

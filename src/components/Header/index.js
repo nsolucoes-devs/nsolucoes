@@ -8,7 +8,7 @@ import {
   LogoName,
   Menu,
   MobileHeader,
-  MiddleButton
+  MiddleButton,
 } from "./styles";
 import { RiArrowDropDownLine } from "../../styles/Icons";
 import logo from "../../assets/images/just-logo.png";
@@ -16,7 +16,7 @@ import logo_name from "../../assets/images/logo-name.png";
 import Dropdown from "../Dropdown";
 import {
   AiOutlineInfoCircle,
-  GiTicket, 
+  GiTicket,
   IoMapSharp,
   AiFillPhone,
 } from "../../styles/Icons";
@@ -28,8 +28,8 @@ function Header() {
       label: "Apps",
       items: [
         { name: "Android e IOS", url: "/apps/mobile" },
-        { name: "UI e UX Design", url: "/apps/uiux" }
-      ]
+        { name: "UI e UX Design", url: "/apps/uiux" },
+      ],
     },
     {
       label: "Software",
@@ -38,26 +38,26 @@ function Header() {
         { name: "Gestão e Vendas", url: "/software/management" },
         { name: "Controle de Estoque", url: "/software/inventory" },
         { name: "Gestão de Frotas", url: "/software/fleet" },
-        { name: "Locação de Trajes", url: "/software/fleet" }
-      ]
+        { name: "Locação de Trajes", url: "/software/fleet" },
+      ],
     },
     {
       label: "Web",
       items: [
         { name: "Sites e Portais", url: "/web/sites" },
         { name: "Ecommerces", url: "/web/ecommerce" },
-        { name: "Marketplaces", url: "/web/marketplace" }
-      ]
+        { name: "Marketplaces", url: "/web/marketplace" },
+      ],
     },
     {
       label: "Outsourcing",
       items: [
         { name: "Terceirizações e Squads", url: "/outsourcing/squads" },
-        { name: "Suporte a FinTechs", url: "/outsourcing/fintechs" }
-      ]
-    }
-  ]
-  
+        { name: "Suporte a FinTechs", url: "/outsourcing/fintechs" },
+      ],
+    },
+  ];
+
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [open, setOpen] = useState(false);
 
@@ -82,9 +82,12 @@ function Header() {
   }, [width]);
 
   const handleSendClick = () => {
-    const phoneNumber = '5534991601226';
-    const message = 'Estou no site da N Soluções e gostaria de agendar uma reunião.';
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const phoneNumber = "5534991601226";
+    const message =
+      "Estou no site da N Soluções e gostaria de agendar uma reunião.";
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
+      message,
+    )}`;
     window.open(url);
   };
 
@@ -93,8 +96,8 @@ function Header() {
       {open && (
         <MobileHeader>
           <ul>
-            <li onClick={() => window.location.href='/'}>Home</li>
-            <li onClick={() => window.location.href='/about'}>Nós</li>
+            <li onClick={() => (window.location.href = "/")}>Home</li>
+            <li onClick={() => (window.location.href = "/about")}>Nós</li>
             {options.map((option, index) => (
               <li
                 key={index}
@@ -102,10 +105,13 @@ function Header() {
                 onMouseLeave={handleMouseLeave}
               >
                 <span>{option.label}</span> <RiArrowDropDownLine />
-                <Dropdown show={activeDropdown === index} items={option.items} />
+                <Dropdown
+                  show={activeDropdown === index}
+                  items={option.items}
+                />
               </li>
-          ))}
-            <li onClick={() => window.location.href='/contact'}>Contato</li>
+            ))}
+            <li onClick={() => (window.location.href = "/contact")}>Contato</li>
             <a className="contact" onClick={handleSendClick}>
               Agendar Reunião
             </a>
@@ -113,16 +119,16 @@ function Header() {
         </MobileHeader>
       )}
       <Container isOpen={open}>
-        <LogoWrapper onClick={() => window.location.href='/'}>
+        <LogoWrapper onClick={() => (window.location.href = "/")}>
           <Logo src={logo} />
           <LogoName className="logo-name" src={logo_name} />
         </LogoWrapper>
         <OptionsRow>
           <Option>
-            <span onClick={() => window.location.href='/'}>Home</span>
+            <span onClick={() => (window.location.href = "/")}>Home</span>
           </Option>
           <Option>
-            <span onClick={() => window.location.href='/about'}>Nós</span>
+            <span onClick={() => (window.location.href = "/about")}>Nós</span>
           </Option>
           {options.map((option, index) => (
             <Option
@@ -135,9 +141,13 @@ function Header() {
             </Option>
           ))}
           <Option>
-            <span onClick={() => window.location.href='/contact'}>Contato</span>
+            <span onClick={() => (window.location.href = "/contact")}>
+              Contato
+            </span>
           </Option>
-            <MiddleButton className="mobile-button" onClick={handleSendClick}>Agendar Reunião</MiddleButton>
+          <MiddleButton className="mobile-button" onClick={handleSendClick}>
+            Agendar Reunião
+          </MiddleButton>
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>
