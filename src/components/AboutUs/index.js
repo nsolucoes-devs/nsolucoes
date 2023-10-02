@@ -17,31 +17,33 @@ import {
 import StockCard from "../StockCard";
 
 function AboutUs(props) {
+
   return (
     <Container>
+
       {props.home && (
         <>
           <div className="left">
             <Title title={props.title} />
           </div>
-          <MainRow>
+          <MainRow> 
             <StockCard image={props.url} />
             <MainColumn>
               <h1>{props.subtitle}</h1>
               <p>{props.paragraph1}</p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
-              <DivSecundaryRow>
-                {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow key={card.id}>
-                    {card.icon}
-                    <SecundaryColumn>
-                      <strong title={card.title}>{card.title}</strong>
-                      <small>{card.description}</small>
-                    </SecundaryColumn>
-                  </SecundaryRow>
-                ))}
-              </DivSecundaryRow>
+                <DivSecundaryRow>
+                  {(props.cardIcon || []).map((card) => (
+                    <SecundaryRow key={card.id}>
+                      {card.icon}
+                      <SecundaryColumn>
+                        <strong title={card.title}>{card.title}</strong>
+                        <small>{card.description}</small>
+                      </SecundaryColumn>
+                    </SecundaryRow>
+                  ))}
+                </DivSecundaryRow>
             </MainColumn>
           </MainRow>
         </>
@@ -80,7 +82,7 @@ function AboutUs(props) {
           <div className="left">
             <Title title={props.title} />
           </div>
-          <MainRow>
+          <MainRow>            
             <MainColumn>
               <h1>{props.subtitle}</h1>
               <p>{props.paragraph1}</p>
@@ -102,6 +104,7 @@ function AboutUs(props) {
           </MainRow>
         </>
       )}
+
     </Container>
   );
 }

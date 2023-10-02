@@ -23,11 +23,11 @@ export const Container = styled.div`
   cursor: pointer;
   box-shadow: 0 20px 5px 5px rgba(0, 0, 0, 0.2);
   animation: ${move} 10s ease-in-out infinite;
-  background-image: url(${(props) => props.image});
+  background-image: url(${props => props.image});
   background-position: center;
   background-size: cover;
 
-  transition: all 0.2s;
+  transition: all .2s;
 
   :hover {
     transform: scale(1.07);
@@ -37,8 +37,9 @@ export const Container = styled.div`
     max-width: 20rem;
     max-height: 24rem;
     width: 20rem;
-    height: 24rem;
+    height: 24rem;   
   }
+
 `;
 
 export const Blob = styled.div`

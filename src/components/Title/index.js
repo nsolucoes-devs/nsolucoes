@@ -1,10 +1,10 @@
-import React from "react";
-import { Container } from "./styles";
+import React from 'react';
+import { Container } from './styles';
 
-function Title({ title }) {
+function Title({title}) {
   return (
     <Container>
-      <h1>{title}</h1>
+        <h1>{title}</h1>
     </Container>
   );
 }

@@ -80,6 +80,7 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
+
     padding: 59.5px 0 0 0;
 
     .social-contact {
@@ -110,6 +111,7 @@ export const Container = styled.div`
       margin-bottom: 30px;
     }
   }
+
 `;
 
 export const Map = styled(MapContainer)`
@@ -228,7 +230,7 @@ export const SubmitButton = styled.button`
 export const ButtonSend = styled.button`
   background-color: white;
   border-color: transparent;
-
+  
   &:hover {
     cursor: pointer;
   }
@@ -511,7 +513,7 @@ export const SendButton = styled.button`
 
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.6s ease-out 0s;
+    transition: all 0.6s ease-out 0s; 
     z-index: -1;
   }
 
@@ -532,4 +534,5 @@ export const SendButton = styled.button`
   border-top-style: solid;
   border-bottom-width: 0px;
   border-bottom-style: solid;
+
 `;

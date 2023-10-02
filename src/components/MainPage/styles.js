@@ -14,6 +14,7 @@ export const Container = styled.div`
     height: 100vh;
     margin-bottom: -30rem;
   }
+
 `;
 
 export const BackgroundVideo = styled.div`
@@ -48,6 +49,7 @@ export const BackgroundVideo = styled.div`
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     display: none;
   }
+
 `;
 
 export const MiddleContainer = styled.div`
@@ -74,6 +76,9 @@ export const MiddleContainer = styled.div`
   } */
 
   @media only screen and (min-width: 360px) and (max-width: 760px) {
+
+    
+
     h1 {
       font-size: 1rem;
       color: white;
@@ -86,7 +91,7 @@ export const MiddleContainer = styled.div`
     margin-top: 0;
     margin-bottom: 0;
     width: 100%;
-
+    
     h1 {
       font-size: 1.5rem;
       color: white;
@@ -103,12 +108,13 @@ export const MiddleContainer = styled.div`
     width: 100%;
     display: grid;
     justify-items: center;
-
+    
     h1 {
       font-size: 2.7rem;
       color: white;
     }
   }
+
 `;
 
 export const Wrapper = styled.div`
@@ -193,6 +199,7 @@ export const Overlay = styled.div`
   &.fadeOut {
     opacity: 0.5;
   }
+  
 `;
 
 export const Title = styled.h1`
@@ -279,36 +286,37 @@ export const ButtonRow = styled.div`
 `;
 
 export const Button = styled.div`
-  @media only screen and (min-width: 1024px) {
-    display: none;
-  }
+  
+    @media only screen and (min-width: 1024px) {
+      display: none;
+    }  
 
-  @media only screen and (max-width: 768px) {
-    width: fit-content;
-    padding: 20px 40px;
-    border-radius: 70px;
-    background-color: white;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--accent-color);
-    cursor: pointer;
-    box-shadow: 0 20px 84px -15px var(--accent-color);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease-out 0.2s;
-    z-index: 10;
+    @media only screen and (max-width: 768px) {
+      width: fit-content;
+      padding: 20px 40px;
+      border-radius: 70px;
+      background-color: white;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--accent-color);
+      cursor: pointer;
+      box-shadow: 0 20px 84px -15px var(--accent-color);
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-out 0.2s;
+      z-index: 10;
+      
+      &:hover {
+        background-color: #1e8a4d;
+        color: white;
+      }
 
-    &:hover {
-      background-color: #1e8a4d;
-      color: white;
-    }
-
-    &:before {
+      &:before {
       content: "";
       position: absolute;
       top: 50%;
@@ -326,34 +334,35 @@ export const Button = styled.div`
       width: 500px;
       height: 500px;
     }
+
   }
 
   @media screen and (min-width: 769px) and (max-width: 1023px) {
     width: fit-content;
-    padding: 20px 40px;
-    border-radius: 70px;
-    background-color: white;
-    font-weight: 600;
-    font-size: 16px;
-    color: var(--accent-color);
-    cursor: pointer;
-    box-shadow: 0 20px 84px -15px var(--accent-color);
-    -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.3);
-    text-transform: uppercase;
-    letter-spacing: 3px;
-    position: relative;
-    overflow: hidden;
-    transition: background-color 0.3s ease-out 0.2s;
-    z-index: 10;
+      padding: 20px 40px;
+      border-radius: 70px;
+      background-color: white;
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--accent-color);
+      cursor: pointer;
+      box-shadow: 0 20px 84px -15px var(--accent-color);
+      -webkit-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      -moz-box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      box-shadow: 0px 0px 20px 0px rgba(0, 0, 0, 0.30);
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      position: relative;
+      overflow: hidden;
+      transition: background-color 0.3s ease-out 0.2s;
+      z-index: 10;
+      
+      &:hover {
+        background-color: #1e8a4d;
+        color: white;
+      }
 
-    &:hover {
-      background-color: #1e8a4d;
-      color: white;
-    }
-
-    &:before {
+      &:before {
       content: "";
       position: absolute;
       top: 50%;

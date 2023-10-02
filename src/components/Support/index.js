@@ -9,7 +9,7 @@ import {
   Footer,
   ButtonSend,
   WhatsappIcon,
-  SendButton,
+  SendButton
 } from "./styles";
 import {
   MdEmail,
@@ -37,17 +37,14 @@ function Support(props) {
   const [year, setYear] = useState(new Date().getFullYear());
 
   useEffect(() => {
-    const interval = setInterval(
-      () => {
-        setYear(new Date().getFullYear());
-      },
-      1000 * 60 * 60 * 24 * 365,
-    ); // atualiza a cada ano
+    const interval = setInterval(() => {
+      setYear(new Date().getFullYear());
+    }, 1000 * 60 * 60 * 24 * 365); // atualiza a cada ano
 
     return () => clearInterval(interval);
   }, []);
 
-  const [message, setMessage] = useState("");
+  const [message, setMessage] = useState('');
   const [isTyping, setIsTyping] = useState(false);
 
   const handleInputChange = (event) => {
@@ -56,11 +53,9 @@ function Support(props) {
   };
 
   const handleSendClick = () => {
-    const phoneNumber = "5534991601226";
-    const pre = "Mensagem do Site: ";
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(
-      `${pre} ${message}`,
-    )}`;
+    const phoneNumber = '5534991601226';
+    const pre = 'Mensagem do Site: ';
+    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent( `${pre} ${message}`)}`;
     window.open(url);
   };
 

@@ -240,7 +240,7 @@ export const MobileApp = styled.div`
   }
 
   .img-right {
-    margin-left: 10rem;
+    margin-left: 10rem
   }
 
   .img-left {

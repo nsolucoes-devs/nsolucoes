@@ -29,12 +29,14 @@ export const Container = styled.div`
 
   @media only screen and (max-width: 768px) {
     &.show {
-      opacity: 1;
-      visibility: visible;
-      left: 4rem;
-      transform: translateX(0);
-    }
+    opacity: 1;
+    visibility: visible;
+    left: 4rem;
+    transform: translateX(0);
   }
+
+  }
+
 `;
 
 export const ItemLi = styled.li`
@@ -59,4 +61,5 @@ export const ItemLi = styled.li`
       transform: translateX(0);
     }
   }
+  
 `;

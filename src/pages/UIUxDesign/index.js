@@ -1,21 +1,23 @@
 import React from "react";
-import { Container, Spacing } from "./styles";
+import { Container, Spacing, } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
-import Support from "../../components/Support";
+import Support from '../../components/Support';
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
 import { AiOutlineBulb, AiFillEye } from "react-icons/ai";
 import { BsPencilSquare, BsSpeedometer2 } from "react-icons/bs";
 
+
 function UIUxDesign() {
+
   const cardInfo = [
     {
       id: 1,
       title: "Android e IOS",
       type: "development",
       image: "devices",
-      text: "Descubra como alcançar ainda mais pessoas com o seu negócio através de aplicativos Android e iOS. Aprenda sobre as possibilidades de desenvolvimento de aplicativos para dispositivos móveis e como isso pode alavancar suas vendas e visibilidade no mercado. ",
+      text: "Descubra como alcançar ainda mais pessoas com o seu negócio através de aplicativos Android e iOS. Aprenda sobre as possibilidades de desenvolvimento de aplicativos para dispositivos móveis e como isso pode alavancar suas vendas e visibilidade no mercado. "
     },
     {
       id: 2,
@@ -23,50 +25,46 @@ function UIUxDesign() {
       url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
       id: 3,
       title: "Ecommerces",
       type: "development",
       image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
     },
-  ];
+  ]
 
   const cardIcon = [
     {
       icon: <AiOutlineBulb className="products" size={55} />,
       title: "Design intuitivo",
-      description:
-        "A facilidade de uso é fundamental em um design intuitivo, permitindo que os usuários encontrem rapidamente o que precisam.",
+      description: "A facilidade de uso é fundamental em um design intuitivo, permitindo que os usuários encontrem rapidamente o que precisam."
     },
     {
       icon: <BsPencilSquare className="pie" size={55} />,
       title: "Atraente",
-      description:
-        "Um design atraente e visualmente agradável pode capturar a atenção do usuário e tornar a experiência mais agradável.",
+      description: "Um design atraente e visualmente agradável pode capturar a atenção do usuário e tornar a experiência mais agradável."
     },
     {
       icon: <AiFillEye className="performance" size={55} />,
       title: "Acessível",
-      description:
-        "O design acessível é pensado para proporcionar uma experiência positiva para todos, independentemente de suas habilidades físicas ou cognitivas.",
+      description: "O design acessível é pensado para proporcionar uma experiência positiva para todos, independentemente de suas habilidades físicas ou cognitivas."
     },
     {
-      icon: <BsSpeedometer2 className="products" size={55} />,
+      icon: <BsSpeedometer2  className="products" size={55} />,
       title: "Consistente",
-      description:
-        "A consistência é vital em um design, garantindo que o usuário possa navegar facilmente e encontrar o que está procurando.",
-    },
-  ];
+      description: "A consistência é vital em um design, garantindo que o usuário possa navegar facilmente e encontrar o que está procurando."
+    },    
+  ]
 
   return (
     <Container>
+
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs
-          imageleft
+        <AboutUs imageleft 
           cardIcon={cardIcon}
           title="UI e UX Design"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -81,12 +79,13 @@ function UIUxDesign() {
       <AboutRow aService cardInfo={cardInfo} />
 
       <div style={{ marginBottom: "50px" }}></div>
-
+      
       <Budget title="UI e UX Design" />
 
-      <Techs work />
+      <Techs work/>
 
-      <Support copyright />
+      <Support copyright/>
+      
     </Container>
   );
 }

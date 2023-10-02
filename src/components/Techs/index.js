@@ -7,7 +7,7 @@ import {
   Phone,
   Logo,
   InBuildBtn,
-  StacksRow,
+  StacksRow
 } from "./styles";
 import Title from "../Title";
 import stack1 from "../../assets/images/stack1.png";
@@ -45,7 +45,8 @@ function Techs(props) {
 
   return (
     <Container>
-      {props.titleWork && (
+
+      {props.titleWork &&(
         <>
           <div className="left">
             <Title title="Desenvolvemos em" />
@@ -56,7 +57,7 @@ function Techs(props) {
                 key={stack.name}
                 style={{
                   scrollBehavior: "smooth",
-                  height: "100%",
+                  height: "100%"
                 }}
               >
                 <img
@@ -75,14 +76,14 @@ function Techs(props) {
         </>
       )}
 
-      {props.work && (
+      {props.work &&(
         <ScrollContainer className="scroll-container">
           {stacks.map((stack) => (
             <div
               key={stack.name}
               style={{
                 scrollBehavior: "smooth",
-                height: "100%",
+                height: "100%"
               }}
             >
               <img
@@ -97,10 +98,10 @@ function Techs(props) {
               />
             </div>
           ))}
-        </ScrollContainer>
+        </ScrollContainer>        
       )}
 
-      {props.caseWork && (
+      {props.caseWork &&(
         <>
           <div className="left case-title">
             <Title title="Nossas Cases" />
@@ -118,8 +119,7 @@ function Techs(props) {
                 </div>
                 <h2>A primeira plataforma cash on delivery do Brasil!.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e
-                  confiança!
+                  A praticidade chegou pra quem precisa de segurança e confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -140,8 +140,7 @@ function Techs(props) {
                 </div>
                 <h2>O aplicativo que conecta clientes e entregadores.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e
-                  confiança!
+                  A praticidade chegou pra quem precisa de segurança e confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -167,8 +166,7 @@ function Techs(props) {
                 </div>
                 <h2>O aplicativo que conecta clientes e entregadores.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e
-                  confiança!
+                  A praticidade chegou pra quem precisa de segurança e confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -187,6 +185,8 @@ function Techs(props) {
           </MobileApp>
         </>
       )}
+
+
     </Container>
   );
 }

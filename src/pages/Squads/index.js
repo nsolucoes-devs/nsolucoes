@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing } from "./styles";
+import { Container, Spacing, } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -9,13 +9,14 @@ import { FaCogs } from "react-icons/fa";
 import { FiCheckCircle, FiClock, FiEye } from "react-icons/fi";
 
 function Squads() {
+
   const cardInfo = [
     {
       id: 1,
       title: "Suporte a FinTechs",
       type: "development",
       image: "devices",
-      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado.",
+      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado."
     },
     {
       id: 2,
@@ -23,50 +24,46 @@ function Squads() {
       url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
       id: 3,
       title: "Ecommerces",
       type: "development",
       image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
     },
-  ];
+  ]
 
   const cardIcon = [
     {
       icon: <FaCogs className="products" size={45} />,
       title: "Flexibilidade",
-      description:
-        "Times ágeis e multidisciplinares, capazes de se adaptar rapidamente às necessidades do projeto.",
+      description: "Times ágeis e multidisciplinares, capazes de se adaptar rapidamente às necessidades do projeto."
     },
     {
       icon: <FiCheckCircle className="pie" size={40} />,
       title: "Foco na qualidade",
-      description:
-        "Entrega de projetos com alto nível de qualidade e satisfação do cliente.",
+      description: "Entrega de projetos com alto nível de qualidade e satisfação do cliente."
     },
     {
-      icon: <FiClock className="performance" size={45} />,
+      icon: <FiClock  className="performance" size={45} />,
       title: "Produtividade",
-      description:
-        "Otimização do tempo e recursos para garantir a entrega dentro do prazo estabelecido.",
+      description: "Otimização do tempo e recursos para garantir a entrega dentro do prazo estabelecido."
     },
     {
-      icon: <FiEye className="products" size={50} />,
+      icon: <FiEye  className="products" size={50} />,
       title: "Transparência",
-      description:
-        "Comunicação aberta e clara sobre o andamento do projeto e tomada de decisões conjuntas com o cliente.",
-    },
-  ];
+      description: "Comunicação aberta e clara sobre o andamento do projeto e tomada de decisões conjuntas com o cliente."
+    },    
+  ]
 
   return (
     <Container>
+
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs
-          imageleft
+        <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Terceirizações e Squads"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -83,13 +80,15 @@ function Squads() {
       <div style={{ marginBottom: "50px" }}></div>
 
       {/* Faça seu orçamento */}
-      <Budget title="Terceirizações e Squads" />
+      <Budget title="Terceirizações e Squads"/>
 
-      <Techs work />
+      <Techs work/>
 
-      <Support copyright />
+      <Support copyright/>
+
     </Container>
   );
+  
 }
 
 export default Squads;

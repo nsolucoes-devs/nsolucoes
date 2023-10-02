@@ -1,15 +1,16 @@
-import React from "react";
+import React from 'react';
 import { Container } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
-import Budget from "../../components/Budget";
-import Techs from "../../components/Techs";
-import { ImLock } from "react-icons/im";
-import { BsFillGearFill } from "react-icons/bs";
-import { FaChartBar, FaMobileAlt } from "react-icons/fa";
+import Budget from '../../components/Budget';
+import Techs from '../../components/Techs';
+import { ImLock } from 'react-icons/im';
+import { BsFillGearFill } from 'react-icons/bs';
+import { FaChartBar, FaMobileAlt } from 'react-icons/fa';
 
 function Ecommerce() {
+
   const cardInfo = [
     {
       id: 1,
@@ -17,7 +18,7 @@ function Ecommerce() {
       url: "/software/web",
       type: "development",
       image: "devices",
-      text: "Tenha uma presença online profissional e impactante com nossos sites e portais personalizados. Conte com um design moderno, tecnologia atualizada e excelente usabilidade para atrair mais clientes e aumentar as vendas.",
+      text: "Tenha uma presença online profissional e impactante com nossos sites e portais personalizados. Conte com um design moderno, tecnologia atualizada e excelente usabilidade para atrair mais clientes e aumentar as vendas."
     },
     {
       id: 2,
@@ -25,7 +26,7 @@ function Ecommerce() {
       url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
     },
     {
       id: 3,
@@ -33,43 +34,39 @@ function Ecommerce() {
       url: "/apps/uiux",
       type: "development",
       image: "email",
-      text: "Atraia, encante e fidelize seus clientes com um design de interface intuitivo, agradável e eficiente. Nós oferecemos soluções completas de design para garantir a melhor experiência do usuário em seu site ou aplicativo.",
+      text: "Atraia, encante e fidelize seus clientes com um design de interface intuitivo, agradável e eficiente. Nós oferecemos soluções completas de design para garantir a melhor experiência do usuário em seu site ou aplicativo."
     },
-  ];
+  ]
 
   const cardIcon = [
     {
       icon: <ImLock className="products" size={35} />,
       title: "Segurança",
-      description:
-        "Proteção dos dados do cliente através de protocolos de segurança.",
+      description: "Proteção dos dados do cliente através de protocolos de segurança."
     },
     {
       icon: <FaMobileAlt className="pie" size={35} />,
       title: "Mobilidade",
-      description:
-        "Acesso ao e-commerce através de dispositivos móveis, como smartphones e tablets.",
+      description: "Acesso ao e-commerce através de dispositivos móveis, como smartphones e tablets."
     },
     {
       icon: <BsFillGearFill className="performance" size={50} />,
       title: "Personalização ",
-      description:
-        "Possibilidade de customizar a experiência de compra do cliente com base em suas preferências.",
+      description: "Possibilidade de customizar a experiência de compra do cliente com base em suas preferências."
     },
     {
       icon: <FaChartBar className="products" size={60} />,
       title: "Escalabilidade",
-      description:
-        "Capacidade do e-commerce em suportar altos volumes de tráfego e vendas sem comprometer a qualidade.",
-    },
-  ];
+      description: "Capacidade do e-commerce em suportar altos volumes de tráfego e vendas sem comprometer a qualidade."
+    },    
+  ]
 
   return (
     <Container>
+
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs
-          imageleft
+        <AboutUs imageleft 
           cardIcon={cardIcon}
           title="E-commerce"
           url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
@@ -88,9 +85,10 @@ function Ecommerce() {
       {/* Faça seu orçamento */}
       <Budget title="E-commerce" />
 
-      <Techs work />
+      <Techs work/>
 
-      <Support copyright />
+      <Support copyright/>
+
     </Container>
   );
 }
