@@ -1,6 +1,7 @@
 {
   "name": "nsolucoes",
   "version": "0.1.0",
+  "homepage": "https://nsolucoes.nstock.com.br",
   "private": true,
   "dependencies": {
     "@react-three/fiber": "^8.12.0",
