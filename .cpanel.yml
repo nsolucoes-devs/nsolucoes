@@ -1,0 +1,6 @@
+---
+deployment:
+  tasks:
+    - export DEPLOYPATH=/home2/nstock87/nsolucoes.nstock.com.br
+    - /bin/cp -R * $DEPLOYPATH
+    - export PATH=/home2/nstock87/bin/:$PATH
