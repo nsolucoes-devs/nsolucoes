@@ -1,6 +1,6 @@
 import styled from "styled-components";
 
-export const Wrapper = styled.div`
+export const Wrapper = styled.div `
   min-height: 450px;
   max-height: 450px;
   max-width: 350px;
@@ -16,7 +16,7 @@ export const Wrapper = styled.div`
 
 `;
 
-export const MainContainer = styled.div`
+export const MainContainer = styled.div `
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -51,7 +51,7 @@ export const MainContainer = styled.div`
   }
 `;
 
-export const Container = styled.div`
+export const Container = styled.div `
   width: 100%;
   height: 100%;
   border-radius: 20px;
@@ -70,7 +70,7 @@ export const Container = styled.div`
       (props.imageType == "coin" && "65%") ||
       (props.imageType == "squad" && "95%") ||
       (props.imageType == "fintech" && "83%") ||
-      (props.imageType == "api" && "102%")};
+      (props.imageType == "api" && "70%")};
     transition: all 0.3s;
   }
 
@@ -101,7 +101,7 @@ export const Container = styled.div`
   }
 `;
 
-export const Pin = styled.img`
+export const Pin = styled.img `
   position: absolute;
   top: -100px;
   right: -100px;
