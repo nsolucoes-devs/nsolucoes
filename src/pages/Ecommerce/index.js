@@ -69,7 +69,7 @@ function Ecommerce() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="E-commerce"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Descubra como um e-commerce pode aumentar suas vendas e ampliar sua presença no mercado"
           paragraph1="E-commerce é a abreviação de comércio eletrônico. Basicamente, ele se refere a qualquer tipo de transação comercial que ocorra na internet, incluindo a compra e venda de produtos e serviços. Em um e-commerce, os produtos são apresentados em um site ou aplicativo, onde os clientes podem navegar, escolher o que desejam comprar, efetuar o pagamento e receber os produtos em casa."
           paragraph2="O e-commerce se tornou cada vez mais popular ao longo dos anos, graças à conveniência, facilidade e segurança que oferece aos consumidores. Trabalhamos com uma equipe qualificada e preparada para criar o e-commerce que você precisa para o mercado de trabalho. Buscamos sempre melhorar para oferecer aos nossos clientes a melhor experiência possível. Com uma ampla variedade de produtos e preços competitivos, nosso site oferece uma plataforma fácil e segura para compras online."

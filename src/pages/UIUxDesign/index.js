@@ -67,7 +67,7 @@ function UIUxDesign() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="UI e UX Design"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Como a nossa equipe trabalha para criar sites incríveis"
           paragraph1="Na nossa agência, o design é levado a sério, e não seria diferente com o UI e UX Design dos seus projetos. Cuidamos de cada detalhe para garantir que a experiência do usuário seja a melhor possível. Desde a escolha das cores e tipografias, até a arquitetura da informação e a usabilidade do site, tudo é pensado para transmitir a mensagem desejada e facilitar a navegação do usuário."
           paragraph2="Nossos designers têm expertise em criar interfaces intuitivas e agradáveis, além de estarem sempre atualizados nas últimas tendências e melhores práticas de design. Combinando arte e ciência, nossas soluções de UI e UX Design garantem a satisfação do usuário e o sucesso do seu projeto."

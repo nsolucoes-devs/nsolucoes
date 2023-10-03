@@ -70,7 +70,7 @@ function FleetManagement() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Gestão de Frotas"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Maior eficiência e controle para sua empresa"
           paragraph1="A gestão de frotas é essencial para empresas que possuem veículos em suas atividades. Com nossa solução, você tem maior eficiência e controle sobre sua frota, otimizando custos e aumentando a produtividade."
           paragraph2="Com a nossa plataforma de gestão de frotas, você pode gerenciar todos os aspectos da sua frota, desde a manutenção dos veículos até o controle de combustível e quilometragem. Além disso, você pode monitorar o comportamento dos motoristas e receber alertas em caso de ocorrências, como excesso de velocidade ou paradas não autorizadas."

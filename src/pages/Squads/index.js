@@ -66,7 +66,7 @@ function Squads() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Terceirizações e Squads"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Potencialize sua equipe com a alocação de squads terceirizados"
           paragraph1="A alocação de squad é um modelo de gestão de projetos que tem ganhado cada vez mais destaque no mercado. Com este modelo, você contrata uma equipe especializada para trabalhar em seu projeto, deixando toda a gestão nas mãos da nossa agência. Na nossa agência, oferecemos soluções de alocação de squad para empresas de diversos segmentos, com o objetivo de otimizar processos e aumentar a eficiência."
           paragraph2="Contamos com uma equipe de especialistas altamente qualificada e experiente em gerenciamento de projetos, design e desenvolvimento, garantindo que seu projeto seja entregue com qualidade e eficiência. Ao optar pela alocação de squad, você tem a flexibilidade de escolher a equipe que melhor atenda às suas necessidades específicas. Além disso, você pode contar com um modelo de gestão que garante a entrega de projetos no prazo e dentro do orçamento, permitindo que você se concentre em outras áreas do seu negócio."

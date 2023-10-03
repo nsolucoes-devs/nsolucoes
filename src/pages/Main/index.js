@@ -56,7 +56,7 @@ function Main() {
       <AboutUs home
         cardIcon={cardIcon[0]}                                                                                                                                                                                
         title="Quem somos"
-        url="../../assets/images/coin.png"
+        url="https://i.imgur.com/5Lv9aKE.jpg"
         subtitle="Uma equipe criativa que constrói soluções eficientes e inovadoras"
         paragraph1="Nós somos uma agência digital apaixonada por tecnologia e inovação. Acreditamos que a criatividade é a chave para construir soluções eficientes e inovadoras que atendam às necessidades específicas dos nossos clientes. Somos uma equipe altamente qualificada e comprometida em gerar resultados incríveis para nossos parceiros de negócios."
         paragraph2="Combinamos design, desenvolvimento e marketing digital para criar experiências digitais excepcionais que elevam a marca dos nossos clientes ao próximo nível. Utilizamos as melhores práticas e tecnologias modernas para garantir que nossas soluções sejam escaláveis, seguras e confiáveis."

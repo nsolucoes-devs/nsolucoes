@@ -65,7 +65,7 @@ function Marketplace() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Marketplaces"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Conheça nossas soluções para criação de marketplaces e impulsione suas vendas online"
           paragraph1="Os marketplaces são plataformas de comércio eletrônico que permitem que diversas empresas e vendedores individuais vendam seus produtos em um único lugar. Eles oferecem aos clientes uma ampla variedade de produtos, preços competitivos e uma experiência de compra conveniente. Temos vasta experiência no desenvolvimento de marketplaces."
           paragraph2="Acreditamos que a chave para o sucesso de um marketplace é a criação de uma plataforma eficiente, com uma boa experiência de usuário e uma interface intuitiva. Para isso, trabalhamos com tecnologias avançadas e oferecemos uma variedade de recursos personalizados para garantir que o seu marketplace atenda às necessidades específicas do seu negócio. Nosso objetivo é criar um alto desempenho que ofereça um ambiente seguro e confiável para compradores e vendedores. Investimos em recursos avançados de segurança para proteger tanto os dados pessoais quanto financeiros de seus clientes."

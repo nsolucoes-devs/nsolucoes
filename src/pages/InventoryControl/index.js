@@ -67,7 +67,7 @@ function InventoryControl() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Controle de Estoque"
-          url="../../assets/images/coin.png"
+          url="https://i.imgur.com/5Lv9aKE.jpg"
           subtitle="Tenha controle total do seu estoque com a nossa plataforma"
           paragraph1="No mundo dos negócios, gerenciar o estoque pode ser uma tarefa desafiadora. É necessário saber exatamente o que temos disponível, o que está em falta e o que precisa ser reposto, além de garantir que as informações estejam sempre atualizadas. Felizmente, a nossa plataforma de Controle de Estoque pode ajudá-lo a manter tudo sob controle de maneira fácil e eficiente."
           paragraph2="Com a nossa plataforma, você pode monitorar seus estoques em tempo real, garantindo que nunca fique sem produtos. Você pode ajustar automaticamente os níveis de estoque com base em suas necessidades e receber alertas quando um produto estiver acabando. Além disso, nossa plataforma permite que você veja relatórios de vendas, para que possa tomar decisões informadas sobre quais produtos devem ser mantidos em estoque e quais não."
