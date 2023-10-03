@@ -68,7 +68,7 @@ function Management() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Gestão e Vendas"
-          url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
+          url="../../assets/images/coin.png"
           subtitle="Este será o subtitulo"
           paragraph1="Na nossa agência, acreditamos que a Gestão e Vendas são áreas cruciais para o sucesso de qualquer negócio, e por isso, oferecemos soluções personalizadas e eficazes para atender às necessidades específicas dos nossos clientes. Com o nosso know-how e experiência, trabalhamos para ajudar a gerenciar a rotina de vendas e proporcionar informações valiosas para tomadas de decisões estratégicas."
           paragraph2="Além disso, nossa equipe é especializada em desenvolver sistemas de gestão que automatizam processos, otimizam a produtividade e reduzem custos operacionais, aumentando assim a eficiência e a rentabilidade da sua empresa. Por meio de soluções inteligentes de gestão, oferecemos um controle completo do seu negócio, desde o gerenciamento de estoque e financeiro até a administração de contratos e vendas."

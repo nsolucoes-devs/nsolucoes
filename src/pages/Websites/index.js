@@ -69,7 +69,7 @@ function Websites() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Sites e Portais"
-          url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
+          url="../../assets/images/coin.png"
           subtitle="Alavanque sua presença digital com nossos sites e portais personalizados"
           paragraph1="Nós da agência de desenvolvimento de sites e portais, temos o compromisso de fornecer soluções completas e personalizadas para nossos clientes. Com a crescente demanda por presença online, nossos profissionais altamente capacitados estão prontos para criar e desenvolver projetos que atendam às suas necessidades específicas."
           paragraph2="Desde a criação de sites institucionais, e-commerce, landing pages, até portais complexos, temos o expertise necessário para garantir a melhor performance, navegabilidade e usabilidade para os usuários."

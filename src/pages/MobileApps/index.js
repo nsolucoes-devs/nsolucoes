@@ -69,7 +69,7 @@ function MobileApps() {
         <AboutUs imageleft 
           cardIcon={cardIcon[0]} 
           title="Android e IOS"
-          url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
+          url="../../assets/images/coin.png"
           subtitle="Transforme sua ideia em um aplicativo de sucesso com nossos serviços de desenvolvimento mobile"
           paragraph1="Os aplicativos mobile estão sendo cada vez mais utilizados e estão mudando a maneira como as pessoas interagem com seus dispositivos móveis. Nós acreditamos que um bom aplicativo mobile deve ser fácil de usar, intuitivo e seguro."
           paragraph2="Por isso, trabalhamos desenvolvendo com as melhores tecnologias disponíveis no mercado para criar aplicativos que atendam às necessidades dos nossos clientes. Nosso foco está em criar aplicativos responsivos que sejam compatíveis com todos os dispositivos móveis e sistemas operacionais."

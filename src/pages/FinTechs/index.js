@@ -66,7 +66,7 @@ function FinTechs() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Suporte a FinTechs"
-          url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
+          url="../../assets/images/coin.png"
           subtitle="Expanda sua fintech com a ajuda da nossa Inovação e Tecnologia para Fintechs"
           paragraph1="Na nossa agência, temos um suporte especializado para as fintechs, que são empresas que utilizam tecnologia para oferecer serviços financeiros de forma mais ágil e eficiente. Sabemos que essas empresas precisam de soluções específicas para atender as demandas do mercado financeiro e, por isso, estamos preparados para oferecer todo o suporte necessário."
           paragraph2="Nossa equipe conta com profissionais experientes e capacitados para atender as demandas das fintechs. Oferecemos desde soluções para a construção de plataformas de pagamento até a criação de aplicativos de investimento, passando por serviços de consultoria em segurança e compliance. Além disso, nosso suporte está sempre disponível para esclarecer dúvidas e fornecer suporte técnico em todas as etapas do desenvolvimento do projeto."

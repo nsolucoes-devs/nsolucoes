@@ -67,7 +67,7 @@ function WebPlataform() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Plataformas Web"
-          url="https://mundoconectado.com.br/uploads/2022/05/25/25658/cacto.jpg"
+          url="../../assets/images/coin.png"
           subtitle="Descubra como nossa plataforma web pode melhorar sua presença online e aumentar seus resultados"
           paragraph1="Na nossa agência de desenvolvimento de sites, somos especialistas em criar plataformas web incríveis para nossos clientes. Nós nos preocupamos em criar experiências únicas para cada usuário, levando em conta suas necessidades específicas. Utilizamos tecnologias de ponta para desenvolver plataformas web de alto desempenho, com interfaces amigáveis e design moderno."
           paragraph2="Tudo é feito pensando na usabilidade e na experiência do usuário final. Além disso, oferecemos uma ampla variedade de recursos personalizáveis, que permitem que nossos clientes criem uma plataforma web totalmente adaptada às suas necessidades específicas. Isso inclui desde a criação de layouts personalizados até a integração de recursos como formulários, chats e sistemas de pagamento."
