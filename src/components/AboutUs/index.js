@@ -15,6 +15,7 @@ import {
   IoSpeedometer,
 } from "../../styles/Icons";
 import StockCard from "../StockCard";
+import VideoBlod from "../VideoBlod";
 
 function AboutUs(props) {
   return (
@@ -57,13 +58,7 @@ function AboutUs(props) {
             <Title title={props.title} />
           </div>
           <MainRow>
-            {props.isVideo ? (
-              <video controls>
-                <source src={props.url} type="video/mp4" />
-              </video>
-            ) : (
-              <StockCard image={props.url} />
-            )}
+            <VideoBlod isVideo={props.isVideo} source={props.url}  />
             <MainColumn>
               <h1>{props.subtitle}</h1>
               <p>{props.paragraph1}</p>
