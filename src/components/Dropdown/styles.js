@@ -4,13 +4,10 @@ export const Container = styled.div`
   position: absolute;
   top: 33px;
   left: 0;
-  min-width: 250px;
-  width: 300px;
+  min-width: 200px;
   border-radius: 4px;
-  padding: 24px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
   opacity: 0;
   visibility: hidden;
   transition: all 0.5s;
@@ -19,6 +16,8 @@ export const Container = styled.div`
   background-color: var(--main-background);
   color: #252525;
   border: 1px solid rgba(255, 255, 255, 0.18);
+  padding: 8px;
+  gap: 2px;
 
   &.show {
     opacity: 1;
@@ -45,6 +44,9 @@ export const ItemLi = styled.li`
   animation-duration: 0.3s;
   animation-fill-mode: both;
   animation-timing-function: ease-out;
+  padding: 8px;
+
+  transition: 0.2s all;
 
   &.animate-in {
     animation-name: slide-in;
@@ -60,6 +62,10 @@ export const ItemLi = styled.li`
       opacity: 1;
       transform: translateX(0);
     }
+  }
+
+  :hover {
+    background-color: rgb(30, 138, 77, 0.2);
   }
   
 `;

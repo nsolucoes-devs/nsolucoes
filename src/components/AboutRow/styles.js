@@ -7,10 +7,9 @@ export const Container = styled.div`
     justify-content: center;
     align-items: center;
     padding: 70px 0 0 0;
-    gap: 60px;
-    text-align: center;
+    gap: 50px;
 
-    .left {
+  .left {
     margin-left: 10rem;
     align-self: flex-start;
   }

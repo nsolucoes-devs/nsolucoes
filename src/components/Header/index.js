@@ -25,14 +25,7 @@ import { Turn as Hamburger } from "hamburger-react";
 function Header() {
   const options = [
     {
-      label: "Apps",
-      items: [
-        { name: "Android e IOS", url: "/apps/mobile" },
-        { name: "UI e UX Design", url: "/apps/uiux" }
-      ]
-    },
-    {
-      label: "Software",
+      label: "Plataformas",
       items: [
         { name: "Plataformas Web", url: "/software/web" },
         { name: "Gestão e Vendas", url: "/software/management" },
@@ -42,7 +35,7 @@ function Header() {
       ]
     },
     {
-      label: "Web",
+      label: "Sites",
       items: [
         { name: "Sites e Portais", url: "/web/sites" },
         { name: "Ecommerces", url: "/web/ecommerce" },
@@ -52,8 +45,7 @@ function Header() {
     {
       label: "Outsourcing",
       items: [
-        { name: "Terceirizações e Squads", url: "/outsourcing/squads" },
-        { name: "Suporte a FinTechs", url: "/outsourcing/fintechs" }
+        { name: "Terceirizações de Squad", url: "/outsourcing/squads" },
       ]
     }
   ]
@@ -123,6 +115,9 @@ function Header() {
           </Option>
           <Option>
             <span onClick={() => window.location.href='/about'}>Nós</span>
+          </Option>
+          <Option>
+            <span onClick={() => window.location.href='/apps/mobile'}>Apps</span>
           </Option>
           {options.map((option, index) => (
             <Option
