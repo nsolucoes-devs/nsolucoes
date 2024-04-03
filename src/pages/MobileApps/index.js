@@ -5,7 +5,7 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import AppVideo from "../../assets/videos/app.mp4";
+import AppVideo from "../../assets/videos/ecommerce.mp4";
 import { FaHandPointer, FaPuzzlePiece, FaCloud, FaLock } from "react-icons/fa";
 
 function MobileApps() {
@@ -83,7 +83,6 @@ function MobileApps() {
       </div>
 
       {/* Nossos serviços */}
-      <AboutRow aService cardInfo={cardInfo} />
 
       <div style={{ marginBottom: "50px" }}></div>
 

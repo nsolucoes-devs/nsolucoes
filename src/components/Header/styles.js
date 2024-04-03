@@ -58,9 +58,9 @@ export const OptionsRow = styled.ul`
   align-items: center;
   margin-left: 4rem;
 
-  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
-    font-size: 42px;
-  }
+  // @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+  //   font-size: 42px;
+  // }
 `;
 
 export const Option = styled.li`
@@ -127,7 +127,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const LogoName = styled.img`
-  width: 140px;
+  width: 240px;
   /* transition: 0.4s; */
   /* opacity: 0; */
   animation: popIn 1s paused;
@@ -343,8 +343,8 @@ export const MiddleButton = styled.div`
     display: none;
   }
 
-  @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
-    padding: 43px 60px;
-    font-size: 35px;
-  }
+  // @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
+  //   padding: 43px 60px;
+  //   font-size: 35px;
+  // }
 `;

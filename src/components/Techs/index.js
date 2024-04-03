@@ -1,4 +1,4 @@
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef } from "react";
 import {
   Container,
   ProductRow,
@@ -7,7 +7,7 @@ import {
   Phone,
   Logo,
   InBuildBtn,
-  StacksRow
+  StacksRow,
 } from "./styles";
 import Title from "../Title";
 import stack1 from "../../assets/images/stack1.png";
@@ -29,35 +29,39 @@ import StacksTag from "../StacksTag";
 
 function Techs(props) {
   const stacks = [
-    { id: 1, name: stack1, size: "60px" },
-    { id: 2, name: stack2, size: "40px" },
-    { id: 3, name: stack9, size: "60px" },
-    { id: 4, name: stack13, size: "100px" },
-    { id: 5, name: stack11, size: "100px" },
-    { id: 6, name: stack12, size: "80px" },
-    { id: 7, name: stack3, size: "100px" },
-    { id: 8, name: stack6, size: "120px" },
-    { id: 9, name: stack10, size: "150px" },
-    { id: 10, name: stack7, size: "100px" },
+    { id: 1, name: stack1, size: "120px" },
+    { id: 2, name: stack2, size: "80px" },
+    { id: 3, name: stack9, size: "120px" },
+    { id: 4, name: stack13, size: "200px" },
+    { id: 5, name: stack11, size: "300px" },
+    { id: 6, name: stack12, size: "160px" },
+    { id: 7, name: stack3, size: "200px" },
+    { id: 8, name: stack6, size: "240px" },
+    { id: 9, name: stack10, size: "300px" },
+    { id: 10, name: stack7, size: "200px" },
   ];
 
   const scrollContainerRef = useRef(null);
 
+  console.log(scrollContainerRef);
+
   return (
     <Container>
-
-      {props.titleWork &&(
+      {props.titleWork && (
         <>
           <div className="left">
             <Title title="Desenvolvemos em" />
           </div>
-          <ScrollContainer className="scroll-container-work">
+          <ScrollContainer
+            ref={scrollContainerRef}
+            className="scroll-container-work"
+          >
             {stacks.map((stack) => (
               <div
                 key={stack.name}
                 style={{
                   scrollBehavior: "smooth",
-                  height: "100%"
+                  height: "100%",
                 }}
               >
                 <img
@@ -76,14 +80,17 @@ function Techs(props) {
         </>
       )}
 
-      {props.work &&(
-        <ScrollContainer className="scroll-container">
+      {props.work && (
+        <ScrollContainer
+          className="scroll-container"
+          ref={scrollContainerRef}
+        >
           {stacks.map((stack) => (
             <div
               key={stack.name}
               style={{
                 scrollBehavior: "smooth",
-                height: "100%"
+                height: "100%",
               }}
             >
               <img
@@ -98,10 +105,10 @@ function Techs(props) {
               />
             </div>
           ))}
-        </ScrollContainer>        
+        </ScrollContainer>
       )}
 
-      {props.caseWork &&(
+      {props.caseWork && (
         <>
           <div className="left case-title">
             <Title title="Nossas Cases" />
@@ -119,7 +126,8 @@ function Techs(props) {
                 </div>
                 <h2>A primeira plataforma cash on delivery do Brasil!.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e confiança!
+                  A praticidade chegou pra quem precisa de segurança e
+                  confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -140,7 +148,8 @@ function Techs(props) {
                 </div>
                 <h2>O aplicativo que conecta clientes e entregadores.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e confiança!
+                  A praticidade chegou pra quem precisa de segurança e
+                  confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -166,7 +175,8 @@ function Techs(props) {
                 </div>
                 <h2>O aplicativo que conecta clientes e entregadores.</h2>
                 <h4>
-                  A praticidade chegou pra quem precisa de segurança e confiança!
+                  A praticidade chegou pra quem precisa de segurança e
+                  confiança!
                 </h4>
                 <StacksRow>
                   {["html", "php", "css", "sql"].map((item) => {
@@ -185,8 +195,6 @@ function Techs(props) {
           </MobileApp>
         </>
       )}
-
-
     </Container>
   );
 }

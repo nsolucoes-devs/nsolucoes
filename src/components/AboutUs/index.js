@@ -33,9 +33,10 @@ function AboutUs(props) {
             )}
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p>{props.paragraph1}</p>
+              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
+              <p>{props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
                   <SecundaryRow key={card.id}>
@@ -61,9 +62,10 @@ function AboutUs(props) {
             <VideoBlod isVideo={props.isVideo} source={props.url}  />
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p>{props.paragraph1}</p>
+              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
+              <p>{props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
                   <SecundaryRow key={card.id}>
@@ -88,9 +90,10 @@ function AboutUs(props) {
           <MainRow>
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p>{props.paragraph1}</p>
+              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
               <p>{props.paragraph2}</p>
               <p>{props.paragraph3}</p>
+              <p>{props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
                   <SecundaryRow>
