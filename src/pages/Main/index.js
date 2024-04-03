@@ -36,9 +36,8 @@ function Main() {
       id: 4,
       icon: <HiArchiveBox className="products" size={35} />,
       title: "",
-      description:
-        "Projetos sob medida, de médio e grande porte, totalmente escalavéis, sendo seu parceiro de tecnologia.",
-    },
+      description: "Projetos sob medida, de médio e grande porte, totalmente escalavéis, sendo seu parceiro de tecnologia."
+    },    
   ]);
 
   return (
