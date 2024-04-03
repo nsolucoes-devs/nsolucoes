@@ -1,19 +1,19 @@
 import React from "react";
-import { Container, Spacing } from "./styles";
+import { Container } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import { HiArchiveBox } from "react-icons/hi2";
 import { RiPieChartFill } from "react-icons/ri";
 import { IoSpeedometer } from "react-icons/io5";
+import { IoTime } from "react-icons/io5";
 import { FaGear } from "react-icons/fa6";
 import AppVideo from "../../assets/videos/ecommerce.mp4";
 
 function About() {
   const cardIcon = [
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
+      icon: <IoTime className="performance" size={35} />,
       title: "",
       description:
         "Mais de 8 anos de mercado atuando em projetos projetos nacionais e internacionais.",

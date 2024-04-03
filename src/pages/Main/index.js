@@ -8,12 +8,14 @@ import Support from "../../components/Support";
 import { HiArchiveBox } from "react-icons/hi2";
 import { RiPieChartFill } from "react-icons/ri";
 import { IoSpeedometer } from "react-icons/io5";
+import { IoTime } from "react-icons/io5";
+import { FaGear } from "react-icons/fa6";
 
 function Main() {
   const cardIcon = useState([
     {
       id: 1,
-      icon: <HiArchiveBox className="products" size={35} />,
+      icon: <IoTime className="products" size={35} />,
       title: "",
       description:
         "Mais de 8 anos de mercado atuando em projetosprojetos nacionais e internacionais.",
@@ -34,7 +36,7 @@ function Main() {
     },
     {
       id: 4,
-      icon: <HiArchiveBox className="products" size={35} />,
+      icon: <FaGear className="products" size={35} />,
       title: "",
       description: "Projetos sob medida, de médio e grande porte, totalmente escalavéis, sendo seu parceiro de tecnologia."
     },    
