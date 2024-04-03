@@ -28,7 +28,7 @@ function App() {
         <Route element={<AndroidIos />} path="/apps/mobile" />
         <Route element={<UiUx />} path="/apps/uiux" />
         <Route element={<Web />} path="/software/web" />
-        <Route element={<Management />} path="/software/management" />
+        <Route element={<Management />} path="/software/gestaoevendas" />
         <Route element={<InventoryControl />} path="/software/inventory" />
         <Route element={<Squads />} path="/outsourcing/squads" />
         <Route element={<FinTechs />} path="/outsourcing/fintechs" />

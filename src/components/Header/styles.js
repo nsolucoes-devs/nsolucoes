@@ -127,7 +127,7 @@ export const LogoWrapper = styled.div`
 `;
 
 export const LogoName = styled.img`
-  width: 140px;
+  width: 240px;
   /* transition: 0.4s; */
   /* opacity: 0; */
   animation: popIn 1s paused;

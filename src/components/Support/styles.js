@@ -81,7 +81,7 @@ export const Container = styled.div`
 
   @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
 
-    padding: 59.5px 0 0 0;
+    // padding: 59.5px 0 0 0;
 
     .social-contact {
       font-size: 25px;
@@ -97,7 +97,7 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
-    padding: 20rem 0 0 0;
+    // padding: 20rem 0 0 0;
 
     .social-contact {
       font-size: 4rem;

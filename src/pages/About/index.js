@@ -8,7 +8,7 @@ import { HiArchiveBox } from "react-icons/hi2";
 import { RiPieChartFill } from "react-icons/ri";
 import { IoSpeedometer } from "react-icons/io5";
 import { FaGear } from "react-icons/fa6";
-import AppVideo from "../../assets/videos/app.mp4";
+import AppVideo from "../../assets/videos/ecommerce.mp4";
 
 function About() {
   const cardIcon = [

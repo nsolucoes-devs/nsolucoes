@@ -11,8 +11,7 @@ import {
   MiddleButton
 } from "./styles";
 import { RiArrowDropDownLine } from "../../styles/Icons";
-import logo from "../../assets/images/just-logo.png";
-import logo_name from "../../assets/images/logo-name.png";
+import logo_name from "../../assets/images/logo1.png";
 import Dropdown from "../Dropdown";
 import {
   AiOutlineInfoCircle,
@@ -28,7 +27,7 @@ function Header() {
       label: "Plataformas",
       items: [
         { name: "Plataformas Web", url: "/software/web" },
-        { name: "Gestão e Vendas", url: "/software/management" },
+        { name: "Gestão e Vendas", url: "/software/gestaoevendas" },
         { name: "Controle de Estoque", url: "/software/inventory" },
         { name: "Gestão de Frotas", url: "/software/fleet" },
         { name: "Locação de Trajes", url: "/software/fleet" }
@@ -106,7 +105,6 @@ function Header() {
       )}
       <Container isOpen={open}>
         <LogoWrapper onClick={() => window.location.href='/'}>
-          <Logo src={logo} />
           <LogoName className="logo-name" src={logo_name} />
         </LogoWrapper>
         <OptionsRow>
