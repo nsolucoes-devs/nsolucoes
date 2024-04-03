@@ -57,7 +57,13 @@ function AboutUs(props) {
             <Title title={props.title} />
           </div>
           <MainRow>
-          <StockCard image={props.url} />
+            {props.isVideo ? (
+              <video controls>
+                <source src={props.url} type="video/mp4" />
+              </video>
+            ) : (
+              <StockCard image={props.url} />
+            )}
             <MainColumn>
               <h1>{props.subtitle}</h1>
               <p>{props.paragraph1}</p>
@@ -103,7 +109,9 @@ function AboutUs(props) {
               </DivSecundaryRow>
             </MainColumn>
             {props.isVideo ? (
-              <video src={props.url} />
+              <video controls>
+                <source src={props.url} type="video/mp4" />
+              </video>
             ) : (
               <StockCard image={props.url} />
             )}
