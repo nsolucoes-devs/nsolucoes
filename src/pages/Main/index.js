@@ -15,25 +15,25 @@ function Main() {
     {
       id: 1,
       icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste",
+      title: "Produtos",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
       id: 2,
       icon: <RiPieChartFill className="pie" size={35} />,
-      title: "teste 2",
+      title: "Chart",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
       id: 3,
       icon: <IoSpeedometer className="performance" size={35} />,
-      title: "teste 3",
+      title: "Performance",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },
     {
       id: 4,
       icon: <HiArchiveBox className="products" size={35} />,
-      title: "teste 4",
+      title: "Products",
       description: "Lorem Ipsum is simply dummy text of the printing and typesetting industry."
     },    
   ]); 
