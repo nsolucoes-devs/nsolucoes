@@ -44,7 +44,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph1.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -69,7 +69,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph2.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -101,7 +101,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph3.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -148,7 +148,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph1.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -174,7 +174,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph2.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -207,7 +207,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph3.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -257,7 +257,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph1.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -282,7 +282,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph2.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}
@@ -314,7 +314,7 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item};
+                          {item}{index === props.paragraph3.length - 1 ? ";" : "."}
                         </span>
                       </li>
                     ))}

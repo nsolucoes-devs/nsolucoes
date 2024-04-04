@@ -258,7 +258,7 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 10px;
+  column-gap: 150px;
   width: 100%;
   height: 250px;
   margin-top: 1rem;
