@@ -39,27 +39,26 @@ function InventoryControl() {
   const cardIcon = [
     {
       icon: <AiOutlineUnorderedList className="products" size={40} />,
-      title: "Organização",
-      description:
-        "Tenha controle completo sobre o seu estoque, evitando perdas e falta de produtos.",
+      title: "Gestão de entradas",
+      description: "Saídas, perdas e trocas de forma fácil e rápida.",
     },
     {
       icon: <BiBarChartSquare className="pie" size={40} />,
       title: "Relatórios em Tempo Real",
       description:
-        "Visualize informações atualizadas sobre seu estoque a qualquer momento.",
+        "Relatórios de estoque, de vendas, balancetes, comissões e muito mais.",
     },
     {
       icon: <AiOutlineDashboard className="performance" size={50} />,
       title: "Automação de Processos",
       description:
-        "Ganhe tempo com a automatização de tarefas repetitivas, como o cadastro de produtos.",
+        "Tem várias lojas e precisa de controle? Temos a solução completa pra você!",
     },
     {
       icon: <BiLinkAlt className="products" size={50} />,
       title: "Integração",
       description:
-        "Integre o controle de estoque com outros sistemas da sua empresa, como o sistema de vendas.",
+        "Modulo de vendas completo acessível pelo celular, facilite suas vendas.",
     },
   ];
 
@@ -72,10 +71,19 @@ function InventoryControl() {
           cardIcon={cardIcon}
           title="Controle de Estoque"
           url={EstoqueVideo}
-          subtitle="Tenha controle total do seu estoque com a nossa plataforma"
-          paragraph1="No mundo dos negócios, gerenciar o estoque pode ser uma tarefa desafiadora. É necessário saber exatamente o que temos disponível, o que está em falta e o que precisa ser reposto, além de garantir que as informações estejam sempre atualizadas. Felizmente, a nossa plataforma de Controle de Estoque pode ajudá-lo a manter tudo sob controle de maneira fácil e eficiente."
-          paragraph2="Com a nossa plataforma, você pode monitorar seus estoques em tempo real, garantindo que nunca fique sem produtos. Você pode ajustar automaticamente os níveis de estoque com base em suas necessidades e receber alertas quando um produto estiver acabando. Além disso, nossa plataforma permite que você veja relatórios de vendas, para que possa tomar decisões informadas sobre quais produtos devem ser mantidos em estoque e quais não."
-          paragraph3="Nossa plataforma também oferece recursos de automação de vendas, o que significa que você pode otimizar a gestão do seu estoque para melhorar a eficiência do seu negócio. E com a integração de nossa plataforma, você pode integrá-la facilmente com outras ferramentas, como o seu sistema de vendas, para garantir que seus dados estejam sempre atualizados e em sincronia."
+          subtitle="Plataforma web completa para gestão da loja e estoque."
+          paragraph1="Tenha total gestão do seu estoque, entrada, saida, perda, garantia.
+          Módulo de venda completo, comprovante de venda na hora.
+          Cadastro de produtos completo, rápido, e facil de atualizar.
+          Cadastro de Fornecedores completo, rápido, e facil de atualizar.
+          Gestão de clientes, gestão de todas as vendas realizadas para ele.
+          Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.
+          Comissão dos vendedores de forma rápida, e em tempo real.
+          Relatórios de estoque por categoria, por produto, por período;
+          Relatórios de vendas, comissões, balancetes e muito mais."
+          paragraph2="Inclua no seu sistema o nosso ecommerce, tendo total integração da sua loja virtual com a loja física, gerenciando pedidos, estoque e muito mais!"
+          paragraph3="Precisa de ajuste? Plataforma totalmente adaptável, possibilitando desenvolver e ajustar recursos para adequação a necessidade específica do seu negócio."
+          paragraph4="Plataforma 100% sem a necessidade de instalação nos computadores, servidor em nuvem totalmente seguro e rápido, pdv acessível no celular facilitando a venda dos seus vendedores, além da mobilidade."
         />
       </div>
 

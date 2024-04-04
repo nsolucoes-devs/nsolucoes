@@ -45,25 +45,25 @@ function FleetManagement() {
       icon: <MdLocationOn className="products" size={35} />,
       title: "Monitoramento em Tempo Real",
       description:
-        "Acompanhe a localização e o status da sua frota em tempo real.",
+        "100% web, acesse de onde você estiver, gerencie sua frota.",
     },
     {
       icon: <BiMap className="pie" size={50} />,
-      title: "Otimização de Rotas",
+      title: "Custo de Frota Completo",
       description:
-        "Reduza o tempo e os custos de deslocamento com o planejamento de rotas mais eficientes.",
+        "Saiba quanto custa a sua frota, por veículo.",
     },
     {
       icon: <BsTools className="performance" size={50} />,
       title: "Controle de Manutenção",
       description:
-        "Programe e acompanhe a manutenção preventiva da sua frota, evitando problemas e gastos excessivos.",
+        "Tenha avisos de manutenção preventiva.",
     },
     {
       icon: <FaMoneyBillAlt className="products" size={55} />,
       title: "Gestão de Custos",
       description:
-        "Tenha controle total dos gastos relacionados à sua frota, desde combustível até despesas com manutenção.",
+        "Relatórios de custo, de recebimentos, de pagamentos, balancetes e muito mais.",
     },
   ];
 
@@ -77,10 +77,28 @@ function FleetManagement() {
           title="Gestão de Frotas"
           url={FrotasVideo}
           isVideo
-          subtitle="Maior eficiência e controle para sua empresa"
-          paragraph1="A gestão de frotas é essencial para empresas que possuem veículos em suas atividades. Com nossa solução, você tem maior eficiência e controle sobre sua frota, otimizando custos e aumentando a produtividade."
-          paragraph2="Com a nossa plataforma de gestão de frotas, você pode gerenciar todos os aspectos da sua frota, desde a manutenção dos veículos até o controle de combustível e quilometragem. Além disso, você pode monitorar o comportamento dos motoristas e receber alertas em caso de ocorrências, como excesso de velocidade ou paradas não autorizadas."
-          paragraph3="Nossa solução também oferece relatórios em tempo real, permitindo que você tenha informações precisas sobre a frota a qualquer momento. Com isso, você pode identificar oportunidades de melhoria e tomar decisões mais assertivas. Além disso, a automação de processos permite que você ganhe tempo e reduza custos, eliminando tarefas manuais e repetitivas. E a integração com outros sistemas da sua empresa, como o de gestão financeira, permite que você tenha uma visão completa e integrada do seu negócio."
+          subtitle="Plataforma web completa para gerenciar a sua frota."
+          paragraph1="Veiculos Leves ou Pesados, tenha a gestão de manutenções, custos,
+          aviso de troca de óleo, financeiro, relatórios e muito mais!"
+          paragraph2="Nossos principais recursos:"
+          paragraph3={[
+            "Dashboard completo informações cruciais.",
+            "Agenda financeira",
+            "Alerta de O.S Abertas",
+            "Cadastro de clientes, fornecedores",
+            "Cadastro de produtos, estoque, e movimentação;",
+            "Gestão de frota (leve e pesada);",
+            "Gestão de documentos dos veiculos e motoristas;",
+            "Custo de manutenção por frota detalhado;",
+            "Módulo de ordem de serviço completo;",
+            "Gestão de manutenções corretivas e preventivas;",
+            "Gestão de pneus de sua frota;",
+            "Avisos de manutenção;",
+            "Gestão financeira, contas a pagar e receber, baixa de titulos;",
+            "Lançamento de notas discais para gestão;",
+            "Relatórios de custo frota, manutenções, financeiro, balancetes;",
+            "Checklist de recebimento e entrega de frota;",
+          ]}
         />
       </div>
 

@@ -54,18 +54,59 @@ function AboutUs(props) {
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
               )}
-              <p
-                style={
-                  props.boldenGreen
-                    ? { fontWeight: "bold", color: "var(--accent-color)" }
-                    : {}
-                }
-              >
-                {props.paragraph2}
-              </p>
-              <p>{props.paragraph3}</p>
+              {Array.isArray(props.paragraph2) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph2.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p
+                  style={
+                    props.boldenGreen
+                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      : {}
+                  }
+                  dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
+                />
+              )}
+              {Array.isArray(props.paragraph3) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph3.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+              )}
               <p> {props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
@@ -114,18 +155,59 @@ function AboutUs(props) {
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
               )}
-              <p
-                style={
-                  props.boldenGreen
-                    ? { fontWeight: "bold", color: "var(--accent-color)" }
-                    : {}
-                }
-              >
-                {props.paragraph2}
-              </p>
-              <p>{props.paragraph3}</p>
+              {Array.isArray(props.paragraph2) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph2.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p
+                  style={
+                    props.boldenGreen
+                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      : {}
+                  }
+                  dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
+                />
+              )}
+              {Array.isArray(props.paragraph3) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph3.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+              )}
               <p>{props.paragraph4}</p>
             </MainColumn>
           </MainRow>
@@ -171,18 +253,59 @@ function AboutUs(props) {
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
               )}
-              <p
-                style={
-                  props.boldenGreen
-                    ? { fontWeight: "bold", color: "var(--accent-color)" }
-                    : {}
-                }
-              >
-                {props.paragraph2}
-              </p>
-              <p>{props.paragraph3}</p>
+              {Array.isArray(props.paragraph2) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph2.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p
+                  style={
+                    props.boldenGreen
+                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      : {}
+                  }
+                  dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
+                />
+              )}
+              {Array.isArray(props.paragraph3) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph3.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+              )}
               <p> {props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (

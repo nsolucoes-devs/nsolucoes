@@ -41,27 +41,23 @@ function Ecommerce() {
   const cardIcon = [
     {
       icon: <ImLock className="products" size={35} />,
-      title: "Segurança",
       description:
-        "Proteção dos dados do cliente através de protocolos de segurança.",
+        "Plataforma escalável para milhares de acessos",
     },
     {
       icon: <FaMobileAlt className="pie" size={35} />,
-      title: "Mobilidade",
       description:
-        "Acesso ao e-commerce através de dispositivos móveis, como smartphones e tablets.",
+        "Segurança e estabalidade da AWS",
     },
     {
       icon: <BsFillGearFill className="performance" size={50} />,
-      title: "Personalização ",
       description:
-        "Possibilidade de customizar a experiência de compra do cliente com base em suas preferências.",
+        "Integre com qualquer plataforma que desejar",
     },
     {
       icon: <FaChartBar className="products" size={60} />,
-      title: "Escalabilidade",
       description:
-        "Capacidade do e-commerce em suportar altos volumes de tráfego e vendas sem comprometer a qualidade.",
+        "Desenvolvimento sob medida a sua necessidade.",
     },
   ];
 
@@ -76,9 +72,21 @@ function Ecommerce() {
           url={EcommereceVideo}
           isVideo
           subtitle="Descubra como um e-commerce pode aumentar suas vendas e ampliar sua presença no mercado"
-          paragraph1="E-commerce é a abreviação de comércio eletrônico. Basicamente, ele se refere a qualquer tipo de transação comercial que ocorra na internet, incluindo a compra e venda de produtos e serviços. Em um e-commerce, os produtos são apresentados em um site ou aplicativo, onde os clientes podem navegar, escolher o que desejam comprar, efetuar o pagamento e receber os produtos em casa."
-          paragraph2="O e-commerce se tornou cada vez mais popular ao longo dos anos, graças à conveniência, facilidade e segurança que oferece aos consumidores. Trabalhamos com uma equipe qualificada e preparada para criar o e-commerce que você precisa para o mercado de trabalho. Buscamos sempre melhorar para oferecer aos nossos clientes a melhor experiência possível. Com uma ampla variedade de produtos e preços competitivos, nosso site oferece uma plataforma fácil e segura para compras online."
-          paragraph3="Nós nos preocupamos muito com a satisfação dos nossos clientes, por isso, estamos sempre prontos para ajudar em qualquer dúvida ou problema que possa surgir. Trabalhamos com as melhores tecnologias disponíveis no mercado para garantir a segurança das transações e proteger as informações dos nossos clientes. Nosso objetivo é oferecer a melhor experiência de compra online possível, combinando praticidade, segurança e eficiência."
+          paragraph1="Crie sua plataforma de vendas online totalmente sob medida!
+          Compecção do projeto, layout, recursos, treinamento e implantação, nosso time te apoia em todas
+          as etapas do processo."
+          paragraph2="Sua plataforma desenvolvida sob medida, a larga escala, garantindo sucesso
+          em suas vendas online."
+          paragraph3={[
+            "Plataforma com acessos em larga escala",
+            "Segurança e desempenho para milhares de acessos",
+            "Integração com as principais plataformas de pagamento",
+            "Integração com correios e transportadoras",
+            "Tenha emissão de notas ficais integrado, e disponivel",
+            "Tenha OrderBump, Upsell, Abandono de carrinho",
+            "Integre com outras plataformas (ML,Yamp, Tiny e muito mais).",
+            "Integre ao whatsapp para atualizar o status dos pedidos.",
+          ]}
         />
       </div>
 
