@@ -71,6 +71,7 @@ function InventoryControl() {
           cardIcon={cardIcon}
           title="Controle de Estoque"
           url={EstoqueVideo}
+          isVideo
           subtitle="Plataforma web completa para gestão da loja e estoque."
           paragraph1="Tenha total gestão do seu estoque, entrada, saida, perda, garantia.
           Módulo de venda completo, comprovante de venda na hora.

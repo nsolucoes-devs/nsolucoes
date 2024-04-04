@@ -35,7 +35,7 @@ function App() {
         <Route element={<FleetManagement />} path="/software/fleet" />
         <Route element={<Websites />} path="/web/sites"/>
         <Route element={<Ecommerce />} path="/web/ecommerce"/>
-        <Route element={<Marketplace />} path="/web/marketplace"/>
+        <Route element={<Marketplace />} path="/web/dropshipping"/>
         <Route element={<Contact />} path="/contact"/>
         <Route element={<About />} path="/about"/>
       </Routes>

@@ -132,7 +132,9 @@ function Support(props) {
       {props.supportContact && (
         <>
           <div className="social-contact">
-            <h1 style={{ marginBottom: "20px" }}>Vamos conversar!</h1>
+            <h1 style={{ marginBottom: "20px", fontSize: "36px" }}>
+              Vamos conversar!
+            </h1>
             {/* <Title title="" icon={<BiSupport size={100} />} /> */}
           </div>
           <Row className="main-row">

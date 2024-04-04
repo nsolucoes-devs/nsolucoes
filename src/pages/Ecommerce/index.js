@@ -9,6 +9,8 @@ import { ImLock } from "react-icons/im";
 import { BsFillGearFill } from "react-icons/bs";
 import { FaChartBar, FaMobileAlt } from "react-icons/fa";
 import EcommereceVideo from "../../assets/videos/ecommerce.mp4";
+import { MdEscalator } from "react-icons/md";
+import { FaAws } from "react-icons/fa";
 
 function Ecommerce() {
   const cardInfo = [
@@ -40,12 +42,12 @@ function Ecommerce() {
 
   const cardIcon = [
     {
-      icon: <ImLock className="products" size={35} />,
+      icon: <MdEscalator className="products" size={35} />,
       description:
         "Plataforma escalável para milhares de acessos",
     },
     {
-      icon: <FaMobileAlt className="pie" size={35} />,
+      icon: <FaAws className="pie" size={35} />,
       description:
         "Segurança e estabalidade da AWS",
     },

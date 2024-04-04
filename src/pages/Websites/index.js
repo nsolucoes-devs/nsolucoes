@@ -11,6 +11,11 @@ import { FiMonitor } from "react-icons/fi";
 import { BsCodeSlash } from "react-icons/bs";
 import { ImLock } from "react-icons/im";
 import SitesVideo from "../../assets/videos/site.mp4";
+import { HiOutlineDeviceMobile } from "react-icons/hi";
+import { GrUserExpert } from "react-icons/gr";
+import { FaUserCheck } from "react-icons/fa6";
+import { TfiPencil } from "react-icons/tfi";
+import { FaGoogle } from "react-icons/fa";
 
 function Websites() {
   const cardInfo = [
@@ -40,25 +45,25 @@ function Websites() {
 
   const cardIcon = [
     {
-      icon: <RiDatabase2Line className="products" size={45} />,
+      icon: <HiOutlineDeviceMobile className="products" size={200} />,
       title: "SITES 100% RESPONSIVOS",
       description:
         "Desenvolvemos sites responsivos totalmente inteligentementes, projetados para serem adaptados a qualquer tipo de tela, sem distorções, seja no computador, tablet ou celular seu site terá um acesso adequado.",
     },
     {
-      icon: <HiOutlineAdjustments className="pie" size={45} />,
+      icon: <FaUserCheck className="pie" size={200} />,
       title: "EXPERIÊNCIA DO USUÁRIO",
       description:
         "Através de técnica de UI e UX Design tornamos o site atrativo, de facil utilização para o usuário, gerando uma experiência unica ao navegar, com conteudo direto e de fácil acesso. Gerando altos níveis de conversão e maior tempo de navegação.      ",
     },
     {
-      icon: <FiMonitor className="performance" size={45} />,
+      icon: <TfiPencil className="performance" size={200} />,
       title: "PERSONALIZAÇÃO",
       description:
         "Desenvolvemos layouts inovadores, com aparência moderna é o que transmita confiança a seus visitantes. Formas, cores, imagens, ícones. Tudo isso é pensado nos mínimos detalhes, especialmente para seu site.",
     },
     {
-      icon: <ImLock className="products" size={45} />,
+      icon: <FaGoogle className="products" size={200} />,
       title: "OTIMIZADO P/ GOOGLE",
       description:
         "Todos nossos sites são integrados aos mecanismos de busca do google, adequando seu site as pesquisas na web, permitindo que sejam encontrados de forma mais rápida.",

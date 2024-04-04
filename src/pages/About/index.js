@@ -13,25 +13,25 @@ import AboutPhoto from "../../assets/images/about.jpg";
 function About() {
   const cardIcon = [
     {
-      icon: <IoTime className="performance" size={35} />,
+      icon: <IoTime className="performance" size={70} />,
       title: "",
       description:
         "Mais de 8 anos de mercado atuando em projetos projetos nacionais e internacionais.",
     },
     {
-      icon: <IoSpeedometer className="performance" size={35} />,
+      icon: <IoSpeedometer className="performance" size={70} />,
       title: "",
       description:
         "Time especializado e atuante nas melhores praticas de Egenharia de Software e Desenvolvimento Ágil.",
     },
     {
-      icon: <RiPieChartFill className="pie" size={35} />,
+      icon: <RiPieChartFill className="pie" size={70} />,
       title: "",
       description:
         "Atuamos em todas as etapas de seu projeto, da concepção ao desenvolvimento e implementação.",
     },
     {
-      icon: <FaGear className="products" size={35} />,
+      icon: <FaGear className="products" size={70} />,
       title: "",
       description:
         "Projetos sob medida, de médio e grande porte, totalmente escalavéis, sendo seu parceiro de tecnologia.",
