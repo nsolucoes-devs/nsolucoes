@@ -35,10 +35,6 @@ function Header() {
         { name: "Dropshipping", url: "/web/dropshipping" },
       ],
     },
-    {
-      label: "Outsourcing",
-      items: [{ name: "Terceirizações de Squad", url: "/outsourcing/squads" }],
-    },
   ];
 
   const [activeDropdown, setActiveDropdown] = useState(null);
@@ -80,7 +76,9 @@ function Header() {
           <ul>
             <li onClick={() => (window.location.href = "/")}>Home</li>
             <li onClick={() => (window.location.href = "/about")}>Nós</li>
-            <li onClick={() => (window.location.href = "/apps/mobile")}>Apps</li>
+            <li onClick={() => (window.location.href = "/apps/mobile")}>
+              Apps
+            </li>
             {options.map((option, index) => (
               <li
                 key={index}
@@ -105,6 +103,9 @@ function Header() {
                 />
               </li>
             ))}
+            <li onClick={() => (window.location.href = "/outsorcing/squads")}>
+              Alocação de Squad
+            </li>
             <li onClick={() => (window.location.href = "/contact")}>Contato</li>
             <a className="contact" onClick={handleSendClick}>
               Agendar Reunião
@@ -138,6 +139,11 @@ function Header() {
               <Dropdown show={activeDropdown === index} items={option.items} />
             </Option>
           ))}
+          <Option>
+            <span onClick={() => (window.location.href = "/outsourcing/squads")}>
+              Alocação de Squad
+            </span>
+          </Option>
           <Option>
             <span onClick={() => (window.location.href = "/contact")}>
               Contato

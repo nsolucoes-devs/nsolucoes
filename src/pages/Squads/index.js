@@ -1,5 +1,5 @@
 import React from "react";
-import { Container, Spacing, } from "./styles";
+import { Container, Spacing } from "./styles";
 import AboutUs from "../../components/AboutUs";
 import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
@@ -7,16 +7,16 @@ import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
 import { FaCogs } from "react-icons/fa";
 import { FiCheckCircle, FiClock, FiEye } from "react-icons/fi";
+import DevVideo from "../../assets/videos/dev.mp4";
 
 function Squads() {
-
   const cardInfo = [
     {
       id: 1,
       title: "Suporte a FinTechs",
       type: "development",
       image: "devices",
-      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado."
+      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado.",
     },
     {
       id: 2,
@@ -24,53 +24,72 @@ function Squads() {
       url: "/apps/mobile",
       type: "development",
       image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes."
+      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
     },
     {
       id: 3,
       title: "Ecommerces",
       type: "development",
       image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!"
+      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
     },
-  ]
+  ];
 
   const cardIcon = [
     {
       icon: <FaCogs className="products" size={45} />,
       title: "Flexibilidade",
-      description: "Times ágeis e multidisciplinares, capazes de se adaptar rapidamente às necessidades do projeto."
+      description:
+        "Validar suas ideias em pouco tempo",
     },
     {
       icon: <FiCheckCircle className="pie" size={40} />,
       title: "Foco na qualidade",
-      description: "Entrega de projetos com alto nível de qualidade e satisfação do cliente."
+      description:
+        "Alta qualidade de sprints entregas",
     },
     {
-      icon: <FiClock  className="performance" size={45} />,
+      icon: <FiClock className="performance" size={45} />,
       title: "Produtividade",
-      description: "Otimização do tempo e recursos para garantir a entrega dentro do prazo estabelecido."
+      description:
+        "Velocidade nos entregaveis",
     },
     {
-      icon: <FiEye  className="products" size={50} />,
+      icon: <FiEye className="products" size={50} />,
       title: "Transparência",
-      description: "Comunicação aberta e clara sobre o andamento do projeto e tomada de decisões conjuntas com o cliente."
-    },    
-  ]
+      description:
+        "Apoio multidisciplinar",
+    },
+  ];
 
   return (
     <Container>
-
       {/* Sobre nós */}
       <div className="margin-about">
-        <AboutUs imageleft 
+        <AboutUs
+          imageleft
           cardIcon={cardIcon}
           title="Terceirizações e Squads"
-          url="https://i.imgur.com/5Lv9aKE.jpg"
+          url={DevVideo}
+          isVideo
           subtitle="Potencialize sua equipe com a alocação de squads terceirizados"
-          paragraph1="A alocação de squad é um modelo de gestão de projetos que tem ganhado cada vez mais destaque no mercado. Com este modelo, você contrata uma equipe especializada para trabalhar em seu projeto, deixando toda a gestão nas mãos da nossa agência. Na nossa agência, oferecemos soluções de alocação de squad para empresas de diversos segmentos, com o objetivo de otimizar processos e aumentar a eficiência."
-          paragraph2="Contamos com uma equipe de especialistas altamente qualificada e experiente em gerenciamento de projetos, design e desenvolvimento, garantindo que seu projeto seja entregue com qualidade e eficiência. Ao optar pela alocação de squad, você tem a flexibilidade de escolher a equipe que melhor atenda às suas necessidades específicas. Além disso, você pode contar com um modelo de gestão que garante a entrega de projetos no prazo e dentro do orçamento, permitindo que você se concentre em outras áreas do seu negócio."
-          paragraph3="Nossa equipe de profissionais experientes garante a gestão completa do projeto, desde a concepção até a entrega final, com transparência e comunicação constante com o cliente. Dessa forma, você tem a garantia de que seu projeto está em boas mãos, enquanto se concentra em suas atividades cotidianas. Se você está procurando uma solução eficiente e econômica para seus projetos, a alocação de squad é a escolha certa. Entre em contato conosco para saber mais sobre nossos serviços de alocação de squad e como podemos ajudá-lo a alcançar seus objetivos de negócios."
+          paragraph1="Tem um projeto inovador e precisa apenas da equipe de tecnologia? Conte conosco para oferecer a melhor equipe e tornar o seu projeto realidade. 
+          Contamos com um time de especialistas nas mais diversas áreas de desenvolvimento, além de dominarem as mais modernas linguagens de programação."
+          paragraph2="Nosso time transforma suas ideias em soluções personalizadas de alta escala, impulsionando o sucesso do seu negócio, tudo de forma eficiente e profissional!
+          Nossos squads são compostos por profissionais altamente qualificados, capazes de entregar soluções personalizadas de alta qualidade e profissionalismo.
+          Garanta um time dedicado ao seu projeto, focado em impulsionar o sucesso do seu negócio, com entregas períodas e acompanhamento assincrono de todas as etapas
+          com o cliente. <br /> <br />Contamos com equipe de:"
+          paragraph3={[
+            "Analista de requisitos",
+            "Desenvolvedores Web Fullstack",
+            "Especialistas em Banco de Dados",
+            "Especialistas em DevOPS",
+            "Especialistas em Ui e UX",
+            "P.O (Produtor Owner)",
+            "Q.A (Quality Assurance)",
+            "Tech Leads",
+            "CTO Chief (Technology Office)",
+          ]}
         />
       </div>
 
@@ -78,15 +97,13 @@ function Squads() {
       <AboutRow aService cardInfo={cardInfo} />
 
       {/* Faça seu orçamento */}
-      <Budget title="Terceirizações e Squads"/>
+      <Budget title="Terceirizações e Squads" />
 
-      <Techs work/>
+      <Techs work />
 
-      <Support copyright/>
-
+      <Support copyright />
     </Container>
   );
-  
 }
 
 export default Squads;
