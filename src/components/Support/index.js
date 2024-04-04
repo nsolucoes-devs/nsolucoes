@@ -4,12 +4,13 @@ import {
   Row,
   Column,
   MessageBtn,
-  MessageInput,
+  MessageMainButton,
   SocialRow,
   Footer,
   ButtonSend,
   WhatsappIcon,
-  SendButton
+  SendButton,
+  PulseContainer,
 } from "./styles";
 import {
   MdEmail,
@@ -21,8 +22,7 @@ import {
 import L from "leaflet";
 import locationIcon from "../../assets/images/marker.png";
 import { BsWhatsapp } from "react-icons/bs";
-import logo from "../../assets/images/just-logo.png";
-import logo_name from "../../assets/images/logo-name.png";
+import logo from "../../assets/images/logo1.png";
 import { LogoWrapper, Logo, LogoName } from "../Header/styles";
 import { AiOutlineSend } from "react-icons/ai";
 
@@ -44,7 +44,7 @@ function Support(props) {
     return () => clearInterval(interval);
   }, []);
 
-  const [message, setMessage] = useState('');
+  const [message, setMessage] = useState("");
   const [isTyping, setIsTyping] = useState(false);
 
   const handleInputChange = (event) => {
@@ -53,9 +53,7 @@ function Support(props) {
   };
 
   const handleSendClick = () => {
-    const phoneNumber = '5534991601226';
-    const pre = 'Mensagem do Site: ';
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent( `${pre} ${message}`)}`;
+    const url = `https://api.whatsapp.com/send/?phone=5534991601226&text=Estou+no+site+da+N+Solu%C3%A7%C3%B5es+e+gostaria+de+agendar+uma+reuni%C3%A3o.&type=phone_number&app_absent=0`;
     window.open(url);
   };
 
@@ -72,18 +70,16 @@ function Support(props) {
                   sua ideia em realidade!
                 </h3>
                 {/* <h3> Fale agora mesmo com um de nossos especialistas em desenvolvimento, vamos conhecer mais da sua ideia. </h3> */}
-                <MessageBtn>
-                  <MessageInput
-                    placeholder="Envie sua mensagem!"
-                    value={message}
-                    onChange={handleInputChange}
-                  />
-                  {isTyping ? (
-                    <SendButton onClick={handleSendClick}>Enviar</SendButton>
-                  ) : (
-                    <WhatsappIcon />
-                  )}
-                </MessageBtn>
+                <PulseContainer onClick={handleSendClick}>
+                  <MessageBtn>
+                    <MessageMainButton>Envie sua mensagem!</MessageMainButton>
+                    {isTyping ? (
+                      <SendButton onClick={handleSendClick}>Enviar</SendButton>
+                    ) : (
+                      <WhatsappIcon />
+                    )}
+                  </MessageBtn>
+                </PulseContainer>
               </Column>
             </Column>
             <div className="vertical-divider" />
@@ -146,7 +142,7 @@ function Support(props) {
                   sua ideia em realidade!
                 </h3>
                 <MessageBtn>
-                  <MessageInput
+                  <MessageMainButton
                     placeholder="Envie sua mensagem!"
                     value={message}
                     onChange={handleInputChange}
@@ -211,8 +207,7 @@ function Support(props) {
 
           <Footer>
             <LogoWrapper onClick={() => (window.location.href = "/")}>
-              <Logo className="width-logo" src={logo} />
-              <LogoName className="logo-name" src={logo_name} />
+              <LogoName className="logo-name" src={logo} style={{width: '200px'}} />
             </LogoWrapper>
             <small>© {year}. N Soluções, todos os direitos reservados.</small>
           </Footer>

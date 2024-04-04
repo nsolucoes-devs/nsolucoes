@@ -210,6 +210,24 @@ export const MobileHeader = styled.nav`
         background-size: 100% 3px;
       }
     }
+
+    @keyframes pulse {
+      0% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+
+      50% {
+        -webkit-transform: scale3d(1.05, 1.05, 1.05);
+        transform: scale3d(1.05, 1.05, 1.05);
+      }
+
+      100% {
+        -webkit-transform: scaleX(1);
+        transform: scaleX(1);
+      }
+    }
+
     .contact {
       background-color: var(--accent-color);
       border-radius: 12px;
@@ -226,6 +244,7 @@ export const MobileHeader = styled.nav`
       font-weight: 600;
       margin-top: 3rem;
       padding: 1rem;
+      animation: pulse 2s infinite;
     }
   }
   @media (min-width: 1024px) {
@@ -295,6 +314,23 @@ export const Menu = styled.div`
 `;
 
 export const MiddleButton = styled.div`
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 var(--accent-color);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 10px rgba(120, 0, 167, 0.1);
+    }
+
+    100% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(120, 0, 167, 0);
+    }
+  }
+
   width: fit-content;
   padding: 15px 24px;
   border-radius: 70px;
@@ -310,6 +346,7 @@ export const MiddleButton = styled.div`
   text-align: center;
   transition: background-color 0.3s ease-out 0.2s;
   z-index: 1;
+  animation: pulse 2s infinite;
 
   &:before {
     content: "";

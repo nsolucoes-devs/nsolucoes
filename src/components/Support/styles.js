@@ -80,7 +80,6 @@ export const Container = styled.div`
   }
 
   @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
-
     // padding: 59.5px 0 0 0;
 
     .social-contact {
@@ -111,7 +110,6 @@ export const Container = styled.div`
       margin-bottom: 30px;
     }
   }
-
 `;
 
 export const Map = styled(MapContainer)`
@@ -230,7 +228,7 @@ export const SubmitButton = styled.button`
 export const ButtonSend = styled.button`
   background-color: white;
   border-color: transparent;
-  
+
   &:hover {
     cursor: pointer;
   }
@@ -401,9 +399,32 @@ export const SocialRow = styled.div`
   }
 `;
 
+export const PulseContainer = styled.div`
+  @keyframes pulse {
+    0% {
+      transform: scale(0.95);
+      box-shadow: 0 0 0 0 var(--accent-color);
+    }
+
+    70% {
+      transform: scale(1);
+      box-shadow: 0 0 0 20px rgba(120, 0, 167, 0.1);
+    }
+
+    100% {
+      transform: scale(0.9);
+      box-shadow: 0 0 0 0 rgba(120, 0, 167, 0);
+    }
+  }
+
+  animation: pulse 2s infinite;
+  border-radius: 20px;
+  margin-top: 20px;
+  cursor: pointer;
+`;
+
 export const MessageBtn = styled.div`
   width: 100%;
-  margin-top: 20px;
   padding: 20px 25px;
   border-radius: 20px;
   display: flex;
@@ -415,18 +436,19 @@ export const MessageBtn = styled.div`
   backdrop-filter: blur(10px);
   border: 1px solid rgba(255, 255, 255, 0.5);
   justify-content: space-between;
-
-  @media only screen and (max-width: 768px) {
-    width: 85%;
-  }
+  background-color: var(--accent-color);
 `;
 
-export const MessageInput = styled.input`
-  width: 70%;
+export const MessageMainButton = styled.button`
+  width: 100%;
   height: 100%;
   border: none;
   outline: none;
   font-size: 16px;
+  background-color: var(--accent-color);
+  text-align: center;
+  color: white;
+  cursor: pointer;
 `;
 
 export const Footer = styled.div`
@@ -479,7 +501,7 @@ export const WhatsappIcon = styled(BsWhatsapp)`
   position: relative;
   right: 5px;
   cursor: pointer;
-  color: #1e8a4d;
+  color: white;
   font-size: 1.7rem;
 `;
 
@@ -513,7 +535,7 @@ export const SendButton = styled.button`
 
     border-radius: 50%;
     transform: translate(-50%, -50%);
-    transition: all 0.6s ease-out 0s; 
+    transition: all 0.6s ease-out 0s;
     z-index: -1;
   }
 
@@ -534,5 +556,4 @@ export const SendButton = styled.button`
   border-top-style: solid;
   border-bottom-width: 0px;
   border-bottom-style: solid;
-
 `;

@@ -9,6 +9,7 @@ import { RiTimeLine } from "react-icons/ri";
 import { GrDashboard } from "react-icons/gr";
 import { TbSettingsAutomation } from "react-icons/tb";
 import { BiShareAlt } from "react-icons/bi";
+import GestaoEVendasVideo from "../../assets/videos/marketplace.mp4";
 
 function Management() {
   const cardInfo = [
@@ -70,7 +71,8 @@ function Management() {
           imageleft
           cardIcon={cardIcon}
           title="Nstock - Gestão e vendas"
-          url="https://i.imgur.com/5Lv9aKE.jpg"
+          url={GestaoEVendasVideo}
+          isVideo
           subtitle="Tenha no seu negócio uma plataforma web completa para a gestão e vendas."
           paragraph1="- Plataforma Web, sem necessidade instalar nada. <br />
           - PDV rápido e completo, comprovante de venda na hora. <br />

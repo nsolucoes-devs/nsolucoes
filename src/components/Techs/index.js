@@ -33,12 +33,12 @@ function Techs(props) {
     { id: 2, name: stack2, size: "80px" },
     { id: 3, name: stack9, size: "120px" },
     { id: 4, name: stack13, size: "200px" },
-    { id: 5, name: stack11, size: "300px" },
-    { id: 6, name: stack12, size: "160px" },
-    { id: 7, name: stack3, size: "200px" },
-    { id: 8, name: stack6, size: "240px" },
-    { id: 9, name: stack10, size: "300px" },
-    { id: 10, name: stack7, size: "200px" },
+    { id: 5, name: stack11, size: "200px" },
+    { id: 6, name: stack12, size: "100px" },
+    { id: 7, name: stack3, size: "150px" },
+    // { id: 8, name: stack6, size: "240px" },
+    // { id: 9, name: stack10, size: "300px" },
+    // { id: 10, name: stack7, size: "200px" },
   ];
 
   const scrollContainerRef = useRef(null);

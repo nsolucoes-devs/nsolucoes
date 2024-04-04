@@ -73,9 +73,7 @@ function Header() {
   }, [width]);
 
   const handleSendClick = () => {
-    const phoneNumber = '5534991601226';
-    const message = 'Estou no site da N Soluções e gostaria de agendar uma reunião.';
-    const url = `https://wa.me/${phoneNumber}?text=${encodeURIComponent(message)}`;
+    const url = `https://api.whatsapp.com/send/?phone=5534991601226&text=Estou+no+site+da+N+Solu%C3%A7%C3%B5es+e+gostaria+de+agendar+uma+reuni%C3%A3o.&type=phone_number&app_absent=0`;
     window.open(url);
   };
 
