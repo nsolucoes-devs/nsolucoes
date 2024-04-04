@@ -39,14 +39,14 @@ function InventoryControl() {
   const cardIcon = [
     {
       icon: <AiOutlineUnorderedList className="products" size={40} />,
-      title: "Gestão de entradas",
-      description: "Saídas, perdas e trocas de forma fácil e rápida.",
+      title: "Gestão de Comissões",
+      description: "Tenha relatórios de comissão dos seus vendedores, chega de perder tempo calculando fechamentos.",
     },
     {
       icon: <BiBarChartSquare className="pie" size={40} />,
-      title: "Relatórios em Tempo Real",
+      title: "Seus Relatórios",
       description:
-        "Relatórios de estoque, de vendas, balancetes, comissões e muito mais.",
+        "Tenha relatórios em tempo real. Analise vendas, estoque, comissões e muito mais. Permitindo a tomada de decisão.",
     },
     {
       icon: <AiOutlineDashboard className="performance" size={50} />,
@@ -56,9 +56,9 @@ function InventoryControl() {
     },
     {
       icon: <BiLinkAlt className="products" size={50} />,
-      title: "Integração",
+      title: "Ecommerce Integrado",
       description:
-        "Modulo de vendas completo acessível pelo celular, facilite suas vendas.",
+        "Tenha sua loja também na internet, disponibilize seu estoque online, tudo integrado ao sistema",
     },
   ];
 
