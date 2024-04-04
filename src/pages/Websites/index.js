@@ -45,24 +45,24 @@ function Websites() {
 
   const cardIcon = [
     {
-      icon: <HiOutlineDeviceMobile className="products" size={200} />,
+      icon: <HiOutlineDeviceMobile className="products" size={70} />,
       title: "SITES 100% RESPONSIVOS",
       description:
         "Sites projetados a se adaptar a qualquer tipo de tela, computador, tablet ou celular.",
     },
     {
-      icon: <FaUserCheck className="pie" size={200} />,
+      icon: <FaUserCheck className="pie" size={70} />,
       title: "EXPERIÊNCIA DO USUÁRIO",
       description:
         "Aplicamos UI e UX tornando o site atrativo, de facil utilização, gerando uma experiência unica ao navegar.",
     },
     {
-      icon: <TfiPencil className="performance" size={200} />,
+      icon: <TfiPencil className="performance" size={30} />,
       title: "PERSONALIZAÇÃO",
       description: "Seu site sob medida.",
     },
     {
-      icon: <FaGoogle className="products" size={200} />,
+      icon: <FaGoogle className="products" size={70} />,
       title: "OTIMIZADO P/ GOOGLE",
       description:
         "Integrados aos mecanismos de busca do google, adequando seu site as pesquisas na web.",
