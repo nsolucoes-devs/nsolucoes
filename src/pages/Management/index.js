@@ -5,11 +5,11 @@ import AboutRow from "../../components/AboutRow";
 import Support from "../../components/Support";
 import Techs from "../../components/Techs";
 import Budget from "../../components/Budget";
-import { RiTimeLine } from "react-icons/ri";
-import { GrDashboard } from "react-icons/gr";
-import { TbSettingsAutomation } from "react-icons/tb";
-import { BiShareAlt } from "react-icons/bi";
-import GestaoEVendasVideo from "../../assets/videos/marketplace.mp4";
+import GestaoEVendasVideo from "../../assets/videos/pdv.mp4";
+import { BsGraphUpArrow } from "react-icons/bs";
+import { FaStore } from "react-icons/fa";
+import { HiDocumentReport } from "react-icons/hi";
+import { MdManageSearch } from "react-icons/md";
 
 function Management() {
   const cardInfo = [
@@ -38,25 +38,25 @@ function Management() {
 
   const cardIcon = [
     {
-      icon: <GrDashboard className="products" size={60} />,
+      icon: <BsGraphUpArrow className="products" size={60} />,
       title: "Eficiência",
       description:
         "Uma gestão eficiente de vendas permite maximizar o potencial de vendas e gerenciar o processo de vendas de forma mais eficaz.",
     },
     {
-      icon: <RiTimeLine className="pie" size={75} />,
+      icon: <HiDocumentReport className="pie" size={75} />,
       title: "Relatórios em Tempo Real",
       description:
         "Relatórios em tempo real fornecem dados valiosos para a equipe de vendas, permitindo que tomem decisões informadas para melhorar as vendas.",
     },
     {
-      icon: <TbSettingsAutomation className="performance" size={75} />,
+      icon: <FaStore className="performance" size={75} />,
       title: "Ecommerce Integrado",
       description:
         "Tenha sua loja também na internet, disponibilize seu estoque online, tudo integrado ao sistema, facilitando suas vendas e controle.",
     },
     {
-      icon: <BiShareAlt className="products" size={60} />,
+      icon: <MdManageSearch className="products" size={60} />,
       title: "Gestão de Comissões",
       description:
         "Tenha relatórios em tempo real da comissão dos seus vendedores, chega de perder tempo calculando fechamentos na mão.",
@@ -74,18 +74,50 @@ function Management() {
           url={GestaoEVendasVideo}
           isVideo
           subtitle="Tenha no seu negócio uma plataforma web completa para a gestão e vendas."
-          paragraph1="- Plataforma Web, sem necessidade instalar nada. <br />
-          - PDV rápido e completo, comprovante de venda na hora. <br />
-          - PDV mobile, venda direto no celular, sem precisar de computador. <br />
-          - Tenha total gestão do seu estoque, entrada, saida, perda, garantia. <br />
-          - Comissão dos vendedores de forma rápida, e em tempo real. <br />
-          - Cadastro de produtos completo, rápido, e facil de atualizar. <br />
-          - Gestão de clientes, gestão de todas as vendas realizadas para ele. <br />
-          - Cadastro de Fornecedores completo, rápido, e facil de atualizar. <br />
-          - Multi Lojas, gerencie várias lojas e estoque com um sistema unificado. <br />
-          - Cadastro de usuários completo, permitindo definir permissões de acesso. <br />
-          - Relatorios diários, por período, vendas por loja, comissões e muito mais. <br />
-          - Dashboard completo, tenha os dados de forma rápida na sua tela."
+          paragraph1="
+          <ul>
+            <li>
+              <span>Plataforma Web, sem necessidade instalar nada.</span>
+            </li>
+            <li>
+              <span>PDV rápido e completo, comprovante de venda na hora.</span>
+            </li>
+            <li>
+              <span>Tenha total gestão do seu estoque, entrada, saida, perda, garantia.</span>
+            </li>
+            <li>
+              <span>Comissão dos vendedores de forma rápida, e em tempo real.</span>
+            </li>
+            <li>
+              <span>Gestão de clientes, gestão de todas as vendas realizadas para ele.</span>
+            </li>
+            <li>
+              <span>Cadastro de produtos completo, rápido, e facil de atualizar.</span>
+            </li>
+            <li>
+              <span>Cadastro de Fornecedores completo, rápido, e facil de atualizar.</span>
+            </li>
+            <li>
+              <span>Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.</span>
+            </li>
+            <li>
+              <span>Cadastro de usuários completo, permitindo definir permissões de acesso.</span>
+            </li>
+            <li>
+              <span>Relatorios diários, por período, vendas por loja, comissões e muito mais.</span>
+            </li>
+            <li>
+              <span>Dashboard completo, tenha os dados de forma rápida na sua tela.</span>
+            </li>
+          </ul>
+          -  <br />
+          -  <br />
+          -  <br />
+          -  <br />
+          -  <br />
+          -  <br />
+          -  <br />
+          - "
           paragraph2="Inclua no seu sistema o nosso ecommerce, tendo total integração da sua loja virtual com a loja física, gerenciando pedidos, estoque e muito mais!"
           paragraph3="Precisa de ajuste? Plataforma totalmente adaptável, possibilitando desenvolver e ajustar recursos para adequação a necessidade específica do seu negócio."
           paragraph4="Plataforma 100% sem a necessidade de instalação nos computadores, servidor em nuvem totalmente seguro e rápido, pdv acessível no celular facilitando a venda dos seus vendedores, além da mobilidade."

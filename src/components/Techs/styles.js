@@ -5,6 +5,7 @@ export const Container = styled.div`
   flex-direction: column;
   align-items: center;
   padding: 0 0;
+  background-color: var(--secundary-background);
 
   .stacks {
     width: 120px;

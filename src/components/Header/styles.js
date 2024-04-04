@@ -43,7 +43,6 @@ export const Container = styled.div`
     width: 90%;
     justify-content: space-between;
 
-    padding: 45px 40px;
     margin: 26px auto;
   }
 `;

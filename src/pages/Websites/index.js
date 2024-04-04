@@ -10,6 +10,7 @@ import { HiOutlineAdjustments } from 'react-icons/hi';
 import { FiMonitor } from 'react-icons/fi';
 import { BsCodeSlash } from 'react-icons/bs';
 import { ImLock } from 'react-icons/im';
+import SitesVideo from "../../assets/videos/site.mp4";
 
 function Websites() {
 
@@ -69,7 +70,8 @@ function Websites() {
         <AboutUs imageleft 
           cardIcon={cardIcon}
           title="Sites e Portais"
-          url="https://i.imgur.com/5Lv9aKE.jpg"
+          url={SitesVideo}
+          isVideo
           subtitle="Alavanque sua presença digital com nossos sites e portais personalizados"
           paragraph1="Nós da agência de desenvolvimento de sites e portais, temos o compromisso de fornecer soluções completas e personalizadas para nossos clientes. Com a crescente demanda por presença online, nossos profissionais altamente capacitados estão prontos para criar e desenvolver projetos que atendam às suas necessidades específicas."
           paragraph2="Desde a criação de sites institucionais, e-commerce, landing pages, até portais complexos, temos o expertise necessário para garantir a melhor performance, navegabilidade e usabilidade para os usuários."

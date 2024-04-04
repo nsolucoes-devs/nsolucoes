@@ -3,11 +3,11 @@ import AboutUs from "../../components/AboutUs";
 import Support from "../../components/Support";
 import Budget from "../../components/Budget";
 import Techs from "../../components/Techs";
-import CostumeRentalVideo from "../../assets/videos/trajes.mp4";
 import { FaMobileAlt } from "react-icons/fa";
 import { AiFillThunderbolt } from "react-icons/ai";
 import { FiLock } from "react-icons/fi";
 import { BiTargetLock } from "react-icons/bi";
+import CostumeRentalVideo from "../../assets/videos/trajes.mp4";
 
 function CostumeRental() {
   const cardIcon = [
