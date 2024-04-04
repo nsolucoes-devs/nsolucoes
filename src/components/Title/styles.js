@@ -21,7 +21,7 @@ export const Container = styled.div`
       width: 100%;
       background: rgba(30, 138, 77, 0.5);
       transition: all 0.4s ease;
-      z-index: -1;
+      z-index: ;
     }
   }
 
