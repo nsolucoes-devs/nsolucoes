@@ -73,18 +73,21 @@ function InventoryControl() {
           url={EstoqueVideo}
           isVideo
           subtitle="Plataforma web completa para gestão da loja e estoque."
-          paragraph1="Tenha total gestão do seu estoque, entrada, saida, perda, garantia.
-          Módulo de venda completo, comprovante de venda na hora.
-          Cadastro de produtos completo, rápido, e facil de atualizar.
-          Cadastro de Fornecedores completo, rápido, e facil de atualizar.
-          Gestão de clientes, gestão de todas as vendas realizadas para ele.
-          Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.
-          Comissão dos vendedores de forma rápida, e em tempo real.
-          Relatórios de estoque por categoria, por produto, por período;
-          Relatórios de vendas, comissões, balancetes e muito mais."
+          paragraph1={[
+            "Gestão do seu estoque, entrada, saida, perda, garantia",
+            "Módulo de venda completo, comprovante de venda na hora",
+            "Cadastro de produtos completo e facil de atualizar",
+            "Cadastro de Fornecedores completo, com relatórios",
+            "Gestão de clientes, gestão de todas as vendas",
+            "Gerencie várias lojas e estoque com um sistema unificado",
+            "Comissão dos vendedores de forma rápida, e em tempo real",
+            "Relatórios de estoque por categoria, produto, período",
+            "Relatórios de vendas, comissões, balancetes e muito mais",
+          ]}
           paragraph2="Inclua no seu sistema o nosso ecommerce, tendo total integração da sua loja virtual com a loja física, gerenciando pedidos, estoque e muito mais!"
           paragraph3="Precisa de ajuste? Plataforma totalmente adaptável, possibilitando desenvolver e ajustar recursos para adequação a necessidade específica do seu negócio."
           paragraph4="Plataforma 100% sem a necessidade de instalação nos computadores, servidor em nuvem totalmente seguro e rápido, pdv acessível no celular facilitando a venda dos seus vendedores, além da mobilidade."
+          boldenGreen
         />
       </div>
 

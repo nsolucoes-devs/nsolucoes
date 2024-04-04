@@ -48,25 +48,24 @@ function Websites() {
       icon: <HiOutlineDeviceMobile className="products" size={200} />,
       title: "SITES 100% RESPONSIVOS",
       description:
-        "Desenvolvemos sites responsivos totalmente inteligentementes, projetados para serem adaptados a qualquer tipo de tela, sem distorções, seja no computador, tablet ou celular seu site terá um acesso adequado.",
+        "Sites projetados a se adaptar a qualquer tipo de tela, computador, tablet ou celular.",
     },
     {
       icon: <FaUserCheck className="pie" size={200} />,
       title: "EXPERIÊNCIA DO USUÁRIO",
       description:
-        "Através de técnica de UI e UX Design tornamos o site atrativo, de facil utilização para o usuário, gerando uma experiência unica ao navegar, com conteudo direto e de fácil acesso. Gerando altos níveis de conversão e maior tempo de navegação.      ",
+        "Aplicamos UI e UX tornando o site atrativo, de facil utilização, gerando uma experiência unica ao navegar.",
     },
     {
       icon: <TfiPencil className="performance" size={200} />,
       title: "PERSONALIZAÇÃO",
-      description:
-        "Desenvolvemos layouts inovadores, com aparência moderna é o que transmita confiança a seus visitantes. Formas, cores, imagens, ícones. Tudo isso é pensado nos mínimos detalhes, especialmente para seu site.",
+      description: "Seu site sob medida.",
     },
     {
       icon: <FaGoogle className="products" size={200} />,
       title: "OTIMIZADO P/ GOOGLE",
       description:
-        "Todos nossos sites são integrados aos mecanismos de busca do google, adequando seu site as pesquisas na web, permitindo que sejam encontrados de forma mais rápida.",
+        "Integrados aos mecanismos de busca do google, adequando seu site as pesquisas na web.",
     },
   ];
 

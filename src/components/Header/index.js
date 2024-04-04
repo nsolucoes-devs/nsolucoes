@@ -13,12 +13,6 @@ import {
 import { RiArrowDropDownLine } from "../../styles/Icons";
 import logo_name from "../../assets/images/logo1.png";
 import Dropdown from "../Dropdown";
-import {
-  AiOutlineInfoCircle,
-  GiTicket,
-  IoMapSharp,
-  AiFillPhone,
-} from "../../styles/Icons";
 import { Turn as Hamburger } from "hamburger-react";
 
 function Header() {
@@ -30,7 +24,7 @@ function Header() {
         { name: "Gestão e Vendas", url: "/software/gestaoevendas" },
         { name: "Controle de Estoque", url: "/software/inventory" },
         { name: "Gestão de Frotas", url: "/software/fleet" },
-        { name: "Locação de Trajes", url: "/software/fleet" },
+        // { name: "Locação de Trajes", url: "/software/fleet" },
       ],
     },
     {
