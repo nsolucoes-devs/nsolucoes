@@ -18,31 +18,6 @@ import { TfiPencil } from "react-icons/tfi";
 import { FaGoogle } from "react-icons/fa";
 
 function Websites() {
-  const cardInfo = [
-    {
-      id: 1,
-      title: "MarketPlaces",
-      url: "/apps/mobile",
-      type: "development",
-      image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
-    },
-    {
-      id: 2,
-      title: "Ecommerces",
-      type: "development",
-      image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
-    },
-    {
-      id: 3,
-      title: "Suporte a FinTechs",
-      type: "development",
-      image: "devices",
-      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado.",
-    },
-  ];
-
   const cardIcon = [
     {
       icon: <HiOutlineDeviceMobile className="products" size={70} />,
@@ -85,9 +60,6 @@ function Websites() {
           paragraph3="A internet se torna um grande aliado na hora de fortalecer a sua marca, se for bem utilizada. Mas, para isso você precisa ter um site funcional, que proporcione uma ótima experiência ao usuário e que transmita confiança."
         />
       </div>
-
-      {/* Nossos serviços */}
-      <AboutRow aService cardInfo={cardInfo} />
 
       {/* Faça seu orçamento */}
       <Budget title="Sites e Portais" />

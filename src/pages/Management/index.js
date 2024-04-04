@@ -75,17 +75,17 @@ function Management() {
           isVideo
           subtitle="Plataforma completa de Gestão e Vendas"
           paragraph1={[
-            "Plataforma Web, sem necessidade instalar nada.",
-            "PDV rápido e completo, comprovante de venda na hora.",
-            "Tenha total gestão do seu estoque, entrada, saida, perda, garantia.",
-            "Comissão dos vendedores de forma rápida, e em tempo real.",
-            "Gestão de clientes, gestão de todas as vendas realizadas para ele.",
-            "Cadastro de produtos completo, rápido, e facil de atualizar.",
-            "Cadastro de Fornecedores completo, rápido, e facil de atualizar.",
-            "Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.",
-            "Cadastro de usuários completo, permitindo definir permissões de acesso.",
-            "Relatorios diários, por período, vendas por loja, comissões e muito mais.",
-            "Dashboard completo, tenha os dados de forma rápida na sua tela.",
+            "Plataforma Web, sem necessidade instalar nada",
+            "PDV rápido e completo, comprovante de venda na hora",
+            "Tenha total gestão do seu estoque, entrada, saida, perda, garantia",
+            "Comissão dos vendedores de forma rápida, e em tempo real",
+            "Gestão de clientes, gestão de todas as vendas realizadas para ele",
+            "Cadastro de produtos completo, rápido, e facil de atualizar",
+            "Cadastro de Fornecedores completo, rápido, e facil de atualizar",
+            "Multi Lojas, gerencie várias lojas e estoque com um sistema unificado",
+            "Cadastro de usuários completo, permitindo definir permissões de acesso",
+            "Relatorios diários, por período, vendas por loja, comissões e muito mais",
+            "Dashboard completo, tenha os dados de forma rápida na sua tela",
           ]}
           // "
           // <ul>

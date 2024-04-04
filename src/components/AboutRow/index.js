@@ -44,7 +44,7 @@ function AboutRow(props) {
               title="Ecommerces e Marketplaces"
               type="development"
               image="coin"
-              text="Crie uma loja virtual ou marketplace para sua empresa e comece a vender online, com integração de pagamentos e ferramentas de gestão de estoque."
+              text="Crie uma loja virtual ou marketplace para sua empresa e comece a vender online, com integração de pagamentos e ferramentas de gestão de estoque"
             />
             <Card
               title="Terceirização de Squads"
