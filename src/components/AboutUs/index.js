@@ -16,6 +16,7 @@ import {
 } from "../../styles/Icons";
 import StockCard from "../StockCard";
 import VideoBlod from "../VideoBlod";
+import { TiInputChecked } from "react-icons/ti";
 
 function AboutUs(props) {
   return (
@@ -33,10 +34,39 @@ function AboutUs(props) {
             )}
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
-              <p>{props.paragraph2}</p>
+              {Array.isArray(props.paragraph1) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph1.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+              )}
+              <p
+                style={
+                  props.boldenGreen
+                    ? { fontWeight: "bold", color: "var(--accent-color)" }
+                    : {}
+                }
+              >
+                {props.paragraph2}
+              </p>
               <p>{props.paragraph3}</p>
-              <p>{props.paragraph4}</p>
+              <p> {props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
                   <SecundaryRow key={card.id}>
@@ -59,11 +89,40 @@ function AboutUs(props) {
             <Title title={props.title} />
           </div>
           <MainRow>
-            <VideoBlod isVideo={props.isVideo} source={props.url}  />
+            <VideoBlod isVideo={props.isVideo} source={props.url} />
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
-              <p>{props.paragraph2}</p>
+              {Array.isArray(props.paragraph1) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph1.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+              )}
+              <p
+                style={
+                  props.boldenGreen
+                    ? { fontWeight: "bold", color: "var(--accent-color)" }
+                    : {}
+                }
+              >
+                {props.paragraph2}
+              </p>
               <p>{props.paragraph3}</p>
               <p>{props.paragraph4}</p>
               <DivSecundaryRow>
@@ -90,15 +149,44 @@ function AboutUs(props) {
           <MainRow>
             <MainColumn>
               <h1>{props.subtitle}</h1>
-              <p dangerouslySetInnerHTML={{__html: props.paragraph1}}></p>
-              <p>{props.paragraph2}</p>
+              {Array.isArray(props.paragraph1) ? (
+                <p>
+                  <ul style={{ listStyle: "none" }}>
+                    {props.paragraph1.map((item, index) => (
+                      <li key={index}>
+                        <span
+                          style={{
+                            display: "flex",
+                            alignItems: "center",
+                            fontWeight: "600",
+                            marginBlock: "5px",
+                          }}
+                        >
+                          <TiInputChecked color="var(--accent-color)" /> {item}
+                        </span>
+                      </li>
+                    ))}
+                  </ul>
+                </p>
+              ) : (
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }}></p>
+              )}
+              <p
+                style={
+                  props.boldenGreen
+                    ? { fontWeight: "bold", color: "var(--accent-color)" }
+                    : {}
+                }
+              >
+                {props.paragraph2}
+              </p>
               <p>{props.paragraph3}</p>
-              <p>{props.paragraph4}</p>
+              <p> {props.paragraph4}</p>
               <DivSecundaryRow>
                 {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow>
+                  <SecundaryRow key={card.id}>
                     {card.icon}
-                    <SecundaryColumn key={card.id}>
+                    <SecundaryColumn>
                       <strong title={card.title}>{card.title}</strong>
                       <small>{card.description}</small>
                     </SecundaryColumn>

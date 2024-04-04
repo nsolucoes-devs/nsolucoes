@@ -73,59 +73,64 @@ function Management() {
           title="Nstock - Gestão e vendas"
           url={GestaoEVendasVideo}
           isVideo
-          subtitle="Tenha no seu negócio uma plataforma web completa para a gestão e vendas."
-          paragraph1="
-          <ul>
-            <li>
-              <span>Plataforma Web, sem necessidade instalar nada.</span>
-            </li>
-            <li>
-              <span>PDV rápido e completo, comprovante de venda na hora.</span>
-            </li>
-            <li>
-              <span>Tenha total gestão do seu estoque, entrada, saida, perda, garantia.</span>
-            </li>
-            <li>
-              <span>Comissão dos vendedores de forma rápida, e em tempo real.</span>
-            </li>
-            <li>
-              <span>Gestão de clientes, gestão de todas as vendas realizadas para ele.</span>
-            </li>
-            <li>
-              <span>Cadastro de produtos completo, rápido, e facil de atualizar.</span>
-            </li>
-            <li>
-              <span>Cadastro de Fornecedores completo, rápido, e facil de atualizar.</span>
-            </li>
-            <li>
-              <span>Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.</span>
-            </li>
-            <li>
-              <span>Cadastro de usuários completo, permitindo definir permissões de acesso.</span>
-            </li>
-            <li>
-              <span>Relatorios diários, por período, vendas por loja, comissões e muito mais.</span>
-            </li>
-            <li>
-              <span>Dashboard completo, tenha os dados de forma rápida na sua tela.</span>
-            </li>
-          </ul>
-          -  <br />
-          -  <br />
-          -  <br />
-          -  <br />
-          -  <br />
-          -  <br />
-          -  <br />
-          - "
+          subtitle="Uma plataforma web completa para a gestão e vendas."
+          paragraph1={[
+            "Plataforma Web, sem necessidade instalar nada.",
+            "PDV rápido e completo, comprovante de venda na hora.",
+            "Tenha total gestão do seu estoque, entrada, saida, perda, garantia.",
+            "Comissão dos vendedores de forma rápida, e em tempo real.",
+            "Gestão de clientes, gestão de todas as vendas realizadas para ele.",
+            "Cadastro de produtos completo, rápido, e facil de atualizar.",
+            "Cadastro de Fornecedores completo, rápido, e facil de atualizar.",
+            "Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.",
+            "Cadastro de usuários completo, permitindo definir permissões de acesso.",
+            "Relatorios diários, por período, vendas por loja, comissões e muito mais.",
+            "Dashboard completo, tenha os dados de forma rápida na sua tela.",
+          ]}
+          // "
+          // <ul>
+          //   <li>
+          //     <span>Plataforma Web, sem necessidade instalar nada.</span>
+          //   </li>
+          //   <li>
+          //     <span>PDV rápido e completo, comprovante de venda na hora.</span>
+          //   </li>
+          //   <li>
+          //     <span>Tenha total gestão do seu estoque, entrada, saida, perda, garantia.</span>
+          //   </li>
+          //   <li>
+          //     <span>Comissão dos vendedores de forma rápida, e em tempo real.</span>
+          //   </li>
+          //   <li>
+          //     <span>Gestão de clientes, gestão de todas as vendas realizadas para ele.</span>
+          //   </li>
+          //   <li>
+          //     <span>Cadastro de produtos completo, rápido, e facil de atualizar.</span>
+          //   </li>
+          //   <li>
+          //     <span>Cadastro de Fornecedores completo, rápido, e facil de atualizar.</span>
+          //   </li>
+          //   <li>
+          //     <span>Multi Lojas, gerencie várias lojas e estoque com um sistema unificado.</span>
+          //   </li>
+          //   <li>
+          //     <span>Cadastro de usuários completo, permitindo definir permissões de acesso.</span>
+          //   </li>
+          //   <li>
+          //     <span>Relatorios diários, por período, vendas por loja, comissões e muito mais.</span>
+          //   </li>
+          //   <li>
+          //     <span>Dashboard completo, tenha os dados de forma rápida na sua tela.</span>
+          //   </li>
+          // </ul>"
           paragraph2="Inclua no seu sistema o nosso ecommerce, tendo total integração da sua loja virtual com a loja física, gerenciando pedidos, estoque e muito mais!"
           paragraph3="Precisa de ajuste? Plataforma totalmente adaptável, possibilitando desenvolver e ajustar recursos para adequação a necessidade específica do seu negócio."
           paragraph4="Plataforma 100% sem a necessidade de instalação nos computadores, servidor em nuvem totalmente seguro e rápido, pdv acessível no celular facilitando a venda dos seus vendedores, além da mobilidade."
+          boldenGreen
         />
       </div>
 
       {/* Nossos serviços */}
-      <AboutRow aService cardInfo={cardInfo} />
 
       <div style={{ marginBottom: "50px" }}></div>
 
