@@ -14,7 +14,7 @@ function FinTechs() {
   const cardInfo = [
     {
       id: 1,
-      title: "Terceirizações e Squads",
+      title: "Alocação de Squad",
       type: "development",
       image: "devices",
       text: "Descubra como a terceirização de squads pode otimizar sua produtividade e reduzir custos. Conheça nossa abordagem colaborativa e flexível para desenvolver soluções sob medida para sua empresa. "

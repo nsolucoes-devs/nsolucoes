@@ -69,10 +69,10 @@ function Squads() {
         <AboutUs
           imageleft
           cardIcon={cardIcon}
-          title="Terceirizações e Squads"
+          title="Alocação de Squad"
           url={DevVideo}
           isVideo
-          subtitle="Potencialize sua equipe com a alocação de squads terceirizados"
+          subtitle="Tenha um time exclusivo para o seu projeto"
           paragraph1="Tem um projeto inovador e precisa apenas da equipe de tecnologia? Conte conosco para oferecer a melhor equipe e tornar o seu projeto realidade. 
           Contamos com um time de especialistas nas mais diversas áreas de desenvolvimento, além de dominarem as mais modernas linguagens de programação."
           paragraph2="Nosso time transforma suas ideias em soluções personalizadas de alta escala, impulsionando o sucesso do seu negócio, tudo de forma eficiente e profissional!
