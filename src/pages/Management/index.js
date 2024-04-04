@@ -38,25 +38,25 @@ function Management() {
 
   const cardIcon = [
     {
-      icon: <BsGraphUpArrow className="products" size={60} />,
+      icon: <BsGraphUpArrow className="products" size={160} />,
       title: "Eficiência",
       description:
         "Uma gestão eficiente de vendas permite maximizar o potencial de vendas e gerenciar o processo de vendas de forma mais eficaz.",
     },
     {
-      icon: <HiDocumentReport className="pie" size={75} />,
+      icon: <HiDocumentReport className="pie" size={200} />,
       title: "Relatórios em Tempo Real",
       description:
         "Relatórios em tempo real fornecem dados valiosos para a equipe de vendas, permitindo que tomem decisões informadas para melhorar as vendas.",
     },
     {
-      icon: <FaStore className="performance" size={75} />,
+      icon: <FaStore className="performance" size={200} />,
       title: "Ecommerce Integrado",
       description:
         "Tenha sua loja também na internet, disponibilize seu estoque online, tudo integrado ao sistema, facilitando suas vendas e controle.",
     },
     {
-      icon: <MdManageSearch className="products" size={60} />,
+      icon: <MdManageSearch className="products" size={200} />,
       title: "Gestão de Comissões",
       description:
         "Tenha relatórios em tempo real da comissão dos seus vendedores, chega de perder tempo calculando fechamentos na mão.",
@@ -73,7 +73,7 @@ function Management() {
           title="Nstock - Gestão e vendas"
           url={GestaoEVendasVideo}
           isVideo
-          subtitle="Uma plataforma web completa para a gestão e vendas."
+          subtitle="Plataforma completa de Gestão e Vendas"
           paragraph1={[
             "Plataforma Web, sem necessidade instalar nada.",
             "PDV rápido e completo, comprovante de venda na hora.",

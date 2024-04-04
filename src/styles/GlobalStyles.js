@@ -9,7 +9,7 @@ export default createGlobalStyle`
     }
     body {
         background-color: #fff;
-        font-family:  'Quicksand', sans-serif;
+        font-family:  'Montserrat', sans-serif;
         color: #5B5C69;
         scroll-behavior: smooth;
         overflow-x: hidden;

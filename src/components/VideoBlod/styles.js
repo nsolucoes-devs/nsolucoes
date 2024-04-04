@@ -90,7 +90,7 @@ export const Circle = styled.div`
   border-radius: 50%;
   overflow: hidden; /* Garante que o vídeo não ultrapasse os limites do círculo */
   position: relative;
-  max-width: 800px;
+  max-width: 600px;
   max-height: 550px;
   width: 800px;
   height: 550px;
@@ -101,6 +101,7 @@ export const Circle = styled.div`
   // background: url(${props => props.image});
   // background-position: center;
   // background-size: cover;
+  flex: 1;
 
   transition: all .2s;
 

@@ -36,12 +36,15 @@ function AboutUs(props) {
                         <span
                           style={{
                             display: "flex",
-                            alignItems: "center",
-                            fontWeight: "600",
-                            marginBlock: "5px",
+                            marginBlock: "10px",
+                            textAlign: "left",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -59,11 +62,14 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -73,7 +79,7 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px' }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -88,11 +94,14 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -101,18 +110,7 @@ function AboutUs(props) {
               ) : (
                 <p dangerouslySetInnerHTML={{ __html: props.paragraph3 }} />
               )}
-              <p> {props.paragraph4}</p>
-              <DivSecundaryRow>
-                {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow key={card.id}>
-                    {card.icon}
-                    <SecundaryColumn>
-                      <strong title={card.title}>{card.title}</strong>
-                      <small>{card.description}</small>
-                    </SecundaryColumn>
-                  </SecundaryRow>
-                ))}
-              </DivSecundaryRow>
+              <p>{props.paragraph4}</p>
             </MainColumn>
           </MainRow>
         </>
@@ -141,12 +139,16 @@ function AboutUs(props) {
                         <span
                           style={{
                             display: "flex",
-                            alignItems: "center",
-                            fontWeight: "600",
-                            marginBlock: "5px",
+
+                            marginBlock: "10px",
+                            textAlign: "left",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -164,11 +166,15 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
+
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -178,7 +184,7 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px'  }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -193,11 +199,15 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
+
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -239,12 +249,15 @@ function AboutUs(props) {
                         <span
                           style={{
                             display: "flex",
-                            alignItems: "center",
-                            fontWeight: "600",
-                            marginBlock: "5px",
+                            marginBlock: "10px",
+                            textAlign: "left",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -262,11 +275,14 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
@@ -276,7 +292,7 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)" }
+                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px'  }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -291,31 +307,23 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
-                            fontWeight: "600",
                             marginBlock: "5px",
                           }}
                         >
-                          <TiInputChecked color="var(--accent-color)" /> {item}
+                          <TiInputChecked
+                            color="var(--accent-color)"
+                            size={24}
+                          />
+                          {item}
                         </span>
                       </li>
                     ))}
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph3 }} />
               )}
-              <p> {props.paragraph4}</p>
-              <DivSecundaryRow>
-                {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow key={card.id}>
-                    {card.icon}
-                    <SecundaryColumn>
-                      <strong title={card.title}>{card.title}</strong>
-                      <small>{card.description}</small>
-                    </SecundaryColumn>
-                  </SecundaryRow>
-                ))}
-              </DivSecundaryRow>
+              <p>{props.paragraph4}</p>
             </MainColumn>
             {props.isVideo ? (
               <video controls>

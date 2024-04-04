@@ -64,8 +64,8 @@ export const MainRow = styled.div`
   flex-direction: row;
   padding: 40px 0;
   gap: 70px;
-  width: 90%;
-  justify-content: center;
+  width: 80%;
+  justify-content: space-between;
   z-index: 1;
   margin: 0 auto;
 
@@ -87,19 +87,19 @@ export const MainRow = styled.div`
 export const MainColumn = styled.div`
   display: flex;
   flex-direction: column;
-  padding: 0 20px;
+  flex: 3;
 
   h1 {
     font-weight: 600;
     font-size: 2rem;
-    max-width: 600px;
+    width: 100%;
     margin-bottom: 30px;
   }
 
   p {
     font-size: 1.2rem;
     word-wrap: break-word;
-    max-width: 600px;
+    width: 100%;
     white-space: pre-wrap;
     word-break: break-word; /* Adicione esta linha */
     margin-bottom: 1rem;
