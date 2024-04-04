@@ -45,7 +45,7 @@ function CostumeRental() {
           imageleft
           cardIcon={cardIcon}
           title="PLATAFORMAS DE ALTA ESCALA"
-          subtitle="Com vasta experiência, somos especialistas em criar plataformas de alta escala."
+          subtitle="Com vasta experiência, somos especialistas em criar plataformas de alta escala"
           paragraph2="Tudo é feito pensando na usabilidade e na experiência do usuário final. Além disso, oferecemos uma ampla variedade de recursos personalizáveis, que permitem que nossos clientes criem uma plataforma web totalmente adaptada às suas necessidades específicas. Isso inclui desde a criação de layouts personalizados até a integração de recursos como formulários, chats e sistemas de pagamento e até outras plataformas."
           paragraph3="Nossa equipe altamente qualificada está sempre pronta para ajudar nossos clientes em todas as etapas do desenvolvimento da plataforma, desde a concepção até a implementação e manutenção. Nós oferecemos um atendimento personalizado, que visa entender as necessidades de cada cliente e propor soluções sob medida para cada projeto. Se você está procurando uma plataforma web de alto desempenho e que proporcione uma experiência única para os seus usuários, entre em contato conosco e vamos conversar sobre como podemos ajudá-lo.          "
           url={CostumeRentalVideo}

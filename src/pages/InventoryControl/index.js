@@ -72,7 +72,7 @@ function InventoryControl() {
           title="Controle de Estoque"
           url={EstoqueVideo}
           isVideo
-          subtitle="Plataforma web completa para gestão da loja e estoque."
+          subtitle="Plataforma web completa para gestão da loja e estoque"
           paragraph1={[
             "Gestão do seu estoque, entrada, saida, perda, garantia",
             "Módulo de venda completo, comprovante de venda na hora",

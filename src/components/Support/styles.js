@@ -79,7 +79,8 @@ export const Container = styled.div`
 
   @media only screen and (min-width: 768px) {
     .support-home {
-      width: 80%;
+      width: 60%;
+      gap: 10px;
       justify-content: space-between;
     }
   }

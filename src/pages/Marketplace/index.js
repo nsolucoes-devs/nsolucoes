@@ -69,7 +69,7 @@ function Marketplace() {
           isVideo
           subtitle="Crie sua plataforma de dropshipping completa, tenha uma equipe de tecnologia
           apoiando o seu negócio, de forma escalável, com tecnologia e desempenho
-          para atingir vendas em todo brasil, e até internacionais."
+          para atingir vendas em todo brasil, e até internacionais"
           paragraph1={[
             "Plataforma com acessos em larga escala;",
             "Segurança e desempenho para milhares de acessos;",

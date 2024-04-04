@@ -46,7 +46,7 @@ function FleetManagement() {
           title="Gestão de Frotas"
           url={FrotasVideo}
           isVideo
-          subtitle="Plataforma web completa para gerenciar a sua frota."
+          subtitle="Plataforma web completa para gerenciar a sua frota"
           paragraph1="Veículos Leves ou Pesados, tenha a gestão de manutenções, custos,
           aviso de troca de óleo, financeiro, relatórios e muito mais!"
           paragraph2="Nossos principais recursos:"

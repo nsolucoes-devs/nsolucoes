@@ -71,7 +71,7 @@ function WebPlataform() {
           imageleft
           cardIcon={cardIcon}
           title="PLATAFORMAS DE ALTA ESCALA"
-          subtitle="Com vasta experiência, somos especialistas em criar plataformas de alta escala."
+          subtitle="Com vasta experiência, somos especialistas em criar plataformas de alta escala"
           paragraph1="Tudo é feito pensando na usabilidade e na experiência do usuário final. Além disso, oferecemos uma ampla variedade de recursos personalizáveis, que permitem que nossos clientes criem uma plataforma web totalmente adaptada às suas necessidades específicas."
           paragraph2="Da criação de layouts personalizados até a integração de recursos como formulários, chats e sistemas de pagamento e até outras plataformas."
           paragraph3={[
