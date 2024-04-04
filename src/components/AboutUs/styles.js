@@ -93,15 +93,17 @@ export const MainColumn = styled.div`
     font-weight: 600;
     font-size: 2rem;
     max-width: 600px;
-    margin-bottom: 50px;
+    margin-bottom: 30px;
   }
 
   p {
+    font-size: 1.2rem;
     word-wrap: break-word;
     max-width: 600px;
     white-space: pre-wrap;
     word-break: break-word; /* Adicione esta linha */
     margin-bottom: 1rem;
+    text-align: justify;
   }
 
   @media only screen and (max-width: 768px) {

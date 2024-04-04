@@ -37,28 +37,28 @@ function MobileApps() {
   const cardIcon = useState([
     {
       id: 1,
-      icon: <FaHandPointer className="products" size={45} />,
+      icon: <FaHandPointer className="products" size={90} />,
       title: "Intuitivo",
       description:
         "Um aplicativo com interface fácil de usar e que permita a realização das tarefas com rapidez e facilidade.",
     },
     {
       id: 2,
-      icon: <FaPuzzlePiece className="pie" size={45} />,
+      icon: <FaPuzzlePiece className="pie" size={90} />,
       title: "Personalizado",
       description:
         "O aplicativo é desenvolvido de acordo com as necessidades e objetivos do cliente.",
     },
     {
       id: 3,
-      icon: <FaCloud className="performance" size={45} />,
+      icon: <FaCloud className="performance" size={90} />,
       title: "Conectado",
       description:
         "Integração com redes sociais e outras plataformas para melhorar a interação com o usuário.",
     },
     {
       id: 4,
-      icon: <FaLock className="products" size={35} />,
+      icon: <FaLock className="products" size={80} />,
       title: "Seguro",
       description:
         "Proteção das informações do usuário e das transações realizadas pelo aplicativo.",
