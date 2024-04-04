@@ -6,6 +6,7 @@ const Description = ({ children }) => {
       style={{
         fontSize: "20px",
         lineHeight: "30px",
+        margin: "16px",
       }}
     >
       {children}

@@ -64,7 +64,7 @@ function Support(props) {
           <Row className="main-row support-home">
             <Column>
               <Column className="contact">
-                <h1>Vamos conversar!</h1>
+                <h1 style={{ marginBottom: "20px" }}>Vamos conversar!</h1>
                 <h3>
                   Fale com um de nossos especialistas agora mesmo, vamos tornar
                   sua ideia em realidade!
@@ -82,6 +82,7 @@ function Support(props) {
                 </PulseContainer>
               </Column>
             </Column>
+            <div className="horizontal-divider" />
             <div className="vertical-divider" />
             <Column>
               <Column className="contact">
@@ -131,7 +132,7 @@ function Support(props) {
       {props.supportContact && (
         <>
           <div className="social-contact">
-            <h1>Vamos conversar!</h1>
+            <h1 style={{ marginBottom: "20px" }}>Vamos conversar!</h1>
             {/* <Title title="" icon={<BiSupport size={100} />} /> */}
           </div>
           <Row className="main-row">
@@ -141,21 +142,20 @@ function Support(props) {
                   Fale com um de nossos especialistas agora mesmo, vamos tornar
                   sua ideia em realidade!
                 </h3>
-                <MessageBtn>
-                  <MessageMainButton
-                    placeholder="Envie sua mensagem!"
-                    value={message}
-                    onChange={handleInputChange}
-                  />
-                  {isTyping ? (
-                    <SendButton onClick={handleSendClick}>Enviar</SendButton>
-                  ) : (
-                    <WhatsappIcon />
-                  )}
-                </MessageBtn>
+                <PulseContainer onClick={handleSendClick}>
+                  <MessageBtn>
+                    <MessageMainButton>Envie sua mensagem!</MessageMainButton>
+                    {isTyping ? (
+                      <SendButton onClick={handleSendClick}>Enviar</SendButton>
+                    ) : (
+                      <WhatsappIcon />
+                    )}
+                  </MessageBtn>
+                </PulseContainer>
               </Column>
             </Column>
             <div className="vertical-divider" />
+            <div className="horizontal-divider" />
             <Column>
               <Column className="contact">
                 {/* <strong>Suporte</strong> */}
@@ -197,6 +197,7 @@ function Support(props) {
                 </SocialRow>
               </Column>
             </Column>
+            <div className="horizontal-divider" />
           </Row>
         </>
       )}
@@ -207,7 +208,11 @@ function Support(props) {
 
           <Footer>
             <LogoWrapper onClick={() => (window.location.href = "/")}>
-              <LogoName className="logo-name" src={logo} style={{width: '200px'}} />
+              <LogoName
+                className="logo-name"
+                src={logo}
+                style={{ width: "200px" }}
+              />
             </LogoWrapper>
             <small>© {year}. N Soluções, todos os direitos reservados.</small>
           </Footer>

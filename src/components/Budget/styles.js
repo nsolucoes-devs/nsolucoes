@@ -37,7 +37,6 @@ export const ButtonBudget = styled.div`
       display: grid;
       height: 100%;
       text-align: center;
-      margin-top: 2rem;
       justify-items: center;
     }
 
@@ -51,7 +50,8 @@ export const ButtonBudget = styled.div`
 
 export const Button = styled.div`
   width: fit-content;
-  padding: 20px 75px;
+  padding: 10px 75px;
+  margin-bottom: 30px;
   border-radius: 70px;
   background-color: #fff;
   font-weight: 600;

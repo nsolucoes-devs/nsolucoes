@@ -80,8 +80,6 @@ function WebPlataform() {
         />
       </div>
 
-      <div style={{ marginBottom: "50px" }}></div>
-
       {/* Faça seu orçamento */}
       <Budget title="Plataformas Web" />
 

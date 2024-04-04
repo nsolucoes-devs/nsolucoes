@@ -62,7 +62,7 @@ export const Container = styled.div`
 export const MainRow = styled.div`
   display: flex;
   flex-direction: row;
-  padding: 100px 0;
+  padding: 40px 0;
   gap: 70px;
   width: 90%;
   justify-content: center;
@@ -193,7 +193,9 @@ export const SecundaryRow = styled.div`
 export const DivSecundaryRow = styled.div`
   display: flex;
   flex-wrap: wrap;
-  max-width: 700px;
+  width: 80%;
+  margin-block: 30px 60px;
+  gap: 10px;
 
   @media only screen and (max-width: 768px) {
     justify-content: space-around;

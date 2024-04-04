@@ -132,8 +132,6 @@ function Management() {
 
       {/* Nossos serviços */}
 
-      <div style={{ marginBottom: "50px" }}></div>
-
       {/* Faça seu orçamento */}
       <Budget title="Gestão e Vendas" />
 

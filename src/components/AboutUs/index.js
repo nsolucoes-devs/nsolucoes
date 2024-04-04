@@ -89,7 +89,9 @@ function AboutUs(props) {
             <Title title={props.title} />
           </div>
           <MainRow>
-            <VideoBlod isVideo={props.isVideo} source={props.url} />
+            <div>
+              <VideoBlod isVideo={props.isVideo} source={props.url} />
+            </div>
             <MainColumn>
               <h1>{props.subtitle}</h1>
               {Array.isArray(props.paragraph1) ? (
@@ -125,19 +127,19 @@ function AboutUs(props) {
               </p>
               <p>{props.paragraph3}</p>
               <p>{props.paragraph4}</p>
-              <DivSecundaryRow>
-                {(props.cardIcon || []).map((card) => (
-                  <SecundaryRow key={card.id}>
-                    {card.icon}
-                    <SecundaryColumn>
-                      <strong title={card.title}>{card.title}</strong>
-                      <small>{card.description}</small>
-                    </SecundaryColumn>
-                  </SecundaryRow>
-                ))}
-              </DivSecundaryRow>
             </MainColumn>
           </MainRow>
+          <DivSecundaryRow>
+            {(props.cardIcon || []).map((card) => (
+              <SecundaryRow key={card.id}>
+                {card.icon}
+                <SecundaryColumn>
+                  <strong title={card.title}>{card.title}</strong>
+                  <small>{card.description}</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+            ))}
+          </DivSecundaryRow>
         </>
       )}
 

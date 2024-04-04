@@ -17,7 +17,7 @@ export const Container = styled.div`
       position: absolute;
       bottom: 5px;
       left: 0;
-      height: 15px;
+      height: 10px;
       width: 100%;
       background: rgba(30, 138, 77, 0.5);
       transition: all 0.4s ease;

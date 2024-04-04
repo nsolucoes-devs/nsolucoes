@@ -77,8 +77,6 @@ function UIUxDesign() {
 
       {/* Nossos serviços */}
       <AboutRow aService cardInfo={cardInfo} />
-
-      <div style={{ marginBottom: "50px" }}></div>
       
       <Budget title="UI e UX Design" />
 

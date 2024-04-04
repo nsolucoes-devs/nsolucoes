@@ -55,7 +55,6 @@ export const OptionsRow = styled.ul`
   font-size: 15px;
   gap: 30px;
   align-items: center;
-  margin-left: 4rem;
 
   // @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
   //   font-size: 42px;
@@ -145,7 +144,7 @@ export const LogoName = styled.img`
 export const MobileHeader = styled.nav`
   display: flex;
   justify-content: center;
-  align-items: center;
+  padding-top: 14vh;
   width: 100vw;
   height: 100vh;
   box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
@@ -189,7 +188,7 @@ export const MobileHeader = styled.nav`
     li {
       text-transform: uppercase;
       font-size: 16pt;
-      font-weight: 600;
+      font-weight: bold;
       cursor: pointer;
       padding: 5px 15px;
       color: black;
@@ -242,6 +241,7 @@ export const MobileHeader = styled.nav`
       font-size: 16pt;
       font-weight: 600;
       margin-top: 3rem;
+      margin-bottom: 5rem;
       padding: 1rem;
       animation: pulse 2s infinite;
     }

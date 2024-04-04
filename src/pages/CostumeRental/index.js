@@ -54,8 +54,6 @@ function CostumeRental() {
         />
       </div>
 
-      <div style={{ marginBottom: "50px" }}></div>
-
       {/* Faça seu orçamento */}
       <Budget title="Locação de Trajes" />
 

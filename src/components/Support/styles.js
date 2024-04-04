@@ -36,13 +36,17 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.1);
   }
   .horizontal-divider {
+    display: none;
     height: 2px;
     width: 80%;
-    margin: 30px 0;
+    margin: 30px 0px;
     background-color: rgba(0, 0, 0, 0.1);
   }
 
   @media only screen and (max-width: 767px) {
+    .horizontal-divider {
+      display: block;
+    }
     .left {
       margin-left: 0;
       align-self: center;
@@ -76,6 +80,7 @@ export const Container = styled.div`
   @media only screen and (min-width: 768px) {
     .support-home {
       width: 80%;
+      justify-content: space-between;
     }
   }
 
@@ -107,7 +112,7 @@ export const Container = styled.div`
       color: #252525;
       max-width: 95vw;
       margin-top: 15rem;
-      margin-bottom: 30px;
+      margin-bottom: 20px;
     }
   }
 `;
@@ -252,13 +257,13 @@ export const Row = styled.div`
   flex-direction: row;
   justify-content: center;
   align-items: center;
-  gap: 50px;
+  gap: 10px;
   width: 100%;
   height: 250px;
   margin-top: 1rem;
-  margin-bottom: 2rem;
+  margin-bottom: 7.3rem;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     height: fit-content;
   }
 
@@ -269,10 +274,6 @@ export const Row = styled.div`
   .support-home {
     margin-top: 2rem !important;
     margin-bottom: 2rem !important;
-  }
-
-  @media only screen and (min-device-width: 1280px) and (max-device-width: 1920px) and (orientation: landscape) {
-    margin-bottom: 7.3rem;
   }
 `;
 
@@ -328,7 +329,7 @@ export const Column = styled.div`
     text-align: center;
 
     ul {
-      margin-bottom: 30px;
+      margin-bottom: 10px;
     }
   }
 
@@ -373,7 +374,7 @@ export const SocialRow = styled.div`
   gap: 20px;
   align-items: center;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     margin-bottom: 10px;
   }
 
@@ -419,8 +420,10 @@ export const PulseContainer = styled.div`
 
   animation: pulse 2s infinite;
   border-radius: 20px;
-  margin-top: 20px;
+  margin-block: 40px;
   cursor: pointer;
+
+  width: 80%;
 `;
 
 export const MessageBtn = styled.div`

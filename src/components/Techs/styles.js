@@ -59,6 +59,15 @@ export const Container = styled.div`
   }
 
   @media only screen and (max-width: 768px) {
+    .scroll-container {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
+
+    .scroll-container-work {
+      justify-content: center;
+      flex-wrap: wrap;
+    }
     .left {
       margin-left: 0;
       align-self: center;
@@ -376,7 +385,7 @@ export const StacksRow = styled.div`
   flex-wrap: wrap;
   gap: 10px;
 
-  @media (max-width: 500px) {
+  @media (max-width: 768px) {
     justify-content: center;
   }
 `;

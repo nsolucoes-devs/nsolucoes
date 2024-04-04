@@ -8,14 +8,14 @@ import {
   LogoName,
   Menu,
   MobileHeader,
-  MiddleButton
+  MiddleButton,
 } from "./styles";
 import { RiArrowDropDownLine } from "../../styles/Icons";
 import logo_name from "../../assets/images/logo1.png";
 import Dropdown from "../Dropdown";
 import {
   AiOutlineInfoCircle,
-  GiTicket, 
+  GiTicket,
   IoMapSharp,
   AiFillPhone,
 } from "../../styles/Icons";
@@ -30,37 +30,37 @@ function Header() {
         { name: "Gestão e Vendas", url: "/software/gestaoevendas" },
         { name: "Controle de Estoque", url: "/software/inventory" },
         { name: "Gestão de Frotas", url: "/software/fleet" },
-        { name: "Locação de Trajes", url: "/software/fleet" }
-      ]
+        { name: "Locação de Trajes", url: "/software/fleet" },
+      ],
     },
     {
       label: "Sites",
       items: [
         { name: "Sites e Portais", url: "/web/sites" },
         { name: "Ecommerces", url: "/web/ecommerce" },
-        { name: "Marketplaces", url: "/web/marketplace" }
-      ]
+        { name: "Marketplaces", url: "/web/marketplace" },
+      ],
     },
     {
       label: "Outsourcing",
-      items: [
-        { name: "Terceirizações de Squad", url: "/outsourcing/squads" },
-      ]
-    }
-  ]
-  
+      items: [{ name: "Terceirizações de Squad", url: "/outsourcing/squads" }],
+    },
+  ];
+
   const [activeDropdown, setActiveDropdown] = useState(null);
   const [open, setOpen] = useState(false);
 
-  // função para mostrar o dropdown quando o mouse passar sobre o Option
-  function handleMouseEnter(index) {
-    setActiveDropdown(index);
+  // função para mostrar o dropdown quando clicar no Option
+  function handleClick(index) {
+    setActiveDropdown((currentDropdown) =>
+      currentDropdown === index ? null : index
+    );
   }
 
   // função para esconder o dropdown quando o mouse sair do Option
-  function handleMouseLeave() {
-    setActiveDropdown(null);
-  }
+  // function handleMouseLeave() {
+  //   setActiveDropdown(null);
+  // }
 
   const [width, setWidth] = useState(window.innerWidth);
 
@@ -77,24 +77,41 @@ function Header() {
     window.open(url);
   };
 
+  console.log(activeDropdown);
+
   return (
     <>
       {open && (
         <MobileHeader>
           <ul>
-            <li onClick={() => window.location.href='/'}>Home</li>
-            <li onClick={() => window.location.href='/about'}>Nós</li>
+            <li onClick={() => (window.location.href = "/")}>Home</li>
+            <li onClick={() => (window.location.href = "/about")}>Nós</li>
+            <li onClick={() => (window.location.href = "/apps/mobile")}>Apps</li>
             {options.map((option, index) => (
               <li
                 key={index}
-                onMouseEnter={() => handleMouseEnter(index)}
-                onMouseLeave={handleMouseLeave}
+                onClick={() => handleClick(index)}
+                style={{ display: "flex", flexDirection: "column" }}
+                // onMouseLeave={handleMouseLeave}
               >
-                <span>{option.label}</span> <RiArrowDropDownLine />
-                <Dropdown show={activeDropdown === index} items={option.items} />
+                <div>
+                  <span style={{ fontWeight: "bold" }}>{option.label}</span>{" "}
+                  <RiArrowDropDownLine />
+                </div>
+                <Dropdown
+                  show={activeDropdown === index}
+                  items={option.items}
+                  style={{
+                    position: "static",
+                    background: "transparent",
+                    border: "none",
+                    boxShadow: "none",
+                    display: activeDropdown === index ? "flex" : "none",
+                  }}
+                />
               </li>
-          ))}
-            <li onClick={() => window.location.href='/contact'}>Contato</li>
+            ))}
+            <li onClick={() => (window.location.href = "/contact")}>Contato</li>
             <a className="contact" onClick={handleSendClick}>
               Agendar Reunião
             </a>
@@ -102,33 +119,39 @@ function Header() {
         </MobileHeader>
       )}
       <Container isOpen={open}>
-        <LogoWrapper onClick={() => window.location.href='/'}>
+        <LogoWrapper onClick={() => (window.location.href = "/")}>
           <LogoName className="logo-name" src={logo_name} />
         </LogoWrapper>
         <OptionsRow>
           <Option>
-            <span onClick={() => window.location.href='/'}>Home</span>
+            <span onClick={() => (window.location.href = "/")}>Home</span>
           </Option>
           <Option>
-            <span onClick={() => window.location.href='/about'}>Nós</span>
+            <span onClick={() => (window.location.href = "/about")}>Nós</span>
           </Option>
           <Option>
-            <span onClick={() => window.location.href='/apps/mobile'}>Apps</span>
+            <span onClick={() => (window.location.href = "/apps/mobile")}>
+              Apps
+            </span>
           </Option>
           {options.map((option, index) => (
             <Option
               key={index}
-              onMouseEnter={() => handleMouseEnter(index)}
-              onMouseLeave={handleMouseLeave}
+              onClick={() => handleClick(index)}
+              // onMouseLeave={handleMouseLeave}
             >
               <span>{option.label}</span> <RiArrowDropDownLine />
               <Dropdown show={activeDropdown === index} items={option.items} />
             </Option>
           ))}
           <Option>
-            <span onClick={() => window.location.href='/contact'}>Contato</span>
+            <span onClick={() => (window.location.href = "/contact")}>
+              Contato
+            </span>
           </Option>
-            <MiddleButton className="mobile-button" onClick={handleSendClick}>Agendar Reunião</MiddleButton>
+          <MiddleButton className="mobile-button" onClick={handleSendClick}>
+            Agendar Reunião
+          </MiddleButton>
           <Menu>
             <Hamburger toggled={open} toggle={setOpen} />
           </Menu>

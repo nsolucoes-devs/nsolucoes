@@ -82,8 +82,6 @@ function Websites() {
       {/* Nossos serviços */}
       <AboutRow aService cardInfo={cardInfo} />
 
-      <div style={{ marginBottom: "50px" }}></div>
-
       {/* Faça seu orçamento */}
       <Budget title="Sites e Portais"/>
 

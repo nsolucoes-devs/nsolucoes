@@ -29,13 +29,13 @@ import StacksTag from "../StacksTag";
 
 function Techs(props) {
   const stacks = [
-    { id: 1, name: stack1, size: "120px" },
-    { id: 2, name: stack2, size: "80px" },
-    { id: 3, name: stack9, size: "120px" },
-    { id: 4, name: stack13, size: "200px" },
-    { id: 5, name: stack11, size: "200px" },
-    { id: 6, name: stack12, size: "100px" },
-    { id: 7, name: stack3, size: "150px" },
+    { id: 1, name: stack1, size: "5rem" },
+    { id: 2, name: stack2, size: "4rem" },
+    { id: 3, name: stack9, size: "5rem" },
+    { id: 4, name: stack13, size: "8rem" },
+    { id: 5, name: stack11, size: "7rem" },
+    { id: 6, name: stack12, size: "6rem" },
+    { id: 7, name: stack3, size: "8rem" },
     // { id: 8, name: stack6, size: "240px" },
     // { id: 9, name: stack10, size: "300px" },
     // { id: 10, name: stack7, size: "200px" },
@@ -54,7 +54,8 @@ function Techs(props) {
           </div>
           <ScrollContainer
             ref={scrollContainerRef}
-            className="scroll-container-work"
+            className="scroll-container"
+            vertical
           >
             {stacks.map((stack) => (
               <div
