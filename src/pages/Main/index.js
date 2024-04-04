@@ -10,6 +10,7 @@ import { RiPieChartFill } from "react-icons/ri";
 import { IoSpeedometer } from "react-icons/io5";
 import { IoTime } from "react-icons/io5";
 import { FaGear } from "react-icons/fa6";
+import Fachada from "../../assets/images/fachada.jpg";
 
 function Main() {
   const cardIcon = useState([
@@ -60,7 +61,7 @@ function Main() {
         home
         cardIcon={cardIcon[0]}
         title="Quem somos"
-        url="https://i.imgur.com/5Lv9aKE.jpg"
+        url={Fachada}
         subtitle="Uma Software House para ser seu braço tecnológico"
         paragraph1="Acreditamos que a tecnologia é o motor que impulsiona o mundo. Sempre rodeados por ideias inovadoras e projetos de larga escala, estamos prontos para ser seu parceiro em tecnologia, transformando suas ideias em realidade!"
         paragraph2="Criamos experiências digitais que elevam a marca dos nossos clientes a patamares superiores. Nosso compromisso com as melhores práticas e tecnologias de ponta nos permite garantir soluções escaláveis, seguras e confiáveis."
