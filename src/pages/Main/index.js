@@ -66,6 +66,7 @@ function Main() {
         paragraph1="Acreditamos que a tecnologia é o motor que impulsiona o mundo. Sempre rodeados por ideias inovadoras e projetos de larga escala, estamos prontos para ser seu parceiro em tecnologia, transformando suas ideias em realidade!"
         paragraph2="Criamos experiências digitais que elevam a marca dos nossos clientes a patamares superiores. Nosso compromisso com as melhores práticas e tecnologias de ponta nos permite garantir soluções escaláveis, seguras e confiáveis."
         paragraph3="Trabalhamos em estreita colaboração com nossos parceiros de negócios para entender seus objetivos e desafios! Desenvolvemos soluções criativas e inovadoras, somos movidos pela paixão a tecnologia e estamos sempre em busca de novas maneiras de impulsionar negócios e transformar ideias em realidade."
+      
       />
 
       <Techs caseWork />

@@ -8,12 +8,6 @@ import {
   DivSecundaryRow,
 } from "./styles";
 import Title from "../Title";
-import {
-  TiInfoLargeOutline,
-  HiArchiveBox,
-  RiPieChartFill,
-  IoSpeedometer,
-} from "../../styles/Icons";
 import StockCard from "../StockCard";
 import VideoBlod from "../VideoBlod";
 import { TiInputChecked } from "react-icons/ti";
@@ -105,7 +99,7 @@ function AboutUs(props) {
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph3 }} />
               )}
               <p> {props.paragraph4}</p>
               <DivSecundaryRow>
@@ -131,7 +125,11 @@ function AboutUs(props) {
           </div>
           <MainRow>
             <div>
-              <VideoBlod isVideo={props.isVideo} source={props.url} />
+              {props.isVideo ? (
+                <VideoBlod isVideo={props.isVideo} source={props.url} />
+              ) : (
+                <StockCard image={props.url} />
+              )}
             </div>
             <MainColumn>
               <h1>{props.subtitle}</h1>
@@ -206,7 +204,7 @@ function AboutUs(props) {
                   </ul>
                 </p>
               ) : (
-                <p dangerouslySetInnerHTML={{ __html: props.paragraph1 }} />
+                <p dangerouslySetInnerHTML={{ __html: props.paragraph3 }} />
               )}
               <p>{props.paragraph4}</p>
             </MainColumn>
