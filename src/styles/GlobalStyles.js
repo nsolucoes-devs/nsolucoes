@@ -8,7 +8,7 @@ export default createGlobalStyle`
         scroll-behavior: smooth;
     }
     body {
-        background-color: #fff;
+        background-color: var(--secundary-background);
         font-family:  'Montserrat', sans-serif;
         color: #5B5C69;
         scroll-behavior: smooth;

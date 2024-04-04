@@ -159,6 +159,7 @@ export const SecundaryRow = styled.div`
   margin-top: 15px;
   background-color: var(--main-background);
   max-width: 320px;
+  max-height: 160px;
   padding: 16px;
   border-radius: 20px;
   box-shadow: rgba(17, 12, 46, 0.08) 0px 48px 100px 0px;

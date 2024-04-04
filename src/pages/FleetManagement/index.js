@@ -12,7 +12,7 @@ function FleetManagement() {
   const cardIcon = [
     {
       icon: <FaMobileAlt className="products" size={55} />,
-      title: "Acesse de onde estiver",
+      title: "Acesse de Onde Estiver",
       description:
         "100% web, acesse de onde você estiver, gerencie sua frota.",
     },

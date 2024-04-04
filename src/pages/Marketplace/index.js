@@ -59,7 +59,7 @@ function Marketplace() {
       </div>
 
       {/* Faça seu orçamento */}
-      <Budget title="Marketplaces" />
+      <Budget title="Dropshipping" />
 
       <Techs work />
 

@@ -12,30 +12,6 @@ import { BiLinkAlt } from "react-icons/bi";
 import EstoqueVideo from "../../assets/videos/estoque.mp4";
 
 function InventoryControl() {
-  const cardInfo = [
-    {
-      id: 1,
-      title: "Gestão e Vendas",
-      type: "development",
-      image: "responsive",
-      text: "Aumente a eficiência e a rentabilidade do seu negócio com nossas soluções de gestão e vendas, que permitem um controle total sobre suas operações. Nossos sistemas oferecem recursos como controle de estoque, gerenciamento financeiro e integração com plataformas de venda online.",
-    },
-    {
-      id: 2,
-      title: "Plataformas Webs",
-      type: "development",
-      image: "devices",
-      text: "Descubra como criar uma forte presença online para sua empresa com nossas plataformas webs personalizadas, desenvolvidas para atender às necessidades específicas do seu negócio. Oferecemos soluções completas de design, desenvolvimento e hospedagem.",
-    },
-    {
-      id: 3,
-      title: "Gestão de Frotas",
-      type: "development",
-      image: "email",
-      text: "Com nossa solução de Gestão de Frotas, você pode ter o controle total de todos os seus veículos, agendar manutenções preventivas, controlar combustível e muito mais. Aumente a eficiência da sua frota e economize dinheiro.",
-    },
-  ];
-
   const cardIcon = [
     {
       icon: <AiOutlineUnorderedList className="products" size={40} />,
@@ -89,10 +65,7 @@ function InventoryControl() {
           paragraph4="Plataforma 100% sem a necessidade de instalação nos computadores, servidor em nuvem totalmente seguro e rápido, pdv acessível no celular facilitando a venda dos seus vendedores, além da mobilidade."
           boldenGreen
         />
-      </div>
-
-      {/* Nossos serviços */}
-      <AboutRow aService cardInfo={cardInfo} />
+      </div>  
 
       {/* Faça seu orçamento */}
       <Budget title="Controle de Estoque" />

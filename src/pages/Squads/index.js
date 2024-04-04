@@ -10,31 +10,6 @@ import { FiCheckCircle, FiClock, FiEye } from "react-icons/fi";
 import DevVideo from "../../assets/videos/dev.mp4";
 
 function Squads() {
-  const cardInfo = [
-    {
-      id: 1,
-      title: "Suporte a FinTechs",
-      type: "development",
-      image: "devices",
-      text: "Transforme sua ideia em realidade com nosso suporte a FinTechs! Contamos com soluções sob medida para atender às demandas específicas do seu negócio e ajudá-lo a alcançar o sucesso desejado.",
-    },
-    {
-      id: 2,
-      title: "MarketPlaces",
-      url: "/apps/mobile",
-      type: "development",
-      image: "responsive",
-      text: "Amplie sua visibilidade e aumente as vendas com nosso marketplace personalizado para a sua marca. Tenha uma vitrine online completa e atraente, que oferece uma experiência de compra segura e conveniente para os seus clientes.",
-    },
-    {
-      id: 3,
-      title: "Ecommerces",
-      type: "development",
-      image: "responsive",
-      text: "Descubra como potencializar suas vendas e alcançar mais clientes com nosso guia completo sobre E-commerce. Aproveite a oportunidade de começar agora mesmo e impulsione seu negócio para o sucesso!",
-    },
-  ];
-
   const cardIcon = [
     {
       icon: <FaCogs className="products" size={45} />,
@@ -92,9 +67,6 @@ function Squads() {
           ]}
         />
       </div>
-
-      {/* Nossos serviços */}
-      <AboutRow aService cardInfo={cardInfo} />
 
       {/* Faça seu orçamento */}
       <Budget title="Terceirizações e Squads" />
