@@ -28,6 +28,8 @@ export const Container = styled.div`
   @media only screen and (max-width: 768px) {
     h1 {
       font-size: 30px;
+      text-align: center;
+      margin-inline: 10px;
     }
     
   }
