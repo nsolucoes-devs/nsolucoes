@@ -55,6 +55,8 @@ export const OptionsRow = styled.ul`
   font-size: 15px;
   gap: 30px;
   align-items: center;
+  width: 100%;
+  justify-content: flex-end;
 
   // @media only screen and (min-device-width: 2160px) and (max-device-width: 3840px) and (orientation: landscape) {
   //   font-size: 42px;
@@ -246,9 +248,7 @@ export const MobileHeader = styled.nav`
       animation: pulse 2s infinite;
     }
   }
-  @media (min-width: 1024px) {
-    display: none;
-  }
+
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     ul {
@@ -259,7 +259,7 @@ export const MobileHeader = styled.nav`
 
       li {
         text-transform: uppercase;
-        font-size: 35pt;
+        // font-size: 35pt;
         font-weight: 600;
         cursor: pointer;
         padding: 5px 15px;
@@ -301,14 +301,15 @@ export const MobileHeader = styled.nav`
 
 export const Menu = styled.div`
   display: none;
+  align-self: flex-end;
 
-  @media (max-width: 835px) {
+  @media (max-width: 1100px) {
     display: flex;
     /* margin-left: 2rem; */
   }
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
-    margin-left: 20rem;
+    // margin-left: 20rem;
   }
 `;
 

@@ -103,7 +103,7 @@ function Header() {
                 />
               </li>
             ))}
-            <li onClick={() => (window.location.href = "/outsorcing/squads")}>
+            <li onClick={() => (window.location.href = "/outsourcing/squads")}>
               Alocação de Squad
             </li>
             <li onClick={() => (window.location.href = "/contact")}>Contato</li>

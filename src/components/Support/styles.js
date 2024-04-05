@@ -43,6 +43,12 @@ export const Container = styled.div`
     background-color: rgba(0, 0, 0, 0.1);
   }
 
+  @media only screen and (max-width: 1100px) {
+    .vertical-divider {
+      display: none;
+    }
+  }
+
   @media only screen and (max-width: 767px) {
     .horizontal-divider {
       display: block;
@@ -61,10 +67,6 @@ export const Container = styled.div`
 
     .social-contact {
       margin-bottom: 0px;
-    }
-
-    .vertical-divider {
-      display: none;
     }
 
     h1 {

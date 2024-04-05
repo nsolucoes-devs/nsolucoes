@@ -16,6 +16,7 @@ export const ButtonBudget = styled.div`
     align-items: center;
     justify-content: space-around;
     height: 100%;
+    padding: 16px;
   }
 
   .main-budget h1 {
