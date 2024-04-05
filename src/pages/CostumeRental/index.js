@@ -42,7 +42,7 @@ function CostumeRental() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="PLATAFORMAS DE ALTA ESCALA"
           subtitle="Com vasta experiência, somos especialistas em criar plataformas de alta escala"

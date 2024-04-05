@@ -35,7 +35,7 @@ function Ecommerce() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="E-commerce"
           url={EcommereceVideo}

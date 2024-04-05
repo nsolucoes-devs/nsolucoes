@@ -37,7 +37,7 @@ function Marketplace() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="Dropshipping"
           url={MarketplaceVideo}

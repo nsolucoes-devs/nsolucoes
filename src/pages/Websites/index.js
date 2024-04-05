@@ -49,7 +49,7 @@ function Websites() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="Sites e Portais"
           url={SitesVideo}

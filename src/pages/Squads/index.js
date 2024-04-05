@@ -42,7 +42,7 @@ function Squads() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="Alocação de Squad"
           url={DevVideo}

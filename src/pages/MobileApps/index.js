@@ -70,7 +70,7 @@ function MobileApps() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon[0]}
           title="Android e IOS"
           subtitle="Transforme sua ideia em um aplicativo de sucesso com nossos serviços de desenvolvimento mobile"
