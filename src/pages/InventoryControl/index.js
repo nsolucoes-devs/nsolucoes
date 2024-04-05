@@ -43,11 +43,11 @@ function InventoryControl() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
           cardIcon={cardIcon}
           title="Controle de Estoque"
           url={EstoqueVideo}
           isVideo
+          imageright
           subtitle="Plataforma web completa para gestão da loja e estoque"
           paragraph1={[
             "Gestão do seu estoque, entrada, saida, perda, garantia",

@@ -68,7 +68,7 @@ function Management() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="Nstock - Gestão e vendas"
           url={GestaoEVendasVideo}

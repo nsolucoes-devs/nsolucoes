@@ -127,12 +127,12 @@ export const LogoWrapper = styled.div`
 `;
 
 export const LogoName = styled.img`
-  width: 200px;
+  width: 180px;
+  margin-right: 20px;
   /* transition: 0.4s; */
   /* opacity: 0; */
   animation: popIn 1s paused;
   /* transform: translate(-10px); */
-  margin-bottom: 10px;
 
   @media only screen and (min-width: 769px) and (max-width: 1023px) {
     width: 10rem;

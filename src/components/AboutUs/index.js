@@ -44,7 +44,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph1.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph1.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -69,7 +70,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph2.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph2.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -79,7 +81,11 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px' }
+                      ? {
+                          fontWeight: "bold",
+                          color: "var(--accent-color)",
+                          marginBlock: "20px 40px",
+                        }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -101,7 +107,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph3.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph3.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -148,7 +155,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph1.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph1.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -174,7 +182,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph2.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph2.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -184,7 +193,11 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px'  }
+                      ? {
+                          fontWeight: "bold",
+                          color: "var(--accent-color)",
+                          marginBlock: "20px 40px",
+                        }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -207,7 +220,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph3.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph3.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -235,7 +249,7 @@ function AboutUs(props) {
 
       {props.imageright && (
         <>
-          <div className="left">
+          <div className="left color-title">
             <Title title={props.title} />
           </div>
           <MainRow>
@@ -249,6 +263,7 @@ function AboutUs(props) {
                         <span
                           style={{
                             display: "flex",
+
                             marginBlock: "10px",
                             textAlign: "left",
                           }}
@@ -257,7 +272,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph1.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph1.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -275,6 +291,7 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
+
                             marginBlock: "5px",
                           }}
                         >
@@ -282,7 +299,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph2.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph2.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -292,7 +310,11 @@ function AboutUs(props) {
                 <p
                   style={
                     props.boldenGreen
-                      ? { fontWeight: "bold", color: "var(--accent-color)", marginBlock: '20px 40px'  }
+                      ? {
+                          fontWeight: "bold",
+                          color: "var(--accent-color)",
+                          marginBlock: "20px 40px",
+                        }
                       : {}
                   }
                   dangerouslySetInnerHTML={{ __html: props.paragraph2 }}
@@ -307,6 +329,7 @@ function AboutUs(props) {
                           style={{
                             display: "flex",
                             alignItems: "center",
+
                             marginBlock: "5px",
                           }}
                         >
@@ -314,7 +337,8 @@ function AboutUs(props) {
                             color="var(--accent-color)"
                             size={24}
                           />
-                          {item}{index === props.paragraph3.length - 1 ? "." : ";"}
+                          {item}
+                          {index === props.paragraph3.length - 1 ? "." : ";"}
                         </span>
                       </li>
                     ))}
@@ -325,14 +349,25 @@ function AboutUs(props) {
               )}
               <p>{props.paragraph4}</p>
             </MainColumn>
-            {props.isVideo ? (
-              <video controls>
-                <source src={props.url} type="video/mp4" />
-              </video>
-            ) : (
-              <StockCard image={props.url} />
-            )}
+            <div>
+              {props.isVideo ? (
+                <VideoBlod isVideo={props.isVideo} source={props.url} />
+              ) : (
+                <StockCard image={props.url} />
+              )}
+            </div>
           </MainRow>
+          <DivSecundaryRow>
+            {(props.cardIcon || []).map((card) => (
+              <SecundaryRow key={card.id}>
+                {card.icon}
+                <SecundaryColumn>
+                  <strong title={card.title}>{card.title}</strong>
+                  <small>{card.description}</small>
+                </SecundaryColumn>
+              </SecundaryRow>
+            ))}
+          </DivSecundaryRow>
         </>
       )}
     </Container>

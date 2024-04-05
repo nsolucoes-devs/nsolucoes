@@ -41,7 +41,7 @@ function FleetManagement() {
       {/* Sobre nós */}
       <div className="margin-about">
         <AboutUs
-          imageleft
+          imageright
           cardIcon={cardIcon}
           title="Gestão de Frotas"
           url={FrotasVideo}
